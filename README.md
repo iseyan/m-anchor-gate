@@ -2,69 +2,48 @@
 
 [日本語](README.ja.md)
 
-Deterministic state gate for AI-generated proposals, with implementation code, evaluation records, and reproducible tests. Model proposes; deterministic layer commits.
+Implementation records from **Demonstration 1 onward** for a state-preservation principle: selecting an action or producing a summary must not, by itself, eliminate unresolved candidates.
 
-This repository preserves implementation records from **Demonstration 1 onward**.
+The recorded design separates model proposals from host validation and authoritative storage. The conceptual framework and formal work remain in [m-anchor-framework](https://github.com/iseyan/m-anchor-framework).
 
-**Model proposes; the host validates and commits.** Candidate sets, selected actions, admitted evidence and summaries remain distinct. The implementations check proposed transitions before they reach the authoritative store.
+## Current scope — 1 October 2026 (JST)
 
-The conceptual framework and its theoretical development remain in [m-anchor-framework](https://github.com/iseyan/m-anchor-framework). This repository records the implementation work and its evidence. The inherited minimal Python core is retained where the recorded implementations require it.
+**The official Stage 3 integration evaluation is stopped, incomplete. Stage 4 implementation has not started under this plan.** The retained research results are listed below; they are not one combined proof.
 
-## Read the records separately
-
-| Record | Location | Recorded status |
+| Stage | Result retained | Evidence and limit |
 | --- | --- | --- |
-| Demonstration 1 | [Finalization](demonstration1/demo1-finalization-v0.1.en.md), [implementation and run](demonstration1/demo1/demo1-implementation-and-run-v0.1.en.md) | Completed fixed-input demonstration. No LLM; four acceptance conditions passed in the recorded run. |
-| Stage 3 fixed-input development checks | [Closed report](stage3/development-report.v0.1.en.md), [original snapshot](stage3/development-snapshot/) | Checked path: 4 accepted, 11 rejected. D02 alone differs from the comparator. Model API calls in this record: 0. |
-| Collected-proposal replay | [Report](stage3/collected-proposals/m-anchor-stage3/evaluation-report.ja.md), [code and records](stage3/collected-proposals/m-anchor-stage3/) | Separate replay of 15 collected proposals: 8 rejected, 4 no-ops, 3 valid updates. Recorded unauthorized commits: 0; valid updates blocked: 0. |
-| Agents API connection check | [Run report](stage3/collected-proposals/m-anchor-agent/run-report.md), [application](stage3/collected-proposals/m-anchor-agent/) | API startup, interaction, streaming and saved-response recovery were recorded. This is separate from automatic integration with an authoritative state store. |
-| Official Stage 3 evaluation route | [Specification v0.1.1](stage3/specification/stage3-integration-evaluation-v0.1.1.en.md), [run forms](stage3/run-forms/) | Preparation and whole-stage completion remain separate decisions. The imported official forms are not frozen; the prepared form has `execution_ready=false`. |
-| Stage 4 | [Draft plan](stage4/stage4-productization-plan-v0.1.en.md), [entry form](stage4/stage4-productization-entry-form.v0.1.json) | Draft plan, entry unconfirmed, implementation not started under this plan; `execution_ready=false`. |
+| 1 — Formal note | Conditional mathematical result | Preservation under the stated transition assumptions; an empty evidence basis leaves the candidate set unchanged. The [finalized materials](reports/collected-materials/M-Anchor_Stages_1-4_Materials_v0.1.en.pdf) retain this background. |
+| 2 — Demonstration 1 | Completed fixed-input demonstration | [Implementation and run](demonstration1/demo1/demo1-implementation-and-run-v0.1.en.md): a fresh process used the saved version, candidates and selected action. No LLM. |
+| 3 — Development and schema checks | Fixed-input checks and schema gate 003 completed within their recorded scope | [Development report](stage3/development-report.v0.1.en.md): D02 alone differs under the removal check. [003 receipt report](stage3/schema-gates/schema-gate-003/report.en.md): four schemas checked; 82 classifications matched, including 81 valid instances and D10's expected invalid instance. The receipt is not an independent rerun. Preparation and live integration evaluation remain incomplete. |
+| 4 — Productization | Not started under this plan | [Draft plan](stage4/stage4-productization-plan-v0.1.en.md), with entry conditions unmet and `execution_ready=false`. |
 
-These are the statuses in the imported records, not a combined experimental result. See the [record map](docs/record-map.ja-en.md) for the differences between the two Stage 3 comparisons and their version rules.
+Start with Demonstration 1 for the observable result. The [English](reports/collected-materials/M-Anchor_Stages_1-4_Materials_v0.1.en.pdf) and [Japanese](reports/collected-materials/M-Anchor_Stages_1-4_Materials_v0.1.ja.pdf) collected PDFs remain historical reading editions, unchanged by this scope decision.
 
-## Repository layout
+### Where work stops
 
-- `demonstration1/`: original fixed-input demonstration, source code, schemas, SQLite state, audit logs and finalization records.
-- `stage3/development-snapshot/`: original development distribution, including `schema-gate-001.json` and failed inputs.
-- `stage3/specification/`, `stage3/run-forms/`: frozen evaluation specification and unfrozen execution forms.
-- `stage3/collected-proposals/m-anchor-stage3/`: separate deterministic replay implementation, the 15 original proposal JSONs, excluded input, and saved results.
-- `stage3/collected-proposals/m-anchor-agent/`: the separately recorded API application and connection report.
-- `stage4/`: draft productization plan and unfilled entry form.
-- `reports/collected-materials/`: final English and Japanese reading editions of the Stages 1-4 collection. Their Stage 1 material is retained as background within those already finalized PDFs.
-- `records/materials-finalization/`: the separate collection finalization record; it is not inserted into the original ZIP or Bundle 1.0.
-- `provenance/`: file-by-file import mapping and checksums.
+Current `stage3-preparation-001` retains its total cap of seven API calls. Its input bound of 8,192 tokens is unestablished, so generation does not proceed. Proposed `stage3-preparation-002` remains unadopted and is not an execution path. Neither run is ready; no first counting request is authorized. Conditions and implementation bindings already frozen remain historical records; they do not amount to a fully frozen execution form.
 
-## Read the completed materials
+Live API preparation, count-pricing research, provider inquiry and full run-form freezing are not continuing tasks in this effort. An eventual live-integration study would need a separately chosen purpose and scope. Stopping does not pass an unmet gate or change an earlier result.
 
-- [English main edition, 83 pages](reports/collected-materials/M-Anchor_Stages_1-4_Materials_v0.1.en.pdf)
-- [Japanese companion edition, 81 pages](reports/collected-materials/M-Anchor_Stages_1-4_Materials_v0.1.ja.pdf)
+The [process appendix](docs/research-scope-and-process-note.ja-en.md) records how preparation and documentation grew beyond the research question, and the cautions for future work.
 
-The reading editions describe their frozen source collection. The collected-proposal replay and API connection records above are separate records now stored alongside it; importing them here does not retrospectively rewrite the frozen ledger.
+## Supporting records
 
-## Local use
+These records remain available for inspection. They are not a queue of work to resume or substitutes for the unfinished official evaluation.
 
-The two local replay implementations use the Python standard library. Follow each implementation's own README and environment requirements. From the repository root, the following commands use a new output directory and leave the recorded runs intact:
+- [Official specification](stage3/specification/stage3-integration-evaluation-v0.1.1.en.md), [run forms and candidate](stage3/run-forms/), [implementation binding](stage3/execution-bindings/), [environment receipt](stage3/environment-checks/) and [pricing review](stage3/pricing-reviews/count-endpoint-pricing-001/README.en.md).
+- [Separate collected-proposal replay](stage3/collected-proposals/m-anchor-stage3/evaluation-report.ja.md): 15 proposals; 8 rejected, 4 no-ops, 3 valid updates. These results belong to that replay.
+- [Separate Agents API connection record](stage3/collected-proposals/m-anchor-agent/run-report.md): connection and interaction checks, not completion of the official store-integration evaluation.
+- [Historical record map](docs/record-map.ja-en.md): explains differences between implementations, comparators and version histories.
 
-```sh
-# Demonstration 1
-cd demonstration1/demo1
-python run_demo.py --output-dir ../../run-output/demo1-new
-cd ../..
+## Local reproduction
 
-# Separate collected-proposal replay
-cd stage3/collected-proposals/m-anchor-stage3
-python -X utf8 replay.py evaluate --out ../../../run-output/collected-replay-new
-python -X utf8 restart_check.py --out ../../../run-output/collected-restart-new
-cd ../../..
-```
+The [Demonstration 1 README](demonstration1/demo1/README.md) and [separate replay README](stage3/collected-proposals/m-anchor-stage3/README.md) provide their own local instructions. Use a new output directory and preserve the recorded runs. These local reproductions do not require starting the stopped official API route.
 
-Choose a fresh output directory for each run. The API application has separate dependencies and credential requirements; it is not invoked by the commands above. No API key or local environment file is part of this import.
+## Provenance and limits
 
-## Provenance and scope
+Specifications, code, run records, failures, receipts, candidate files and finalized materials are retained. The documentation revision changes the root reading guide and adds the process appendix; it adds no experiment result. Schema gates 001–002 are not rewritten as successes, and 003 is not extended to new code or model outputs.
 
-`provenance/import-manifest.json` maps every inherited file to its source archive member or standalone finalized file, with SHA-256. `provenance/SHA256SUMS.txt` covers the repository payload except itself. Git attributes disable line-ending conversion to preserve recorded bytes.
+`provenance/import-manifest.json` and `provenance/SHA256SUMS.txt` describe the original import, including the then-current root READMEs. They do not describe every later addition or the revised navigation. The [pre-revision snapshot](https://github.com/iseyan/m-anchor-gate/tree/64d8280203d4d8f38d6fda816c8e39ed482e367a) retains those README bytes. Git history records subsequent changes. Checksums identify bytes; they do not prove an authenticated API exchange or independent reproduction.
 
-This repository import does not rerun experiments, regenerate model proposals, pass the blocked schema gate, freeze the official run form, or start Stage 4. Earlier failures, excluded trials, no-op results and legitimate updates remain in the record. Checksums identify bytes; they do not authenticate an original model API exchange or constitute an independent reproduction.
-
-The preserved `schema-gate-001` failure belongs to the fixed-input development route. The separate replay's passing checks do not replace it or establish compliance with every entry condition of specification v0.1.1. Future schema-gate results, official run forms and Stage 4 entry decisions require separate records.
+The evidence here does not establish model understanding, the truth of evidence, general authorization security, prompt-injection resistance, accident prevention or product effectiveness.
