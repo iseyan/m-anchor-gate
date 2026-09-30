@@ -1,0 +1,67 @@
+{
+  "artifact_type": "generation_rates_and_unresolved_count_cost_review",
+  "proposed_run_id": "stage3-preparation-002",
+  "checked_at_utc": "2026-09-30T15:34:11.501144+00:00",
+  "basis_commit": "c22615bec2279f549fcb2bcbd727264cc8905b41",
+  "adopted": false,
+  "execution_ready": false,
+  "sources_reviewed": [
+    {
+      "url": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+      "finding": "Pinned snapshot and published standard generation rates match the inherited model/settings."
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/pricing",
+      "finding": "General API and token pricing text; no count-endpoint-specific price bound established in this review."
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/guides/token-counting",
+      "finding": "Pre-generation count method; no counting-price bound established in this review."
+    },
+    {
+      "url": "https://developers.openai.com/api/reference/typescript/resources/responses/subresources/input_tokens/methods/count",
+      "finding": "Count parameters and response fields; no counting-price bound established in this review."
+    }
+  ],
+  "model_identifier": "gpt-5.4-mini-2026-03-17",
+  "generation_rate_basis": {
+    "service_tier": "default",
+    "routing": "global_standard",
+    "uncached_input_usd_per_million": "0.75",
+    "output_usd_per_million": "4.50"
+  },
+  "generation_max_input_tokens_conditional": 8192,
+  "generation_max_output_tokens": 2048,
+  "generation_cost_bound_usd_per_call_conditional": "0.01536",
+  "generation_cost_bound_usd_for_seven_conditional": "0.10752",
+  "generation_reservation_usd_per_call": "0.02",
+  "generation_reservations_usd_for_seven": "0.14",
+  "run_budget_usd": "1.00",
+  "count_endpoint_cost_basis": null,
+  "count_endpoint_cost_source": null,
+  "count_request_cost_upper_bound_usd": null,
+  "count_request_reservation_usd": null,
+  "combined_cost_upper_bound_usd": null,
+  "combined_cost_upper_bound_established": false,
+  "count_free_assumed": false,
+  "unknown_count_price_blocks_first_count": true,
+  "symbolic_budget": {
+    "c": "A separately evidenced monetary upper bound/reservation for one count attempt, including the relevant failure/over-cap cases; not the returned token count.",
+    "conditional_token_charge_ceiling": "0.10752 + 7*c <= 1.00",
+    "reservation_capacity": "0.14 + 7*c <= 1.00",
+    "remaining_reservation_capacity_usd": "0.86",
+    "meaning": "Budget feasibility only. These expressions do not supply a value of c or prove the actual count fee."
+  },
+  "required_cost_evidence": [
+    "Official pricing terms or a provider account-specific confirmation covering POST /v1/responses/input_tokens for the pinned snapshot and chosen routing/tier.",
+    "Whether charging depends on payload size; if so, establish the billed quantity bound before counting, including a request whose returned count exceeds 8192.",
+    "Treatment of errors, timeouts and unknown delivery; no missing usage equals zero assumption.",
+    "The resulting per-attempt reservation and combined bound fit the unchanged USD 1 policy before any request."
+  ],
+  "why_no_generation_rate_substitution": "The fact that a count returns input_tokens does not by itself establish that the endpoint is billed like generation input. Generation rates alone do not define the count cost.",
+  "provider_question_not_sent": "For POST /v1/responses/input_tokens with gpt-5.4-mini-2026-03-17 on api.openai.com, what billing rule applies to successful counts, over-limit inputs, errors and uncertain/timeout deliveries? Please identify the applicable pricing terms and a pre-dispatch cost bound. No request has been sent.",
+  "account_access_verified": false,
+  "paid_API_calls": 0,
+  "count_API_calls": 0,
+  "spend_incurred_usd": "0.00"
+}

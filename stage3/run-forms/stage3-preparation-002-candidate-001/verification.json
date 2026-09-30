@@ -1,0 +1,333 @@
+{
+  "artifact_type": "candidate_document_consistency_check_only",
+  "checked_at_utc": "2026-09-30T15:38:29.488240+00:00",
+  "checker_sha256": "462ade373cb5e626b7e353472c3b04666406403167c637e35493ac464d628abd",
+  "status": "candidate_document_consistency_passed",
+  "checks": [
+    {
+      "name": "reference:stage3/development-snapshot/adapter.py",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/development-snapshot/fixtures/evidence-authority.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/development-snapshot/schemas/decision.schema.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/development-snapshot/schemas/input.schema.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/development-snapshot/schemas/proposal.schema.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/development-snapshot/schemas/state.schema.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/environment-checks/environment-check-20260930T143626Z-f7a97493/verification.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/binding.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/evaluator-contract.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/fixtures/r4-manifest.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/input-binding.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/runtime-manifest.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/src/api_client.py",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/src/contracts.py",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/src/evaluator.py",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/src/gate.py",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/src/live_reader.py",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/src/m_anchor_minimal.py",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/src/pipeline.py",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/src/request_builder.py",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-contexts/stage3-preparation-001-context-002/execution-context.record.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-contexts/stage3-preparation-001-context-002/token-method.candidate.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/run-forms/stage3-preparation-001/case-admissions.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/run-forms/stage3-preparation-001/official-run-form.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/run-forms/stage3-preparation-001/trial-plan.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/run-forms/stage3-preparation-002-candidate-001/case-admissions.candidate.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/run-forms/stage3-preparation-002-candidate-001/pricing-bound.review.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/run-forms/stage3-preparation-002-candidate-001/run-form.candidate.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/run-forms/stage3-preparation-002-candidate-001/trial-plan.candidate.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/schema-gates/schema-gate-003/run/schema-gate-003-20260930T104603Z-36d5c5c4/validation-command.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/schema-gates/schema-gate-003/verification.json",
+      "passed": true
+    },
+    {
+      "name": "embedded_manifest:case_admission",
+      "passed": true
+    },
+    {
+      "name": "embedded_manifest:condition",
+      "passed": true
+    },
+    {
+      "name": "new_proposed_id",
+      "passed": true
+    },
+    {
+      "name": "unadopted_unfrozen_unexecuted",
+      "passed": true
+    },
+    {
+      "name": "inherited:scope",
+      "passed": true
+    },
+    {
+      "name": "inherited:baseline",
+      "passed": true
+    },
+    {
+      "name": "inherited:stop_conditions",
+      "passed": true
+    },
+    {
+      "name": "inherited:failure_policy",
+      "passed": true
+    },
+    {
+      "name": "inherited:partner_evaluation",
+      "passed": true
+    },
+    {
+      "name": "inherited_model:model_identifier",
+      "passed": true
+    },
+    {
+      "name": "inherited_model:settings",
+      "passed": true
+    },
+    {
+      "name": "inherited_model:omitted_settings",
+      "passed": true
+    },
+    {
+      "name": "inherited_model:maximum_input_tokens",
+      "passed": true
+    },
+    {
+      "name": "inherited_model:request_timeout_seconds",
+      "passed": true
+    },
+    {
+      "name": "inherited_model:tools_available",
+      "passed": true
+    },
+    {
+      "name": "inherited_model:previous_conversation_inherited",
+      "passed": true
+    },
+    {
+      "name": "inherited_model:model_fallback_allowed",
+      "passed": true
+    },
+    {
+      "name": "inherited_model:output_validation",
+      "passed": true
+    },
+    {
+      "name": "schema_sources_unchanged",
+      "passed": true
+    },
+    {
+      "name": "evidence_interpretation_unchanged",
+      "passed": true
+    },
+    {
+      "name": "eight_case_rows_renamed_only",
+      "passed": true
+    },
+    {
+      "name": "admission_rows_agree",
+      "passed": true
+    },
+    {
+      "name": "admission_link:R1/no_evidence_response_B",
+      "passed": true
+    },
+    {
+      "name": "admission_link:R2/full_incorporation",
+      "passed": true
+    },
+    {
+      "name": "admission_link:R3/reuse_existing_evidence",
+      "passed": true
+    },
+    {
+      "name": "admission_link:R4/invalid_references",
+      "passed": true
+    },
+    {
+      "name": "admission_link:R5/reference",
+      "passed": true
+    },
+    {
+      "name": "admission_link:R5/changed_K",
+      "passed": true
+    },
+    {
+      "name": "admission_link:R5/response_only",
+      "passed": true
+    },
+    {
+      "name": "admission_link:R5/summary_only",
+      "passed": true
+    },
+    {
+      "name": "generation_trials_unchanged_except_case_id",
+      "passed": true
+    },
+    {
+      "name": "inherited_trial_contract:retry_policy",
+      "passed": true
+    },
+    {
+      "name": "inherited_trial_contract:proposal_replays",
+      "passed": true
+    },
+    {
+      "name": "inherited_trial_contract:R4_fixed_replay_plan",
+      "passed": true
+    },
+    {
+      "name": "inherited_trial_contract:R5_restart_plan",
+      "passed": true
+    },
+    {
+      "name": "inherited_trial_contract:task_legality_separation",
+      "passed": true
+    },
+    {
+      "name": "paired_count_plan",
+      "passed": true
+    },
+    {
+      "name": "proposed_endpoint_and_aggregate_caps",
+      "passed": true
+    },
+    {
+      "name": "generation_budget_inherited",
+      "passed": true
+    },
+    {
+      "name": "conditional_cost_arithmetic",
+      "passed": true
+    },
+    {
+      "name": "count_cost_and_total_remain_unknown",
+      "passed": true
+    },
+    {
+      "name": "implementation_not_claimed",
+      "passed": true
+    },
+    {
+      "name": "new_output_namespace_only_planned",
+      "passed": true
+    },
+    {
+      "name": "complete_change_register:stage3/run-forms/stage3-preparation-002-candidate-001/run-form.candidate.json",
+      "passed": true
+    },
+    {
+      "name": "complete_change_register:stage3/run-forms/stage3-preparation-002-candidate-001/case-admissions.candidate.json",
+      "passed": true
+    },
+    {
+      "name": "complete_change_register:stage3/run-forms/stage3-preparation-002-candidate-001/trial-plan.candidate.json",
+      "passed": true
+    },
+    {
+      "name": "no_new_execution",
+      "passed": true
+    }
+  ],
+  "error": null,
+  "exit_code": 0,
+  "adopted": false,
+  "execution_ready": false,
+  "token_gate_closed": false,
+  "schema_validation_performed": false,
+  "new_runtime_code_tested": false,
+  "old_69_or_68_checks_rerun": false,
+  "schema_gate_003_rerun": false,
+  "generation_API_calls": 0,
+  "count_API_calls": 0,
+  "state_store_writes": 0,
+  "scope": "References, complete recorded differences, inherited scientific conditions, proposed endpoint pairing and conditional arithmetic only."
+}

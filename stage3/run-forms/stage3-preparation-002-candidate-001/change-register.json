@@ -1,0 +1,841 @@
+{
+  "artifact_type": "unadopted_condition_candidate_change_register",
+  "basis_commit": "c22615bec2279f549fcb2bcbd727264cc8905b41",
+  "proposed_run_id": "stage3-preparation-002",
+  "adopted": false,
+  "pairs": [
+    {
+      "source": {
+        "path": "stage3/run-forms/stage3-preparation-001/official-run-form.json",
+        "sha256": "96ace90ed5c1f7f781bd5a5b3c7a256b9fc26b0595b7640a311044b6333db5e3"
+      },
+      "candidate": {
+        "path": "stage3/run-forms/stage3-preparation-002-candidate-001/run-form.candidate.json",
+        "sha256": "5e21ace6162eaa9b0fd756e57fdd9156a064432221e42218756d031939ed829a"
+      },
+      "differences": [
+        {
+          "pointer": "/adapter/live_implementation_status",
+          "before": "not_implemented",
+          "after": "new_run_and_counting_path_not_implemented_or_bound"
+        },
+        {
+          "pointer": "/adapter/source_binding_for_review",
+          "operation": "add",
+          "after": {
+            "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/binding.json",
+            "sha256": "58b7717a733f65d3c383ec0ed44b1979a8c8687d0a46490eee27d10167488a67"
+          }
+        },
+        {
+          "pointer": "/adopted",
+          "operation": "add",
+          "after": false
+        },
+        {
+          "pointer": "/adoption",
+          "operation": "add",
+          "after": {
+            "adopted": false,
+            "decision_record": null,
+            "authoring_basis": "User requested continuing preparation. No adoption of the count-call allowance or permission for live API execution is recorded here.",
+            "does_not_supersede_run_001": true
+          }
+        },
+        {
+          "pointer": "/artifact_type",
+          "before": "pre_execution_run_form",
+          "after": "pre_execution_run_form_candidate"
+        },
+        {
+          "pointer": "/budget/combined_cost_upper_bound_established",
+          "operation": "add",
+          "after": false
+        },
+        {
+          "pointer": "/budget/combined_cost_upper_bound_usd",
+          "operation": "add",
+          "after": null
+        },
+        {
+          "pointer": "/budget/count_free_assumed",
+          "operation": "add",
+          "after": false
+        },
+        {
+          "pointer": "/budget/count_request_cost_upper_bound_usd",
+          "operation": "add",
+          "after": null
+        },
+        {
+          "pointer": "/budget/count_request_reservation_usd",
+          "operation": "add",
+          "after": null
+        },
+        {
+          "pointer": "/budget/inherited_numeric_fields_applicability",
+          "operation": "add",
+          "after": "conservative_token_charge_usd_per_call, conservative_token_charge_usd_for_seven_calls and reservation_usd_per_call apply to generation only; the charge bound requires the 8192 input cap. None supplies count pricing."
+        },
+        {
+          "pointer": "/budget/pre_call_reservation_policy",
+          "before": "Before each dispatch verify the fixed model, tier, pricing and token caps; reserve USD 0.02 and refuse if settled charges plus outstanding reservations plus this reservation exceed USD 1.00. No auxiliary generation calls. This is a run policy awaiting implementation, not an account-wide billing cap.",
+          "after": "Proposed: use separate count/generation attempt records with one aggregate USD 1 budget. A documented count cost/reservation must exist before the first count; it is currently null. Keep generation reservation USD 0.02. Check settled amounts plus outstanding reservations plus the next reservation before every dispatch."
+        },
+        {
+          "pointer": "/budget/pricing_checked_at",
+          "before": "2026-09-30T11:21:01+00:00",
+          "after": "2026-09-30T15:34:11.501144+00:00"
+        },
+        {
+          "pointer": "/budget/pricing_review",
+          "operation": "add",
+          "after": {
+            "path": "stage3/run-forms/stage3-preparation-002-candidate-001/pricing-bound.review.json",
+            "sha256": "d2bb35137acb14656b2eb8ea2e7b6a518e5e2285ab7c51b659112cc6f55eabf3"
+          }
+        },
+        {
+          "pointer": "/budget/unknown_usage_policy",
+          "before": "Retain the full reservation, mark cost unresolved and stop further dispatch. Do not treat absent usage as zero or retry.",
+          "after": "Retain the full applicable reservation and stop. Unknown count billing or generation usage is not zero; never retry an uncertain attempt."
+        },
+        {
+          "pointer": "/comparison/checked_evaluation_store_path",
+          "before": "stage3/runs/stage3-preparation-001/stores/checked/",
+          "after": "stage3/runs/stage3-preparation-002/stores/checked/"
+        },
+        {
+          "pointer": "/comparison/unchecked_evaluation_store_path",
+          "before": "stage3/runs/stage3-preparation-001/stores/unchecked/",
+          "after": "stage3/runs/stage3-preparation-002/stores/unchecked/"
+        },
+        {
+          "pointer": "/creation_record/adoption_performed",
+          "operation": "add",
+          "after": false
+        },
+        {
+          "pointer": "/creation_record/conditions_frozen",
+          "operation": "add",
+          "after": false
+        },
+        {
+          "pointer": "/creation_record/runtime_code_modified",
+          "operation": "add",
+          "after": false
+        },
+        {
+          "pointer": "/creation_record/token_count_api_calls",
+          "operation": "add",
+          "after": 0
+        },
+        {
+          "pointer": "/entry_checks/case_admission_fixed",
+          "before": true,
+          "after": false
+        },
+        {
+          "pointer": "/entry_checks/count_cost_bound_established",
+          "operation": "add",
+          "after": false
+        },
+        {
+          "pointer": "/entry_checks/count_receipt_binding",
+          "operation": "add",
+          "after": "not_implemented"
+        },
+        {
+          "pointer": "/entry_checks/live_schema_validation",
+          "before": "not_implemented",
+          "after": "not_evaluated_for_new_run"
+        },
+        {
+          "pointer": "/entry_checks/official_form_frozen",
+          "before": "conditions_frozen_full_execution_binding_pending",
+          "after": "candidate_not_frozen"
+        },
+        {
+          "pointer": "/entry_checks/requested_parameters_frozen",
+          "before": true,
+          "after": false
+        },
+        {
+          "pointer": "/entry_checks/restart_trace_linkage",
+          "before": "not_implemented",
+          "after": "new_run_counting_path_not_implemented"
+        },
+        {
+          "pointer": "/evidence_authority/admission_fixed_at",
+          "before": "2026-09-30T11:21:01+00:00",
+          "after": null
+        },
+        {
+          "pointer": "/evidence_authority/admission_status",
+          "operation": "add",
+          "after": "proposed_not_admitted_for_active_run"
+        },
+        {
+          "pointer": "/evidence_authority/case_admission_manifest_path",
+          "before": "stage3/run-forms/stage3-preparation-001/case-admissions.json",
+          "after": "stage3/run-forms/stage3-preparation-002-candidate-001/case-admissions.candidate.json"
+        },
+        {
+          "pointer": "/evidence_authority/case_admission_manifest_sha256",
+          "before": "73c6a626d1d8418c8b5eef3276d79529ab903a14e9a5311eae4a441e88e0b4dc",
+          "after": "77aebf3b5d84faa5bc3470a44e18e80ff31b28af351f3fa609632d5c406637de"
+        },
+        {
+          "pointer": "/evidence_authority/case_rows/0/admission_record_ref",
+          "before": "stage3/run-forms/stage3-preparation-001/case-admissions.json#R1/no_evidence_response_B",
+          "after": "stage3/run-forms/stage3-preparation-002-candidate-001/case-admissions.candidate.json#R1/no_evidence_response_B"
+        },
+        {
+          "pointer": "/evidence_authority/case_rows/0/case_id",
+          "before": "stage3-preparation-001-r1",
+          "after": "stage3-preparation-002-r1"
+        },
+        {
+          "pointer": "/evidence_authority/case_rows/0/planned_store_path",
+          "before": "stage3/runs/stage3-preparation-001/stores/checked/r1.sqlite",
+          "after": "stage3/runs/stage3-preparation-002/stores/checked/r1.sqlite"
+        },
+        {
+          "pointer": "/evidence_authority/case_rows/1/admission_record_ref",
+          "before": "stage3/run-forms/stage3-preparation-001/case-admissions.json#R2/full_incorporation",
+          "after": "stage3/run-forms/stage3-preparation-002-candidate-001/case-admissions.candidate.json#R2/full_incorporation"
+        },
+        {
+          "pointer": "/evidence_authority/case_rows/1/case_id",
+          "before": "stage3-preparation-001-r2",
+          "after": "stage3-preparation-002-r2"
+        },
+        {
+          "pointer": "/evidence_authority/case_rows/1/planned_store_path",
+          "before": "stage3/runs/stage3-preparation-001/stores/checked/r2.sqlite",
+          "after": "stage3/runs/stage3-preparation-002/stores/checked/r2.sqlite"
+        },
+        {
+          "pointer": "/evidence_authority/case_rows/2/admission_record_ref",
+          "before": "stage3/run-forms/stage3-preparation-001/case-admissions.json#R3/reuse_existing_evidence",
+          "after": "stage3/run-forms/stage3-preparation-002-candidate-001/case-admissions.candidate.json#R3/reuse_existing_evidence"
+        },
+        {
+          "pointer": "/evidence_authority/case_rows/2/case_id",
+          "before": "stage3-preparation-001-r3",
+          "after": "stage3-preparation-002-r3"
+        },
+        {
+          "pointer": "/evidence_authority/case_rows/2/planned_store_path",
+          "before": "stage3/runs/stage3-preparation-001/stores/checked/r3.sqlite",
+          "after": "stage3/runs/stage3-preparation-002/stores/checked/r3.sqlite"
+        },
+        {
+          "pointer": "/evidence_authority/case_rows/3/admission_record_ref",
+          "before": "stage3/run-forms/stage3-preparation-001/case-admissions.json#R4/invalid_references",
+          "after": "stage3/run-forms/stage3-preparation-002-candidate-001/case-admissions.candidate.json#R4/invalid_references"
+        },
+        {
+          "pointer": "/evidence_authority/case_rows/3/case_id",
+          "before": "stage3-preparation-001-r4",
+          "after": "stage3-preparation-002-r4"
+        },
+        {
+          "pointer": "/evidence_authority/case_rows/3/planned_store_path",
+          "before": "stage3/runs/stage3-preparation-001/stores/checked/r4.sqlite",
+          "after": "stage3/runs/stage3-preparation-002/stores/checked/r4.sqlite"
+        },
+        {
+          "pointer": "/evidence_authority/case_rows/4/admission_record_ref",
+          "before": "stage3/run-forms/stage3-preparation-001/case-admissions.json#R5/reference",
+          "after": "stage3/run-forms/stage3-preparation-002-candidate-001/case-admissions.candidate.json#R5/reference"
+        },
+        {
+          "pointer": "/evidence_authority/case_rows/4/case_id",
+          "before": "stage3-preparation-001-r1",
+          "after": "stage3-preparation-002-r1"
+        },
+        {
+          "pointer": "/evidence_authority/case_rows/4/planned_store_path",
+          "before": "stage3/runs/stage3-preparation-001/stores/checked/r1.sqlite",
+          "after": "stage3/runs/stage3-preparation-002/stores/checked/r1.sqlite"
+        },
+        {
+          "pointer": "/evidence_authority/case_rows/5/admission_record_ref",
+          "before": "stage3/run-forms/stage3-preparation-001/case-admissions.json#R5/changed_K",
+          "after": "stage3/run-forms/stage3-preparation-002-candidate-001/case-admissions.candidate.json#R5/changed_K"
+        },
+        {
+          "pointer": "/evidence_authority/case_rows/5/case_id",
+          "before": "stage3-preparation-001-r2",
+          "after": "stage3-preparation-002-r2"
+        },
+        {
+          "pointer": "/evidence_authority/case_rows/5/planned_store_path",
+          "before": "stage3/runs/stage3-preparation-001/stores/checked/r2.sqlite",
+          "after": "stage3/runs/stage3-preparation-002/stores/checked/r2.sqlite"
+        },
+        {
+          "pointer": "/evidence_authority/case_rows/6/admission_record_ref",
+          "before": "stage3/run-forms/stage3-preparation-001/case-admissions.json#R5/response_only",
+          "after": "stage3/run-forms/stage3-preparation-002-candidate-001/case-admissions.candidate.json#R5/response_only"
+        },
+        {
+          "pointer": "/evidence_authority/case_rows/6/case_id",
+          "before": "stage3-preparation-001-r1",
+          "after": "stage3-preparation-002-r1"
+        },
+        {
+          "pointer": "/evidence_authority/case_rows/6/planned_store_path",
+          "before": "stage3/runs/stage3-preparation-001/stores/restart/response-only.sqlite",
+          "after": "stage3/runs/stage3-preparation-002/stores/restart/response-only.sqlite"
+        },
+        {
+          "pointer": "/evidence_authority/case_rows/7/admission_record_ref",
+          "before": "stage3/run-forms/stage3-preparation-001/case-admissions.json#R5/summary_only",
+          "after": "stage3/run-forms/stage3-preparation-002-candidate-001/case-admissions.candidate.json#R5/summary_only"
+        },
+        {
+          "pointer": "/evidence_authority/case_rows/7/case_id",
+          "before": "stage3-preparation-001-r1",
+          "after": "stage3-preparation-002-r1"
+        },
+        {
+          "pointer": "/evidence_authority/case_rows/7/planned_store_path",
+          "before": "stage3/runs/stage3-preparation-001/stores/restart/summary-only.sqlite",
+          "after": "stage3/runs/stage3-preparation-002/stores/restart/summary-only.sqlite"
+        },
+        {
+          "pointer": "/form_version",
+          "before": "stage3-run-form/v0.1-conditions-001",
+          "after": "stage3-run-form/v0.1-conditions-002-candidate-001"
+        },
+        {
+          "pointer": "/freeze/basis_commit",
+          "before": "b2bd9d53c0a387df92c5cb9062f8319f0d805832",
+          "after": "c22615bec2279f549fcb2bcbd727264cc8905b41"
+        },
+        {
+          "pointer": "/freeze/change_policy",
+          "before": "Keep this record immutable. Bind implementation in a separate pre-execution file referencing this form hash; changes to fixed conditions require a new revision/run ID.",
+          "after": "Preserve this candidate snapshot and all prior records. Adoption, revised prices, implementation and execution use separate records; do not retroactively set this candidate to ready."
+        },
+        {
+          "pointer": "/freeze/conditions_frozen",
+          "before": true,
+          "after": false
+        },
+        {
+          "pointer": "/freeze/execution_binding_status",
+          "before": "not_implemented_or_verified",
+          "after": "new_run_not_implemented_or_verified"
+        },
+        {
+          "pointer": "/freeze/scope",
+          "before": [
+            "model_identifier_and_settings",
+            "trial_counts_and_retries",
+            "spending_limit",
+            "case_admitted_evidence_and_interpretation"
+          ],
+          "after": [
+            "model_identifier_and_settings",
+            "trial_counts_and_retries",
+            "spending_limit",
+            "case_admitted_evidence_and_interpretation",
+            "separate_count_attempt_allowance",
+            "combined_count_and_generation_accounting"
+          ]
+        },
+        {
+          "pointer": "/model/input_counting_candidate",
+          "operation": "add",
+          "after": {
+            "endpoint": "https://api.openai.com/v1/responses/input_tokens",
+            "method_reference": {
+              "path": "stage3/execution-contexts/stage3-preparation-001-context-002/token-method.candidate.json",
+              "sha256": "833d78e0e8eecafa87e0dd08fb958f7d5a252b298af38269ba30bf06046150eb"
+            },
+            "adopted": false,
+            "implementation_reference": null,
+            "live_count_observed": false
+          }
+        },
+        {
+          "pointer": "/model/input_token_limit_enforcement",
+          "before": "Before dispatch, establish the input-token count or a documented conservative bound; stop if the 8192 cap cannot be established. Implementation/version is pending execution binding.",
+          "after": "Proposed: at most one authenticated count request per listed generation trial; require a verified count <=8192 linked to the complete unchanged generation bytes. Method and cost must be adopted and bound first. No numeric bound is issued by this form."
+        },
+        {
+          "pointer": "/note",
+          "before": "The requested conditions are selected and frozen here. Full official run-form binding and live preparation execution remain incomplete. No change to the Stage 3 specification or closed records; no Stage 3 completion or Stage 4 entry.",
+          "after": "Unadopted proposed conditions for a new run ID. Seven generations are retained; up to seven count attempts and total fourteen are only proposed. No official form freeze, API execution, prior-result rewriting, Stage 3 completion or Stage 4 entry."
+        },
+        {
+          "pointer": "/remaining_execution_bindings",
+          "before": [
+            "Live adapter/client source revision and hashes; preserve the checked write path and separate origin labels.",
+            "Exact prompt/template and input assembly manifest, output parser, token-bound implementation, client retry disabling and budget checks.",
+            "Complete R4 fixture bytes/hashes; evaluator-only expectations and scoring code, kept outside the model input.",
+            "Runtime schema validation and case/version/hash checks; store creation, provenance and restart-to-API linkage.",
+            "A separate pre-execution binding record referencing this frozen form and recording account/model access status without uncounted generation probes."
+          ],
+          "after": [
+            "Record a distinct decision adopting the proposed count allowance, if selected; do not treat this candidate or reviewer text as that decision.",
+            "Establish count-specific monetary bounds and reservations within the USD 1 policy before any count request.",
+            "Bind a new implementation to the adopted form hash and new run/case IDs, with endpoint-specific and aggregate accounting.",
+            "Regenerate initial state/input and R4 fixture hashes for new case IDs; do not substitute old request/state hashes.",
+            "Verify actual count receipt origin/linkage and the exact request bytes within the same fresh R5 process, with no history handoff.",
+            "Run focused checks on changed code in the specified-validator environment and retain new results. Old 69/68/003 do not cover it.",
+            "Create a separate actual-start environment/price/path binding; account availability remains unverified and no probes are added."
+          ]
+        },
+        {
+          "pointer": "/retention/count_exchange_retention",
+          "operation": "add",
+          "after": [
+            "attempt_id",
+            "generation_trial_id",
+            "endpoint",
+            "request_bytes_sha256",
+            "generation_request_sha256",
+            "status_or_transport_error",
+            "request_id_if_returned",
+            "raw_response_or_error",
+            "start_and_end_times",
+            "cost_reservation_and_basis"
+          ]
+        },
+        {
+          "pointer": "/retention/run_directory",
+          "before": "stage3/runs/stage3-preparation-001/",
+          "after": "stage3/runs/stage3-preparation-002/"
+        },
+        {
+          "pointer": "/run/freeze_manifest_path",
+          "before": "stage3/run-forms/stage3-preparation-001/freeze-manifest.json",
+          "after": null
+        },
+        {
+          "pointer": "/run/frozen_at",
+          "before": "2026-09-30T11:21:01+00:00",
+          "after": null
+        },
+        {
+          "pointer": "/run/identifier_status",
+          "operation": "add",
+          "after": "proposed_new_run_id_not_started"
+        },
+        {
+          "pointer": "/run/proposed_at_utc",
+          "operation": "add",
+          "after": "2026-09-30T15:34:11.501144+00:00"
+        },
+        {
+          "pointer": "/run/revision",
+          "before": "conditions-v0.1",
+          "after": "conditions-002-candidate-001"
+        },
+        {
+          "pointer": "/run/run_id",
+          "before": "stage3-preparation-001",
+          "after": "stage3-preparation-002"
+        },
+        {
+          "pointer": "/schemas/validation/new_run_applicability",
+          "operation": "add",
+          "after": "Historical 003 evidence for its fixed development objects only. No conformance or code-check result for this proposed run is created or inherited."
+        },
+        {
+          "pointer": "/source_condition",
+          "operation": "add",
+          "after": {
+            "path": "stage3/run-forms/stage3-preparation-001/official-run-form.json",
+            "sha256": "96ace90ed5c1f7f781bd5a5b3c7a256b9fc26b0595b7640a311044b6333db5e3"
+          }
+        },
+        {
+          "pointer": "/source_context",
+          "operation": "add",
+          "after": {
+            "path": "stage3/execution-contexts/stage3-preparation-001-context-002/execution-context.record.json",
+            "sha256": "da1555065e3ef7874f2930c7eaeb4446f669b6a1bd700c4de81c01e0ad1428bf"
+          }
+        },
+        {
+          "pointer": "/status",
+          "before": "requested_conditions_frozen_execution_binding_pending",
+          "after": "unadopted_condition_revision_cost_and_implementation_pending"
+        },
+        {
+          "pointer": "/trial_plan/allowance_adopted",
+          "operation": "add",
+          "after": false
+        },
+        {
+          "pointer": "/trial_plan/condition_manifest_path",
+          "before": "stage3/run-forms/stage3-preparation-001/trial-plan.json",
+          "after": "stage3/run-forms/stage3-preparation-002-candidate-001/trial-plan.candidate.json"
+        },
+        {
+          "pointer": "/trial_plan/condition_manifest_sha256",
+          "before": "64719a5eee171731798ebf4e2d413922f192b1f728951f9ecbd0cdeeb31af977",
+          "after": "58193cdd846185715576e0ba1a5e583ef0ac3341bd76126bbef10076e458fc4e"
+        },
+        {
+          "pointer": "/trial_plan/count_calls_observed",
+          "operation": "add",
+          "after": 0
+        },
+        {
+          "pointer": "/trial_plan/maximum_count_api_calls",
+          "operation": "add",
+          "after": 7
+        },
+        {
+          "pointer": "/trial_plan/maximum_count_attempts_per_trial",
+          "operation": "add",
+          "after": 1
+        },
+        {
+          "pointer": "/trial_plan/maximum_generation_api_calls",
+          "operation": "add",
+          "after": 7
+        },
+        {
+          "pointer": "/trial_plan/maximum_total_api_calls",
+          "before": 7,
+          "after": 14
+        }
+      ]
+    },
+    {
+      "source": {
+        "path": "stage3/run-forms/stage3-preparation-001/case-admissions.json",
+        "sha256": "73c6a626d1d8418c8b5eef3276d79529ab903a14e9a5311eae4a441e88e0b4dc"
+      },
+      "candidate": {
+        "path": "stage3/run-forms/stage3-preparation-002-candidate-001/case-admissions.candidate.json",
+        "sha256": "77aebf3b5d84faa5bc3470a44e18e80ff31b28af351f3fa609632d5c406637de"
+      },
+      "differences": [
+        {
+          "pointer": "/adopted",
+          "operation": "add",
+          "after": false
+        },
+        {
+          "pointer": "/artifact_type",
+          "before": "case_admission_manifest",
+          "after": "case_admission_manifest_candidate"
+        },
+        {
+          "pointer": "/authorization",
+          "before": "User requested model/settings, trial count, spending limit and case-admitted evidence to be fixed.",
+          "after": "Proposed case admissions only; preparing this candidate does not admit evidence for an active run."
+        },
+        {
+          "pointer": "/case_rows/0/case_id",
+          "before": "stage3-preparation-001-r1",
+          "after": "stage3-preparation-002-r1"
+        },
+        {
+          "pointer": "/case_rows/0/planned_store_path",
+          "before": "stage3/runs/stage3-preparation-001/stores/checked/r1.sqlite",
+          "after": "stage3/runs/stage3-preparation-002/stores/checked/r1.sqlite"
+        },
+        {
+          "pointer": "/case_rows/1/case_id",
+          "before": "stage3-preparation-001-r2",
+          "after": "stage3-preparation-002-r2"
+        },
+        {
+          "pointer": "/case_rows/1/planned_store_path",
+          "before": "stage3/runs/stage3-preparation-001/stores/checked/r2.sqlite",
+          "after": "stage3/runs/stage3-preparation-002/stores/checked/r2.sqlite"
+        },
+        {
+          "pointer": "/case_rows/2/case_id",
+          "before": "stage3-preparation-001-r3",
+          "after": "stage3-preparation-002-r3"
+        },
+        {
+          "pointer": "/case_rows/2/planned_store_path",
+          "before": "stage3/runs/stage3-preparation-001/stores/checked/r3.sqlite",
+          "after": "stage3/runs/stage3-preparation-002/stores/checked/r3.sqlite"
+        },
+        {
+          "pointer": "/case_rows/3/case_id",
+          "before": "stage3-preparation-001-r4",
+          "after": "stage3-preparation-002-r4"
+        },
+        {
+          "pointer": "/case_rows/3/planned_store_path",
+          "before": "stage3/runs/stage3-preparation-001/stores/checked/r4.sqlite",
+          "after": "stage3/runs/stage3-preparation-002/stores/checked/r4.sqlite"
+        },
+        {
+          "pointer": "/case_rows/4/case_id",
+          "before": "stage3-preparation-001-r1",
+          "after": "stage3-preparation-002-r1"
+        },
+        {
+          "pointer": "/case_rows/4/planned_store_path",
+          "before": "stage3/runs/stage3-preparation-001/stores/checked/r1.sqlite",
+          "after": "stage3/runs/stage3-preparation-002/stores/checked/r1.sqlite"
+        },
+        {
+          "pointer": "/case_rows/5/case_id",
+          "before": "stage3-preparation-001-r2",
+          "after": "stage3-preparation-002-r2"
+        },
+        {
+          "pointer": "/case_rows/5/planned_store_path",
+          "before": "stage3/runs/stage3-preparation-001/stores/checked/r2.sqlite",
+          "after": "stage3/runs/stage3-preparation-002/stores/checked/r2.sqlite"
+        },
+        {
+          "pointer": "/case_rows/6/case_id",
+          "before": "stage3-preparation-001-r1",
+          "after": "stage3-preparation-002-r1"
+        },
+        {
+          "pointer": "/case_rows/6/planned_store_path",
+          "before": "stage3/runs/stage3-preparation-001/stores/restart/response-only.sqlite",
+          "after": "stage3/runs/stage3-preparation-002/stores/restart/response-only.sqlite"
+        },
+        {
+          "pointer": "/case_rows/7/case_id",
+          "before": "stage3-preparation-001-r1",
+          "after": "stage3-preparation-002-r1"
+        },
+        {
+          "pointer": "/case_rows/7/planned_store_path",
+          "before": "stage3/runs/stage3-preparation-001/stores/restart/summary-only.sqlite",
+          "after": "stage3/runs/stage3-preparation-002/stores/restart/summary-only.sqlite"
+        },
+        {
+          "pointer": "/conditions_frozen",
+          "operation": "add",
+          "after": false
+        },
+        {
+          "pointer": "/fixed_at_utc",
+          "before": "2026-09-30T11:21:01+00:00",
+          "after": null
+        },
+        {
+          "pointer": "/proposed_at_utc",
+          "operation": "add",
+          "after": "2026-09-30T15:34:11.501144+00:00"
+        },
+        {
+          "pointer": "/run_id",
+          "before": "stage3-preparation-001",
+          "after": "stage3-preparation-002"
+        },
+        {
+          "pointer": "/version",
+          "before": "stage3-case-admissions/v0.1",
+          "after": "stage3-case-admissions/v0.1-candidate-002"
+        }
+      ]
+    },
+    {
+      "source": {
+        "path": "stage3/run-forms/stage3-preparation-001/trial-plan.json",
+        "sha256": "64719a5eee171731798ebf4e2d413922f192b1f728951f9ecbd0cdeeb31af977"
+      },
+      "candidate": {
+        "path": "stage3/run-forms/stage3-preparation-002-candidate-001/trial-plan.candidate.json",
+        "sha256": "58193cdd846185715576e0ba1a5e583ef0ac3341bd76126bbef10076e458fc4e"
+      },
+      "differences": [
+        {
+          "pointer": "/R4_fixed_replay_plan/case_id",
+          "before": "stage3-preparation-001-r4",
+          "after": "stage3-preparation-002-r4"
+        },
+        {
+          "pointer": "/adopted",
+          "operation": "add",
+          "after": false
+        },
+        {
+          "pointer": "/artifact_type",
+          "before": "frozen_trial_plan",
+          "after": "trial_plan_candidate"
+        },
+        {
+          "pointer": "/calls/0/case_id",
+          "before": "stage3-preparation-001-r1",
+          "after": "stage3-preparation-002-r1"
+        },
+        {
+          "pointer": "/calls/1/case_id",
+          "before": "stage3-preparation-001-r2",
+          "after": "stage3-preparation-002-r2"
+        },
+        {
+          "pointer": "/calls/2/case_id",
+          "before": "stage3-preparation-001-r3",
+          "after": "stage3-preparation-002-r3"
+        },
+        {
+          "pointer": "/calls/3/case_id",
+          "before": "stage3-preparation-001-r1",
+          "after": "stage3-preparation-002-r1"
+        },
+        {
+          "pointer": "/calls/4/case_id",
+          "before": "stage3-preparation-001-r2",
+          "after": "stage3-preparation-002-r2"
+        },
+        {
+          "pointer": "/calls/5/case_id",
+          "before": "stage3-preparation-001-r1",
+          "after": "stage3-preparation-002-r1"
+        },
+        {
+          "pointer": "/calls/6/case_id",
+          "before": "stage3-preparation-001-r1",
+          "after": "stage3-preparation-002-r1"
+        },
+        {
+          "pointer": "/count_calls_observed",
+          "operation": "add",
+          "after": 0
+        },
+        {
+          "pointer": "/counting_plan",
+          "operation": "add",
+          "after": {
+            "adopted": false,
+            "endpoint": "https://api.openai.com/v1/responses/input_tokens",
+            "calls": [
+              {
+                "count_attempt_id": "C-P001",
+                "generation_trial_id": "P001",
+                "case_id": "stage3-preparation-002-r1",
+                "maximum_attempts": 1
+              },
+              {
+                "count_attempt_id": "C-P002",
+                "generation_trial_id": "P002",
+                "case_id": "stage3-preparation-002-r2",
+                "maximum_attempts": 1
+              },
+              {
+                "count_attempt_id": "C-P003",
+                "generation_trial_id": "P003",
+                "case_id": "stage3-preparation-002-r3",
+                "maximum_attempts": 1
+              },
+              {
+                "count_attempt_id": "C-A001",
+                "generation_trial_id": "A001",
+                "case_id": "stage3-preparation-002-r1",
+                "maximum_attempts": 1
+              },
+              {
+                "count_attempt_id": "C-A002",
+                "generation_trial_id": "A002",
+                "case_id": "stage3-preparation-002-r2",
+                "maximum_attempts": 1
+              },
+              {
+                "count_attempt_id": "C-A003",
+                "generation_trial_id": "A003",
+                "case_id": "stage3-preparation-002-r1",
+                "maximum_attempts": 1
+              },
+              {
+                "count_attempt_id": "C-A004",
+                "generation_trial_id": "A004",
+                "case_id": "stage3-preparation-002-r1",
+                "maximum_attempts": 1
+              }
+            ],
+            "attempt_order_if_reached": [
+              "C-P001",
+              "P001",
+              "C-P002",
+              "P002",
+              "C-P003",
+              "P003",
+              "C-A001",
+              "A001",
+              "C-A002",
+              "A002",
+              "C-A003",
+              "A003",
+              "C-A004",
+              "A004"
+            ],
+            "attempt_reservation": "Reserve the endpoint slot and documented monetary bound before dispatch. Failures and uncertain delivery keep the slot consumed. Do not retry, reuse a failed slot or issue a second count for changed input.",
+            "generation_dependency": "Generation is possible only after the paired count succeeds for the identical complete generation-request bytes and all other existing checks pass.",
+            "count_error_or_over_cap": "Retain the attempt and stop this run before generation; no fallback or request replacement.",
+            "R4": "No count or generation request. Keep the fixed-replay position after P003 and before A001.",
+            "R5": "Each fresh process reads the actual authoritative store, builds and counts its exact input, then sends those same bytes at most once. Handoff remains case ID and store path only."
+          }
+        },
+        {
+          "pointer": "/early_stop",
+          "before": "Seven is the plan and cap, not a completion quota. Retain fewer calls if blocked; do not replace failures.",
+          "after": "Seven generations and at most seven counts are proposed caps, not quotas. Keep early-stop results and failed attempts without replacement."
+        },
+        {
+          "pointer": "/fixed_at_utc",
+          "before": "2026-09-30T11:21:01+00:00",
+          "after": null
+        },
+        {
+          "pointer": "/generation_calls_observed",
+          "operation": "add",
+          "after": 0
+        },
+        {
+          "pointer": "/maximum_count_api_calls",
+          "operation": "add",
+          "after": 7
+        },
+        {
+          "pointer": "/maximum_count_attempts_per_trial",
+          "operation": "add",
+          "after": 1
+        },
+        {
+          "pointer": "/maximum_total_api_calls",
+          "operation": "add",
+          "after": 14
+        },
+        {
+          "pointer": "/proposed_at_utc",
+          "operation": "add",
+          "after": "2026-09-30T15:34:11.501144+00:00"
+        },
+        {
+          "pointer": "/run_id",
+          "before": "stage3-preparation-001",
+          "after": "stage3-preparation-002"
+        },
+        {
+          "pointer": "/version",
+          "before": "stage3-trial-plan/v0.1",
+          "after": "stage3-trial-plan/v0.1-candidate-002"
+        }
+      ]
+    }
+  ],
+  "unchanged_scientific_contract": [
+    "model identifier/settings",
+    "candidate guard and evidence interpretation",
+    "seven generation tasks/order",
+    "paired store comparison",
+    "R4 categories",
+    "R5 actual-state controls",
+    "D15 legality/task distinction",
+    "scope and stop conditions"
+  ],
+  "material_proposed_change": "Separate endpoint call allowance/accounting plus a new run/case/output namespace. Adoption/freeze flags remain false; count cost and new implementation remain unresolved."
+}

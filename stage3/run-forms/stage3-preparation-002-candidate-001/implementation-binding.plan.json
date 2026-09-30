@@ -1,0 +1,142 @@
+{
+  "artifact_type": "new_run_implementation_binding_plan_only",
+  "proposed_run_id": "stage3-preparation-002",
+  "plan_id": "stage3-preparation-002-binding-plan-001",
+  "created_at_utc": "2026-09-30T15:34:11.501144+00:00",
+  "adopted": false,
+  "implementation_binding_frozen": false,
+  "execution_ready": false,
+  "source_binding": {
+    "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/binding.json",
+    "sha256": "58b7717a733f65d3c383ec0ed44b1979a8c8687d0a46490eee27d10167488a67"
+  },
+  "source_files": [
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/src/contracts.py",
+      "sha256": "30b4402a6d87dfd075bdcbf6f7a9cfeb1bfe616d64fdb8b32c18e8bf6c3ee475"
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/src/api_client.py",
+      "sha256": "ebcd92d4108508bc87272f25153515bf8aed56fe6a5b536becd5a0e61f5d2e8f"
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/src/live_reader.py",
+      "sha256": "8b94232b813cecac0072838a5e5adafe088289cb3f0c19ec8b649eb0f5339783"
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/src/pipeline.py",
+      "sha256": "45d0ee3dd382c39314b3e1cd7489ccaaf86b56ef6a1a5db65e3644ca567a4376"
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/src/request_builder.py",
+      "sha256": "dc8c443827565680578ed5cca629a49cb349850afadaa34a81865bf7a9f3edfd"
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/src/gate.py",
+      "sha256": "5208175ef1e81cd067ea2f1f95a6c9d89e2916bcea197df2bfaa736ec8366ce0"
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/src/evaluator.py",
+      "sha256": "fd3ad6be6635dc972fa85fade195a3fb93d30c0054a35e8ac8a3b142d889af87"
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/src/m_anchor_minimal.py",
+      "sha256": "0f9551e8d00cd4408441944d9067cfe9bce7d5653019a5af27738fb5895f58c9"
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/runtime-manifest.json",
+      "sha256": "b3aca72a5a0a41df1dcdddda4482645fa69ed64fbf5845c5537f0c0e5162dafd"
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/input-binding.json",
+      "sha256": "f5464b8905c3d4be3f3dd32f406bc099900a505063665fccfff36e86655d5101"
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/fixtures/r4-manifest.json",
+      "sha256": "3b91c529ba31fcaac416ea98fea11f651392537e948aac1fe7b8c9d49a7b3074"
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/evaluator-contract.json",
+      "sha256": "392eb52dc090ea70b685d599d8d312fb130bdeaab2a0f0b2b2f2623dd262cd84"
+    }
+  ],
+  "candidate_conditions": {
+    "path": "stage3/run-forms/stage3-preparation-002-candidate-001/run-form.candidate.json",
+    "sha256": "5e21ace6162eaa9b0fd756e57fdd9156a064432221e42218756d031939ed829a"
+  },
+  "count_method_candidate": {
+    "path": "stage3/execution-contexts/stage3-preparation-001-context-002/token-method.candidate.json",
+    "sha256": "833d78e0e8eecafa87e0dd08fb958f7d5a252b298af38269ba30bf06046150eb"
+  },
+  "historical_exact_validator_receipt": {
+    "path": "stage3/environment-checks/environment-check-20260930T143626Z-f7a97493/verification.json",
+    "sha256": "62af6b4c41382a82e40308475f51447edb82602b07d465bd8dd5ec0e6bd3bf66"
+  },
+  "planned_new_binding_directory": "stage3/execution-bindings/stage3-preparation-002-binding-001/",
+  "new_runtime_manifest_sha256": null,
+  "new_input_binding_sha256": null,
+  "new_R4_fixture_manifest_sha256": null,
+  "new_code_created": false,
+  "new_code_checked": false,
+  "changes_required": [
+    {
+      "area": "contracts.py",
+      "observed": "CONDITIONS and FORM_SHA256 identify run 001; runtime verification pins source bytes.",
+      "required": "In a new source directory bind the adopted run-002 form, admissions and trial-plan hashes. Reject all unadopted candidates; no replacement of old pins in place."
+    },
+    {
+      "area": "api_client.py / Journal.reserve",
+      "observed": "Seven generation trial IDs and a single reservation type are hardcoded.",
+      "required": "Keep the seven generation IDs/order, plus C-<trial> count slots. Enforce one count per trial, separate caps seven/seven and total fourteen if adopted. Consume reserved attempt slots on uncertain delivery/errors; prohibit bypassing the paired-count dependency. Account for both kinds under one USD 1 budget."
+    },
+    {
+      "area": "api_client.py / LiveHTTPTransport.preflight",
+      "observed": "Checks a claimed origin string, request/model/count range and nonempty method hash, but does not verify count exchange provenance and linked receipt files.",
+      "required": "Validate the adopted method hash, exact payload projection, raw count exchange and receipt hashes, run/trial/case/version/state/view linkage, and host transport origin before issuing a bound for immutable generation bytes. A supplied JSON origin label is insufficient."
+    },
+    {
+      "area": "live_reader.py + pipeline.decision_call",
+      "observed": "The old reader loads a precomputed bound file before the pipeline builds the request.",
+      "required": "In one fresh process read the authoritative store, build/fix bytes, count, validate the receipt, then generate from exactly those bytes. Store metadata provides host configuration, not prior memory. Handoff remains case ID and store path; writer exit precedes reader start. No comparison-store inputs."
+    },
+    {
+      "area": "request_builder.py + input-binding + fixtures",
+      "observed": "Case IDs appear in state/action/input values and therefore affect canonical hashes.",
+      "required": "Keep prompt tasks, schemas and settings as scientifically specified. Rebuild initial state/action/view bytes and R4 fixture bytes against the new case IDs and legitimate initial hashes before execution. Do not string-replace old hashes or copy received fixture requests as live inputs."
+    },
+    {
+      "area": "guard/gate/evaluator",
+      "observed": "Candidate guard, admission checks and task-vs-legality scoring are separate from call accounting.",
+      "required": "Keep the minimal guard byte-identical and one checked commit path. Retain D15 legality/task separation, paired raw proposal replay and R4 categories. Scope remains synthetic evidence and state preservation; no security/adoption claims."
+    },
+    {
+      "area": "manifests + tests",
+      "observed": "Old manifests and 69/68/003 results identify earlier code and data.",
+      "required": "Hash all new runtime files, templates, inputs and R4 bytes in new manifests. Use the specified validator for relevant new data and record checks of changed transport/accounting logic separately; do not relabel old results."
+    }
+  ],
+  "receipt_authority_limits": "Use a host-owned transport result tied to the current attempt; fixture/manual records never acquire live authority from matching JSON. Hashes establish byte linkage, not general authenticity or privileged-write resistance. The count response does not itself report the model ID.",
+  "focused_checks_planned_not_executed": [
+    "Unknown count price, unadopted form or missing active method blocks before network dispatch.",
+    "Mutated count/generation bytes, method hash, receipt hash, run/trial/case/version/view linkage or fixture origin blocks bound issuance.",
+    "Counts 8192 and 8193, malformed/duplicate-key JSON, booleans and transport errors exercise the defined boundary without live calls.",
+    "Duplicate count for a trial, eighth count/generation, aggregate overflow, wrong ordering and budget overflow are blocked; failures retain slots and reservations.",
+    "A fresh reader counts its actual immutable saved-state request and uses those same bytes for mock dispatch; summaries and comparison stores cannot replace authoritative reads.",
+    "Run-specific initial/R4 hashes and exact-validator checks cover newly bound data; prior results are only historical references."
+  ],
+  "storage_plan": {
+    "physical_root": "C:\\Users\\ise\\Desktop\\m-anchor-gate-executions",
+    "logical_run_directory": "stage3/runs/stage3-preparation-002/",
+    "physical_run_directory": "C:\\Users\\ise\\Desktop\\m-anchor-gate-executions\\stage3\\runs\\stage3-preparation-002",
+    "created": false,
+    "locally_verified": false,
+    "policy": "Separate output ID, outside the source kit. Resolve and create exclusively only in a future authorized start; no old output reuse or deletion."
+  },
+  "environment_plan": "The received Windows venv is a candidate for later checks. Its historical success does not establish these unimplemented changes.",
+  "current_creation_counts": {
+    "generation_api_calls": 0,
+    "count_api_calls": 0,
+    "official_state_writes": 0,
+    "github_actions_used": false
+  }
+}

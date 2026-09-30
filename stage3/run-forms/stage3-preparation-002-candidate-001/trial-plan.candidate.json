@@ -1,0 +1,237 @@
+{
+  "artifact_type": "trial_plan_candidate",
+  "version": "stage3-trial-plan/v0.1-candidate-002",
+  "run_id": "stage3-preparation-002",
+  "fixed_at_utc": null,
+  "planned_generation_calls": 7,
+  "maximum_generation_calls": 7,
+  "calls": [
+    {
+      "trial_id": "P001",
+      "condition_id": "R1",
+      "purpose": "proposal",
+      "case_id": "stage3-preparation-002-r1",
+      "replicates": 1
+    },
+    {
+      "trial_id": "P002",
+      "condition_id": "R2",
+      "purpose": "proposal",
+      "case_id": "stage3-preparation-002-r2",
+      "replicates": 1
+    },
+    {
+      "trial_id": "P003",
+      "condition_id": "R3",
+      "purpose": "proposal",
+      "case_id": "stage3-preparation-002-r3",
+      "replicates": 1
+    },
+    {
+      "trial_id": "A001",
+      "condition_id": "R5",
+      "variant": "reference",
+      "purpose": "read_only_decision",
+      "case_id": "stage3-preparation-002-r1",
+      "replicates": 1
+    },
+    {
+      "trial_id": "A002",
+      "condition_id": "R5",
+      "variant": "changed_K",
+      "purpose": "read_only_decision",
+      "case_id": "stage3-preparation-002-r2",
+      "replicates": 1
+    },
+    {
+      "trial_id": "A003",
+      "condition_id": "R5",
+      "variant": "response_only",
+      "purpose": "read_only_decision",
+      "case_id": "stage3-preparation-002-r1",
+      "replicates": 1
+    },
+    {
+      "trial_id": "A004",
+      "condition_id": "R5",
+      "variant": "summary_only",
+      "purpose": "read_only_decision",
+      "case_id": "stage3-preparation-002-r1",
+      "replicates": 1
+    }
+  ],
+  "generation_order": [
+    "P001",
+    "P002",
+    "P003",
+    "A001",
+    "A002",
+    "A003",
+    "A004"
+  ],
+  "sampling": "One small pass; one response per listed input. No incidence-rate or model-ranking claim.",
+  "retry_policy": {
+    "automatic_retries": 0,
+    "manual_retries": 0,
+    "sdk_transport_retries": 0,
+    "probe_generation_calls": 0,
+    "regeneration_or_json_repair_calls": 0,
+    "new_run_required_for_retry": true
+  },
+  "early_stop": "Seven generations and at most seven counts are proposed caps, not quotas. Keep early-stop results and failed attempts without replacement.",
+  "proposal_replays": {
+    "model_generated_proposals": 3,
+    "maximum_store_submissions": 6,
+    "stores_per_proposal": 2,
+    "same_raw_output_bytes": true,
+    "same_start_state_and_admission_within_each_pair": true,
+    "only_variable": "candidate_removal_check",
+    "unchecked_store_authoritative": false,
+    "malformed_output_policy": "Retain raw bytes; record rejection or unparseable input without repair.",
+    "null_model_output_comparison_retained": true
+  },
+  "R4_fixed_replay_plan": {
+    "model_calls": 0,
+    "maximum_distinct_fixed_proposals": 4,
+    "stores_per_proposal": 2,
+    "maximum_store_submissions": 8,
+    "origin": "fixed_invalid_replay",
+    "execution_position": "After P003 and before A001",
+    "case_id": "stage3-preparation-002-r4",
+    "coverage_rule": "Replay each category not already attempted by a recorded interpretable model proposal. Record proposal ID, case admission and observed rejection when marking a category covered; malformed JSON does not establish category coverage.",
+    "cases": [
+      {
+        "fixture_id": "F001",
+        "category": "action_id",
+        "attempted_evidence_ids": [
+          "action-001"
+        ]
+      },
+      {
+        "fixture_id": "F002",
+        "category": "summary_id",
+        "attempted_evidence_ids": [
+          "summary-001"
+        ]
+      },
+      {
+        "fixture_id": "F003",
+        "category": "unregistered_id",
+        "attempted_evidence_ids": [
+          "e_unknown"
+        ]
+      },
+      {
+        "fixture_id": "F004",
+        "category": "registered_but_not_case_admitted",
+        "attempted_evidence_ids": [
+          "e_B"
+        ]
+      }
+    ],
+    "concrete_proposal_bytes_and_hashes": null,
+    "binding_requirement": "Freeze all four complete fixture proposals, with legitimate case/version/hash fields and an unsupported reduction to h_B, before any generation call. No outcome-dependent replacement.",
+    "counts_as_model_behavior": false
+  },
+  "R5_restart_plan": {
+    "model_calls": 4,
+    "comparison_pairs": 3,
+    "assessment_commits": 0,
+    "writer_must_exit_before_reader": true,
+    "fresh_host_process_per_call": true,
+    "runtime_handoff": [
+      "case_id",
+      "store_path"
+    ],
+    "previous_conversation_inherited": false,
+    "reference": "Read the actual R1 checked store after P001 is handled. Preserve its committed state, or unchanged state if rejected.",
+    "changed_K": "Read the actual R2 checked store after P002 is handled; reuse its admitted e_B, with no new observation at restart. If full incorporation did not occur, record an unmet control and the actual decision; do not insert a successful replacement.",
+    "response_only": "Clone the R1 checked result with provenance, preserve K and its evidence basis, then submit the predefined host action change to a_A through the checked write path. Record any required version/action/hash changes. If the reference is already a_A, record the unavailable contrast without substitution.",
+    "summary_only": "Clone the R1 checked result with provenance, keep state, version, action and evidence unchanged, and replace only the summary text with the fixed text below. Summary saving does not advance the state version.",
+    "summary_only_text": "保存済みの暫定対応はBである。",
+    "host_control_origin": "trusted_control_setup_not_model_output",
+    "input_differences": "Record all actual differences, including case/evidence metadata in the R2 comparison and version/hash metadata after a checked action change. Do not claim byte-identical inputs except for one field.",
+    "expected_values": "Derive evaluator expectations from the actual authoritative reads under the frozen rules; keep them outside the API input. Never score against an invented successful state.",
+    "trace_binding": "Link writer exit, reader PID, actual state/action reads and hashes, serialized API request bytes/hash, request ID, raw response and parsed decision.",
+    "self_reported_version_sufficient": false
+  },
+  "task_legality_separation": "R2 or R3 retaining both candidates with valid applied e_B is preservation-legal but fails a full-incorporation request. Empty K is candidate exhaustion, not ordinary unresolved status.",
+  "fixed_replays_are_not_prompt_injection_resistance_tests": true,
+  "run_started": false,
+  "proposed_at_utc": "2026-09-30T15:34:11.501144+00:00",
+  "adopted": false,
+  "maximum_count_api_calls": 7,
+  "maximum_count_attempts_per_trial": 1,
+  "maximum_total_api_calls": 14,
+  "generation_calls_observed": 0,
+  "count_calls_observed": 0,
+  "counting_plan": {
+    "adopted": false,
+    "endpoint": "https://api.openai.com/v1/responses/input_tokens",
+    "calls": [
+      {
+        "count_attempt_id": "C-P001",
+        "generation_trial_id": "P001",
+        "case_id": "stage3-preparation-002-r1",
+        "maximum_attempts": 1
+      },
+      {
+        "count_attempt_id": "C-P002",
+        "generation_trial_id": "P002",
+        "case_id": "stage3-preparation-002-r2",
+        "maximum_attempts": 1
+      },
+      {
+        "count_attempt_id": "C-P003",
+        "generation_trial_id": "P003",
+        "case_id": "stage3-preparation-002-r3",
+        "maximum_attempts": 1
+      },
+      {
+        "count_attempt_id": "C-A001",
+        "generation_trial_id": "A001",
+        "case_id": "stage3-preparation-002-r1",
+        "maximum_attempts": 1
+      },
+      {
+        "count_attempt_id": "C-A002",
+        "generation_trial_id": "A002",
+        "case_id": "stage3-preparation-002-r2",
+        "maximum_attempts": 1
+      },
+      {
+        "count_attempt_id": "C-A003",
+        "generation_trial_id": "A003",
+        "case_id": "stage3-preparation-002-r1",
+        "maximum_attempts": 1
+      },
+      {
+        "count_attempt_id": "C-A004",
+        "generation_trial_id": "A004",
+        "case_id": "stage3-preparation-002-r1",
+        "maximum_attempts": 1
+      }
+    ],
+    "attempt_order_if_reached": [
+      "C-P001",
+      "P001",
+      "C-P002",
+      "P002",
+      "C-P003",
+      "P003",
+      "C-A001",
+      "A001",
+      "C-A002",
+      "A002",
+      "C-A003",
+      "A003",
+      "C-A004",
+      "A004"
+    ],
+    "attempt_reservation": "Reserve the endpoint slot and documented monetary bound before dispatch. Failures and uncertain delivery keep the slot consumed. Do not retry, reuse a failed slot or issue a second count for changed input.",
+    "generation_dependency": "Generation is possible only after the paired count succeeds for the identical complete generation-request bytes and all other existing checks pass.",
+    "count_error_or_over_cap": "Retain the attempt and stop this run before generation; no fallback or request replacement.",
+    "R4": "No count or generation request. Keep the fixed-replay position after P003 and before A001.",
+    "R5": "Each fresh process reads the actual authoritative store, builds and counts its exact input, then sends those same bytes at most once. Handoff remains case ID and store path only."
+  }
+}
