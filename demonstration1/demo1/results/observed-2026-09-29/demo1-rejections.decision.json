@@ -1,0 +1,54 @@
+{
+  "schema_version": "demo1-decision/v0.1",
+  "decision_id": "2e78ff2b-2a35-4c19-8b8b-db6688316c8a",
+  "case_id": "demo1-rejections",
+  "reader_process": {
+    "pid": 8,
+    "instance_id": "9491b557-5db7-4740-93ec-4f8e52209aa4",
+    "started_at_utc": "2026-09-29T04:38:11.795213+00:00"
+  },
+  "read_at_utc": "2026-09-29T04:38:11.801640+00:00",
+  "state_version_read": 1,
+  "K_read": [
+    "h_A",
+    "h_B"
+  ],
+  "evidence_basis": [],
+  "rule_version": "empty-basis-identity/v1",
+  "state_sha256": "8ee534645a89207c479d9207bc4f0b59c595614416a4d90d7826634bcbe9b425",
+  "state_writer_process": {
+    "instance_id": "12b7d38f-3e52-41f0-943f-6cb49be6cf2c",
+    "pid": 7,
+    "started_at_utc": "2026-09-29T04:38:11.728790+00:00"
+  },
+  "transition_audit_id": "d5a3df89-6611-4227-9def-abd805223273",
+  "action_record_id": "action-001",
+  "selected_action": "a_B",
+  "action_sha256": "fecdf4ddc85f051c8b2111076828febdf8302b7b38600d5ee65716e9e0c9fb8b",
+  "summary_read": {
+    "admitted_as_evidence": false,
+    "case_id": "demo1-rejections",
+    "saved_at_utc": "2026-09-29T04:38:11.733484+00:00",
+    "state_version_at_save": 1,
+    "summary_id": "summary-001",
+    "text_en": "Provisional response B was selected.",
+    "text_ja": "暫定対応Bを選択した。",
+    "writer_process": {
+      "instance_id": "12b7d38f-3e52-41f0-943f-6cb49be6cf2c",
+      "pid": 7,
+      "started_at_utc": "2026-09-29T04:38:11.728790+00:00"
+    }
+  },
+  "decision_rule": "candidate-cardinality-and-action/v0.1",
+  "decision_inputs": {
+    "K": [
+      "h_A",
+      "h_B"
+    ],
+    "selected_action": "a_B"
+  },
+  "summary_used_for_decision": false,
+  "status": "unresolved",
+  "decision_ja": "a_Bは選択済み／原因A・Bは未決",
+  "decision_en": "a_B was selected; causes A/B remain unresolved."
+}

@@ -1,0 +1,9 @@
+{
+  "scope": "JSON syntax and exact top-level field sets only; not full JSON Schema validation",
+  "records_checked": {
+    "state": 6,
+    "decision": 3
+  },
+  "passed": true,
+  "external_schema_validator_used": false
+}

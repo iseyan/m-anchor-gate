@@ -1,0 +1,54 @@
+{
+  "schema_version": "demo1-decision/v0.1",
+  "decision_id": "e3116b5b-0ebd-49a2-b552-834f0e0f04fd",
+  "case_id": "demo1-control",
+  "reader_process": {
+    "pid": 10,
+    "instance_id": "88ec18f7-8e7e-4006-bb64-71c6cec12860",
+    "started_at_utc": "2026-09-29T04:38:11.948919+00:00"
+  },
+  "read_at_utc": "2026-09-29T04:38:11.952809+00:00",
+  "state_version_read": 1,
+  "K_read": [
+    "h_B"
+  ],
+  "evidence_basis": [
+    "e_B"
+  ],
+  "rule_version": "demo1-evidence-map/v0.1",
+  "state_sha256": "ab945aa79efa50958a58d40bbdf3778e7fc34bed59c3a5e8d12f7d698d2856f2",
+  "state_writer_process": {
+    "instance_id": "63b341d3-e1d6-4730-a055-7aedc4deec51",
+    "pid": 9,
+    "started_at_utc": "2026-09-29T04:38:11.858387+00:00"
+  },
+  "transition_audit_id": "de3d6381-da72-4728-8881-fa57202b9f85",
+  "action_record_id": "action-001",
+  "selected_action": "a_B",
+  "action_sha256": "92d444fc49f7951d8d96464fd5c520c37934c1ef03a2d26ae428232f1e142209",
+  "summary_read": {
+    "admitted_as_evidence": false,
+    "case_id": "demo1-control",
+    "saved_at_utc": "2026-09-29T04:38:11.868690+00:00",
+    "state_version_at_save": 1,
+    "summary_id": "summary-001",
+    "text_en": "Provisional response B was selected.",
+    "text_ja": "暫定対応Bを選択した。",
+    "writer_process": {
+      "instance_id": "63b341d3-e1d6-4730-a055-7aedc4deec51",
+      "pid": 9,
+      "started_at_utc": "2026-09-29T04:38:11.858387+00:00"
+    }
+  },
+  "decision_rule": "candidate-cardinality-and-action/v0.1",
+  "decision_inputs": {
+    "K": [
+      "h_B"
+    ],
+    "selected_action": "a_B"
+  },
+  "summary_used_for_decision": false,
+  "status": "single_candidate_under_interpretation",
+  "decision_ja": "この証拠解釈ではBのみ保持",
+  "decision_en": "only B is retained under this evidence interpretation"
+}

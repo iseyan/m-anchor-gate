@@ -1,0 +1,47 @@
+{
+  "plan": {
+    "id": "stage3-adapter-development-20260929-v0.1",
+    "scope": "fixed_input_development_checks_only",
+    "stage3_evaluation_run": false,
+    "model_api_calls": 0,
+    "model_identifier": null,
+    "spending": 0,
+    "transition_trials": 15,
+    "stores_per_trial": 2,
+    "read_processes": 4,
+    "retry_count": 0,
+    "expected_values_location": "evaluator/development-expected.json",
+    "entry_condition_external_schema": "not_met; checked separately, not simulated",
+    "comparison_only_difference": "unsupported_candidate_removal_check",
+    "stop_on_unexpected_result": true,
+    "overwriting_previous_runs": false
+  },
+  "frozen_before_execution_at": "2026-09-29T08:15:40.043708+00:00",
+  "source_sha256": {
+    "adapter.py": "a735b5d4b95a224f5e76d27e38366a12cb987b7e0f40e6833b4788acc1050945",
+    "build_fixtures.py": "3415b6a640aa3001ef0020bf4befa908bce3fae88f7af826e6a1562442215890",
+    "evaluator/development-expected.json": "8e3a5021acb44f03e8ec4fddd0d53ce26da046ad3947c040812383cd11b2611d",
+    "fixtures/development-plan.json": "93deb10ae534d9e180633f70b7e142201b303ec3b7da6f601634ba0d20645213",
+    "fixtures/development-trials.json": "14c38c7a9d67944f8cffba1b96b7cad9b8f57b7ba87be9676aa1b08c80a813ed",
+    "fixtures/evidence-authority.json": "cd0eba5bab28177378d4320b9b1e5bcd211aa5763a9b75921cb8526f1d7cf745",
+    "m_anchor_minimal.py": "0f9551e8d00cd4408441944d9067cfe9bce7d5653019a5af27738fb5895f58c9",
+    "reader_fixture_writer.py": "51eaee9246df2870ebbb120aa09d37af9409a0214b28b1bbdf2b1c67fbe9922c",
+    "references/stage3-integration-evaluation-v0.1.1.en.md": "614882692b1b8419f6be4d1df9fbbf3a243bb43c05450c726a6ac2c3faeaa0fe",
+    "references/stage3-integration-evaluation-v0.1.1.ja.md": "7896a85f613bbea912eb2eb95eb661f40cba8ad378e76b451b64732c98f93d71",
+    "requirements.txt": "756cc9e506ae4ee1a6f6c0507088b5cfc0dc8ba350fb2d2d46f1ffa72033adb6",
+    "run_development.py": "1b122f4911dc035061e72f51db4f8a23b08bd8ee1f181c69aea5f92389f1cfda",
+    "schemas/decision.schema.json": "6ed201e6d3e6b731ae861f3ba041415b2f1085f7e6308b71eff4a5303f9fb81d",
+    "schemas/input.schema.json": "a301da3af83adefd8932a4786045351ebf8e3a03a5d1273d3c8a792546afb5d1",
+    "schemas/proposal.schema.json": "e1f4e6ed2143e6691963af81426c8497c492ab6e7b9578bb7d9d37daaf227176",
+    "schemas/state.schema.json": "5da9fc4feb447f6e724c52f2e72e161c4a567671385a6b9845a334615be0a934",
+    "validate_schemas.py": "d13701ac713323c58b7d809a273f2e2df48f54b24efc24c7460d1b52e2115230"
+  },
+  "model_api_calls": 0,
+  "is_stage3_evaluation": false,
+  "external_schema_entry_condition_met": false,
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "adapter": "stage3-adapter-development/v0.1"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:m-anchor:demo1:state:v0.1",
+  "title": "Demo 1 state record v0.1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "case_id",
+    "state_version",
+    "K",
+    "omega",
+    "evidence_basis",
+    "registry_version",
+    "rule_version",
+    "action_record_id",
+    "transition_audit_id",
+    "writer_process",
+    "saved_at_utc"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "demo1-state/v0.1"
+    },
+    "case_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "state_version": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "K": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "h_A",
+          "h_B"
+        ]
+      },
+      "uniqueItems": true,
+      "maxItems": 2
+    },
+    "omega": {
+      "const": [
+        "h_A",
+        "h_B"
+      ]
+    },
+    "evidence_basis": {
+      "type": "array",
+      "items": {
+        "const": "e_B"
+      },
+      "uniqueItems": true,
+      "maxItems": 1
+    },
+    "registry_version": {
+      "const": "demo1-registry/v0.1"
+    },
+    "rule_version": {
+      "enum": [
+        "empty-basis-identity/v1",
+        "demo1-evidence-map/v0.1"
+      ]
+    },
+    "action_record_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "transition_audit_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "writer_process": {
+      "type": "object",
+      "required": [
+        "pid",
+        "instance_id",
+        "started_at_utc"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "pid": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "instance_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "started_at_utc": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "saved_at_utc": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "state_version": {
+            "const": 0
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "action_record_id": {
+            "type": "null"
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "action_record_id": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  ]
+}

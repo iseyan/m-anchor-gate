@@ -1,0 +1,83 @@
+{
+  "title": "Stages 1–4 materials — editorial finalization record / 資料一式・編集確定記録",
+  "record_version": "0.1",
+  "date_jst": "2026-09-30",
+  "editorial_status": "finalized_and_frozen",
+  "frozen_collection": {
+    "filename": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+    "document_version": "0.1",
+    "sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+    "bytes": 3475562
+  },
+  "ledger_title": "Progress ledger / 到達点 v0.1",
+  "scope": "Only the source records included in this collection; not an assessment of every experiment in the project.",
+  "frozen_document_references": [
+    {
+      "archive_member": "M-Anchor_Stages_1-4_Materials_v0.1/README.ja.md",
+      "sha256": "06534cb3d5ae337dc43fccbc31ef35f88f43e7205ce98a3d8cb6a363e01074b4"
+    },
+    {
+      "archive_member": "M-Anchor_Stages_1-4_Materials_v0.1/README.en.md",
+      "sha256": "9bea77c37f66faf7d2679f4e7f1dedf8a2b4bfea72fa428bb92c814f0bae6c40"
+    },
+    {
+      "archive_member": "M-Anchor_Stages_1-4_Materials_v0.1/00_progress/progress-ledger.v0.1.json",
+      "sha256": "40615562123b53df6ae1701f711a17ee648afbd8ae636e77243b5645cb9ab337"
+    },
+    {
+      "archive_member": "M-Anchor_Stages_1-4_Materials_v0.1/00_progress/progress-ledger-v0.1.ja.md",
+      "sha256": "8b8a25fe7e199250640c0ea03264218028f7577facfda9defd5737d9c18f8f9f"
+    },
+    {
+      "archive_member": "M-Anchor_Stages_1-4_Materials_v0.1/00_progress/progress-ledger-v0.1.en.md",
+      "sha256": "277455e30dc14d2cb14e0c5f73d2115078bbff23e0b2caa0c39bc9198c2389f5"
+    }
+  ],
+  "stage_statuses": [
+    {
+      "stage": 1,
+      "status": "conditional_proof_and_scope_documented"
+    },
+    {
+      "stage": 2,
+      "status": "completed_fixed_input_demonstration"
+    },
+    {
+      "stage": 3,
+      "status": "development_checks_complete_integration_evaluation_incomplete"
+    },
+    {
+      "stage": 4,
+      "status": "draft_plan_entry_unfrozen_implementation_not_started"
+    }
+  ],
+  "separate_execution_records": [
+    {
+      "stage": 2,
+      "state_version_read": 1,
+      "action_record_read": "action-001"
+    },
+    {
+      "stage": 3,
+      "record_scope": "fixed-input development check",
+      "state_version_read": 2,
+      "action_record_read": "action-002"
+    }
+  ],
+  "review_response_status": "closed_for_this_collection_version",
+  "review_role": "advisory input; no new acceptance criterion or authority",
+  "combined_proof_claim": false,
+  "all_stages_execution_complete": false,
+  "new_execution_results_added": false,
+  "source_archive_modified_by_finalization": false,
+  "bundle_1_0_modified": false,
+  "closed_records_modified": false,
+  "schema_gate_001_modified": false,
+  "stage4_execution_ready": false,
+  "next_records": [
+    "new external schema-gate record",
+    "official run form in a separate file"
+  ],
+  "future_update_policy": "Keep this frozen collection unchanged; record later work in separate files and identify its own specification, version and evidence.",
+  "record_location": "Separate from the frozen archive; not appended to its ledger or closed source reports."
+}

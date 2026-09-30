@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Stage 3 development state",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "stage3-state/v0.1"
+    },
+    "case_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "K": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "h_A",
+          "h_B"
+        ]
+      },
+      "uniqueItems": true,
+      "maxItems": 2
+    },
+    "applied_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      },
+      "uniqueItems": true
+    },
+    "rule_version": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "action_id": {
+      "anyOf": [
+        {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "action_sha256": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "case_id",
+    "version",
+    "K",
+    "applied_evidence",
+    "rule_version",
+    "action_id",
+    "action_sha256"
+  ],
+  "additionalProperties": false
+}

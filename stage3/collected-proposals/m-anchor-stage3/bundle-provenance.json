@@ -1,0 +1,68 @@
+{
+  "source_filename": "Bundle_1.0.zip",
+  "archive_sha256": "e469dd924dd439dab4145930adbc421a8e93bab6872ddafb3bdfa9714d70fa30",
+  "manifest_verified_files": 12,
+  "publication_identity": "User-supplied Bundle 1.0. Zenodo publication independently unverified. Internal manifest integrity is not provenance authentication.",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "ec445ceadcd96148cfe6d77f613b35cea48152980d4493a5aa2a856de048d437",
+      "manifest_matches": true
+    },
+    {
+      "path": "formal_note_v0.4.ja.md",
+      "sha256": "087496ed71b30917a0959638965756ba9f9c05d28c1665c0a4a3f96462a019a5",
+      "manifest_matches": true
+    },
+    {
+      "path": "formal_note_v0.4.ja.pdf",
+      "sha256": "c6a965ad9dcbdb47b6a56ee041d89f68b51043f7060897f7eade6cfb7401d7fe",
+      "manifest_matches": true
+    },
+    {
+      "path": "formal_note_v0.4.md",
+      "sha256": "dad6841508749e90e422f39104c556a6156d3ae21095647d4f6204b084f34b58",
+      "manifest_matches": true
+    },
+    {
+      "path": "formal_note_v0.4.pdf",
+      "sha256": "5fa5a3dc5b92ea42b0a80d4554de526f494abc898e65e33712aee6a562d08559",
+      "manifest_matches": true
+    },
+    {
+      "path": "python_implementation_report_v0.1.md",
+      "sha256": "490ec562c17e56f18abe4511c3b9ca547b895b6cffc7437d00d702e99d60c0a3",
+      "manifest_matches": true
+    },
+    {
+      "path": "python_implementation_report_v0.1.pdf",
+      "sha256": "743543e0707eb7522489a7297c9b5f6ee3fd110e47d77d3738fc97f0e24267ec",
+      "manifest_matches": true
+    },
+    {
+      "path": "python_v0.1/M_ANCHOR_MINIMAL_README.ja.md",
+      "sha256": "2a4f8baf6396bc62aa0d5c996e5fec2b4f593b8501d649b9a07cd0f426c2c426",
+      "manifest_matches": true
+    },
+    {
+      "path": "python_v0.1/m_anchor_minimal.py",
+      "sha256": "0f9551e8d00cd4408441944d9067cfe9bce7d5653019a5af27738fb5895f58c9",
+      "manifest_matches": true
+    },
+    {
+      "path": "python_v0.1/test_m_anchor_minimal.py",
+      "sha256": "1fa228427dfeb4460d2ee14767d64664456f245e505e5d59d4f6ae8b5023db5b",
+      "manifest_matches": true
+    },
+    {
+      "path": "technical_report_v0.5.md",
+      "sha256": "f19d3af157ec2c2f82932d170300d2025c18064cfdbde331a3491805b4eee29c",
+      "manifest_matches": true
+    },
+    {
+      "path": "technical_report_v0.5.pdf",
+      "sha256": "04d6cac1029c18e9074160589b974ea43619ee83dc66edce17ea2c7e76073cfa",
+      "manifest_matches": true
+    }
+  ]
+}

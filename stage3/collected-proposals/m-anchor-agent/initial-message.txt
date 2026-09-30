@@ -1,0 +1,7 @@
+Start a bounded M-Anchor Stage 3 integration session. Do not run a Stage 3 evaluation yet.
+
+First perform a read-only runtime check in the hosted sandbox: run a command that reports the Python version and current working directory. Do not create or modify M-Anchor code, authoritative state, evidence registries, or raw proposals.
+
+The Zenodo v0.1 source, its tests, authoritative initial states, case-specific evidence admission records, and previously collected raw proposals have not been supplied to this session. Do not guess the Zenodo record or regenerate proposals.
+
+Respond in Japanese, briefly: report the observed runtime result; list the exact source/data inputs needed before integration; and confirm that the published core must first be inspected and that PI-09 must accept the admitted {h_A,h_B} -> {h_B} transition. Do not claim any evaluation passed or failed.

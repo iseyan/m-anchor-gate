@@ -1,0 +1,108 @@
+{
+  "schema_version": "m-anchor-stage3-authority/v1",
+  "cases": [
+    {
+      "case_id": "PI-01",
+      "omega": [
+        "h_A",
+        "h_B"
+      ],
+      "candidates": [
+        "h_A",
+        "h_B"
+      ],
+      "version": 1,
+      "state_hash": "H1",
+      "cause_status": "unresolved",
+      "require_full_incorporation": false,
+      "selected_response": "B"
+    },
+    {
+      "case_id": "PI-02",
+      "omega": [
+        "h_A",
+        "h_B"
+      ],
+      "candidates": [
+        "h_A",
+        "h_B"
+      ],
+      "version": 1,
+      "state_hash": "H1",
+      "cause_status": "unresolved",
+      "require_full_incorporation": false,
+      "selected_response": "B"
+    },
+    {
+      "case_id": "PI-04",
+      "omega": [
+        "h_A",
+        "h_B"
+      ],
+      "candidates": [
+        "h_A",
+        "h_B"
+      ],
+      "version": 1,
+      "state_hash": "H1",
+      "cause_status": "unresolved",
+      "require_full_incorporation": false
+    },
+    {
+      "case_id": "PI-05",
+      "omega": [
+        "h_A",
+        "h_B"
+      ],
+      "candidates": [
+        "h_A",
+        "h_B"
+      ],
+      "version": 1,
+      "state_hash": "H1",
+      "cause_status": "unresolved",
+      "require_full_incorporation": false,
+      "selected_response": "B"
+    },
+    {
+      "case_id": "PI-09",
+      "omega": [
+        "h_A",
+        "h_B"
+      ],
+      "candidates": [
+        "h_A",
+        "h_B"
+      ],
+      "version": 1,
+      "state_hash": "H1",
+      "cause_status": "unresolved",
+      "require_full_incorporation": true,
+      "selected_response": "B"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "e_B",
+      "active": true
+    }
+  ],
+  "admissions": [
+    {
+      "case_id": "PI-09",
+      "evidence_id": "e_B"
+    }
+  ],
+  "interpretations": [
+    {
+      "case_id": "PI-09",
+      "evidence_ids": [
+        "e_B"
+      ],
+      "compatible": [
+        "h_B"
+      ],
+      "map_version": "external-fixture-PI-09-v1"
+    }
+  ]
+}

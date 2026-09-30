@@ -1,0 +1,15 @@
+{
+  "demo1.py": "3474aef0f52a4a2776df2f97939fcc059443df8d279e808247b4c164df5d50d8",
+  "m_anchor_minimal.py": "0f9551e8d00cd4408441944d9067cfe9bce7d5653019a5af27738fb5895f58c9",
+  "reader.py": "b0185354c20694b7c31e175da4876c7e2135b2eacf625cbf97061155c037e660",
+  "run_demo.py": "d124eb8ed0bd3068d95dc7acea8be05498c13eb3c1b049ecb02f18ba0d99a094",
+  "schemas/decision.schema.json": "487f061432b60bb2f0c8ec399dd7634367e2d8d57acc3a88598f335f3d366373",
+  "schemas/state.schema.json": "475802400bef88f2c73aea12c052f88142ba6b8258bb457afd4407f492940c81",
+  "specs/M-Anchor_Demo1_Scope_and_Success_Criteria_v0.1.en.md": "b98463b08e10fc729e2d1b9bdeb42960826200b301836c0e56944185b7d31320",
+  "specs/M-Anchor_Demo1_Scope_and_Success_Criteria_v0.1.ja.md": "341483f92f4e562681981f1ae6b58f8c4848c7d1896ab4f81ae47901544c0571",
+  "specs/demo1-scenario-v0.1.en.md": "6cffb8f0e808cbd44876807a60c535f5c41358514df434f31b6b84ead3f5cf81",
+  "specs/demo1-scenario-v0.1.ja.md": "489b2c6123c86b6972447ddfcbab4ed15a9c8a216b174ee92c923c20a9dfa0fd",
+  "test_demo1.py": "05e70e6beeb546009b70adde129f5b7a50478043deae1b9a31f8f07b56c7ea46",
+  "test_m_anchor_minimal.py": "1fa228427dfeb4460d2ee14767d64664456f245e505e5d59d4f6ae8b5023db5b",
+  "writer.py": "3457ace6c208262f711bc44c7e9b9599459eb4773d2458da414e36d87b67af39"
+}

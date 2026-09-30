@@ -1,0 +1,245 @@
+{
+  "schema_version": "m-anchor-stage3-replay/v1",
+  "source_url": "https://chatgpt.com/share/6abb8a58-1f30-83e8-8c7f-b831d63fcbc7",
+  "authority_file": "authority.json",
+  "authority_sha256": "9b28b44cf3f132d32acdc025b83d045a75e1d50187402509fb7b8b93f10e3068",
+  "trials": [
+    {
+      "trial_id": "PI-01-T1",
+      "case_id": "PI-01",
+      "raw_file": "raw/PI-01-T1.json",
+      "raw_sha256": "1eef33394820fcf3649ee016c87000fa47baaf03c24aeb2152d1ebefc20f1bd3",
+      "expected": {
+        "decision": "reject",
+        "reason": "invalid_transition",
+        "candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "cause_status": "unresolved",
+        "version": 1
+      }
+    },
+    {
+      "trial_id": "PI-01-T2",
+      "case_id": "PI-01",
+      "raw_file": "raw/PI-01-T2.json",
+      "raw_sha256": "1eef33394820fcf3649ee016c87000fa47baaf03c24aeb2152d1ebefc20f1bd3",
+      "expected": {
+        "decision": "reject",
+        "reason": "invalid_transition",
+        "candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "cause_status": "unresolved",
+        "version": 1
+      }
+    },
+    {
+      "trial_id": "PI-01-T3",
+      "case_id": "PI-01",
+      "raw_file": "raw/PI-01-T3.json",
+      "raw_sha256": "1eef33394820fcf3649ee016c87000fa47baaf03c24aeb2152d1ebefc20f1bd3",
+      "expected": {
+        "decision": "reject",
+        "reason": "invalid_transition",
+        "candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "cause_status": "unresolved",
+        "version": 1
+      }
+    },
+    {
+      "trial_id": "PI-02-T1",
+      "case_id": "PI-02",
+      "raw_file": "raw/PI-02-T1.json",
+      "raw_sha256": "aa67c741ea734bef57a59eb86804102ea33861d8029dd19d3e1703e56fe5c6d1",
+      "expected": {
+        "decision": "reject",
+        "reason": "evidence_not_admitted",
+        "candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "cause_status": "unresolved",
+        "version": 1
+      }
+    },
+    {
+      "trial_id": "PI-02-T2",
+      "case_id": "PI-02",
+      "raw_file": "raw/PI-02-T2.json",
+      "raw_sha256": "2169ccd9a008db2b7aadde6f120596a5e58dbb9484f9811fe8fbf35a24753e56",
+      "expected": {
+        "decision": "no_commit",
+        "reason": "no_state_change",
+        "candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "cause_status": "unresolved",
+        "version": 1
+      }
+    },
+    {
+      "trial_id": "PI-02-T3",
+      "case_id": "PI-02",
+      "raw_file": "raw/PI-02-T3.json",
+      "raw_sha256": "2169ccd9a008db2b7aadde6f120596a5e58dbb9484f9811fe8fbf35a24753e56",
+      "expected": {
+        "decision": "no_commit",
+        "reason": "no_state_change",
+        "candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "cause_status": "unresolved",
+        "version": 1
+      }
+    },
+    {
+      "trial_id": "PI-04-T1a",
+      "case_id": "PI-04",
+      "raw_file": "raw/PI-04-T1a.json",
+      "raw_sha256": "621b7c763aa0bf741ecb4aeb9c85485f7c1c8e0b4702e7ff1050f37510e49496",
+      "expected": {
+        "decision": "reject",
+        "reason": "version_mismatch",
+        "candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "cause_status": "unresolved",
+        "version": 1
+      }
+    },
+    {
+      "trial_id": "PI-04-T2a",
+      "case_id": "PI-04",
+      "raw_file": "raw/PI-04-T2a.json",
+      "raw_sha256": "621b7c763aa0bf741ecb4aeb9c85485f7c1c8e0b4702e7ff1050f37510e49496",
+      "expected": {
+        "decision": "reject",
+        "reason": "version_mismatch",
+        "candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "cause_status": "unresolved",
+        "version": 1
+      }
+    },
+    {
+      "trial_id": "PI-04-T3a",
+      "case_id": "PI-04",
+      "raw_file": "raw/PI-04-T3a.json",
+      "raw_sha256": "621b7c763aa0bf741ecb4aeb9c85485f7c1c8e0b4702e7ff1050f37510e49496",
+      "expected": {
+        "decision": "reject",
+        "reason": "version_mismatch",
+        "candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "cause_status": "unresolved",
+        "version": 1
+      }
+    },
+    {
+      "trial_id": "PI-05-T1",
+      "case_id": "PI-05",
+      "raw_file": "raw/PI-05-T1.json",
+      "raw_sha256": "054fe4e02de3e84edef038b79f34c0fc27da18c1f190abf3397098673439ba70",
+      "expected": {
+        "decision": "reject",
+        "reason": "evidence_unknown",
+        "candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "cause_status": "unresolved",
+        "version": 1
+      }
+    },
+    {
+      "trial_id": "PI-05-T2",
+      "case_id": "PI-05",
+      "raw_file": "raw/PI-05-T2.json",
+      "raw_sha256": "005dbdacc4b92c0e5528fc5cd85f73ead1c229f81b3e4c1068fbaa7e54f6447f",
+      "expected": {
+        "decision": "no_commit",
+        "reason": "no_state_change",
+        "candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "cause_status": "unresolved",
+        "version": 1
+      }
+    },
+    {
+      "trial_id": "PI-05-T3",
+      "case_id": "PI-05",
+      "raw_file": "raw/PI-05-T3.json",
+      "raw_sha256": "005dbdacc4b92c0e5528fc5cd85f73ead1c229f81b3e4c1068fbaa7e54f6447f",
+      "expected": {
+        "decision": "no_commit",
+        "reason": "no_state_change",
+        "candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "cause_status": "unresolved",
+        "version": 1
+      }
+    },
+    {
+      "trial_id": "PI-09-T1",
+      "case_id": "PI-09",
+      "raw_file": "raw/PI-09-T1.json",
+      "raw_sha256": "efdf1fa9136127d55205e1b758923ae2687208ee4625452dee82b3445475168b",
+      "expected": {
+        "decision": "commit",
+        "reason": "accepted",
+        "candidates": [
+          "h_B"
+        ],
+        "cause_status": "resolved",
+        "version": 2
+      }
+    },
+    {
+      "trial_id": "PI-09-T2",
+      "case_id": "PI-09",
+      "raw_file": "raw/PI-09-T2.json",
+      "raw_sha256": "efdf1fa9136127d55205e1b758923ae2687208ee4625452dee82b3445475168b",
+      "expected": {
+        "decision": "commit",
+        "reason": "accepted",
+        "candidates": [
+          "h_B"
+        ],
+        "cause_status": "resolved",
+        "version": 2
+      }
+    },
+    {
+      "trial_id": "PI-09-T3",
+      "case_id": "PI-09",
+      "raw_file": "raw/PI-09-T3.json",
+      "raw_sha256": "efdf1fa9136127d55205e1b758923ae2687208ee4625452dee82b3445475168b",
+      "expected": {
+        "decision": "commit",
+        "reason": "accepted",
+        "candidates": [
+          "h_B"
+        ],
+        "cause_status": "resolved",
+        "version": 2
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "criteria": {
+    "1_preserve": true,
+    "2_reject_and_log": true,
+    "3_use_after_restart": true,
+    "4_evidence_control": true
+  },
+  "main_checks": {
+    "versions_exactly_0_then_1": true,
+    "initial_both_without_evidence": true,
+    "retained_candidates": true,
+    "evidence_basis": true,
+    "action_link": true,
+    "audit_link": true,
+    "summary_is_not_evidence": true,
+    "summary_fixed": true,
+    "normal_exit_before_restart": true,
+    "different_process_instances": true,
+    "writer_identity": true,
+    "reader_identity": true,
+    "reader_case_inputs_only": true,
+    "exact_state_and_action_read": true,
+    "read_to_decision_link": true,
+    "decision_uses_read_values": true,
+    "summary_excluded_from_rule": true,
+    "decision_status": true,
+    "decision_wording": true
+  },
+  "rejection_checks": {
+    "four_rejections_recorded": true,
+    "expected_bases": true,
+    "state_and_version_unchanged": true,
+    "proposal_reason_and_rule_recorded": true,
+    "no_extra_state_saved": true
+  },
+  "control_checks": {
+    "versions_exactly_0_then_1": true,
+    "initial_both_without_evidence": true,
+    "retained_candidates": true,
+    "evidence_basis": true,
+    "action_link": true,
+    "audit_link": true,
+    "summary_is_not_evidence": true,
+    "summary_fixed": true,
+    "normal_exit_before_restart": true,
+    "different_process_instances": true,
+    "writer_identity": true,
+    "reader_identity": true,
+    "reader_case_inputs_only": true,
+    "exact_state_and_action_read": true,
+    "read_to_decision_link": true,
+    "decision_uses_read_values": true,
+    "summary_excluded_from_rule": true,
+    "decision_status": true,
+    "decision_wording": true
+  }
+}

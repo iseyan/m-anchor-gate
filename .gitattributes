@@ -1,0 +1,7 @@
+# Preserve recorded source, proposal and audit bytes, including line endings.
+* -text
+*.pdf binary
+*.sqlite3 binary
+*.sqlite binary
+*.db binary
+*.zip binary

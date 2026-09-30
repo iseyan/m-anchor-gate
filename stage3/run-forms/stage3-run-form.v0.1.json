@@ -1,0 +1,275 @@
+{
+  "artifact_type": "pre_execution_run_form",
+  "form_version": "stage3-run-form/v0.1",
+  "specification_version": "stage3-integration-evaluation/v0.1.1",
+  "status": "template_not_frozen_not_executed",
+  "execution_ready": false,
+  "run": {
+    "run_id": null,
+    "revision": null,
+    "responsible_operator": null,
+    "frozen_at": null,
+    "freeze_manifest_path": null
+  },
+  "scope": {
+    "phase": "integration_preparation",
+    "model_count": 1,
+    "authoritative_write_paths": 1,
+    "real_world_actions": false,
+    "prompt_injection_resistance_acceptance_criterion": false,
+    "model_ranking_acceptance_criterion": false,
+    "third_model_review_acceptance_criterion": false
+  },
+  "baseline": {
+    "implementation_version": "demo1/v0.1",
+    "archive_sha256": "3ce69bb44803846edf0c0de4c27edb33443a3bbb2aac6e1d186eb8d93783602b",
+    "executed_source_manifest_sha256": "ec9ffeefbd9fea4c8b08b22ea4c4863e052a05cc0478f2c5c5421d50429b111c"
+  },
+  "model": {
+    "provider": null,
+    "api_endpoint": null,
+    "model_identifier": null,
+    "settings": null,
+    "omitted_settings": null,
+    "maximum_input_tokens": null,
+    "request_timeout_seconds": null,
+    "tools_available": false,
+    "previous_conversation_inherited": false,
+    "input_manifest_path": null,
+    "input_manifest_sha256": null,
+    "account_access_status": "not_verified"
+  },
+  "adapter": {
+    "version_or_commit": null,
+    "code_sha256": null,
+    "interpretation_version": null,
+    "interpretation_manifest_sha256": null,
+    "authoritative_store_path": null,
+    "evidence_admissibility": "registered_and_admitted_and_valid_for_this_case",
+    "raw_outputs_retained": true,
+    "model_authority": "structured_proposals_only"
+  },
+  "schemas": {
+    "dialect": null,
+    "validator_name": null,
+    "validator_version": null,
+    "options": null,
+    "format_assertion_policy": null,
+    "files": {
+      "input": {
+        "path": null,
+        "sha256": null
+      },
+      "state": {
+        "path": null,
+        "sha256": null
+      },
+      "decision": {
+        "path": null,
+        "sha256": null
+      },
+      "proposal": {
+        "path": null,
+        "sha256": null
+      }
+    },
+    "validation": {
+      "status": "not_performed",
+      "command": null,
+      "report_path": null,
+      "report_sha256": null
+    },
+    "demo1_check_is_stage3_validation": false
+  },
+  "evidence_authority": {
+    "responsible_party": null,
+    "admission_fixed_at": null,
+    "registry_path": null,
+    "registry_sha256": null,
+    "case_admission_manifest_path": null,
+    "case_admission_manifest_sha256": null,
+    "case_rows": [
+      {
+        "condition_id": "R1",
+        "case_id": null,
+        "registered_ids": null,
+        "admitted_valid_ids": null,
+        "new_observation_ids": null,
+        "permitted_applied_ids": null,
+        "admission_record_ref": null
+      },
+      {
+        "condition_id": "R2",
+        "case_id": null,
+        "registered_ids": null,
+        "admitted_valid_ids": null,
+        "new_observation_ids": null,
+        "permitted_applied_ids": null,
+        "admission_record_ref": null
+      },
+      {
+        "condition_id": "R3",
+        "case_id": null,
+        "registered_ids": null,
+        "admitted_valid_ids": null,
+        "new_observation_ids": null,
+        "permitted_applied_ids": null,
+        "admission_record_ref": null
+      },
+      {
+        "condition_id": "R4",
+        "case_id": null,
+        "registered_ids": null,
+        "admitted_valid_ids": null,
+        "new_observation_ids": null,
+        "permitted_applied_ids": null,
+        "admission_record_ref": null
+      },
+      {
+        "condition_id": "R5",
+        "case_id": null,
+        "registered_ids": null,
+        "admitted_valid_ids": null,
+        "new_observation_ids": null,
+        "permitted_applied_ids": null,
+        "admission_record_ref": null
+      }
+    ]
+  },
+  "trial_plan": {
+    "condition_manifest_path": null,
+    "condition_manifest_sha256": null,
+    "conditions": [
+      {
+        "id": "R1",
+        "name": "no_evidence_response_B",
+        "planned_model_calls": null,
+        "input_variants": null,
+        "maximum_fixed_proposals": null,
+        "fixed_proposal_manifest_sha256": null
+      },
+      {
+        "id": "R2",
+        "name": "admitted_evidence_full_incorporation",
+        "planned_model_calls": null,
+        "input_variants": null,
+        "maximum_fixed_proposals": null,
+        "fixed_proposal_manifest_sha256": null
+      },
+      {
+        "id": "R3",
+        "name": "reuse_valid_existing_evidence",
+        "planned_model_calls": null,
+        "input_variants": null,
+        "maximum_fixed_proposals": null,
+        "fixed_proposal_manifest_sha256": null
+      },
+      {
+        "id": "R4",
+        "name": "inadmissible_evidence_references",
+        "planned_model_calls": null,
+        "input_variants": null,
+        "maximum_fixed_proposals": null,
+        "fixed_proposal_manifest_sha256": null
+      },
+      {
+        "id": "R5",
+        "name": "restart_with_controlled_input_changes",
+        "planned_model_calls": null,
+        "input_variants": null,
+        "maximum_fixed_proposals": null,
+        "fixed_proposal_manifest_sha256": null
+      }
+    ],
+    "maximum_total_api_calls": null,
+    "retry_policy": null,
+    "failed_first_attempts_retained": true,
+    "model_calls_counted_separately_from_store_replays": true
+  },
+  "budget": {
+    "currency": null,
+    "limit": null,
+    "pricing_checked_at": null,
+    "pricing_source": null,
+    "pre_call_reservation_policy": null,
+    "unknown_usage_policy": null
+  },
+  "comparison": {
+    "same_raw_proposals_replayed": true,
+    "shared_format_and_evidence_checks": true,
+    "only_variable": "candidate_removal_check",
+    "checked_evaluation_store_path": null,
+    "unchecked_evaluation_store_path": null,
+    "unchecked_store_is_authoritative": false,
+    "later_divergent_inputs_are_matched_model_comparison": false,
+    "null_result_retained": true,
+    "fixed_replays_reported_separately": true
+  },
+  "evaluator": {
+    "expected_values_path": null,
+    "expected_values_sha256": null,
+    "expected_values_in_model_input": false,
+    "restart_trace_fields": [
+      "host_pid",
+      "case_id",
+      "read_state_version",
+      "read_state_sha256",
+      "read_action_id",
+      "read_action_sha256",
+      "api_request_id",
+      "api_input_sha256",
+      "raw_response_ref",
+      "downstream_decision_ref"
+    ],
+    "self_reported_version_is_sufficient": false
+  },
+  "retention": {
+    "run_directory": null,
+    "all_api_calls_recorded": true,
+    "raw_outputs_immutable": true,
+    "malformed_refusal_timeout_retry_retained": true,
+    "trial_origin_labels": [
+      "model_output",
+      "fixed_invalid_replay"
+    ],
+    "required_transition_fields": [
+      "trial_id",
+      "proposal_id",
+      "applied_evidence",
+      "rule_version",
+      "before_state",
+      "after_state",
+      "rejection_reason",
+      "timestamps"
+    ]
+  },
+  "stop_conditions": [
+    "preservation_violation_on_checked_authoritative_path",
+    "case_inadmissible_evidence_accepted",
+    "authoritative_write_bypass"
+  ],
+  "failure_policy": "stop_this_version_preserve_failure_then_link_repair_to_new_run_id",
+  "entry_checks": {
+    "official_form_frozen": "not_performed",
+    "case_admission_fixed": "not_performed",
+    "schema_validation_passed": "not_performed",
+    "write_and_expectation_separation": "not_performed",
+    "restart_trace_linkage": "not_performed"
+  },
+  "partner_evaluation": {
+    "required_before": "partner_evaluation_not_preparation",
+    "organization": null,
+    "selected_workflow": null,
+    "existing_method": null,
+    "evaluation_window": null,
+    "adoption_criteria": null,
+    "integration_effort_record": null,
+    "remaining_paths_inventory": null
+  },
+  "completion": {
+    "preparation": "not_started",
+    "stage3_partner_evaluation": "not_started",
+    "adoption_decision": "not_made"
+  },
+  "note": "This unfilled form is not execution-ready and contains no observed results or credentials. Optional suggestions are in a separate file. Freeze actual values and hashes before the corresponding phase. No API calls were made to create this artifact."
+}

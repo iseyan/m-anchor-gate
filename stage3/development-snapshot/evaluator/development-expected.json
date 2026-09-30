@@ -1,0 +1,190 @@
+{
+  "D01": {
+    "checked_status": "accepted",
+    "comparison_status": "accepted",
+    "checked_K": [
+      "h_A",
+      "h_B"
+    ],
+    "comparison_K": [
+      "h_A",
+      "h_B"
+    ],
+    "proposal_schema_valid": true
+  },
+  "D02": {
+    "checked_status": "rejected",
+    "comparison_status": "accepted",
+    "checked_K": [
+      "h_A",
+      "h_B"
+    ],
+    "comparison_K": [
+      "h_B"
+    ],
+    "proposal_schema_valid": true
+  },
+  "D03": {
+    "checked_status": "rejected",
+    "comparison_status": "rejected",
+    "checked_K": [
+      "h_A",
+      "h_B"
+    ],
+    "comparison_K": [
+      "h_A",
+      "h_B"
+    ],
+    "proposal_schema_valid": true
+  },
+  "D04": {
+    "checked_status": "rejected",
+    "comparison_status": "rejected",
+    "checked_K": [
+      "h_A",
+      "h_B"
+    ],
+    "comparison_K": [
+      "h_A",
+      "h_B"
+    ],
+    "proposal_schema_valid": true
+  },
+  "D05": {
+    "checked_status": "rejected",
+    "comparison_status": "rejected",
+    "checked_K": [
+      "h_A",
+      "h_B"
+    ],
+    "comparison_K": [
+      "h_A",
+      "h_B"
+    ],
+    "proposal_schema_valid": true
+  },
+  "D06": {
+    "checked_status": "rejected",
+    "comparison_status": "rejected",
+    "checked_K": [
+      "h_A",
+      "h_B"
+    ],
+    "comparison_K": [
+      "h_A",
+      "h_B"
+    ],
+    "proposal_schema_valid": true
+  },
+  "D07": {
+    "checked_status": "rejected",
+    "comparison_status": "rejected",
+    "checked_K": [
+      "h_A",
+      "h_B"
+    ],
+    "comparison_K": [
+      "h_A",
+      "h_B"
+    ],
+    "proposal_schema_valid": true
+  },
+  "D08": {
+    "checked_status": "rejected",
+    "comparison_status": "rejected",
+    "checked_K": [
+      "h_A",
+      "h_B"
+    ],
+    "comparison_K": [
+      "h_A",
+      "h_B"
+    ],
+    "proposal_schema_valid": true
+  },
+  "D09": {
+    "checked_status": "rejected",
+    "comparison_status": "rejected",
+    "checked_K": [
+      "h_A",
+      "h_B"
+    ],
+    "comparison_K": [
+      "h_A",
+      "h_B"
+    ],
+    "proposal_schema_valid": true
+  },
+  "D10": {
+    "checked_status": "rejected",
+    "comparison_status": "rejected",
+    "checked_K": [
+      "h_A",
+      "h_B"
+    ],
+    "comparison_K": [
+      "h_A",
+      "h_B"
+    ],
+    "proposal_schema_valid": false
+  },
+  "D11": {
+    "checked_status": "rejected",
+    "comparison_status": "rejected",
+    "checked_K": [
+      "h_A",
+      "h_B"
+    ],
+    "comparison_K": [
+      "h_A",
+      "h_B"
+    ],
+    "proposal_schema_valid": false
+  },
+  "D12": {
+    "checked_status": "accepted",
+    "comparison_status": "accepted",
+    "checked_K": [
+      "h_B"
+    ],
+    "comparison_K": [
+      "h_B"
+    ],
+    "proposal_schema_valid": true
+  },
+  "D13": {
+    "checked_status": "accepted",
+    "comparison_status": "accepted",
+    "checked_K": [
+      "h_B"
+    ],
+    "comparison_K": [
+      "h_B"
+    ],
+    "proposal_schema_valid": true
+  },
+  "D14": {
+    "checked_status": "rejected",
+    "comparison_status": "rejected",
+    "checked_K": [
+      "h_B"
+    ],
+    "comparison_K": [
+      "h_B"
+    ],
+    "proposal_schema_valid": true
+  },
+  "D15": {
+    "checked_status": "accepted",
+    "comparison_status": "accepted",
+    "checked_K": [
+      "h_A",
+      "h_B"
+    ],
+    "comparison_K": [
+      "h_A",
+      "h_B"
+    ],
+    "proposal_schema_valid": true
+  }
+}

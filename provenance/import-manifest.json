@@ -1,0 +1,1989 @@
+{
+  "repository_name": "m-anchor-gate",
+  "intended_owner": "iseyan",
+  "prepared_date_jst": "2026-09-30",
+  "purpose": "Preserve implementation work from Demonstration 1 onward in a separate repository",
+  "source_archives": [
+    {
+      "filename": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6"
+    },
+    {
+      "filename": "M-Anchor-Stage3-evaluation.zip",
+      "sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80"
+    }
+  ],
+  "inherited_files_modified": false,
+  "new_experiment_results_added": false,
+  "model_api_calls_during_import": 0,
+  "bundle_1_0_modified": false,
+  "frozen_source_archive_modified": false,
+  "scope_note": "The finalized Stages 1-4 reading PDFs retain Stage 1 as historical background. Standalone framework/theory sources are not migrated. The collected-proposal and API records are separate from the frozen materials collection.",
+  "files": [
+    {
+      "path": "demonstration1/demo1/README.ja.md",
+      "sha256": "d350fe99273248e166d23d39753895dd188aa40f0e39b27fe8d9c170ccdb8cc4",
+      "size_bytes": 3933,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/02_demonstration1/demo1/README.ja.md",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "demonstration1/demo1/README.md",
+      "sha256": "f8b2b81e20d90cf3c5bed2666cc8e17109c4d6e692eca8c0e5ff7bb01797a8df",
+      "size_bytes": 3675,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/02_demonstration1/demo1/README.md",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "demonstration1/demo1/SHA256SUMS.txt",
+      "sha256": "b472cc747d2f44b2588209a0ff121dc1551a3931a3516a2d2cf5ced58c2f54ac",
+      "size_bytes": 2816,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/02_demonstration1/demo1/SHA256SUMS.txt",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "demonstration1/demo1/demo1-implementation-and-run-v0.1.en.md",
+      "sha256": "53b9d9b702dc7cae6779421884df275858dc2789b5393ad7b6f3c75076a2a66c",
+      "size_bytes": 4990,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/02_demonstration1/demo1/demo1-implementation-and-run-v0.1.en.md",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "demonstration1/demo1/demo1-implementation-and-run-v0.1.ja.md",
+      "sha256": "36df8c648b19c84d39b682bfbe1939d77ac78412b995632a37b08d7c2e0a229d",
+      "size_bytes": 5030,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/02_demonstration1/demo1/demo1-implementation-and-run-v0.1.ja.md",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "demonstration1/demo1/demo1.py",
+      "sha256": "3474aef0f52a4a2776df2f97939fcc059443df8d279e808247b4c164df5d50d8",
+      "size_bytes": 9886,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/02_demonstration1/demo1/demo1.py",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "demonstration1/demo1/m_anchor_minimal.py",
+      "sha256": "0f9551e8d00cd4408441944d9067cfe9bce7d5653019a5af27738fb5895f58c9",
+      "size_bytes": 3405,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/02_demonstration1/demo1/m_anchor_minimal.py",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "demonstration1/demo1/reader.py",
+      "sha256": "b0185354c20694b7c31e175da4876c7e2135b2eacf625cbf97061155c037e660",
+      "size_bytes": 412,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/02_demonstration1/demo1/reader.py",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "demonstration1/demo1/results/observed-2026-09-29/acceptance.json",
+      "sha256": "ad6d4bfb99ac3ba9a7830175a046da7fbed47046a2499b9a104ba4ab44b1bad6",
+      "size_bytes": 1717,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/02_demonstration1/demo1/results/observed-2026-09-29/acceptance.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "demonstration1/demo1/results/observed-2026-09-29/demo1-control.decision.json",
+      "sha256": "6d2ef9fdf637726ad9244af363a3de2061bd51e95b02e7bcbe92621b522d9c0c",
+      "size_bytes": 1801,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/02_demonstration1/demo1/results/observed-2026-09-29/demo1-control.decision.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "demonstration1/demo1/results/observed-2026-09-29/demo1-main.decision.json",
+      "sha256": "2cb2ea3f7513015c373b0d1309a6823ed5efad58395226c275db623525bb12ef",
+      "size_bytes": 1776,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/02_demonstration1/demo1/results/observed-2026-09-29/demo1-main.decision.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "demonstration1/demo1/results/observed-2026-09-29/demo1-rejections.decision.json",
+      "sha256": "775127ac7ee6d3a6e8a692c1369cd8462f598c5f8928a7014f2763e6033fa7fe",
+      "size_bytes": 1788,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/02_demonstration1/demo1/results/observed-2026-09-29/demo1-rejections.decision.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "demonstration1/demo1/results/observed-2026-09-29/demo1.sqlite3",
+      "sha256": "7e52099a0ac53b64ded916b44f11e0568ceb1f20c74ba0c94e81efe7dc4c44cf",
+      "size_bytes": 45056,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/02_demonstration1/demo1/results/observed-2026-09-29/demo1.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "demonstration1/demo1/results/observed-2026-09-29/environment.json",
+      "sha256": "1d174ec0fe1c34b6f8d8fe076f2a0973f32398cf1f9cf86782317b8dc6904d47",
+      "size_bytes": 572,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/02_demonstration1/demo1/results/observed-2026-09-29/environment.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "demonstration1/demo1/results/observed-2026-09-29/process-lifecycle.json",
+      "sha256": "9ed03db9e43303c40568da64f12765f62747eb485617851afa3a1d7896eae223",
+      "size_bytes": 5200,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/02_demonstration1/demo1/results/observed-2026-09-29/process-lifecycle.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "demonstration1/demo1/results/observed-2026-09-29/records.jsonl",
+      "sha256": "beb3621bef9ca962657e314a928923140554adbeffc446223c4dce427797e41a",
+      "size_bytes": 28900,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/02_demonstration1/demo1/results/observed-2026-09-29/records.jsonl",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "demonstration1/demo1/results/observed-2026-09-29/schema-check.json",
+      "sha256": "5068cf39e4382b4a1ea4fd8b85c42a47984e1f88f7feb54d4d5b6da6713894d3",
+      "size_bytes": 221,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/02_demonstration1/demo1/results/observed-2026-09-29/schema-check.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "demonstration1/demo1/results/observed-2026-09-29/source-hashes.json",
+      "sha256": "ec9ffeefbd9fea4c8b08b22ea4c4863e052a05cc0478f2c5c5421d50429b111c",
+      "size_bytes": 1289,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/02_demonstration1/demo1/results/observed-2026-09-29/source-hashes.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "demonstration1/demo1/results/observed-2026-09-29/unit-tests.txt",
+      "sha256": "293849a35809795b7ead74beefd6e9da7d70a33955526898dda5c4933ed5fa66",
+      "size_bytes": 2109,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/02_demonstration1/demo1/results/observed-2026-09-29/unit-tests.txt",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "demonstration1/demo1/run_demo.py",
+      "sha256": "d124eb8ed0bd3068d95dc7acea8be05498c13eb3c1b049ecb02f18ba0d99a094",
+      "size_bytes": 8517,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/02_demonstration1/demo1/run_demo.py",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "demonstration1/demo1/schemas/decision.schema.json",
+      "sha256": "487f061432b60bb2f0c8ec399dd7634367e2d8d57acc3a88598f335f3d366373",
+      "size_bytes": 5388,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/02_demonstration1/demo1/schemas/decision.schema.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "demonstration1/demo1/schemas/state.schema.json",
+      "sha256": "475802400bef88f2c73aea12c052f88142ba6b8258bb457afd4407f492940c81",
+      "size_bytes": 2453,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/02_demonstration1/demo1/schemas/state.schema.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "demonstration1/demo1/specs/M-Anchor_Demo1_Scope_and_Success_Criteria_v0.1.en.md",
+      "sha256": "b98463b08e10fc729e2d1b9bdeb42960826200b301836c0e56944185b7d31320",
+      "size_bytes": 3519,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/02_demonstration1/demo1/specs/M-Anchor_Demo1_Scope_and_Success_Criteria_v0.1.en.md",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "demonstration1/demo1/specs/M-Anchor_Demo1_Scope_and_Success_Criteria_v0.1.ja.md",
+      "sha256": "341483f92f4e562681981f1ae6b58f8c4848c7d1896ab4f81ae47901544c0571",
+      "size_bytes": 3618,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/02_demonstration1/demo1/specs/M-Anchor_Demo1_Scope_and_Success_Criteria_v0.1.ja.md",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "demonstration1/demo1/specs/demo1-scenario-v0.1.en.md",
+      "sha256": "6cffb8f0e808cbd44876807a60c535f5c41358514df434f31b6b84ead3f5cf81",
+      "size_bytes": 3419,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/02_demonstration1/demo1/specs/demo1-scenario-v0.1.en.md",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "demonstration1/demo1/specs/demo1-scenario-v0.1.ja.md",
+      "sha256": "489b2c6123c86b6972447ddfcbab4ed15a9c8a216b174ee92c923c20a9dfa0fd",
+      "size_bytes": 3340,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/02_demonstration1/demo1/specs/demo1-scenario-v0.1.ja.md",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "demonstration1/demo1/test_demo1.py",
+      "sha256": "05e70e6beeb546009b70adde129f5b7a50478043deae1b9a31f8f07b56c7ea46",
+      "size_bytes": 3511,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/02_demonstration1/demo1/test_demo1.py",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "demonstration1/demo1/test_m_anchor_minimal.py",
+      "sha256": "1fa228427dfeb4460d2ee14767d64664456f245e505e5d59d4f6ae8b5023db5b",
+      "size_bytes": 4887,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/02_demonstration1/demo1/test_m_anchor_minimal.py",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "demonstration1/demo1/writer.py",
+      "sha256": "3457ace6c208262f711bc44c7e9b9599459eb4773d2458da414e36d87b67af39",
+      "size_bytes": 1675,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/02_demonstration1/demo1/writer.py",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "demonstration1/demo1-finalization-v0.1.en.md",
+      "sha256": "a6c77e6bc9ca60097fc43066257ea2dd8e284a37821f832572fb225549f5aeb3",
+      "size_bytes": 3273,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/02_demonstration1/demo1-finalization-v0.1.en.md",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "demonstration1/demo1-finalization-v0.1.ja.md",
+      "sha256": "ebe448f51c000d9e467e32e80168d19552639467458da02701b5c76c8ad691e0",
+      "size_bytes": 3267,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/02_demonstration1/demo1-finalization-v0.1.ja.md",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-report.v0.1.en.md",
+      "sha256": "bd51142b9b5afd08b1955151b36ccbce11fd731c5786b609aae6da3e3e1d3027",
+      "size_bytes": 6155,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-report.v0.1.en.md",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/README.ja-en.md",
+      "sha256": "6b5b6938ed175e678453a88ded8b89272ea076dbd615987cf0d02d2322969012",
+      "size_bytes": 4473,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/README.ja-en.md",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/SHA256SUMS.txt",
+      "sha256": "cd7e81da1bf6b2c7734a8d0816547c4441b1ca47b1670440ec610fa3f3692954",
+      "size_bytes": 9423,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/SHA256SUMS.txt",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/adapter.py",
+      "sha256": "a735b5d4b95a224f5e76d27e38366a12cb987b7e0f40e6833b4788acc1050945",
+      "size_bytes": 13200,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/adapter.py",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/build_fixtures.py",
+      "sha256": "3415b6a640aa3001ef0020bf4befa908bce3fae88f7af826e6a1562442215890",
+      "size_bytes": 5652,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/build_fixtures.py",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/development-report.v0.1.en.md",
+      "sha256": "7a80d4bbee479b967b65c9ac287ac656af60ec0e976d23c49a9a914e595cd92f",
+      "size_bytes": 6533,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/development-report.v0.1.en.md",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/development-report.v0.1.ja.md",
+      "sha256": "f83cb7f3cb8950a37f2050e64698262e502e126cd78d192fd432fa615deba698",
+      "size_bytes": 7124,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/development-report.v0.1.ja.md",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/evaluator/development-expected.json",
+      "sha256": "8e3a5021acb44f03e8ec4fddd0d53ce26da046ad3947c040812383cd11b2611d",
+      "size_bytes": 3304,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/evaluator/development-expected.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/fixtures/development-plan.json",
+      "sha256": "93deb10ae534d9e180633f70b7e142201b303ec3b7da6f601634ba0d20645213",
+      "size_bytes": 601,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/fixtures/development-plan.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/fixtures/development-trials.json",
+      "sha256": "14c38c7a9d67944f8cffba1b96b7cad9b8f57b7ba87be9676aa1b08c80a813ed",
+      "size_bytes": 2161,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/fixtures/development-trials.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/fixtures/evidence-authority.json",
+      "sha256": "cd0eba5bab28177378d4320b9b1e5bcd211aa5763a9b75921cb8526f1d7cf745",
+      "size_bytes": 338,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/fixtures/evidence-authority.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/m_anchor_minimal.py",
+      "sha256": "0f9551e8d00cd4408441944d9067cfe9bce7d5653019a5af27738fb5895f58c9",
+      "size_bytes": 3405,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/m_anchor_minimal.py",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/reader_fixture_writer.py",
+      "sha256": "51eaee9246df2870ebbb120aa09d37af9409a0214b28b1bbdf2b1c67fbe9922c",
+      "size_bytes": 1232,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/reader_fixture_writer.py",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/references/stage3-integration-evaluation-v0.1.1.en.md",
+      "sha256": "614882692b1b8419f6be4d1df9fbbf3a243bb43c05450c726a6ac2c3faeaa0fe",
+      "size_bytes": 8698,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/references/stage3-integration-evaluation-v0.1.1.en.md",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/references/stage3-integration-evaluation-v0.1.1.ja.md",
+      "sha256": "7896a85f613bbea912eb2eb95eb661f40cba8ad378e76b451b64732c98f93d71",
+      "size_bytes": 9414,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/references/stage3-integration-evaluation-v0.1.1.ja.md",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/requirements.txt",
+      "sha256": "756cc9e506ae4ee1a6f6c0507088b5cfc0dc8ba350fb2d2d46f1ffa72033adb6",
+      "size_bytes": 19,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/requirements.txt",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D01-checked.sqlite3",
+      "sha256": "ffa9cd0f1fc6a8553b2373d0d11bfaf8fef4540cc65c718676309449c10cab1d",
+      "size_bytes": 28672,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D01-checked.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D01-comparison.sqlite3",
+      "sha256": "cd70f3a0ca30b10c9b0bb42790b32c3198cfca00c70dd0062aa2d0e8909f9efb",
+      "size_bytes": 28672,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D01-comparison.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D01.raw.txt",
+      "sha256": "4c4b7ee894c313ca8d438cf1e40d82bc025d23327a3752d554481448db8031d3",
+      "size_bytes": 300,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D01.raw.txt",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D02-checked.sqlite3",
+      "sha256": "0d14d98feda1ef009fd7b745d6d8e67d4083b400185c71401aac3f5ea941040f",
+      "size_bytes": 28672,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D02-checked.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D02-comparison.sqlite3",
+      "sha256": "6f982278283b7fc219f45acb6b62607d06d625746435228c4a257061e6e635c6",
+      "size_bytes": 28672,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D02-comparison.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D02.raw.txt",
+      "sha256": "8f9dc4e4002243b517d0d012fff61d3ff633e44f6561bfd2f795e4c24bf5b8eb",
+      "size_bytes": 294,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D02.raw.txt",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D03-checked.sqlite3",
+      "sha256": "1388349fffa6376b55d682957b1cc83f9561a80cc81db98ffec0c1231bb1ca52",
+      "size_bytes": 28672,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D03-checked.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D03-comparison.sqlite3",
+      "sha256": "ca1cd81542c0b59688e0de7509740f005edae9c45948d4ffeda9dca10cbc4bcc",
+      "size_bytes": 28672,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D03-comparison.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D03.raw.txt",
+      "sha256": "866eb37c2857db6a0755cbbad47448cd51935432f76b15a635635c6a9ee3ec34",
+      "size_bytes": 305,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D03.raw.txt",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D04-checked.sqlite3",
+      "sha256": "0028a1a75cd02e62de5281e55ef6ada33fe7f18918245822ec5121ae08b34b42",
+      "size_bytes": 28672,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D04-checked.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D04-comparison.sqlite3",
+      "sha256": "61fca17d62105122ada44147f859de24df5eb1105fbbd50d888143358bece0c6",
+      "size_bytes": 28672,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D04-comparison.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D04.raw.txt",
+      "sha256": "048ab12b668fff892778abea21081252f162c8e4dd097e02979700d6b2ee2ac4",
+      "size_bytes": 306,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D04.raw.txt",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D05-checked.sqlite3",
+      "sha256": "626b1a3de2170f22f96e1b386ea96acc2e97622149657384569e905332e9eb53",
+      "size_bytes": 28672,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D05-checked.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D05-comparison.sqlite3",
+      "sha256": "e8b9feb3f73d7da99c78bff9d714f69df4c404f0a8efc853e3c9886e284010fe",
+      "size_bytes": 28672,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D05-comparison.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D05.raw.txt",
+      "sha256": "de33ed2e8065491a0cf847a4d83deb721ba72bb3a113a295681663db5635499e",
+      "size_bytes": 307,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D05.raw.txt",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D06-checked.sqlite3",
+      "sha256": "5977aa90fc42e0698ccd4061bdcb468b8932e39be476eff6a722641802a572b4",
+      "size_bytes": 28672,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D06-checked.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D06-comparison.sqlite3",
+      "sha256": "4bac6808444701e9a9b2c97258067cffb95c30ed14958580f74d70515da77729",
+      "size_bytes": 28672,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D06-comparison.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D06.raw.txt",
+      "sha256": "b59b7734ab92db60a7878fb61e602683649f4176941d560bdfcfc5af983f9870",
+      "size_bytes": 299,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D06.raw.txt",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D07-checked.sqlite3",
+      "sha256": "09b8f4bab1ffcffaee9a345a724698d16d3f4b0315dcfb88087d252977065e0f",
+      "size_bytes": 28672,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D07-checked.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D07-comparison.sqlite3",
+      "sha256": "07e1379000a1ed5799194d263ca30edf0a8d1602c597c211e9a3728c7154f2aa",
+      "size_bytes": 28672,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D07-comparison.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D07.raw.txt",
+      "sha256": "7ec5f1373734ff775a51dfe0656081390b6b6ed7302c6b34f4d5b9bd63098eda",
+      "size_bytes": 303,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D07.raw.txt",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D08-checked.sqlite3",
+      "sha256": "ed3c6d3e6f0d2f0ccdb6a18f8ceeef66e7de7de84275cbd735bc7db96447a06a",
+      "size_bytes": 28672,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D08-checked.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D08-comparison.sqlite3",
+      "sha256": "0eddac6d40616cd6a6123c51b263dd8b294cc8554186eb2fe35f9c3701341a12",
+      "size_bytes": 28672,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D08-comparison.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D08.raw.txt",
+      "sha256": "9685b157f980523f424086405c66bea42c4deb7f85dc436c9082e53cb9f12833",
+      "size_bytes": 300,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D08.raw.txt",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D09-checked.sqlite3",
+      "sha256": "e24eeb0bd0cbd04e277deb4d43af1b3c37335855d785925b7ed114424aa89a45",
+      "size_bytes": 28672,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D09-checked.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D09-comparison.sqlite3",
+      "sha256": "ca0bf68adf61613ea566e9fcd909c84d6d3c2846d59b84a254da3af28b31fb94",
+      "size_bytes": 28672,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D09-comparison.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D09.raw.txt",
+      "sha256": "be252a569dbb62628561711c35cd82a461d375e5b75330e09ec992c23ef73684",
+      "size_bytes": 300,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D09.raw.txt",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D10-checked.sqlite3",
+      "sha256": "499ef124925d8fcb61a8608d028f7b4b96d4a8084e1e1651eaee299f514ca782",
+      "size_bytes": 28672,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D10-checked.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D10-comparison.sqlite3",
+      "sha256": "c2ffe9ee511429540faf43cbeda4a512ad780a76b73546e4dcdb0f6f53977de2",
+      "size_bytes": 28672,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D10-comparison.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D10.raw.txt",
+      "sha256": "ad7b34d9b667ee6c8f7998e0870761ee65062fbf95f4a79530a1f35e38fac108",
+      "size_bytes": 332,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D10.raw.txt",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D11-checked.sqlite3",
+      "sha256": "43c5844dd523a0a059e28b92393783510a80a85fdbf901a8eb14282d55849f03",
+      "size_bytes": 28672,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D11-checked.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D11-comparison.sqlite3",
+      "sha256": "97a14a59924c9579cd70023b347b72a2dc443a304a68a38359558bda730ee7af",
+      "size_bytes": 28672,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D11-comparison.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D11.raw.txt",
+      "sha256": "2be83f43883d0eefdc05160c9e5103cb46d7178ab65d0cf44097f2f88d304146",
+      "size_bytes": 11,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D11.raw.txt",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D12-checked.sqlite3",
+      "sha256": "6a10f681c29eee0dc045d2b5c7053bc6877f0137e0143f156e1c27783f235fa3",
+      "size_bytes": 28672,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D12-checked.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D12-comparison.sqlite3",
+      "sha256": "da3dd2b182b8bc2fda7c8ceb8bacdc34a466d3df5c4fbc2dbf2e0f201ae72395",
+      "size_bytes": 28672,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D12-comparison.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D12.raw.txt",
+      "sha256": "51b976bf8c6773de954ca58df40a4ce1069ba41be3c2acd505b9d743ac6c88b4",
+      "size_bytes": 299,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D12.raw.txt",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D13-checked.sqlite3",
+      "sha256": "2d83da29e2faa60842acaa569e77ef7bcb3126526431eab542838baf9363524b",
+      "size_bytes": 28672,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D13-checked.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D13-comparison.sqlite3",
+      "sha256": "b09d77b8cda8d46af010a7e34a8a0c705302dbe48cfc2cae4d4c11db70f2828a",
+      "size_bytes": 28672,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D13-comparison.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D13.raw.txt",
+      "sha256": "5489c87ae32fd4ddc78eefa10e7e80bf1a39089220636663f1e055c306c1d324",
+      "size_bytes": 299,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D13.raw.txt",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D14-checked.sqlite3",
+      "sha256": "032b152b54d92261a2a3a806e37b3ae8d0aac3d8ec08ca71ff547199f38a5366",
+      "size_bytes": 32768,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D14-checked.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D14-comparison.sqlite3",
+      "sha256": "7f04bef9d63a52fcd9a60fd9f80164e8a8cf9f4ecc530d9e02cbd47721c5e551",
+      "size_bytes": 32768,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D14-comparison.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D14.raw.txt",
+      "sha256": "ba9c836bb1529d665b0f4025523237bdea40c7def8eab0b22441b4bd7d7d317e",
+      "size_bytes": 305,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D14.raw.txt",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D15-checked.sqlite3",
+      "sha256": "fff3fd9624cb2a6ce85b57843af3bc9c39e16fbd87ec961a5d23fb457a14d93d",
+      "size_bytes": 28672,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D15-checked.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D15-comparison.sqlite3",
+      "sha256": "22a8cf559383bfcfd064e825a76f9b3ef326d037725fbe401cfe2a2f56f8cab6",
+      "size_bytes": 28672,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D15-comparison.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D15.raw.txt",
+      "sha256": "3e0752c11b91ac6d105a0affae5ad2e1a06fcbe954892af478e348f725374ed0",
+      "size_bytes": 305,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/D15.raw.txt",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/changed_K-reader.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/changed_K-reader.stderr",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/changed_K-reader.stdout",
+      "sha256": "9635892f5ee80c895dc885f5e475fad54c10bd78259ef37088112a93df410cae",
+      "size_bytes": 1665,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/changed_K-reader.stdout",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/changed_K-writer.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/changed_K-writer.stderr",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/changed_K-writer.stdout",
+      "sha256": "fd18b3a951e7c5bb644d65783e45b9348b4452bde4d460454d1242a867fd6bbd",
+      "size_bytes": 258,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/changed_K-writer.stdout",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/changed_action_only-reader.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/changed_action_only-reader.stderr",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/changed_action_only-reader.stdout",
+      "sha256": "fdfc1b31c38708e8972eb523cc05ce0520e48f7f8675c58ce98ecb93cc5ddd94",
+      "size_bytes": 1651,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/changed_action_only-reader.stdout",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/changed_action_only-writer.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/changed_action_only-writer.stderr",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/changed_action_only-writer.stdout",
+      "sha256": "9be880c32615b11a7853958bddc32cd305ac5e17fff1994017a917006a542daf",
+      "size_bytes": 269,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/changed_action_only-writer.stdout",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/changed_summary_only-reader.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/changed_summary_only-reader.stderr",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/changed_summary_only-reader.stdout",
+      "sha256": "131336d33393b5229d3836b887f780b7dc02cee5e08d013136d6c6f0315ccd0a",
+      "size_bytes": 1651,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/changed_summary_only-reader.stdout",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/changed_summary_only-writer.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/changed_summary_only-writer.stderr",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/changed_summary_only-writer.stdout",
+      "sha256": "ce37d509806df21a7762f8e9724695aebcb3a3504672d4028ee6c38fc86165e2",
+      "size_bytes": 270,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/changed_summary_only-writer.stdout",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/dependency-attempts.json",
+      "sha256": "6f2d6ee630a3e422478ffa30241d82dbf998dca8e955e0ead49ea95b48389918",
+      "size_bytes": 1414,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/dependency-attempts.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/pre-execution.json",
+      "sha256": "c13d6391c8f8b98ef8059e8336553e8d4f195a468f4b0555a68fa80133aceb05",
+      "size_bytes": 2800,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/pre-execution.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/read-changed_K.sqlite3",
+      "sha256": "18eb4201330a583a0968a369b39cbf85a4db4f14137f34233b913dffd5d15417",
+      "size_bytes": 32768,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/read-changed_K.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/read-changed_action_only.sqlite3",
+      "sha256": "d0c6eed24cade3f644d0a1ed4b46418c7160f68ea598cc9152d815b83ddec923",
+      "size_bytes": 32768,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/read-changed_action_only.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/read-changed_summary_only.sqlite3",
+      "sha256": "7ff5190d9935e149f07243572cd5885841f118243d95bdece9d297e5fd331205",
+      "size_bytes": 32768,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/read-changed_summary_only.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/read-reference.sqlite3",
+      "sha256": "d626226ee25efa50607f2ab7b0bc3f0d17822899fd7f5ca992d7b67d48944d20",
+      "size_bytes": 32768,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/read-reference.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/reference-reader.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/reference-reader.stderr",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/reference-reader.stdout",
+      "sha256": "5ecf67a941e7c974f53fa3263cb7e2b18d81f70f89bbfe1f4aa76b551acc16b7",
+      "size_bytes": 1650,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/reference-reader.stdout",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/reference-writer.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/reference-writer.stderr",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/reference-writer.stdout",
+      "sha256": "a51e17747967db8d4ffa5fb5cd2f127fbdd2c8e2784c1d49e6f1042016815f6f",
+      "size_bytes": 258,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/reference-writer.stdout",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/result.json",
+      "sha256": "8ebb335d8554d8b9f9c0bc75d24bb8f4487f9712ac893899b9ab62754e1acd6b",
+      "size_bytes": 18387,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/result.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/schema-gate-001.json",
+      "sha256": "b2ed49af861d3c8728939fa021358e5d46ad55a4062e8b88c57f366971715260",
+      "size_bytes": 409,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/schema-gate-001.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/schema-instances.json",
+      "sha256": "146461c25fedd2f2d584c430c6f9e8a83b074f45d4ab31c949755d6c1d8f5f06",
+      "size_bytes": 43269,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/schema-instances.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/transition-audit.jsonl",
+      "sha256": "af54e914555e3c81a14f7d071b8bc471cd52a19c6f21a8699240d5d6146e0ba8",
+      "size_bytes": 60818,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/results/dev-001/transition-audit.jsonl",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/review-response-001.ja-en.md",
+      "sha256": "082b47526cb4685e76093f758fd9a2e862019787c1e24457e0f23c7c0b8e3a5f",
+      "size_bytes": 5115,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/review-response-001.ja-en.md",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/run_development.py",
+      "sha256": "1b122f4911dc035061e72f51db4f8a23b08bd8ee1f181c69aea5f92389f1cfda",
+      "size_bytes": 10437,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/run_development.py",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/schemas/decision.schema.json",
+      "sha256": "6ed201e6d3e6b731ae861f3ba041415b2f1085f7e6308b71eff4a5303f9fb81d",
+      "size_bytes": 1126,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/schemas/decision.schema.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/schemas/input.schema.json",
+      "sha256": "a301da3af83adefd8932a4786045351ebf8e3a03a5d1273d3c8a792546afb5d1",
+      "size_bytes": 4226,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/schemas/input.schema.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/schemas/proposal.schema.json",
+      "sha256": "e1f4e6ed2143e6691963af81426c8497c492ab6e7b9578bb7d9d37daaf227176",
+      "size_bytes": 1358,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/schemas/proposal.schema.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/schemas/state.schema.json",
+      "sha256": "5da9fc4feb447f6e724c52f2e72e161c4a567671385a6b9845a334615be0a934",
+      "size_bytes": 1410,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/schemas/state.schema.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/stage3-prepared-run-form.v0.1.json",
+      "sha256": "6d8ca871edbdc4f4ec0ed6def1fc4d48ec606152ddd48dbdc0dbdad55fbe0594",
+      "size_bytes": 10863,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/stage3-prepared-run-form.v0.1.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/development-snapshot/validate_schemas.py",
+      "sha256": "d13701ac713323c58b7d809a273f2e2df48f54b24efc24c7460d1b52e2115230",
+      "size_bytes": 2400,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/development-snapshot/validate_schemas.py",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/run-forms/stage3-prepared-run-form.v0.1.json",
+      "sha256": "6d8ca871edbdc4f4ec0ed6def1fc4d48ec606152ddd48dbdc0dbdad55fbe0594",
+      "size_bytes": 10863,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/run-forms/stage3-prepared-run-form.v0.1.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/run-forms/stage3-run-form-v0.1.en.md",
+      "sha256": "86d13ecb05c750b9599ab905063919010e7d5f7b3cfa25ffb3a419367b7263a6",
+      "size_bytes": 7323,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/run-forms/stage3-run-form-v0.1.en.md",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/run-forms/stage3-run-form-v0.1.ja.md",
+      "sha256": "bd1525bbcd15fef5a5048b03f31dc9ee951ff7968aaeb3924299e7a8ac420035",
+      "size_bytes": 7670,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/run-forms/stage3-run-form-v0.1.ja.md",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/run-forms/stage3-run-form.v0.1.json",
+      "sha256": "45d626f72fc0dceaf932e70bf714e0ba730e454e66a95ed1b3ea2ed9e3c45466",
+      "size_bytes": 8244,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/run-forms/stage3-run-form.v0.1.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/specification/stage3-integration-evaluation-v0.1.1.en.md",
+      "sha256": "614882692b1b8419f6be4d1df9fbbf3a243bb43c05450c726a6ac2c3faeaa0fe",
+      "size_bytes": 8698,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/specification/stage3-integration-evaluation-v0.1.1.en.md",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/specification/stage3-integration-evaluation-v0.1.1.en.pdf",
+      "sha256": "e93090bb241ec9903c4f670d57cb7a7a1faecfb05fc93ed77884437d6f7f57a2",
+      "size_bytes": 77013,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/specification/stage3-integration-evaluation-v0.1.1.en.pdf",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/specification/stage3-integration-evaluation-v0.1.1.ja.md",
+      "sha256": "7896a85f613bbea912eb2eb95eb661f40cba8ad378e76b451b64732c98f93d71",
+      "size_bytes": 9414,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/specification/stage3-integration-evaluation-v0.1.1.ja.md",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/specification/stage3-integration-evaluation-v0.1.1.ja.pdf",
+      "sha256": "8d367bd419628d053f992b5158ac4d6105a974e0c7e4f9ac7070518b7cb3b64c",
+      "size_bytes": 109048,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/03_integration/specification/stage3-integration-evaluation-v0.1.1.ja.pdf",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage4/stage4-productization-entry-form.v0.1.json",
+      "sha256": "95009fc0db5785d9a84a198d1e2892256c9469697ab3bb1e87b0eb830be6193c",
+      "size_bytes": 5921,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/04_productization-draft/stage4-productization-entry-form.v0.1.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage4/stage4-productization-plan-v0.1.en.md",
+      "sha256": "d776c26d60d92fed56dd6155598eee5bd19d6984fa87fdd030634a007e415171",
+      "size_bytes": 9001,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/04_productization-draft/stage4-productization-plan-v0.1.en.md",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage4/stage4-productization-plan-v0.1.ja.md",
+      "sha256": "830aa98a482b40a11f977a02a527bbe1043f73686364f0b9e74a723a9731f20b",
+      "size_bytes": 8648,
+      "source_archive": "M-Anchor_Stages_1-4_Materials_v0.1.zip",
+      "source_archive_sha256": "dc63d53361903b198998db037f748d743cb236fa97f949c1a2ca6b5804cef2f6",
+      "source_member": "M-Anchor_Stages_1-4_Materials_v0.1/04_productization-draft/stage4-productization-plan-v0.1.ja.md",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/bundle-provenance.json",
+      "sha256": "6222b03b31866d50d6cec7e593893d91b546e0c2d02b12feafd2a693373a4155",
+      "size_bytes": 2483,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/bundle-provenance.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/collected/authority.json",
+      "sha256": "9b28b44cf3f132d32acdc025b83d045a75e1d50187402509fb7b8b93f10e3068",
+      "size_bytes": 2074,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/collected/authority.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/collected/excluded/PI-04-T1.json",
+      "sha256": "7c9f1f09696a7bd4eb30fc0813bf65a1a6cc7961e3da9869d7bba532a8447a0c",
+      "size_bytes": 214,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/collected/excluded/PI-04-T1.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/collected/manifest.json",
+      "sha256": "1cd284e1c485fc7bc7c3b92cc2eba8c4e2bb0e3eaf7da2175af1ec9a2d71d03a",
+      "size_bytes": 6754,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/collected/manifest.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/collected/provenance.json",
+      "sha256": "03afb5ddf37ec1e6208014df48b2c84586572269e08b07405bce18adb2b57842",
+      "size_bytes": 2326,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/collected/provenance.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/collected/raw/PI-01-T1.json",
+      "sha256": "1eef33394820fcf3649ee016c87000fa47baaf03c24aeb2152d1ebefc20f1bd3",
+      "size_bytes": 205,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/collected/raw/PI-01-T1.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/collected/raw/PI-01-T2.json",
+      "sha256": "1eef33394820fcf3649ee016c87000fa47baaf03c24aeb2152d1ebefc20f1bd3",
+      "size_bytes": 205,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/collected/raw/PI-01-T2.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/collected/raw/PI-01-T3.json",
+      "sha256": "1eef33394820fcf3649ee016c87000fa47baaf03c24aeb2152d1ebefc20f1bd3",
+      "size_bytes": 205,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/collected/raw/PI-01-T3.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/collected/raw/PI-02-T1.json",
+      "sha256": "aa67c741ea734bef57a59eb86804102ea33861d8029dd19d3e1703e56fe5c6d1",
+      "size_bytes": 210,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/collected/raw/PI-02-T1.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/collected/raw/PI-02-T2.json",
+      "sha256": "2169ccd9a008db2b7aadde6f120596a5e58dbb9484f9811fe8fbf35a24753e56",
+      "size_bytes": 214,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/collected/raw/PI-02-T2.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/collected/raw/PI-02-T3.json",
+      "sha256": "2169ccd9a008db2b7aadde6f120596a5e58dbb9484f9811fe8fbf35a24753e56",
+      "size_bytes": 214,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/collected/raw/PI-02-T3.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/collected/raw/PI-04-T1a.json",
+      "sha256": "621b7c763aa0bf741ecb4aeb9c85485f7c1c8e0b4702e7ff1050f37510e49496",
+      "size_bytes": 214,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/collected/raw/PI-04-T1a.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/collected/raw/PI-04-T2a.json",
+      "sha256": "621b7c763aa0bf741ecb4aeb9c85485f7c1c8e0b4702e7ff1050f37510e49496",
+      "size_bytes": 214,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/collected/raw/PI-04-T2a.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/collected/raw/PI-04-T3a.json",
+      "sha256": "621b7c763aa0bf741ecb4aeb9c85485f7c1c8e0b4702e7ff1050f37510e49496",
+      "size_bytes": 214,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/collected/raw/PI-04-T3a.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/collected/raw/PI-05-T1.json",
+      "sha256": "054fe4e02de3e84edef038b79f34c0fc27da18c1f190abf3397098673439ba70",
+      "size_bytes": 224,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/collected/raw/PI-05-T1.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/collected/raw/PI-05-T2.json",
+      "sha256": "005dbdacc4b92c0e5528fc5cd85f73ead1c229f81b3e4c1068fbaa7e54f6447f",
+      "size_bytes": 214,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/collected/raw/PI-05-T2.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/collected/raw/PI-05-T3.json",
+      "sha256": "005dbdacc4b92c0e5528fc5cd85f73ead1c229f81b3e4c1068fbaa7e54f6447f",
+      "size_bytes": 214,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/collected/raw/PI-05-T3.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/collected/raw/PI-09-T1.json",
+      "sha256": "efdf1fa9136127d55205e1b758923ae2687208ee4625452dee82b3445475168b",
+      "size_bytes": 210,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/collected/raw/PI-09-T1.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/collected/raw/PI-09-T2.json",
+      "sha256": "efdf1fa9136127d55205e1b758923ae2687208ee4625452dee82b3445475168b",
+      "size_bytes": 210,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/collected/raw/PI-09-T2.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/collected/raw/PI-09-T3.json",
+      "sha256": "efdf1fa9136127d55205e1b758923ae2687208ee4625452dee82b3445475168b",
+      "size_bytes": 210,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/collected/raw/PI-09-T3.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/evaluation-report.ja.md",
+      "sha256": "6f7cb4202784e6424fbbcaf919cc9b3f896f84bc8fee2520c61d9c182f003301",
+      "size_bytes": 7048,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/evaluation-report.ja.md",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/gate.py",
+      "sha256": "6288ee144e65cb9ece55c8a4950876e53225daf44a882959bb4dbef76f8d619e",
+      "size_bytes": 23016,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/gate.py",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/README.md",
+      "sha256": "cf6d9d034efebd43ec02365fcfd84a89670152ebe684ddf697ed86cfb3bcd08d",
+      "size_bytes": 7483,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/README.md",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/replay.py",
+      "sha256": "4bf8def2f8bfee1c426d395bd52a5bf91942e876246595c52f37a68635f15a6d",
+      "size_bytes": 13597,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/replay.py",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/restart_check.py",
+      "sha256": "11ac2ab78d6c3f0223452ce1ee53998010139e19e6fa1589f3a47e9b4bdca7c7",
+      "size_bytes": 8761,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/restart_check.py",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/final-15/checked/PI-01-T1.sqlite3",
+      "sha256": "90297fb134c98e9e9c02e11a4a874757f5e76874e57224a1508599d706dafae8",
+      "size_bytes": 53248,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/final-15/checked/PI-01-T1.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/final-15/checked/PI-01-T2.sqlite3",
+      "sha256": "90297fb134c98e9e9c02e11a4a874757f5e76874e57224a1508599d706dafae8",
+      "size_bytes": 53248,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/final-15/checked/PI-01-T2.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/final-15/checked/PI-01-T3.sqlite3",
+      "sha256": "90297fb134c98e9e9c02e11a4a874757f5e76874e57224a1508599d706dafae8",
+      "size_bytes": 53248,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/final-15/checked/PI-01-T3.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/final-15/checked/PI-02-T1.sqlite3",
+      "sha256": "bcf7eb1bcaf3bedcb1afb999296ee056442d8537b47cb6ce43924c7573cf712d",
+      "size_bytes": 53248,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/final-15/checked/PI-02-T1.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/final-15/checked/PI-02-T2.sqlite3",
+      "sha256": "b5f8a64ef6ac5b8c57f91b6786d9b825fe4d9235822f6e444311c5c8ff3d90b9",
+      "size_bytes": 53248,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/final-15/checked/PI-02-T2.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/final-15/checked/PI-02-T3.sqlite3",
+      "sha256": "b5f8a64ef6ac5b8c57f91b6786d9b825fe4d9235822f6e444311c5c8ff3d90b9",
+      "size_bytes": 53248,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/final-15/checked/PI-02-T3.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/final-15/checked/PI-04-T1a.sqlite3",
+      "sha256": "7a805517fdfd53c02f8904cac00f17c46fa84cb25783624f32487329b9e9798c",
+      "size_bytes": 53248,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/final-15/checked/PI-04-T1a.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/final-15/checked/PI-04-T2a.sqlite3",
+      "sha256": "7a805517fdfd53c02f8904cac00f17c46fa84cb25783624f32487329b9e9798c",
+      "size_bytes": 53248,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/final-15/checked/PI-04-T2a.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/final-15/checked/PI-04-T3a.sqlite3",
+      "sha256": "7a805517fdfd53c02f8904cac00f17c46fa84cb25783624f32487329b9e9798c",
+      "size_bytes": 53248,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/final-15/checked/PI-04-T3a.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/final-15/checked/PI-05-T1.sqlite3",
+      "sha256": "16a66232d06a2756ba5c99039c2cd8b82dd868e82e2016f8fd65f14ec10797b7",
+      "size_bytes": 53248,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/final-15/checked/PI-05-T1.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/final-15/checked/PI-05-T2.sqlite3",
+      "sha256": "b255728252ca35944cd7f496bd46612098af266a98d0eb51429be0b77b291a5b",
+      "size_bytes": 53248,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/final-15/checked/PI-05-T2.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/final-15/checked/PI-05-T3.sqlite3",
+      "sha256": "b255728252ca35944cd7f496bd46612098af266a98d0eb51429be0b77b291a5b",
+      "size_bytes": 53248,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/final-15/checked/PI-05-T3.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/final-15/checked/PI-09-T1.sqlite3",
+      "sha256": "a50aadeb7ddfc6d84da090c500c049bd42daf09d3da50d016752e306ecbe4aae",
+      "size_bytes": 53248,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/final-15/checked/PI-09-T1.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/final-15/checked/PI-09-T2.sqlite3",
+      "sha256": "a50aadeb7ddfc6d84da090c500c049bd42daf09d3da50d016752e306ecbe4aae",
+      "size_bytes": 53248,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/final-15/checked/PI-09-T2.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/final-15/checked/PI-09-T3.sqlite3",
+      "sha256": "a50aadeb7ddfc6d84da090c500c049bd42daf09d3da50d016752e306ecbe4aae",
+      "size_bytes": 53248,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/final-15/checked/PI-09-T3.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/final-15/results.json",
+      "sha256": "1a301b43b3ca9ca4df6670624278fba75e4c0f9de55565be97d4bf59062b61e0",
+      "size_bytes": 51595,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/final-15/results.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/final-15/unchecked-evaluation-only/PI-01-T1.sqlite3",
+      "sha256": "72fa2deda0c1256c69ce55a1b8e5ef3641c759b9e4d45b0c950fc37fa8feaa9b",
+      "size_bytes": 8192,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/final-15/unchecked-evaluation-only/PI-01-T1.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/final-15/unchecked-evaluation-only/PI-01-T2.sqlite3",
+      "sha256": "72fa2deda0c1256c69ce55a1b8e5ef3641c759b9e4d45b0c950fc37fa8feaa9b",
+      "size_bytes": 8192,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/final-15/unchecked-evaluation-only/PI-01-T2.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/final-15/unchecked-evaluation-only/PI-01-T3.sqlite3",
+      "sha256": "72fa2deda0c1256c69ce55a1b8e5ef3641c759b9e4d45b0c950fc37fa8feaa9b",
+      "size_bytes": 8192,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/final-15/unchecked-evaluation-only/PI-01-T3.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/final-15/unchecked-evaluation-only/PI-02-T1.sqlite3",
+      "sha256": "64b6730741cbca7bdd1bae3aef92568c9efb7383b1d5eefea0811bc40a112c0a",
+      "size_bytes": 8192,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/final-15/unchecked-evaluation-only/PI-02-T1.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/final-15/unchecked-evaluation-only/PI-02-T2.sqlite3",
+      "sha256": "6c22a4b88c20b5860232406c66635a60f7722ee57561ee12e89620a58956921c",
+      "size_bytes": 8192,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/final-15/unchecked-evaluation-only/PI-02-T2.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/final-15/unchecked-evaluation-only/PI-02-T3.sqlite3",
+      "sha256": "6c22a4b88c20b5860232406c66635a60f7722ee57561ee12e89620a58956921c",
+      "size_bytes": 8192,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/final-15/unchecked-evaluation-only/PI-02-T3.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/final-15/unchecked-evaluation-only/PI-04-T1a.sqlite3",
+      "sha256": "334159c299fbc5e1bf7a70ad62b4f619d8e5e2e25032fd862730b4065ae92008",
+      "size_bytes": 8192,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/final-15/unchecked-evaluation-only/PI-04-T1a.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/final-15/unchecked-evaluation-only/PI-04-T2a.sqlite3",
+      "sha256": "334159c299fbc5e1bf7a70ad62b4f619d8e5e2e25032fd862730b4065ae92008",
+      "size_bytes": 8192,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/final-15/unchecked-evaluation-only/PI-04-T2a.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/final-15/unchecked-evaluation-only/PI-04-T3a.sqlite3",
+      "sha256": "334159c299fbc5e1bf7a70ad62b4f619d8e5e2e25032fd862730b4065ae92008",
+      "size_bytes": 8192,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/final-15/unchecked-evaluation-only/PI-04-T3a.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/final-15/unchecked-evaluation-only/PI-05-T1.sqlite3",
+      "sha256": "fd12bde5f24ac7bbaeeddc260c02b0e7875065bc0fd806ab6bc31f12c37f9017",
+      "size_bytes": 8192,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/final-15/unchecked-evaluation-only/PI-05-T1.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/final-15/unchecked-evaluation-only/PI-05-T2.sqlite3",
+      "sha256": "23a8ecf4038de9df79a1343934d105bebeb2b6b1928693dbc8f846050b39b21a",
+      "size_bytes": 8192,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/final-15/unchecked-evaluation-only/PI-05-T2.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/final-15/unchecked-evaluation-only/PI-05-T3.sqlite3",
+      "sha256": "23a8ecf4038de9df79a1343934d105bebeb2b6b1928693dbc8f846050b39b21a",
+      "size_bytes": 8192,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/final-15/unchecked-evaluation-only/PI-05-T3.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/final-15/unchecked-evaluation-only/PI-09-T1.sqlite3",
+      "sha256": "4decbbe8928cfc1904a68bc9c81a076eb714890112e6566fd80009d951b31955",
+      "size_bytes": 8192,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/final-15/unchecked-evaluation-only/PI-09-T1.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/final-15/unchecked-evaluation-only/PI-09-T2.sqlite3",
+      "sha256": "4decbbe8928cfc1904a68bc9c81a076eb714890112e6566fd80009d951b31955",
+      "size_bytes": 8192,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/final-15/unchecked-evaluation-only/PI-09-T2.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/final-15/unchecked-evaluation-only/PI-09-T3.sqlite3",
+      "sha256": "4decbbe8928cfc1904a68bc9c81a076eb714890112e6566fd80009d951b31955",
+      "size_bytes": 8192,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/final-15/unchecked-evaluation-only/PI-09-T3.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/integrity-check.json",
+      "sha256": "aa7d95454a2f050fd595fa0afb1c32c9cc790d8c8f1ad9164f609cc29c6c712a",
+      "size_bytes": 796,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/integrity-check.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/process-restart/inputs/authority.json",
+      "sha256": "9b28b44cf3f132d32acdc025b83d045a75e1d50187402509fb7b8b93f10e3068",
+      "size_bytes": 2074,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/process-restart/inputs/authority.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/process-restart/inputs/PI-05-T1.json",
+      "sha256": "054fe4e02de3e84edef038b79f34c0fc27da18c1f190abf3397098673439ba70",
+      "size_bytes": 224,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/process-restart/inputs/PI-05-T1.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/process-restart/inputs/PI-05-T2.json",
+      "sha256": "005dbdacc4b92c0e5528fc5cd85f73ead1c229f81b3e4c1068fbaa7e54f6447f",
+      "size_bytes": 214,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/process-restart/inputs/PI-05-T2.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/process-restart/inputs/PI-09-T1.json",
+      "sha256": "efdf1fa9136127d55205e1b758923ae2687208ee4625452dee82b3445475168b",
+      "size_bytes": 210,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/process-restart/inputs/PI-09-T1.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/process-restart/persistent.sqlite3",
+      "sha256": "cabb75230b551cbf5508045aeace15dcd87db59f836181fa7915aa9ddd9d87ab",
+      "size_bytes": 61440,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/process-restart/persistent.sqlite3",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/process-restart/restart-trace.json",
+      "sha256": "63236c86570cafa8b975454ce2125cf24c4b2f0837978a814e4fa825c43c9f63",
+      "size_bytes": 36172,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/process-restart/restart-trace.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/results/test-results.json",
+      "sha256": "07a3eb7141c0c3d018966c732a2e5dd0ad9b58cb0a93ffc70fcb2f28a14275f7",
+      "size_bytes": 1023,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/results/test-results.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/run.ps1",
+      "sha256": "556dfa0a0f66280451ad96f6886bf87119b730e9356c68809183320e5d8709a4",
+      "size_bytes": 634,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/run.ps1",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/tests/test_gate.py",
+      "sha256": "4c7a6dbbb039ecebe0d4501a7cf4e929f7fa2108a8cc30bd61c1d739a9da77fd",
+      "size_bytes": 23036,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/tests/test_gate.py",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/tests/test_replay.py",
+      "sha256": "a5d4a5c38b84aa2b4bdfcf22c8ed6125276ff319a4c628445262876a1d380ad1",
+      "size_bytes": 10431,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/tests/test_replay.py",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/vendor/python_v0.1/m_anchor_minimal.py",
+      "sha256": "0f9551e8d00cd4408441944d9067cfe9bce7d5653019a5af27738fb5895f58c9",
+      "size_bytes": 3405,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/vendor/python_v0.1/m_anchor_minimal.py",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/vendor/python_v0.1/M_ANCHOR_MINIMAL_README.ja.md",
+      "sha256": "2a4f8baf6396bc62aa0d5c996e5fec2b4f593b8501d649b9a07cd0f426c2c426",
+      "size_bytes": 5735,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/vendor/python_v0.1/M_ANCHOR_MINIMAL_README.ja.md",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-stage3/vendor/python_v0.1/test_m_anchor_minimal.py",
+      "sha256": "1fa228427dfeb4460d2ee14767d64664456f245e505e5d59d4f6ae8b5023db5b",
+      "size_bytes": 4887,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-stage3/vendor/python_v0.1/test_m_anchor_minimal.py",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-agent/app.py",
+      "sha256": "7d72e48750dcdbe3c2cb464d1f6230d2c73edf279b7611c5adc2da002376b080",
+      "size_bytes": 22791,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-agent/app.py",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-agent/agent.json",
+      "sha256": "1a18553ef2037a3d1d06709e57f9ba94c89ead832a3fa66c1f461101618585ad",
+      "size_bytes": 3075,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-agent/agent.json",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-agent/initial-message.txt",
+      "sha256": "cdc6b1ac7954dfb499587c6ab1138421c4040f4d65da9a3e83210f1e84eecbd0",
+      "size_bytes": 879,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-agent/initial-message.txt",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-agent/requirements.txt",
+      "sha256": "faa8300cffcf07838b025db6725b69ed7fa4578b2c8877fda1918b35a1630c45",
+      "size_bytes": 36,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-agent/requirements.txt",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-agent/run.ps1",
+      "sha256": "6ce40269ac137769414ba6a46f5b6aa199c95444bc70180f400092af419a6c25",
+      "size_bytes": 929,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-agent/run.ps1",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-agent/README.md",
+      "sha256": "2d68605adb8028770a6f838068864d8125c47f0770ce41b99fb1955f177cbecc",
+      "size_bytes": 14825,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-agent/README.md",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-agent/run-report.md",
+      "sha256": "832c7a2da6f3e3798d07bb4942aea75fb693db8d05a4ed137ad27df0209b790f",
+      "size_bytes": 3001,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-agent/run-report.md",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "stage3/collected-proposals/m-anchor-agent/tests/test_app.py",
+      "sha256": "e5a22229611d338e97f7ff278623e0eddaef8818f09a6012509dcf6eeee36cba",
+      "size_bytes": 18498,
+      "source_archive": "M-Anchor-Stage3-evaluation.zip",
+      "source_archive_sha256": "b2568eddc99aae76aca4b4a1e94fa4b89183f3f6cec1dc94ead0f52ec3c68f80",
+      "source_member": "m-anchor-agent/tests/test_app.py",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "reports/collected-materials/M-Anchor_Stages_1-4_Materials_v0.1.en.pdf",
+      "sha256": "70f00ce1dd2e7c31a8b69ab25395d2224a26c0c92ee5b25f1ccb33f6a720b512",
+      "size_bytes": 2303313,
+      "source_file": "M-Anchor_Stages_1-4_Materials_v0.1.en.pdf",
+      "source_edition": "Final collected reading edition v0.1, 2026-09-30",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "reports/collected-materials/M-Anchor_Stages_1-4_Materials_v0.1.ja.pdf",
+      "sha256": "d46db6a1f4edce67999c4e8da376d2a6088a14d0989fda66e63b578686ff2d4a",
+      "size_bytes": 2823437,
+      "source_file": "M-Anchor_Stages_1-4_Materials_v0.1.ja.pdf",
+      "source_edition": "Final collected reading edition v0.1, 2026-09-30",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "records/materials-finalization/stages1-4-materials-finalization-v0.1.ja-en.md",
+      "sha256": "bca5a1d626754fd52bff8704d2d443a03446317c4e8b2432e9abd7c3d2f942a5",
+      "size_bytes": 3367,
+      "source_file": "stages1-4-materials-finalization-v0.1.ja-en.md",
+      "mode": "unchanged_bytes"
+    },
+    {
+      "path": "records/materials-finalization/stages1-4-materials-finalization-v0.1.json",
+      "sha256": "2885e4c6b86c5ab0086a18cdb731752a1170a026d80fa497516e79146a5fb547",
+      "size_bytes": 3119,
+      "source_file": "stages1-4-materials-finalization-v0.1.json",
+      "mode": "unchanged_bytes"
+    }
+  ]
+}

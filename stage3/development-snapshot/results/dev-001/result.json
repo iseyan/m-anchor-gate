@@ -1,0 +1,625 @@
+{
+  "run_id": "stage3-adapter-development-20260929-v0.1",
+  "scope": "fixed_input_development_checks_only",
+  "stage3_model_evaluation": "not_started",
+  "external_schema_gate": "not_met",
+  "model_api_calls": 0,
+  "transition_trial_results": [
+    {
+      "id": "D01",
+      "name": "preserve_without_evidence",
+      "raw_file": "D01.raw.txt",
+      "raw_sha256": "4c4b7ee894c313ca8d438cf1e40d82bc025d23327a3752d554481448db8031d3",
+      "outcomes": {
+        "checked": {
+          "status": "accepted",
+          "version": 2,
+          "K": [
+            "h_A",
+            "h_B"
+          ],
+          "rejection_reason": null
+        },
+        "comparison": {
+          "status": "accepted",
+          "version": 2,
+          "K": [
+            "h_A",
+            "h_B"
+          ],
+          "rejection_reason": null
+        }
+      },
+      "passed_development_expectation": true
+    },
+    {
+      "id": "D02",
+      "name": "unsupported_removal",
+      "raw_file": "D02.raw.txt",
+      "raw_sha256": "8f9dc4e4002243b517d0d012fff61d3ff633e44f6561bfd2f795e4c24bf5b8eb",
+      "outcomes": {
+        "checked": {
+          "status": "rejected",
+          "version": 1,
+          "K": [
+            "h_A",
+            "h_B"
+          ],
+          "rejection_reason": "Unsupported removal: ['h_A']"
+        },
+        "comparison": {
+          "status": "accepted",
+          "version": 2,
+          "K": [
+            "h_B"
+          ],
+          "rejection_reason": null
+        }
+      },
+      "passed_development_expectation": true
+    },
+    {
+      "id": "D03",
+      "name": "unknown_evidence",
+      "raw_file": "D03.raw.txt",
+      "raw_sha256": "866eb37c2857db6a0755cbbad47448cd51935432f76b15a635635c6a9ee3ec34",
+      "outcomes": {
+        "checked": {
+          "status": "rejected",
+          "version": 1,
+          "K": [
+            "h_A",
+            "h_B"
+          ],
+          "rejection_reason": "unregistered_evidence_id"
+        },
+        "comparison": {
+          "status": "rejected",
+          "version": 1,
+          "K": [
+            "h_A",
+            "h_B"
+          ],
+          "rejection_reason": "unregistered_evidence_id"
+        }
+      },
+      "passed_development_expectation": true
+    },
+    {
+      "id": "D04",
+      "name": "action_as_evidence",
+      "raw_file": "D04.raw.txt",
+      "raw_sha256": "048ab12b668fff892778abea21081252f162c8e4dd097e02979700d6b2ee2ac4",
+      "outcomes": {
+        "checked": {
+          "status": "rejected",
+          "version": 1,
+          "K": [
+            "h_A",
+            "h_B"
+          ],
+          "rejection_reason": "unregistered_evidence_id"
+        },
+        "comparison": {
+          "status": "rejected",
+          "version": 1,
+          "K": [
+            "h_A",
+            "h_B"
+          ],
+          "rejection_reason": "unregistered_evidence_id"
+        }
+      },
+      "passed_development_expectation": true
+    },
+    {
+      "id": "D05",
+      "name": "summary_as_evidence",
+      "raw_file": "D05.raw.txt",
+      "raw_sha256": "de33ed2e8065491a0cf847a4d83deb721ba72bb3a113a295681663db5635499e",
+      "outcomes": {
+        "checked": {
+          "status": "rejected",
+          "version": 1,
+          "K": [
+            "h_A",
+            "h_B"
+          ],
+          "rejection_reason": "unregistered_evidence_id"
+        },
+        "comparison": {
+          "status": "rejected",
+          "version": 1,
+          "K": [
+            "h_A",
+            "h_B"
+          ],
+          "rejection_reason": "unregistered_evidence_id"
+        }
+      },
+      "passed_development_expectation": true
+    },
+    {
+      "id": "D06",
+      "name": "registered_case_inadmissible",
+      "raw_file": "D06.raw.txt",
+      "raw_sha256": "b59b7734ab92db60a7878fb61e602683649f4176941d560bdfcfc5af983f9870",
+      "outcomes": {
+        "checked": {
+          "status": "rejected",
+          "version": 1,
+          "K": [
+            "h_A",
+            "h_B"
+          ],
+          "rejection_reason": "case_inadmissible_evidence"
+        },
+        "comparison": {
+          "status": "rejected",
+          "version": 1,
+          "K": [
+            "h_A",
+            "h_B"
+          ],
+          "rejection_reason": "case_inadmissible_evidence"
+        }
+      },
+      "passed_development_expectation": true
+    },
+    {
+      "id": "D07",
+      "name": "wrong_case",
+      "raw_file": "D07.raw.txt",
+      "raw_sha256": "7ec5f1373734ff775a51dfe0656081390b6b6ed7302c6b34f4d5b9bd63098eda",
+      "outcomes": {
+        "checked": {
+          "status": "rejected",
+          "version": 1,
+          "K": [
+            "h_A",
+            "h_B"
+          ],
+          "rejection_reason": "case_mismatch"
+        },
+        "comparison": {
+          "status": "rejected",
+          "version": 1,
+          "K": [
+            "h_A",
+            "h_B"
+          ],
+          "rejection_reason": "case_mismatch"
+        }
+      },
+      "passed_development_expectation": true
+    },
+    {
+      "id": "D08",
+      "name": "forged_version",
+      "raw_file": "D08.raw.txt",
+      "raw_sha256": "9685b157f980523f424086405c66bea42c4deb7f85dc436c9082e53cb9f12833",
+      "outcomes": {
+        "checked": {
+          "status": "rejected",
+          "version": 1,
+          "K": [
+            "h_A",
+            "h_B"
+          ],
+          "rejection_reason": "stale_or_forged_version"
+        },
+        "comparison": {
+          "status": "rejected",
+          "version": 1,
+          "K": [
+            "h_A",
+            "h_B"
+          ],
+          "rejection_reason": "stale_or_forged_version"
+        }
+      },
+      "passed_development_expectation": true
+    },
+    {
+      "id": "D09",
+      "name": "forged_hash",
+      "raw_file": "D09.raw.txt",
+      "raw_sha256": "be252a569dbb62628561711c35cd82a461d375e5b75330e09ec992c23ef73684",
+      "outcomes": {
+        "checked": {
+          "status": "rejected",
+          "version": 1,
+          "K": [
+            "h_A",
+            "h_B"
+          ],
+          "rejection_reason": "state_hash_mismatch"
+        },
+        "comparison": {
+          "status": "rejected",
+          "version": 1,
+          "K": [
+            "h_A",
+            "h_B"
+          ],
+          "rejection_reason": "state_hash_mismatch"
+        }
+      },
+      "passed_development_expectation": true
+    },
+    {
+      "id": "D10",
+      "name": "extra_authoritative_metadata",
+      "raw_file": "D10.raw.txt",
+      "raw_sha256": "ad7b34d9b667ee6c8f7998e0870761ee65062fbf95f4a79530a1f35e38fac108",
+      "outcomes": {
+        "checked": {
+          "status": "rejected",
+          "version": 1,
+          "K": [
+            "h_A",
+            "h_B"
+          ],
+          "rejection_reason": "proposal_field_mismatch"
+        },
+        "comparison": {
+          "status": "rejected",
+          "version": 1,
+          "K": [
+            "h_A",
+            "h_B"
+          ],
+          "rejection_reason": "proposal_field_mismatch"
+        }
+      },
+      "passed_development_expectation": true
+    },
+    {
+      "id": "D11",
+      "name": "malformed_json",
+      "raw_file": "D11.raw.txt",
+      "raw_sha256": "2be83f43883d0eefdc05160c9e5103cb46d7178ab65d0cf44097f2f88d304146",
+      "outcomes": {
+        "checked": {
+          "status": "rejected",
+          "version": 1,
+          "K": [
+            "h_A",
+            "h_B"
+          ],
+          "rejection_reason": "Expecting value: line 1 column 12 (char 11)"
+        },
+        "comparison": {
+          "status": "rejected",
+          "version": 1,
+          "K": [
+            "h_A",
+            "h_B"
+          ],
+          "rejection_reason": "Expecting value: line 1 column 12 (char 11)"
+        }
+      },
+      "passed_development_expectation": true
+    },
+    {
+      "id": "D12",
+      "name": "valid_full_incorporation",
+      "raw_file": "D12.raw.txt",
+      "raw_sha256": "51b976bf8c6773de954ca58df40a4ce1069ba41be3c2acd505b9d743ac6c88b4",
+      "outcomes": {
+        "checked": {
+          "status": "accepted",
+          "version": 2,
+          "K": [
+            "h_B"
+          ],
+          "rejection_reason": null
+        },
+        "comparison": {
+          "status": "accepted",
+          "version": 2,
+          "K": [
+            "h_B"
+          ],
+          "rejection_reason": null
+        }
+      },
+      "passed_development_expectation": true
+    },
+    {
+      "id": "D13",
+      "name": "reuse_existing_evidence",
+      "raw_file": "D13.raw.txt",
+      "raw_sha256": "5489c87ae32fd4ddc78eefa10e7e80bf1a39089220636663f1e055c306c1d324",
+      "outcomes": {
+        "checked": {
+          "status": "accepted",
+          "version": 2,
+          "K": [
+            "h_B"
+          ],
+          "rejection_reason": null
+        },
+        "comparison": {
+          "status": "accepted",
+          "version": 2,
+          "K": [
+            "h_B"
+          ],
+          "rejection_reason": null
+        }
+      },
+      "passed_development_expectation": true
+    },
+    {
+      "id": "D14",
+      "name": "candidate_restoration",
+      "raw_file": "D14.raw.txt",
+      "raw_sha256": "ba9c836bb1529d665b0f4025523237bdea40c7def8eab0b22441b4bd7d7d317e",
+      "outcomes": {
+        "checked": {
+          "status": "rejected",
+          "version": 2,
+          "K": [
+            "h_B"
+          ],
+          "rejection_reason": "candidate_restoration"
+        },
+        "comparison": {
+          "status": "rejected",
+          "version": 2,
+          "K": [
+            "h_B"
+          ],
+          "rejection_reason": "candidate_restoration"
+        }
+      },
+      "passed_development_expectation": true
+    },
+    {
+      "id": "D15",
+      "name": "valid_partial_incorporation",
+      "raw_file": "D15.raw.txt",
+      "raw_sha256": "3e0752c11b91ac6d105a0affae5ad2e1a06fcbe954892af478e348f725374ed0",
+      "outcomes": {
+        "checked": {
+          "status": "accepted",
+          "version": 2,
+          "K": [
+            "h_A",
+            "h_B"
+          ],
+          "rejection_reason": null
+        },
+        "comparison": {
+          "status": "accepted",
+          "version": 2,
+          "K": [
+            "h_A",
+            "h_B"
+          ],
+          "rejection_reason": null
+        }
+      },
+      "passed_development_expectation": true
+    }
+  ],
+  "read_process_results": [
+    {
+      "variant": "reference",
+      "writer": {
+        "case_id": "dev-read",
+        "state_sha256": "2c818b78c614fd14b9a2a5bc3756ae369010045f080124d4d823276477c527a1",
+        "summary_did_not_advance_version": true,
+        "variant": "reference",
+        "version": 2,
+        "writer_process": {
+          "instance_id": "88d779dc-1bee-48d9-8feb-4377b6d7ebdb",
+          "pid": 6
+        }
+      },
+      "writer_exited_before_reader_launch": true,
+      "writer_exit_code": 0,
+      "reader_exit_code": 0,
+      "read_trace": {
+        "action_id_read": "action-002",
+        "action_sha256_read": "9d2115f8d6f4a408acbdd1ecff98b4014058781634856a806fcc1c2731290b0a",
+        "api_request_id": null,
+        "case_id": "dev-read",
+        "decision_source": "deterministic_development_reader",
+        "input_sha256": "61bb18330d741b6ba09dfb794af59f91488b98f4ea45aff116eba086527ce313",
+        "previous_conversation_inherited": false,
+        "read_at": "2026-09-29T08:15:40.272062+00:00",
+        "reader_process": {
+          "instance_id": "bf047407-ca3e-4a34-a3b2-c000a8f133e8",
+          "pid": 7
+        },
+        "state_sha256_read": "2c818b78c614fd14b9a2a5bc3756ae369010045f080124d4d823276477c527a1",
+        "state_version_read": 2,
+        "summary_used_to_reconstruct_K": false
+      },
+      "decision": {
+        "case_id": "dev-read",
+        "cause_status": "unresolved",
+        "retained_candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "schema_version": "stage3-decision/v0.1",
+        "selected_action": "a_B",
+        "state_sha256_read": "2c818b78c614fd14b9a2a5bc3756ae369010045f080124d4d823276477c527a1",
+        "state_version_read": 2
+      },
+      "actual_input_difference_paths": [],
+      "passed_deterministic_development_expectation": true,
+      "model_observation": false
+    },
+    {
+      "variant": "changed_K",
+      "writer": {
+        "case_id": "dev-read",
+        "state_sha256": "433a98ddbb877ced53abfe66c8868b2fc1d53d18589f478eebf45c183b49a721",
+        "summary_did_not_advance_version": true,
+        "variant": "changed_K",
+        "version": 2,
+        "writer_process": {
+          "instance_id": "a805a22a-0263-4869-af01-46ed4477376e",
+          "pid": 8
+        }
+      },
+      "writer_exited_before_reader_launch": true,
+      "writer_exit_code": 0,
+      "reader_exit_code": 0,
+      "read_trace": {
+        "action_id_read": "action-002",
+        "action_sha256_read": "9d2115f8d6f4a408acbdd1ecff98b4014058781634856a806fcc1c2731290b0a",
+        "api_request_id": null,
+        "case_id": "dev-read",
+        "decision_source": "deterministic_development_reader",
+        "input_sha256": "cade613e4d738fb8765fcee8bcce853cd105aa14b957a8577fd1aebe426562ab",
+        "previous_conversation_inherited": false,
+        "read_at": "2026-09-29T08:15:40.383565+00:00",
+        "reader_process": {
+          "instance_id": "3d188db3-c50d-4c4d-b95c-911b69502d67",
+          "pid": 9
+        },
+        "state_sha256_read": "433a98ddbb877ced53abfe66c8868b2fc1d53d18589f478eebf45c183b49a721",
+        "state_version_read": 2,
+        "summary_used_to_reconstruct_K": false
+      },
+      "decision": {
+        "case_id": "dev-read",
+        "cause_status": "single_candidate_under_interpretation",
+        "retained_candidates": [
+          "h_B"
+        ],
+        "schema_version": "stage3-decision/v0.1",
+        "selected_action": "a_B",
+        "state_sha256_read": "433a98ddbb877ced53abfe66c8868b2fc1d53d18589f478eebf45c183b49a721",
+        "state_version_read": 2
+      },
+      "actual_input_difference_paths": [
+        "/state/K",
+        "/state_sha256"
+      ],
+      "passed_deterministic_development_expectation": true,
+      "model_observation": false
+    },
+    {
+      "variant": "changed_action_only",
+      "writer": {
+        "case_id": "dev-read",
+        "state_sha256": "868a822e1d0b21961742befb6d282e45cd981cdcb33cda30247233a8fac4f450",
+        "summary_did_not_advance_version": true,
+        "variant": "changed_action_only",
+        "version": 2,
+        "writer_process": {
+          "instance_id": "1ac2ea99-3602-4fc0-8d33-bcff0857f5f7",
+          "pid": 10
+        }
+      },
+      "writer_exited_before_reader_launch": true,
+      "writer_exit_code": 0,
+      "reader_exit_code": 0,
+      "read_trace": {
+        "action_id_read": "action-002",
+        "action_sha256_read": "d478c3f666063d9e760b8b75ae2df849a96660b9e3515fbfa6a17b380193346d",
+        "api_request_id": null,
+        "case_id": "dev-read",
+        "decision_source": "deterministic_development_reader",
+        "input_sha256": "0160b1cc69801bfb069a1047310a5d8638f0086d89241eb1a0ad370f1502bb44",
+        "previous_conversation_inherited": false,
+        "read_at": "2026-09-29T08:15:40.492322+00:00",
+        "reader_process": {
+          "instance_id": "dbce360a-0b9f-40ba-8eed-7ee2b8ffd70c",
+          "pid": 11
+        },
+        "state_sha256_read": "868a822e1d0b21961742befb6d282e45cd981cdcb33cda30247233a8fac4f450",
+        "state_version_read": 2,
+        "summary_used_to_reconstruct_K": false
+      },
+      "decision": {
+        "case_id": "dev-read",
+        "cause_status": "unresolved",
+        "retained_candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "schema_version": "stage3-decision/v0.1",
+        "selected_action": "a_A",
+        "state_sha256_read": "868a822e1d0b21961742befb6d282e45cd981cdcb33cda30247233a8fac4f450",
+        "state_version_read": 2
+      },
+      "actual_input_difference_paths": [
+        "/action/selected_action",
+        "/state/action_sha256",
+        "/state_sha256"
+      ],
+      "passed_deterministic_development_expectation": true,
+      "model_observation": false
+    },
+    {
+      "variant": "changed_summary_only",
+      "writer": {
+        "case_id": "dev-read",
+        "state_sha256": "2c818b78c614fd14b9a2a5bc3756ae369010045f080124d4d823276477c527a1",
+        "summary_did_not_advance_version": true,
+        "variant": "changed_summary_only",
+        "version": 2,
+        "writer_process": {
+          "instance_id": "aba5386e-a379-4e67-a398-d828d94aa8d5",
+          "pid": 12
+        }
+      },
+      "writer_exited_before_reader_launch": true,
+      "writer_exit_code": 0,
+      "reader_exit_code": 0,
+      "read_trace": {
+        "action_id_read": "action-002",
+        "action_sha256_read": "9d2115f8d6f4a408acbdd1ecff98b4014058781634856a806fcc1c2731290b0a",
+        "api_request_id": null,
+        "case_id": "dev-read",
+        "decision_source": "deterministic_development_reader",
+        "input_sha256": "84bfe1befd991bdf4c3e279a2156d391ab84a348cdf4008935146981e5b6e745",
+        "previous_conversation_inherited": false,
+        "read_at": "2026-09-29T08:15:40.599112+00:00",
+        "reader_process": {
+          "instance_id": "2a6e06e6-bbbd-446d-9ecc-bc53b17e5f30",
+          "pid": 13
+        },
+        "state_sha256_read": "2c818b78c614fd14b9a2a5bc3756ae369010045f080124d4d823276477c527a1",
+        "state_version_read": 2,
+        "summary_used_to_reconstruct_K": false
+      },
+      "decision": {
+        "case_id": "dev-read",
+        "cause_status": "unresolved",
+        "retained_candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "schema_version": "stage3-decision/v0.1",
+        "selected_action": "a_B",
+        "state_sha256_read": "2c818b78c614fd14b9a2a5bc3756ae369010045f080124d4d823276477c527a1",
+        "state_version_read": 2
+      },
+      "actual_input_difference_paths": [
+        "/summary/text"
+      ],
+      "passed_deterministic_development_expectation": true,
+      "model_observation": false
+    }
+  ],
+  "schema_conformance": "not_claimed",
+  "stop_on_unexpected_result": true,
+  "status": "passed_development_checks",
+  "transition_trials_passed": 15,
+  "store_submissions": 30,
+  "fresh_reader_processes_passed": 4,
+  "unsupported_removal_comparison_differences": [
+    "D02"
+  ],
+  "live_model_performance_inference": false,
+  "stage3_preparation_complete": false,
+  "next_gate": "External JSON Schema validation and a frozen live-model run form remain required."
+}

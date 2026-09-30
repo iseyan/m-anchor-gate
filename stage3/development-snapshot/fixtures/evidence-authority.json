@@ -1,0 +1,13 @@
+{
+  "version": "stage3-synthetic-evidence/v0.1",
+  "authority": "host_fixed_development_fixture",
+  "registry": {
+    "e_B": {
+      "permitted_candidates": [
+        "h_B"
+      ]
+    }
+  },
+  "case_admission_rule": "Use only each predeclared trial's admitted list; registered alone is insufficient.",
+  "claims_real_causation": false
+}

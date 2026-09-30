@@ -1,0 +1,161 @@
+{
+  "demo1-main": {
+    "store": "/workspace/scratch/2bcf40de1dce/m_anchor_demo1_v0.1/results/observed-2026-09-29/demo1.sqlite3",
+    "writer": {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/2bcf40de1dce/m_anchor_demo1_v0.1/writer.py",
+        "--store",
+        "/workspace/scratch/2bcf40de1dce/m_anchor_demo1_v0.1/results/observed-2026-09-29/demo1.sqlite3",
+        "--case-id",
+        "demo1-main",
+        "--scenario",
+        "main"
+      ],
+      "environment_keys": [
+        "PATH",
+        "PYTHONUTF8"
+      ],
+      "stdin": "DEVNULL",
+      "returncode": 0,
+      "started_monotonic_ns": 8476533694874,
+      "returned_monotonic_ns": 8476599270807,
+      "process": {
+        "pid": 5,
+        "instance_id": "7d262f14-ad77-4ad1-9021-c80e3f6d2eaf",
+        "started_at_utc": "2026-09-29T04:38:11.595004+00:00"
+      },
+      "stderr": ""
+    },
+    "reader": {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/2bcf40de1dce/m_anchor_demo1_v0.1/reader.py",
+        "--store",
+        "/workspace/scratch/2bcf40de1dce/m_anchor_demo1_v0.1/results/observed-2026-09-29/demo1.sqlite3",
+        "--case-id",
+        "demo1-main"
+      ],
+      "environment_keys": [
+        "PATH",
+        "PYTHONUTF8"
+      ],
+      "stdin": "DEVNULL",
+      "returncode": 0,
+      "started_monotonic_ns": 8476599346253,
+      "returned_monotonic_ns": 8476671774761,
+      "process": {
+        "pid": 6,
+        "instance_id": "84c7aa9f-162a-41ec-abde-6f7b905457ad",
+        "started_at_utc": "2026-09-29T04:38:11.666576+00:00"
+      },
+      "stderr": ""
+    }
+  },
+  "demo1-rejections": {
+    "store": "/workspace/scratch/2bcf40de1dce/m_anchor_demo1_v0.1/results/observed-2026-09-29/demo1.sqlite3",
+    "writer": {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/2bcf40de1dce/m_anchor_demo1_v0.1/writer.py",
+        "--store",
+        "/workspace/scratch/2bcf40de1dce/m_anchor_demo1_v0.1/results/observed-2026-09-29/demo1.sqlite3",
+        "--case-id",
+        "demo1-rejections",
+        "--scenario",
+        "rejections"
+      ],
+      "environment_keys": [
+        "PATH",
+        "PYTHONUTF8"
+      ],
+      "stdin": "DEVNULL",
+      "returncode": 0,
+      "started_monotonic_ns": 8476672365261,
+      "returned_monotonic_ns": 8476733813941,
+      "process": {
+        "pid": 7,
+        "instance_id": "12b7d38f-3e52-41f0-943f-6cb49be6cf2c",
+        "started_at_utc": "2026-09-29T04:38:11.728790+00:00"
+      },
+      "stderr": ""
+    },
+    "reader": {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/2bcf40de1dce/m_anchor_demo1_v0.1/reader.py",
+        "--store",
+        "/workspace/scratch/2bcf40de1dce/m_anchor_demo1_v0.1/results/observed-2026-09-29/demo1.sqlite3",
+        "--case-id",
+        "demo1-rejections"
+      ],
+      "environment_keys": [
+        "PATH",
+        "PYTHONUTF8"
+      ],
+      "stdin": "DEVNULL",
+      "returncode": 0,
+      "started_monotonic_ns": 8476733880389,
+      "returned_monotonic_ns": 8476801005315,
+      "process": {
+        "pid": 8,
+        "instance_id": "9491b557-5db7-4740-93ec-4f8e52209aa4",
+        "started_at_utc": "2026-09-29T04:38:11.795213+00:00"
+      },
+      "stderr": ""
+    }
+  },
+  "demo1-control": {
+    "store": "/workspace/scratch/2bcf40de1dce/m_anchor_demo1_v0.1/results/observed-2026-09-29/demo1.sqlite3",
+    "writer": {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/2bcf40de1dce/m_anchor_demo1_v0.1/writer.py",
+        "--store",
+        "/workspace/scratch/2bcf40de1dce/m_anchor_demo1_v0.1/results/observed-2026-09-29/demo1.sqlite3",
+        "--case-id",
+        "demo1-control",
+        "--scenario",
+        "control"
+      ],
+      "environment_keys": [
+        "PATH",
+        "PYTHONUTF8"
+      ],
+      "stdin": "DEVNULL",
+      "returncode": 0,
+      "started_monotonic_ns": 8476801294425,
+      "returned_monotonic_ns": 8476872762438,
+      "process": {
+        "pid": 9,
+        "instance_id": "63b341d3-e1d6-4730-a055-7aedc4deec51",
+        "started_at_utc": "2026-09-29T04:38:11.858387+00:00"
+      },
+      "stderr": ""
+    },
+    "reader": {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "/workspace/scratch/2bcf40de1dce/m_anchor_demo1_v0.1/reader.py",
+        "--store",
+        "/workspace/scratch/2bcf40de1dce/m_anchor_demo1_v0.1/results/observed-2026-09-29/demo1.sqlite3",
+        "--case-id",
+        "demo1-control"
+      ],
+      "environment_keys": [
+        "PATH",
+        "PYTHONUTF8"
+      ],
+      "stdin": "DEVNULL",
+      "returncode": 0,
+      "started_monotonic_ns": 8476872838283,
+      "returned_monotonic_ns": 8476952215508,
+      "process": {
+        "pid": 10,
+        "instance_id": "88ec18f7-8e7e-4006-bb64-71c6cec12860",
+        "started_at_utc": "2026-09-29T04:38:11.948919+00:00"
+      },
+      "stderr": ""
+    }
+  }
+}

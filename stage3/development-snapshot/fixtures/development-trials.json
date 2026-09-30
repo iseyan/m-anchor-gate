@@ -1,0 +1,152 @@
+[
+  {
+    "id": "D01",
+    "name": "preserve_without_evidence",
+    "K": [
+      "h_A",
+      "h_B"
+    ]
+  },
+  {
+    "id": "D02",
+    "name": "unsupported_removal",
+    "K": [
+      "h_B"
+    ]
+  },
+  {
+    "id": "D03",
+    "name": "unknown_evidence",
+    "evidence": [
+      "e_unknown"
+    ],
+    "K": [
+      "h_B"
+    ]
+  },
+  {
+    "id": "D04",
+    "name": "action_as_evidence",
+    "evidence": [
+      "action-001"
+    ],
+    "K": [
+      "h_B"
+    ]
+  },
+  {
+    "id": "D05",
+    "name": "summary_as_evidence",
+    "evidence": [
+      "summary-001"
+    ],
+    "K": [
+      "h_B"
+    ]
+  },
+  {
+    "id": "D06",
+    "name": "registered_case_inadmissible",
+    "evidence": [
+      "e_B"
+    ],
+    "K": [
+      "h_B"
+    ]
+  },
+  {
+    "id": "D07",
+    "name": "wrong_case",
+    "override": {
+      "case_id": "other-case"
+    }
+  },
+  {
+    "id": "D08",
+    "name": "forged_version",
+    "override": {
+      "expected_version": 7
+    }
+  },
+  {
+    "id": "D09",
+    "name": "forged_hash",
+    "override": {
+      "expected_state_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  },
+  {
+    "id": "D10",
+    "name": "extra_authoritative_metadata",
+    "override": {
+      "version": 7,
+      "state_sha256": "H7"
+    }
+  },
+  {
+    "id": "D11",
+    "name": "malformed_json",
+    "raw": "{\"case_id\":"
+  },
+  {
+    "id": "D12",
+    "name": "valid_full_incorporation",
+    "admitted": [
+      "e_B"
+    ],
+    "new_observations": [
+      "e_B"
+    ],
+    "evidence": [
+      "e_B"
+    ],
+    "K": [
+      "h_B"
+    ]
+  },
+  {
+    "id": "D13",
+    "name": "reuse_existing_evidence",
+    "admitted": [
+      "e_B"
+    ],
+    "new_observations": [],
+    "evidence": [
+      "e_B"
+    ],
+    "K": [
+      "h_B"
+    ]
+  },
+  {
+    "id": "D14",
+    "name": "candidate_restoration",
+    "admitted": [
+      "e_B"
+    ],
+    "initial_K": [
+      "h_B"
+    ],
+    "evidence": [
+      "e_B"
+    ],
+    "K": [
+      "h_A",
+      "h_B"
+    ]
+  },
+  {
+    "id": "D15",
+    "name": "valid_partial_incorporation",
+    "admitted": [
+      "e_B"
+    ],
+    "evidence": [
+      "e_B"
+    ],
+    "K": [
+      "h_A",
+      "h_B"
+    ]
+  }
+]

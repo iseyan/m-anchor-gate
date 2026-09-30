@@ -1,0 +1,23 @@
+{
+  "bundle_files_verified": 12,
+  "vendored_files": [
+    {
+      "file": "vendor/python_v0.1/M_ANCHOR_MINIMAL_README.ja.md",
+      "sha256": "2a4f8baf6396bc62aa0d5c996e5fec2b4f593b8501d649b9a07cd0f426c2c426",
+      "byte_identical_to_bundle": true
+    },
+    {
+      "file": "vendor/python_v0.1/m_anchor_minimal.py",
+      "sha256": "0f9551e8d00cd4408441944d9067cfe9bce7d5653019a5af27738fb5895f58c9",
+      "byte_identical_to_bundle": true
+    },
+    {
+      "file": "vendor/python_v0.1/test_m_anchor_minimal.py",
+      "sha256": "1fa228427dfeb4460d2ee14767d64664456f245e505e5d59d4f6ae8b5023db5b",
+      "byte_identical_to_bundle": true
+    }
+  ],
+  "preserved_raw_proposals_verified": 15,
+  "final_implementation_matches_replay": true,
+  "restart_checks_passed": true
+}

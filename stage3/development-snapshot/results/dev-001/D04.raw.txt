@@ -1,0 +1,1 @@
+{"case_id":"dev-D04","evidence_ids":["action-001"],"expected_state_sha256":"0fd5f9e38dca1eb62ad4f959dfa3297b7a9efd29f87cfa960c1af94beff48d82","expected_version":1,"proposal_id":"D04","proposed_K":["h_B"],"reason":"Fixed development fixture.","schema_version":"stage3-proposal/v0.1","selected_action":"a_B"}

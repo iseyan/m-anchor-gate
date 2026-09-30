@@ -1,0 +1,31 @@
+{
+  "date": "2026-09-29",
+  "python": "3.12.14",
+  "suites": [
+    {
+      "suite": "vendor/python_v0.1/test_m_anchor_minimal.py",
+      "command": "python -m unittest discover -s vendor/python_v0.1 -v",
+      "tests": 9,
+      "status": "passed",
+      "elapsed_seconds": 0.002
+    },
+    {
+      "suite": "tests/test_gate.py",
+      "command": "python -m unittest discover -s tests -p test_gate.py -v",
+      "tests": 31,
+      "status": "passed",
+      "elapsed_seconds": 5.036
+    },
+    {
+      "suite": "tests/test_replay.py",
+      "command": "python -m unittest discover -s tests -p test_replay.py -v",
+      "tests": 15,
+      "status": "passed",
+      "elapsed_seconds": 10.032
+    }
+  ],
+  "total_tests": 55,
+  "collection_replay": "final-15/results.json",
+  "restart_trace": "process-restart/restart-trace.json",
+  "note": "Recorded from successful test executions. Added adversarial tests are separate from the 15 collected model proposals. Agents API app's earlier 28 tests are not included in this count."
+}

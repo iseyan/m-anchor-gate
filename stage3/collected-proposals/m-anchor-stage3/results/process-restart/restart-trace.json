@@ -1,0 +1,1099 @@
+{
+  "schema_version": "m-anchor-stage3-restart/v1",
+  "created_at": "2026-09-29T10:27:57.479126+00:00",
+  "manifest_sha256": "1cd284e1c485fc7bc7c3b92cc2eba8c4e2bb0e3eaf7da2175af1ec9a2d71d03a",
+  "authority_sha256": "9b28b44cf3f132d32acdc025b83d045a75e1d50187402509fb7b8b93f10e3068",
+  "raw_sha256": {
+    "PI-05-T1": "054fe4e02de3e84edef038b79f34c0fc27da18c1f190abf3397098673439ba70",
+    "PI-05-T2": "005dbdacc4b92c0e5528fc5cd85f73ead1c229f81b3e4c1068fbaa7e54f6447f",
+    "PI-09-T1": "efdf1fa9136127d55205e1b758923ae2687208ee4625452dee82b3445475168b"
+  },
+  "scope": "Real local CLI process restarts. No model or API calls. This does not authenticate or recreate the original model-session restart.",
+  "steps": [
+    {
+      "label": "initialize",
+      "argv": [
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\work\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\outputs\\m-anchor-stage3\\replay.py",
+        "init",
+        "--authority",
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\outputs\\m-anchor-stage3\\results\\process-restart\\inputs\\authority.json",
+        "--db",
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\outputs\\m-anchor-stage3\\results\\process-restart\\persistent.sqlite3"
+      ],
+      "launcher_pid": 5220,
+      "returncode": 0,
+      "stdout": "{\"process_id\": 9688, \"initialized\": true}\n",
+      "stderr": "",
+      "pid": 9688,
+      "result": {
+        "process_id": 9688,
+        "initialized": true
+      }
+    },
+    {
+      "label": "PI-05 before rejection",
+      "argv": [
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\work\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\outputs\\m-anchor-stage3\\replay.py",
+        "snapshot",
+        "--db",
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\outputs\\m-anchor-stage3\\results\\process-restart\\persistent.sqlite3",
+        "--case",
+        "PI-05"
+      ],
+      "launcher_pid": 9160,
+      "returncode": 0,
+      "stdout": "{\"process_id\": 9652, \"state\": {\"candidates\": [\"h_A\", \"h_B\"], \"case_id\": \"PI-05\", \"cause_status\": \"unresolved\", \"omega\": [\"h_A\", \"h_B\"], \"require_full_incorporation\": false, \"selected_response\": \"B\", \"state_hash\": \"H1\", \"version\": 1}}\n",
+      "stderr": "",
+      "pid": 9652,
+      "result": {
+        "process_id": 9652,
+        "state": {
+          "candidates": [
+            "h_A",
+            "h_B"
+          ],
+          "case_id": "PI-05",
+          "cause_status": "unresolved",
+          "omega": [
+            "h_A",
+            "h_B"
+          ],
+          "require_full_incorporation": false,
+          "selected_response": "B",
+          "state_hash": "H1",
+          "version": 1
+        }
+      }
+    },
+    {
+      "label": "PI-05-T1 reject",
+      "argv": [
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\work\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\outputs\\m-anchor-stage3\\replay.py",
+        "apply",
+        "--db",
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\outputs\\m-anchor-stage3\\results\\process-restart\\persistent.sqlite3",
+        "--case",
+        "PI-05",
+        "--raw",
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\outputs\\m-anchor-stage3\\results\\process-restart\\inputs\\PI-05-T1.json"
+      ],
+      "launcher_pid": 19568,
+      "returncode": 0,
+      "stdout": "{\"process_id\": 6064, \"decision\": \"reject\", \"reason\": \"evidence_unknown\", \"case_id\": \"PI-05\", \"before\": {\"candidates\": [\"h_A\", \"h_B\"], \"case_id\": \"PI-05\", \"cause_status\": \"unresolved\", \"omega\": [\"h_A\", \"h_B\"], \"require_full_incorporation\": false, \"selected_response\": \"B\", \"state_hash\": \"H1\", \"version\": 1}, \"after\": {\"candidates\": [\"h_A\", \"h_B\"], \"case_id\": \"PI-05\", \"cause_status\": \"unresolved\", \"omega\": [\"h_A\", \"h_B\"], \"require_full_incorporation\": false, \"selected_response\": \"B\", \"state_hash\": \"H1\", \"version\": 1}, \"raw_sha256\": \"054fe4e02de3e84edef038b79f34c0fc27da18c1f190abf3397098673439ba70\", \"denied_authority_requests\": [], \"core_record\": null}\n",
+      "stderr": "",
+      "pid": 6064,
+      "result": {
+        "process_id": 6064,
+        "decision": "reject",
+        "reason": "evidence_unknown",
+        "case_id": "PI-05",
+        "before": {
+          "candidates": [
+            "h_A",
+            "h_B"
+          ],
+          "case_id": "PI-05",
+          "cause_status": "unresolved",
+          "omega": [
+            "h_A",
+            "h_B"
+          ],
+          "require_full_incorporation": false,
+          "selected_response": "B",
+          "state_hash": "H1",
+          "version": 1
+        },
+        "after": {
+          "candidates": [
+            "h_A",
+            "h_B"
+          ],
+          "case_id": "PI-05",
+          "cause_status": "unresolved",
+          "omega": [
+            "h_A",
+            "h_B"
+          ],
+          "require_full_incorporation": false,
+          "selected_response": "B",
+          "state_hash": "H1",
+          "version": 1
+        },
+        "raw_sha256": "054fe4e02de3e84edef038b79f34c0fc27da18c1f190abf3397098673439ba70",
+        "denied_authority_requests": [],
+        "core_record": null
+      }
+    },
+    {
+      "label": "PI-05 reload after rejection",
+      "argv": [
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\work\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\outputs\\m-anchor-stage3\\replay.py",
+        "snapshot",
+        "--db",
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\outputs\\m-anchor-stage3\\results\\process-restart\\persistent.sqlite3",
+        "--case",
+        "PI-05"
+      ],
+      "launcher_pid": 7432,
+      "returncode": 0,
+      "stdout": "{\"process_id\": 2268, \"state\": {\"candidates\": [\"h_A\", \"h_B\"], \"case_id\": \"PI-05\", \"cause_status\": \"unresolved\", \"omega\": [\"h_A\", \"h_B\"], \"require_full_incorporation\": false, \"selected_response\": \"B\", \"state_hash\": \"H1\", \"version\": 1}}\n",
+      "stderr": "",
+      "pid": 2268,
+      "result": {
+        "process_id": 2268,
+        "state": {
+          "candidates": [
+            "h_A",
+            "h_B"
+          ],
+          "case_id": "PI-05",
+          "cause_status": "unresolved",
+          "omega": [
+            "h_A",
+            "h_B"
+          ],
+          "require_full_incorporation": false,
+          "selected_response": "B",
+          "state_hash": "H1",
+          "version": 1
+        }
+      }
+    },
+    {
+      "label": "PI-05-T2 no-op in new process",
+      "argv": [
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\work\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\outputs\\m-anchor-stage3\\replay.py",
+        "apply",
+        "--db",
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\outputs\\m-anchor-stage3\\results\\process-restart\\persistent.sqlite3",
+        "--case",
+        "PI-05",
+        "--raw",
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\outputs\\m-anchor-stage3\\results\\process-restart\\inputs\\PI-05-T2.json"
+      ],
+      "launcher_pid": 8056,
+      "returncode": 0,
+      "stdout": "{\"process_id\": 14816, \"decision\": \"no_commit\", \"reason\": \"no_state_change\", \"case_id\": \"PI-05\", \"before\": {\"candidates\": [\"h_A\", \"h_B\"], \"case_id\": \"PI-05\", \"cause_status\": \"unresolved\", \"omega\": [\"h_A\", \"h_B\"], \"require_full_incorporation\": false, \"selected_response\": \"B\", \"state_hash\": \"H1\", \"version\": 1}, \"after\": {\"candidates\": [\"h_A\", \"h_B\"], \"case_id\": \"PI-05\", \"cause_status\": \"unresolved\", \"omega\": [\"h_A\", \"h_B\"], \"require_full_incorporation\": false, \"selected_response\": \"B\", \"state_hash\": \"H1\", \"version\": 1}, \"raw_sha256\": \"005dbdacc4b92c0e5528fc5cd85f73ead1c229f81b3e4c1068fbaa7e54f6447f\", \"denied_authority_requests\": [], \"core_record\": {\"action\": {\"candidates\": [\"h_A\", \"h_B\"], \"value\": \"B\", \"reason\": \"Evaluate collected proposal against externally admitted evidence.\"}, \"audit\": {\"before\": [\"h_A\", \"h_B\"], \"after\": [\"h_A\", \"h_B\"], \"removed\": [], \"evidence\": [], \"map_version\": \"empty-basis-identity/v1\", \"compatible\": [\"h_A\", \"h_B\"]}}}\n",
+      "stderr": "",
+      "pid": 14816,
+      "result": {
+        "process_id": 14816,
+        "decision": "no_commit",
+        "reason": "no_state_change",
+        "case_id": "PI-05",
+        "before": {
+          "candidates": [
+            "h_A",
+            "h_B"
+          ],
+          "case_id": "PI-05",
+          "cause_status": "unresolved",
+          "omega": [
+            "h_A",
+            "h_B"
+          ],
+          "require_full_incorporation": false,
+          "selected_response": "B",
+          "state_hash": "H1",
+          "version": 1
+        },
+        "after": {
+          "candidates": [
+            "h_A",
+            "h_B"
+          ],
+          "case_id": "PI-05",
+          "cause_status": "unresolved",
+          "omega": [
+            "h_A",
+            "h_B"
+          ],
+          "require_full_incorporation": false,
+          "selected_response": "B",
+          "state_hash": "H1",
+          "version": 1
+        },
+        "raw_sha256": "005dbdacc4b92c0e5528fc5cd85f73ead1c229f81b3e4c1068fbaa7e54f6447f",
+        "denied_authority_requests": [],
+        "core_record": {
+          "action": {
+            "candidates": [
+              "h_A",
+              "h_B"
+            ],
+            "value": "B",
+            "reason": "Evaluate collected proposal against externally admitted evidence."
+          },
+          "audit": {
+            "before": [
+              "h_A",
+              "h_B"
+            ],
+            "after": [
+              "h_A",
+              "h_B"
+            ],
+            "removed": [],
+            "evidence": [],
+            "map_version": "empty-basis-identity/v1",
+            "compatible": [
+              "h_A",
+              "h_B"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "label": "PI-05 reload after no-op",
+      "argv": [
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\work\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\outputs\\m-anchor-stage3\\replay.py",
+        "snapshot",
+        "--db",
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\outputs\\m-anchor-stage3\\results\\process-restart\\persistent.sqlite3",
+        "--case",
+        "PI-05"
+      ],
+      "launcher_pid": 22492,
+      "returncode": 0,
+      "stdout": "{\"process_id\": 8472, \"state\": {\"candidates\": [\"h_A\", \"h_B\"], \"case_id\": \"PI-05\", \"cause_status\": \"unresolved\", \"omega\": [\"h_A\", \"h_B\"], \"require_full_incorporation\": false, \"selected_response\": \"B\", \"state_hash\": \"H1\", \"version\": 1}}\n",
+      "stderr": "",
+      "pid": 8472,
+      "result": {
+        "process_id": 8472,
+        "state": {
+          "candidates": [
+            "h_A",
+            "h_B"
+          ],
+          "case_id": "PI-05",
+          "cause_status": "unresolved",
+          "omega": [
+            "h_A",
+            "h_B"
+          ],
+          "require_full_incorporation": false,
+          "selected_response": "B",
+          "state_hash": "H1",
+          "version": 1
+        }
+      }
+    },
+    {
+      "label": "PI-09 before commit",
+      "argv": [
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\work\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\outputs\\m-anchor-stage3\\replay.py",
+        "snapshot",
+        "--db",
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\outputs\\m-anchor-stage3\\results\\process-restart\\persistent.sqlite3",
+        "--case",
+        "PI-09"
+      ],
+      "launcher_pid": 2376,
+      "returncode": 0,
+      "stdout": "{\"process_id\": 4384, \"state\": {\"candidates\": [\"h_A\", \"h_B\"], \"case_id\": \"PI-09\", \"cause_status\": \"unresolved\", \"omega\": [\"h_A\", \"h_B\"], \"require_full_incorporation\": true, \"selected_response\": \"B\", \"state_hash\": \"H1\", \"version\": 1}}\n",
+      "stderr": "",
+      "pid": 4384,
+      "result": {
+        "process_id": 4384,
+        "state": {
+          "candidates": [
+            "h_A",
+            "h_B"
+          ],
+          "case_id": "PI-09",
+          "cause_status": "unresolved",
+          "omega": [
+            "h_A",
+            "h_B"
+          ],
+          "require_full_incorporation": true,
+          "selected_response": "B",
+          "state_hash": "H1",
+          "version": 1
+        }
+      }
+    },
+    {
+      "label": "PI-09-T1 commit",
+      "argv": [
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\work\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\outputs\\m-anchor-stage3\\replay.py",
+        "apply",
+        "--db",
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\outputs\\m-anchor-stage3\\results\\process-restart\\persistent.sqlite3",
+        "--case",
+        "PI-09",
+        "--raw",
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\outputs\\m-anchor-stage3\\results\\process-restart\\inputs\\PI-09-T1.json"
+      ],
+      "launcher_pid": 17604,
+      "returncode": 0,
+      "stdout": "{\"process_id\": 22388, \"decision\": \"commit\", \"reason\": \"accepted\", \"case_id\": \"PI-09\", \"before\": {\"candidates\": [\"h_A\", \"h_B\"], \"case_id\": \"PI-09\", \"cause_status\": \"unresolved\", \"omega\": [\"h_A\", \"h_B\"], \"require_full_incorporation\": true, \"selected_response\": \"B\", \"state_hash\": \"H1\", \"version\": 1}, \"after\": {\"candidates\": [\"h_B\"], \"case_id\": \"PI-09\", \"cause_status\": \"resolved\", \"omega\": [\"h_A\", \"h_B\"], \"require_full_incorporation\": true, \"selected_response\": \"B\", \"version\": 2, \"state_hash\": \"47df2ccd2587f7450d31309a882d5c5689d83f4d75ef25f1abbd94f772ba0724\"}, \"raw_sha256\": \"efdf1fa9136127d55205e1b758923ae2687208ee4625452dee82b3445475168b\", \"denied_authority_requests\": [], \"core_record\": {\"action\": {\"candidates\": [\"h_A\", \"h_B\"], \"value\": \"B\", \"reason\": \"Evaluate collected proposal against externally admitted evidence.\"}, \"audit\": {\"before\": [\"h_A\", \"h_B\"], \"after\": [\"h_B\"], \"removed\": [\"h_A\"], \"evidence\": [\"e_B\"], \"map_version\": \"external-fixture-PI-09-v1\", \"compatible\": [\"h_B\"]}}}\n",
+      "stderr": "",
+      "pid": 22388,
+      "result": {
+        "process_id": 22388,
+        "decision": "commit",
+        "reason": "accepted",
+        "case_id": "PI-09",
+        "before": {
+          "candidates": [
+            "h_A",
+            "h_B"
+          ],
+          "case_id": "PI-09",
+          "cause_status": "unresolved",
+          "omega": [
+            "h_A",
+            "h_B"
+          ],
+          "require_full_incorporation": true,
+          "selected_response": "B",
+          "state_hash": "H1",
+          "version": 1
+        },
+        "after": {
+          "candidates": [
+            "h_B"
+          ],
+          "case_id": "PI-09",
+          "cause_status": "resolved",
+          "omega": [
+            "h_A",
+            "h_B"
+          ],
+          "require_full_incorporation": true,
+          "selected_response": "B",
+          "version": 2,
+          "state_hash": "47df2ccd2587f7450d31309a882d5c5689d83f4d75ef25f1abbd94f772ba0724"
+        },
+        "raw_sha256": "efdf1fa9136127d55205e1b758923ae2687208ee4625452dee82b3445475168b",
+        "denied_authority_requests": [],
+        "core_record": {
+          "action": {
+            "candidates": [
+              "h_A",
+              "h_B"
+            ],
+            "value": "B",
+            "reason": "Evaluate collected proposal against externally admitted evidence."
+          },
+          "audit": {
+            "before": [
+              "h_A",
+              "h_B"
+            ],
+            "after": [
+              "h_B"
+            ],
+            "removed": [
+              "h_A"
+            ],
+            "evidence": [
+              "e_B"
+            ],
+            "map_version": "external-fixture-PI-09-v1",
+            "compatible": [
+              "h_B"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "label": "PI-09 reload after commit",
+      "argv": [
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\work\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\outputs\\m-anchor-stage3\\replay.py",
+        "snapshot",
+        "--db",
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\outputs\\m-anchor-stage3\\results\\process-restart\\persistent.sqlite3",
+        "--case",
+        "PI-09"
+      ],
+      "launcher_pid": 19508,
+      "returncode": 0,
+      "stdout": "{\"process_id\": 18348, \"state\": {\"candidates\": [\"h_B\"], \"case_id\": \"PI-09\", \"cause_status\": \"resolved\", \"omega\": [\"h_A\", \"h_B\"], \"require_full_incorporation\": true, \"selected_response\": \"B\", \"state_hash\": \"47df2ccd2587f7450d31309a882d5c5689d83f4d75ef25f1abbd94f772ba0724\", \"version\": 2}}\n",
+      "stderr": "",
+      "pid": 18348,
+      "result": {
+        "process_id": 18348,
+        "state": {
+          "candidates": [
+            "h_B"
+          ],
+          "case_id": "PI-09",
+          "cause_status": "resolved",
+          "omega": [
+            "h_A",
+            "h_B"
+          ],
+          "require_full_incorporation": true,
+          "selected_response": "B",
+          "state_hash": "47df2ccd2587f7450d31309a882d5c5689d83f4d75ef25f1abbd94f772ba0724",
+          "version": 2
+        }
+      }
+    },
+    {
+      "label": "PI-09 same old proposal after restart",
+      "argv": [
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\work\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\outputs\\m-anchor-stage3\\replay.py",
+        "apply",
+        "--db",
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\outputs\\m-anchor-stage3\\results\\process-restart\\persistent.sqlite3",
+        "--case",
+        "PI-09",
+        "--raw",
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\outputs\\m-anchor-stage3\\results\\process-restart\\inputs\\PI-09-T1.json"
+      ],
+      "launcher_pid": 14840,
+      "returncode": 0,
+      "stdout": "{\"process_id\": 9364, \"decision\": \"reject\", \"reason\": \"version_mismatch\", \"case_id\": \"PI-09\", \"before\": {\"candidates\": [\"h_B\"], \"case_id\": \"PI-09\", \"cause_status\": \"resolved\", \"omega\": [\"h_A\", \"h_B\"], \"require_full_incorporation\": true, \"selected_response\": \"B\", \"state_hash\": \"47df2ccd2587f7450d31309a882d5c5689d83f4d75ef25f1abbd94f772ba0724\", \"version\": 2}, \"after\": {\"candidates\": [\"h_B\"], \"case_id\": \"PI-09\", \"cause_status\": \"resolved\", \"omega\": [\"h_A\", \"h_B\"], \"require_full_incorporation\": true, \"selected_response\": \"B\", \"state_hash\": \"47df2ccd2587f7450d31309a882d5c5689d83f4d75ef25f1abbd94f772ba0724\", \"version\": 2}, \"raw_sha256\": \"efdf1fa9136127d55205e1b758923ae2687208ee4625452dee82b3445475168b\", \"denied_authority_requests\": [], \"core_record\": null}\n",
+      "stderr": "",
+      "pid": 9364,
+      "result": {
+        "process_id": 9364,
+        "decision": "reject",
+        "reason": "version_mismatch",
+        "case_id": "PI-09",
+        "before": {
+          "candidates": [
+            "h_B"
+          ],
+          "case_id": "PI-09",
+          "cause_status": "resolved",
+          "omega": [
+            "h_A",
+            "h_B"
+          ],
+          "require_full_incorporation": true,
+          "selected_response": "B",
+          "state_hash": "47df2ccd2587f7450d31309a882d5c5689d83f4d75ef25f1abbd94f772ba0724",
+          "version": 2
+        },
+        "after": {
+          "candidates": [
+            "h_B"
+          ],
+          "case_id": "PI-09",
+          "cause_status": "resolved",
+          "omega": [
+            "h_A",
+            "h_B"
+          ],
+          "require_full_incorporation": true,
+          "selected_response": "B",
+          "state_hash": "47df2ccd2587f7450d31309a882d5c5689d83f4d75ef25f1abbd94f772ba0724",
+          "version": 2
+        },
+        "raw_sha256": "efdf1fa9136127d55205e1b758923ae2687208ee4625452dee82b3445475168b",
+        "denied_authority_requests": [],
+        "core_record": null
+      }
+    },
+    {
+      "label": "PI-09 reload after stale rejection",
+      "argv": [
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\work\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\outputs\\m-anchor-stage3\\replay.py",
+        "snapshot",
+        "--db",
+        "C:\\Users\\ise\\Documents\\Codex\\2026-09-29\\build-a-runnable-application-in-this-2\\outputs\\m-anchor-stage3\\results\\process-restart\\persistent.sqlite3",
+        "--case",
+        "PI-09"
+      ],
+      "launcher_pid": 12508,
+      "returncode": 0,
+      "stdout": "{\"process_id\": 20728, \"state\": {\"candidates\": [\"h_B\"], \"case_id\": \"PI-09\", \"cause_status\": \"resolved\", \"omega\": [\"h_A\", \"h_B\"], \"require_full_incorporation\": true, \"selected_response\": \"B\", \"state_hash\": \"47df2ccd2587f7450d31309a882d5c5689d83f4d75ef25f1abbd94f772ba0724\", \"version\": 2}}\n",
+      "stderr": "",
+      "pid": 20728,
+      "result": {
+        "process_id": 20728,
+        "state": {
+          "candidates": [
+            "h_B"
+          ],
+          "case_id": "PI-09",
+          "cause_status": "resolved",
+          "omega": [
+            "h_A",
+            "h_B"
+          ],
+          "require_full_incorporation": true,
+          "selected_response": "B",
+          "state_hash": "47df2ccd2587f7450d31309a882d5c5689d83f4d75ef25f1abbd94f772ba0724",
+          "version": 2
+        }
+      }
+    }
+  ],
+  "passed": true,
+  "checks": {
+    "separate_processes_completed": true,
+    "summary_rejected": true,
+    "rejection_preserves_all_authority": true,
+    "no_op_after_restart": true,
+    "no_op_preserves_all_authority": true,
+    "valid_update_committed": true,
+    "valid_update_persisted": true,
+    "commit_preserves_evidence_authority": true,
+    "commit_preserves_other_cases": true,
+    "stale_proposal_rejected_after_restart": true,
+    "exact_raw_bytes_audited": true,
+    "source_inputs_unchanged": true
+  },
+  "before": {
+    "schema_version": "m-anchor-stage3-authority/v1",
+    "cases": [
+      {
+        "candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "case_id": "PI-01",
+        "cause_status": "unresolved",
+        "omega": [
+          "h_A",
+          "h_B"
+        ],
+        "require_full_incorporation": false,
+        "selected_response": "B",
+        "state_hash": "H1",
+        "version": 1
+      },
+      {
+        "candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "case_id": "PI-02",
+        "cause_status": "unresolved",
+        "omega": [
+          "h_A",
+          "h_B"
+        ],
+        "require_full_incorporation": false,
+        "selected_response": "B",
+        "state_hash": "H1",
+        "version": 1
+      },
+      {
+        "candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "case_id": "PI-04",
+        "cause_status": "unresolved",
+        "omega": [
+          "h_A",
+          "h_B"
+        ],
+        "require_full_incorporation": false,
+        "selected_response": null,
+        "state_hash": "H1",
+        "version": 1
+      },
+      {
+        "candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "case_id": "PI-05",
+        "cause_status": "unresolved",
+        "omega": [
+          "h_A",
+          "h_B"
+        ],
+        "require_full_incorporation": false,
+        "selected_response": "B",
+        "state_hash": "H1",
+        "version": 1
+      },
+      {
+        "candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "case_id": "PI-09",
+        "cause_status": "unresolved",
+        "omega": [
+          "h_A",
+          "h_B"
+        ],
+        "require_full_incorporation": true,
+        "selected_response": "B",
+        "state_hash": "H1",
+        "version": 1
+      }
+    ],
+    "evidence": [
+      {
+        "evidence_id": "e_B",
+        "active": true
+      }
+    ],
+    "admissions": [
+      {
+        "case_id": "PI-09",
+        "evidence_id": "e_B"
+      }
+    ],
+    "interpretations": [
+      {
+        "case_id": "PI-09",
+        "evidence_ids": [
+          "e_B"
+        ],
+        "compatible": [
+          "h_B"
+        ],
+        "map_version": "external-fixture-PI-09-v1"
+      }
+    ]
+  },
+  "after_reject": {
+    "schema_version": "m-anchor-stage3-authority/v1",
+    "cases": [
+      {
+        "candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "case_id": "PI-01",
+        "cause_status": "unresolved",
+        "omega": [
+          "h_A",
+          "h_B"
+        ],
+        "require_full_incorporation": false,
+        "selected_response": "B",
+        "state_hash": "H1",
+        "version": 1
+      },
+      {
+        "candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "case_id": "PI-02",
+        "cause_status": "unresolved",
+        "omega": [
+          "h_A",
+          "h_B"
+        ],
+        "require_full_incorporation": false,
+        "selected_response": "B",
+        "state_hash": "H1",
+        "version": 1
+      },
+      {
+        "candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "case_id": "PI-04",
+        "cause_status": "unresolved",
+        "omega": [
+          "h_A",
+          "h_B"
+        ],
+        "require_full_incorporation": false,
+        "selected_response": null,
+        "state_hash": "H1",
+        "version": 1
+      },
+      {
+        "candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "case_id": "PI-05",
+        "cause_status": "unresolved",
+        "omega": [
+          "h_A",
+          "h_B"
+        ],
+        "require_full_incorporation": false,
+        "selected_response": "B",
+        "state_hash": "H1",
+        "version": 1
+      },
+      {
+        "candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "case_id": "PI-09",
+        "cause_status": "unresolved",
+        "omega": [
+          "h_A",
+          "h_B"
+        ],
+        "require_full_incorporation": true,
+        "selected_response": "B",
+        "state_hash": "H1",
+        "version": 1
+      }
+    ],
+    "evidence": [
+      {
+        "evidence_id": "e_B",
+        "active": true
+      }
+    ],
+    "admissions": [
+      {
+        "case_id": "PI-09",
+        "evidence_id": "e_B"
+      }
+    ],
+    "interpretations": [
+      {
+        "case_id": "PI-09",
+        "evidence_ids": [
+          "e_B"
+        ],
+        "compatible": [
+          "h_B"
+        ],
+        "map_version": "external-fixture-PI-09-v1"
+      }
+    ]
+  },
+  "after_noop": {
+    "schema_version": "m-anchor-stage3-authority/v1",
+    "cases": [
+      {
+        "candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "case_id": "PI-01",
+        "cause_status": "unresolved",
+        "omega": [
+          "h_A",
+          "h_B"
+        ],
+        "require_full_incorporation": false,
+        "selected_response": "B",
+        "state_hash": "H1",
+        "version": 1
+      },
+      {
+        "candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "case_id": "PI-02",
+        "cause_status": "unresolved",
+        "omega": [
+          "h_A",
+          "h_B"
+        ],
+        "require_full_incorporation": false,
+        "selected_response": "B",
+        "state_hash": "H1",
+        "version": 1
+      },
+      {
+        "candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "case_id": "PI-04",
+        "cause_status": "unresolved",
+        "omega": [
+          "h_A",
+          "h_B"
+        ],
+        "require_full_incorporation": false,
+        "selected_response": null,
+        "state_hash": "H1",
+        "version": 1
+      },
+      {
+        "candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "case_id": "PI-05",
+        "cause_status": "unresolved",
+        "omega": [
+          "h_A",
+          "h_B"
+        ],
+        "require_full_incorporation": false,
+        "selected_response": "B",
+        "state_hash": "H1",
+        "version": 1
+      },
+      {
+        "candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "case_id": "PI-09",
+        "cause_status": "unresolved",
+        "omega": [
+          "h_A",
+          "h_B"
+        ],
+        "require_full_incorporation": true,
+        "selected_response": "B",
+        "state_hash": "H1",
+        "version": 1
+      }
+    ],
+    "evidence": [
+      {
+        "evidence_id": "e_B",
+        "active": true
+      }
+    ],
+    "admissions": [
+      {
+        "case_id": "PI-09",
+        "evidence_id": "e_B"
+      }
+    ],
+    "interpretations": [
+      {
+        "case_id": "PI-09",
+        "evidence_ids": [
+          "e_B"
+        ],
+        "compatible": [
+          "h_B"
+        ],
+        "map_version": "external-fixture-PI-09-v1"
+      }
+    ]
+  },
+  "after_commit": {
+    "schema_version": "m-anchor-stage3-authority/v1",
+    "cases": [
+      {
+        "candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "case_id": "PI-01",
+        "cause_status": "unresolved",
+        "omega": [
+          "h_A",
+          "h_B"
+        ],
+        "require_full_incorporation": false,
+        "selected_response": "B",
+        "state_hash": "H1",
+        "version": 1
+      },
+      {
+        "candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "case_id": "PI-02",
+        "cause_status": "unresolved",
+        "omega": [
+          "h_A",
+          "h_B"
+        ],
+        "require_full_incorporation": false,
+        "selected_response": "B",
+        "state_hash": "H1",
+        "version": 1
+      },
+      {
+        "candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "case_id": "PI-04",
+        "cause_status": "unresolved",
+        "omega": [
+          "h_A",
+          "h_B"
+        ],
+        "require_full_incorporation": false,
+        "selected_response": null,
+        "state_hash": "H1",
+        "version": 1
+      },
+      {
+        "candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "case_id": "PI-05",
+        "cause_status": "unresolved",
+        "omega": [
+          "h_A",
+          "h_B"
+        ],
+        "require_full_incorporation": false,
+        "selected_response": "B",
+        "state_hash": "H1",
+        "version": 1
+      },
+      {
+        "candidates": [
+          "h_B"
+        ],
+        "case_id": "PI-09",
+        "cause_status": "resolved",
+        "omega": [
+          "h_A",
+          "h_B"
+        ],
+        "require_full_incorporation": true,
+        "selected_response": "B",
+        "state_hash": "47df2ccd2587f7450d31309a882d5c5689d83f4d75ef25f1abbd94f772ba0724",
+        "version": 2
+      }
+    ],
+    "evidence": [
+      {
+        "evidence_id": "e_B",
+        "active": true
+      }
+    ],
+    "admissions": [
+      {
+        "case_id": "PI-09",
+        "evidence_id": "e_B"
+      }
+    ],
+    "interpretations": [
+      {
+        "case_id": "PI-09",
+        "evidence_ids": [
+          "e_B"
+        ],
+        "compatible": [
+          "h_B"
+        ],
+        "map_version": "external-fixture-PI-09-v1"
+      }
+    ]
+  },
+  "final": {
+    "schema_version": "m-anchor-stage3-authority/v1",
+    "cases": [
+      {
+        "candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "case_id": "PI-01",
+        "cause_status": "unresolved",
+        "omega": [
+          "h_A",
+          "h_B"
+        ],
+        "require_full_incorporation": false,
+        "selected_response": "B",
+        "state_hash": "H1",
+        "version": 1
+      },
+      {
+        "candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "case_id": "PI-02",
+        "cause_status": "unresolved",
+        "omega": [
+          "h_A",
+          "h_B"
+        ],
+        "require_full_incorporation": false,
+        "selected_response": "B",
+        "state_hash": "H1",
+        "version": 1
+      },
+      {
+        "candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "case_id": "PI-04",
+        "cause_status": "unresolved",
+        "omega": [
+          "h_A",
+          "h_B"
+        ],
+        "require_full_incorporation": false,
+        "selected_response": null,
+        "state_hash": "H1",
+        "version": 1
+      },
+      {
+        "candidates": [
+          "h_A",
+          "h_B"
+        ],
+        "case_id": "PI-05",
+        "cause_status": "unresolved",
+        "omega": [
+          "h_A",
+          "h_B"
+        ],
+        "require_full_incorporation": false,
+        "selected_response": "B",
+        "state_hash": "H1",
+        "version": 1
+      },
+      {
+        "candidates": [
+          "h_B"
+        ],
+        "case_id": "PI-09",
+        "cause_status": "resolved",
+        "omega": [
+          "h_A",
+          "h_B"
+        ],
+        "require_full_incorporation": true,
+        "selected_response": "B",
+        "state_hash": "47df2ccd2587f7450d31309a882d5c5689d83f4d75ef25f1abbd94f772ba0724",
+        "version": 2
+      }
+    ],
+    "evidence": [
+      {
+        "evidence_id": "e_B",
+        "active": true
+      }
+    ],
+    "admissions": [
+      {
+        "case_id": "PI-09",
+        "evidence_id": "e_B"
+      }
+    ],
+    "interpretations": [
+      {
+        "case_id": "PI-09",
+        "evidence_ids": [
+          "e_B"
+        ],
+        "compatible": [
+          "h_B"
+        ],
+        "map_version": "external-fixture-PI-09-v1"
+      }
+    ]
+  },
+  "audit_count": 4
+}

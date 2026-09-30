@@ -1,0 +1,35 @@
+{
+  "recorded_at": "2026-09-29T08:19:40.071193+00:00",
+  "scope": "dependency acquisition; not model API calls",
+  "attempt_timestamps": null,
+  "attempts": [
+    {
+      "command": "python3 -m pip install --target <temporary-directory> jsonschema==4.26.0",
+      "exit_code": 1,
+      "observed_error": "No matching distribution found for jsonschema==4.26.0"
+    },
+    {
+      "command": "python3 -m pip install --target <temporary-directory> jsonschema",
+      "exit_code": 1,
+      "observed_error": "No matching distribution found for jsonschema"
+    },
+    {
+      "command": "python3 -m pip index versions jsonschema -v",
+      "exit_code": 1,
+      "observed_error": "No matching distribution found for jsonschema"
+    },
+    {
+      "command": "python3 -m pip install --index-url https://pypi.org/simple --target <temporary-directory> jsonschema==4.26.0",
+      "exit_code": 1,
+      "observed_error": "No matching distribution found for jsonschema==4.26.0"
+    },
+    {
+      "command": "npm install --prefix <temporary-directory> --no-audit --no-fund ajv@8.17.1",
+      "exit_code": 1,
+      "observed_error": "E403 Forbidden GET https://registry.npmjs.org/ajv"
+    }
+  ],
+  "installed_external_validator": false,
+  "schema_entry_condition_met": false,
+  "note": "Error excerpts transcribed from execution output; exact attempt times were not captured. No restriction was changed to obtain packages."
+}

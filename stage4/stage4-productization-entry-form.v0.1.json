@@ -1,0 +1,165 @@
+{
+  "artifact_type": "stage4_productization_entry_form_template",
+  "form_version": "stage4-productization-entry-form/v0.1",
+  "created_date_jst": "2026-09-30",
+  "plan_version": "stage4-productization-plan/v0.1",
+  "plan_status": "draft",
+  "public_status": {
+    "ja": "計画草稿／入口未凍結",
+    "en": "Draft plan / entry form not frozen"
+  },
+  "status": "template_not_frozen_not_assessed",
+  "execution_ready": false,
+  "entry_conditions_confirmed": false,
+  "stage4_execution_started": false,
+  "scope_of_status": "This form and the documents referenced by this draft. Supporting Stage 3 completion records have not been linked or assessed for Stage 4 entry; entry conditions remain unconfirmed. This is not an assessment of every experiment in the project.",
+  "source_documents": [
+    {
+      "filename": "research-roadmap-2026-09-29.ja.pdf",
+      "role": "Stage 4 definition and completion condition"
+    },
+    {
+      "filename": "stage3-integration-evaluation-v0.1.1.ja.md",
+      "role": "Unchanged Stage 3 evaluation specification"
+    },
+    {
+      "filename": "development-report.v0.1.en.md",
+      "role": "Closed fixed-input development record",
+      "sha256": "bd51142b9b5afd08b1955151b36ccbce11fd731c5786b609aae6da3e3e1d3027"
+    },
+    {
+      "filename": "stage3-prepared-run-form.v0.1.json",
+      "role": "Partially prepared Stage 3 form; execution_ready=false at reference time"
+    }
+  ],
+  "stage3_evidence_to_assess": [
+    {
+      "item": "external_json_schema_gate",
+      "record_ref": null,
+      "record_sha256": null,
+      "assessment": "not_confirmed",
+      "prior_failure_record_to_preserve": "schema-gate-001.json"
+    },
+    {
+      "item": "frozen_official_run_form",
+      "record_ref": null,
+      "record_sha256": null,
+      "assessment": "not_confirmed"
+    },
+    {
+      "item": "preparation_evaluation_completion",
+      "record_ref": null,
+      "record_sha256": null,
+      "assessment": "not_confirmed"
+    },
+    {
+      "item": "selected_workflow_comparison_and_full_stage3_completion",
+      "record_ref": null,
+      "record_sha256": null,
+      "assessment": "not_confirmed"
+    },
+    {
+      "item": "disposition_of_any_stage3_stop_condition",
+      "record_ref": null,
+      "record_sha256": null,
+      "assessment": "not_assessed"
+    }
+  ],
+  "entry_decision": {
+    "outcome": "not_made",
+    "responsible_person": null,
+    "decided_at": null,
+    "reason": null,
+    "frozen_at": null
+  },
+  "product_scope": {
+    "candidate_workflow": null,
+    "intended_user": null,
+    "paying_party": null,
+    "scope_confirmation_ref": null,
+    "input_and_output_scope": null,
+    "candidate_scope": null,
+    "evidence_admission_responsibility": null,
+    "interpretation_rules_ref": null,
+    "supported_storage_and_write_paths": null,
+    "downstream_state_use": null,
+    "guarantee_scope": null,
+    "excluded_scope": null,
+    "real_world_action_scope": null,
+    "product_form": null,
+    "price_or_funding_terms": null,
+    "willingness_to_pay_record_ref": null
+  },
+  "planned_deliverables": [
+    {
+      "item": "use_scope_and_terms",
+      "status": "not_started_under_this_plan",
+      "responsible_person": null,
+      "artifact_ref": null,
+      "implementation_version": null,
+      "verification_record_ref": null
+    },
+    {
+      "item": "common_api_contract",
+      "status": "not_started_under_this_plan",
+      "responsible_person": null,
+      "artifact_ref": null,
+      "implementation_version": null,
+      "verification_record_ref": null
+    },
+    {
+      "item": "connectors",
+      "status": "not_started_under_this_plan",
+      "responsible_person": null,
+      "artifact_ref": null,
+      "implementation_version": null,
+      "verification_record_ref": null
+    },
+    {
+      "item": "version_and_migration_procedures",
+      "status": "not_started_under_this_plan",
+      "responsible_person": null,
+      "artifact_ref": null,
+      "implementation_version": null,
+      "verification_record_ref": null
+    },
+    {
+      "item": "audit_procedures",
+      "status": "not_started_under_this_plan",
+      "responsible_person": null,
+      "artifact_ref": null,
+      "implementation_version": null,
+      "verification_record_ref": null
+    },
+    {
+      "item": "maintenance_procedures",
+      "status": "not_started_under_this_plan",
+      "responsible_person": null,
+      "artifact_ref": null,
+      "implementation_version": null,
+      "verification_record_ref": null
+    }
+  ],
+  "completion_decision": {
+    "outcome": "not_made",
+    "paying_user_and_use_scope_ref": null,
+    "maintainable_guarantees_ref": null,
+    "product_version": null,
+    "responsible_roles": null,
+    "unresolved_items": null,
+    "decision_reason": null,
+    "decided_at": null
+  },
+  "record_policy": {
+    "completed_development_report_is_closed": true,
+    "stage3_specification_changed": false,
+    "prior_failure_records_overwritten": false,
+    "new_schema_gate_record_requires_new_file": true,
+    "finalized_stage3_run_form_requires_new_file": true,
+    "finalized_stage4_entry_record_requires_new_file": true,
+    "stage3_run_form_replaced_by_this_template": false,
+    "implementation_results_added_by_this_plan": false,
+    "mainline_gradio_or_bundle_integration_performed_by_this_plan": false
+  },
+  "note": "This unfilled, unfrozen recording template accompanies a draft plan; it is not an executable gate. Keep execution_ready=false in this template. The next records are the external schema-gate record and official Stage 3 run form, each in a separate file; if corresponding records exist, confirm their references and versions. Record a later Stage 4 entry decision in a separate finalized form linked to the supporting records. The existence or review closure of this draft does not satisfy entry conditions or establish product readiness. No external JSON Schema conformance is claimed for this template."
+}

@@ -1,0 +1,17 @@
+{
+  "id": "stage3-adapter-development-20260929-v0.1",
+  "scope": "fixed_input_development_checks_only",
+  "stage3_evaluation_run": false,
+  "model_api_calls": 0,
+  "model_identifier": null,
+  "spending": 0,
+  "transition_trials": 15,
+  "stores_per_trial": 2,
+  "read_processes": 4,
+  "retry_count": 0,
+  "expected_values_location": "evaluator/development-expected.json",
+  "entry_condition_external_schema": "not_met; checked separately, not simulated",
+  "comparison_only_difference": "unsupported_candidate_removal_check",
+  "stop_on_unexpected_result": true,
+  "overwriting_previous_runs": false
+}

@@ -1,0 +1,20 @@
+test_action_read_affects_unresolved_wording (test_demo1.DemoTests.test_action_read_affects_unresolved_wording) ... ok
+test_empty_candidates_are_exhaustion (test_demo1.DemoTests.test_empty_candidates_are_exhaustion) ... ok
+test_failed_audit_insert_rolls_back_state_and_action (test_demo1.DemoTests.test_failed_audit_insert_rolls_back_state_and_action) ... ok
+test_interpretation_cannot_be_supplied_by_proposer (test_demo1.DemoTests.test_interpretation_cannot_be_supplied_by_proposer) ... ok
+test_missing_authoritative_state_does_not_fall_back_to_summary (test_demo1.DemoTests.test_missing_authoritative_state_does_not_fall_back_to_summary) ... ok
+test_summary_changes_do_not_change_decision_or_version (test_demo1.DemoTests.test_summary_changes_do_not_change_decision_or_version) ... ok
+test_action_cannot_overwrite_unresolved_state (test_m_anchor_minimal.MAnchorTests.test_action_cannot_overwrite_unresolved_state) ... ok
+test_action_only_keeps_both_candidates (test_m_anchor_minimal.MAnchorTests.test_action_only_keeps_both_candidates) ... ok
+test_empty_state_is_exhaustion_and_cannot_reopen (test_m_anchor_minimal.MAnchorTests.test_empty_state_is_exhaustion_and_cannot_reopen) ... ok
+test_evidence_and_interpretation_must_be_supplied_together (test_m_anchor_minimal.MAnchorTests.test_evidence_and_interpretation_must_be_supplied_together) ... ok
+test_full_incorporation_records_its_basis (test_m_anchor_minimal.MAnchorTests.test_full_incorporation_records_its_basis) ... ok
+test_initial_scope_and_identifier_validation (test_m_anchor_minimal.MAnchorTests.test_initial_scope_and_identifier_validation) ... ok
+test_input_and_output_aliases_cannot_mutate_state (test_m_anchor_minimal.MAnchorTests.test_input_and_output_aliases_cannot_mutate_state) ... ok
+test_mixed_removal_is_rejected (test_m_anchor_minimal.MAnchorTests.test_mixed_removal_is_rejected) ... ok
+test_partial_incorporation_and_reuse_of_old_evidence (test_m_anchor_minimal.MAnchorTests.test_partial_incorporation_and_reuse_of_old_evidence) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.016s
+
+OK

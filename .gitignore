@@ -216,3 +216,20 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Repository-specific additions
+# Credentials and local runtime state
+.env
+.env.*
+!.env.example
+.runtime/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+Thumbs.db
+# New executions use this separate output location.
+/run-output/
+# Recorded SQLite databases and JSON/JSONL results are intentionally tracked.
