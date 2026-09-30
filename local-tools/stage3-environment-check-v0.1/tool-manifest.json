@@ -1,0 +1,34 @@
+{
+  "artifact_type": "environment_check_helper_manifest",
+  "self_hash_excluded": true,
+  "files": [
+    {
+      "path": "README.en.md",
+      "sha256": "95cbeef880f7a8f98a52cc51664c94ec69a836b2a33933f5a9b8da0319f8b9ad"
+    },
+    {
+      "path": "README.ja.md",
+      "sha256": "88f7618bc2a5fa518463b7143684721aa0a763f7f8e8910ca7bb9f98e313887e"
+    },
+    {
+      "path": "environment-check-plan.json",
+      "sha256": "88e0dd7b5d87e8d8ed25f6a4ed8787f73fb60a6535c42d727315b7e9dd4d1c61"
+    },
+    {
+      "path": "probe_environment.py",
+      "sha256": "b29dda09c574ae692deb066b1793247c3719e2a47f776b393f2a53296b730ddc"
+    },
+    {
+      "path": "run-environment-check.cmd",
+      "sha256": "64a0930f98a2c3831d34d471dd461e651c9052a831f56c55079e8560e9ca105a"
+    },
+    {
+      "path": "run_environment_check.py",
+      "sha256": "e6ed3e8ab161aa27734beba7406e300c9b7ee94462805742422a0cc537e43b0f"
+    },
+    {
+      "path": "target-manifest.json",
+      "sha256": "aa6e266a5cd495ba3c79fd0cda17cdf8acf901646802d5cf80d2fd88c3104c2f"
+    }
+  ]
+}

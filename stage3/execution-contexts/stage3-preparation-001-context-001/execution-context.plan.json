@@ -1,0 +1,80 @@
+{
+  "artifact_type": "execution_environment_plan_not_live_start",
+  "context_id": "stage3-preparation-001-context-001",
+  "run_id": "stage3-preparation-001",
+  "created_at_utc": "2026-09-30T14:21:33.237704+00:00",
+  "basis_commit": "e5fc2239bf661916259eb5da38a5faa0dbcb9416",
+  "status": "local_environment_check_prepared_token_method_open",
+  "conditions_frozen": true,
+  "implementation_binding_frozen": true,
+  "official_form_fully_frozen": false,
+  "execution_ready": false,
+  "live_run_started": false,
+  "conditions_sha256": "96ace90ed5c1f7f781bd5a5b3c7a256b9fc26b0595b7640a311044b6333db5e3",
+  "conditions_reference": {
+    "path": "stage3/run-forms/stage3-preparation-001/official-run-form.json",
+    "sha256": "96ace90ed5c1f7f781bd5a5b3c7a256b9fc26b0595b7640a311044b6333db5e3"
+  },
+  "binding_reference": {
+    "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/binding.json",
+    "sha256": "58b7717a733f65d3c383ec0ed44b1979a8c8687d0a46490eee27d10167488a67"
+  },
+  "runtime_manifest_sha256": "b3aca72a5a0a41df1dcdddda4482645fa69ed64fbf5845c5537f0c0e5162dafd",
+  "runtime_manifest_reference": {
+    "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/runtime-manifest.json",
+    "sha256": "b3aca72a5a0a41df1dcdddda4482645fa69ed64fbf5845c5537f0c0e5162dafd"
+  },
+  "environment_plan": {
+    "path": "local-tools/stage3-environment-check-v0.1/environment-check-plan.json",
+    "sha256": "88e0dd7b5d87e8d8ed25f6a4ed8787f73fb60a6535c42d727315b7e9dd4d1c61"
+  },
+  "helper_manifest": {
+    "path": "local-tools/stage3-environment-check-v0.1/tool-manifest.json",
+    "sha256": "1673c3cfb3ac8e5e39a8813704b4123361726b3ab5dd4b34d7f9cf0108d5e353"
+  },
+  "target_manifest": {
+    "path": "local-tools/stage3-environment-check-v0.1/target-manifest.json",
+    "sha256": "aa6e266a5cd495ba3c79fd0cda17cdf8acf901646802d5cf80d2fd88c3104c2f"
+  },
+  "pricing_checked": true,
+  "pricing_record": {
+    "path": "stage3/execution-contexts/stage3-preparation-001-context-001/pricing-check.json",
+    "sha256": "f50cc27a348e8e4c20a0cdbc621816e172836a68de375fc69cc771946e37eb4a"
+  },
+  "token_method_record": {
+    "path": "stage3/execution-contexts/stage3-preparation-001-context-001/token-budget-method.json",
+    "sha256": "9e111b2a23c40b652e245282441864d2c17a395b3a5f81b790668333419bf188"
+  },
+  "storage_plan": {
+    "path": "stage3/execution-contexts/stage3-preparation-001-context-001/storage-map.json",
+    "sha256": "ded54a1a4d4eebc297d6cf039d3e17cc549d81e6fd2169265bbdb0a7a8303489"
+  },
+  "observations": {
+    "public_rate_consistency_checked": true,
+    "windows_environment_currently_checked": false,
+    "new_code_exact_validator_check_passed": false,
+    "supported_full_request_token_bound_fixed": false,
+    "physical_live_output_root_fixed": false,
+    "account_access_status": "not_verified"
+  },
+  "remaining": [
+    "Receive and check a new result from the specified-validator environment.",
+    "Resolve the full-request token bound without changing frozen call accounting implicitly.",
+    "Bind actual runtime, current costs, absolute live output root and per-request bound records in a separate live-start record."
+  ],
+  "creation_counts": {
+    "model_api_calls": 0,
+    "token_count_api_calls": 0,
+    "official_run_state_store_writes": 0,
+    "github_actions_used": false
+  },
+  "not_claimed": [
+    "Stage 3 preparation completed",
+    "Stage 3 integration evaluation completed",
+    "Stage 4 started",
+    "Live schema conformance",
+    "Account model access"
+  ],
+  "review_role": "Advisory input only; no reviewer approval or new acceptance authority.",
+  "record_policy": "This is a new plan. Subsequent environment results and live-start decisions use new records; do not append execution_ready=true here or amend closed records."
+}

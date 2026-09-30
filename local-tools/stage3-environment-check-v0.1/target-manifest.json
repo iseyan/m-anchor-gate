@@ -1,0 +1,228 @@
+{
+  "artifact_type": "frozen_binding_target_subset",
+  "basis_commit": "e5fc2239bf661916259eb5da38a5faa0dbcb9416",
+  "hash_role": "Byte identity, not execution or independent reproduction proof.",
+  "files": [
+    {
+      "path": "stage3/development-snapshot/adapter.py",
+      "sha256": "a735b5d4b95a224f5e76d27e38366a12cb987b7e0f40e6833b4788acc1050945",
+      "bytes": 13200
+    },
+    {
+      "path": "stage3/development-snapshot/fixtures/evidence-authority.json",
+      "sha256": "cd0eba5bab28177378d4320b9b1e5bcd211aa5763a9b75921cb8526f1d7cf745",
+      "bytes": 338
+    },
+    {
+      "path": "stage3/development-snapshot/m_anchor_minimal.py",
+      "sha256": "0f9551e8d00cd4408441944d9067cfe9bce7d5653019a5af27738fb5895f58c9",
+      "bytes": 3405
+    },
+    {
+      "path": "stage3/development-snapshot/schemas/decision.schema.json",
+      "sha256": "6ed201e6d3e6b731ae861f3ba041415b2f1085f7e6308b71eff4a5303f9fb81d",
+      "bytes": 1126
+    },
+    {
+      "path": "stage3/development-snapshot/schemas/input.schema.json",
+      "sha256": "a301da3af83adefd8932a4786045351ebf8e3a03a5d1273d3c8a792546afb5d1",
+      "bytes": 4226
+    },
+    {
+      "path": "stage3/development-snapshot/schemas/proposal.schema.json",
+      "sha256": "e1f4e6ed2143e6691963af81426c8497c492ab6e7b9578bb7d9d37daaf227176",
+      "bytes": 1358
+    },
+    {
+      "path": "stage3/development-snapshot/schemas/state.schema.json",
+      "sha256": "5da9fc4feb447f6e724c52f2e72e161c4a567671385a6b9845a334615be0a934",
+      "bytes": 1410
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/binding.json",
+      "sha256": "58b7717a733f65d3c383ec0ed44b1979a8c8687d0a46490eee27d10167488a67",
+      "bytes": 12237
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/evaluator-contract.json",
+      "sha256": "392eb52dc090ea70b685d599d8d312fb130bdeaab2a0f0b2b2f2623dd262cd84",
+      "bytes": 1601
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/fixtures/F001.proposal.json",
+      "sha256": "45381aedc10b8d5292b1972e336eec5760ac583a679c0a873cbe1313b13b3f8a",
+      "bytes": 347
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/fixtures/F002.proposal.json",
+      "sha256": "77d9ce9c43a8e35fe48b6c02d949c283dcfd0faf74d91136c8a8522c3968f15d",
+      "bytes": 348
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/fixtures/F003.proposal.json",
+      "sha256": "f692d6f1d440083cfda5a95ff9e5fa2a9cc48ac76900eafcc1d9c45453c14cc9",
+      "bytes": 346
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/fixtures/F004.proposal.json",
+      "sha256": "33487d25a57c08f2269686deee7375bf8b169662767ab56c8e41ffc2156deb5c",
+      "bytes": 340
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/fixtures/initial-input-P001.json",
+      "sha256": "e9e03c77dfb5ea28f65b3cce45964ea078138a392451991526d5a4b129f29d10",
+      "bytes": 727
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/fixtures/initial-input-P002.json",
+      "sha256": "e98ab9d95bd095b0db356e439662207e6ec2dabea9e7ac5e6b9913fa5c89420d",
+      "bytes": 784
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/fixtures/initial-input-P003.json",
+      "sha256": "0873a71029ecd4893a4f1209462a0890d1729014b82ad67190277abf56023a8f",
+      "bytes": 779
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/fixtures/r4-manifest.json",
+      "sha256": "3b91c529ba31fcaac416ea98fea11f651392537e948aac1fe7b8c9d49a7b3074",
+      "bytes": 2016
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/input-binding.json",
+      "sha256": "f5464b8905c3d4be3f3dd32f406bc099900a505063665fccfff36e86655d5101",
+      "bytes": 2790
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/prompts/decision.txt",
+      "sha256": "6d6edd99773abb6ab34ef3a5fab9501060c2dd2774c5978cfcbb46a7c859e58f",
+      "bytes": 429
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/prompts/proposal.txt",
+      "sha256": "44da5d93cd07b858cbdd181713e97433434a9f6daa02e03a33250e578e2c9e3b",
+      "bytes": 479
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/prompts/tasks.json",
+      "sha256": "35bbbcf52a8c4e3c0289a6e83a3af2f1d8af1c9c1ac02473f38b07b164e123fd",
+      "bytes": 932
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/requirements.txt",
+      "sha256": "756cc9e506ae4ee1a6f6c0507088b5cfc0dc8ba350fb2d2d46f1ffa72033adb6",
+      "bytes": 19
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/runtime-manifest.json",
+      "sha256": "b3aca72a5a0a41df1dcdddda4482645fa69ed64fbf5845c5537f0c0e5162dafd",
+      "bytes": 3362
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/src/api_client.py",
+      "sha256": "ebcd92d4108508bc87272f25153515bf8aed56fe6a5b536becd5a0e61f5d2e8f",
+      "bytes": 12078
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/src/contracts.py",
+      "sha256": "30b4402a6d87dfd075bdcbf6f7a9cfeb1bfe616d64fdb8b32c18e8bf6c3ee475",
+      "bytes": 6768
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/src/evaluator.py",
+      "sha256": "fd3ad6be6635dc972fa85fade195a3fb93d30c0054a35e8ac8a3b142d889af87",
+      "bytes": 3943
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/src/gate.py",
+      "sha256": "5208175ef1e81cd067ea2f1f95a6c9d89e2916bcea197df2bfaa736ec8366ce0",
+      "bytes": 14116
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/src/live_reader.py",
+      "sha256": "8b94232b813cecac0072838a5e5adafe088289cb3f0c19ec8b649eb0f5339783",
+      "bytes": 1328
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/src/m_anchor_minimal.py",
+      "sha256": "0f9551e8d00cd4408441944d9067cfe9bce7d5653019a5af27738fb5895f58c9",
+      "bytes": 3405
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/src/pipeline.py",
+      "sha256": "45d0ee3dd382c39314b3e1cd7489ccaaf86b56ef6a1a5db65e3644ca567a4376",
+      "bytes": 5782
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/src/reader.py",
+      "sha256": "824d685ae2542b23d065d81fc7b3d4b5c22495a5d7e5238374da0232cded8552",
+      "bytes": 2220
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/src/request_builder.py",
+      "sha256": "dc8c443827565680578ed5cca629a49cb349850afadaa34a81865bf7a9f3edfd",
+      "bytes": 1460
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/tests/offline_checks.py",
+      "sha256": "131d20490725bf67f097b0d825cf4eb605c9619408d842ecd70df887fef272b5",
+      "bytes": 14971
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/tests/writer_fixture.py",
+      "sha256": "0de8e443aab6bc6e62aedc0f9a04a13a50a02ac3f27dfff53fe09e846140a52e",
+      "bytes": 4523
+    },
+    {
+      "path": "stage3/run-forms/stage3-preparation-001/FILES.sha256",
+      "sha256": "7a70d25a6894426c3c9fee3c9ad5b1b587b98dcc0fc3f8fbd9a78100fcb899fc",
+      "bytes": 503
+    },
+    {
+      "path": "stage3/run-forms/stage3-preparation-001/README.en.md",
+      "sha256": "997ac6cd8d45336cc6988a06a7909f01217214fdd3a6200a021d145d782f2216",
+      "bytes": 6082
+    },
+    {
+      "path": "stage3/run-forms/stage3-preparation-001/README.ja.md",
+      "sha256": "95cc153f8f9549edb802660303dd046cdf124477675cce172743667f90e149b8",
+      "bytes": 6534
+    },
+    {
+      "path": "stage3/run-forms/stage3-preparation-001/case-admissions.json",
+      "sha256": "73c6a626d1d8418c8b5eef3276d79529ab903a14e9a5311eae4a441e88e0b4dc",
+      "bytes": 5365
+    },
+    {
+      "path": "stage3/run-forms/stage3-preparation-001/freeze-manifest.json",
+      "sha256": "da49bcb03bee48baf0a52a475920ba440df35abee28aff49110da18b2524c8a9",
+      "bytes": 3601
+    },
+    {
+      "path": "stage3/run-forms/stage3-preparation-001/official-run-form.json",
+      "sha256": "96ace90ed5c1f7f781bd5a5b3c7a256b9fc26b0595b7640a311044b6333db5e3",
+      "bytes": 20154
+    },
+    {
+      "path": "stage3/run-forms/stage3-preparation-001/trial-plan.json",
+      "sha256": "64719a5eee171731798ebf4e2d413922f192b1f728951f9ecbd0cdeeb31af977",
+      "bytes": 6464
+    },
+    {
+      "path": "stage3/schema-gates/schema-gate-003/run/schema-gate-003-20260930T104603Z-36d5c5c4/schema-validation.json",
+      "sha256": "d8c518b49ba581d19f55d31c54a641b5f3f9ed0d05d2e59ccbd4f81ef8741dbd",
+      "bytes": 9530
+    },
+    {
+      "path": "stage3/schema-gates/schema-gate-003/verification.json",
+      "sha256": "e3e1088f5a5b307c9b43e2e426852c5788ed0a0f3ee0ccf0fc787e3888e9ad28",
+      "bytes": 8180
+    },
+    {
+      "path": "stage3/specification/stage3-integration-evaluation-v0.1.1.en.md",
+      "sha256": "614882692b1b8419f6be4d1df9fbbf3a243bb43c05450c726a6ac2c3faeaa0fe",
+      "bytes": 8698
+    }
+  ],
+  "subset_note": "Runtime and linked contracts/provenance only. Historical check ZIPs referenced by binding.json remain in the repository and are not required by this kit."
+}

@@ -1,0 +1,29 @@
+{
+  "artifact_type": "documentation_price_check",
+  "checked_at_utc": "2026-09-30T14:21:33.237704+00:00",
+  "source_url": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+  "source_access": "Official public model documentation read; no account or inference API request.",
+  "model_identifier": "gpt-5.4-mini-2026-03-17",
+  "fixed_model_snapshot_listed": true,
+  "matches_frozen_condition_rates": true,
+  "rate_basis": {
+    "service_tier": "default",
+    "routing": "global_standard",
+    "uncached_input_usd_per_million": "0.75",
+    "output_usd_per_million": "4.50"
+  },
+  "maximum_input_tokens": 8192,
+  "maximum_output_tokens": 2048,
+  "arithmetic_only_usd_per_call": "0.01536",
+  "arithmetic_only_usd_for_seven_calls": "0.10752",
+  "reservation_usd_per_call": "0.02",
+  "budget_usd": "1.00",
+  "rates_are_an_execution_time_guarantee": false,
+  "pre_dispatch_requirement": "Recheck the fixed model, tier, current rates and established input bound. Changed rates/routing require a new cost record; unknown usage retains reservation and stops later calls.",
+  "account_access_status": "not_verified",
+  "account_billing_verified": false,
+  "model_api_calls": 0,
+  "token_count_api_calls": 0,
+  "spend_incurred_usd": "0.00",
+  "meaning": "Public rate consistency and conditional arithmetic only; no paid usage, invoice guarantee or account-wide billing cap."
+}

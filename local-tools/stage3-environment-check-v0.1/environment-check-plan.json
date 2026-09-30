@@ -1,0 +1,50 @@
+{
+  "artifact_type": "offline_environment_check_plan",
+  "context_id": "stage3-preparation-001-context-001",
+  "basis_commit": "e5fc2239bf661916259eb5da38a5faa0dbcb9416",
+  "created_at_utc": "2026-09-30T14:21:33.237704+00:00",
+  "conditions_sha256": "96ace90ed5c1f7f781bd5a5b3c7a256b9fc26b0595b7640a311044b6333db5e3",
+  "runtime_manifest_sha256": "b3aca72a5a0a41df1dcdddda4482645fa69ed64fbf5845c5537f0c0e5162dafd",
+  "preferred_python_executable": "C:\\Users\\ise\\Desktop\\schema-gate-003-local-preparation-v0.1\\environments\\local-preparation-20260930T102507Z-5db00b37\\Scripts\\python.exe",
+  "recorded_003_python_prefix": "C:\\Users\\ise\\Desktop\\schema-gate-003-local-preparation-v0.1\\environments\\local-preparation-20260930T102507Z-5db00b37",
+  "preferred_environment_source": {
+    "path": "stage3/schema-gates/schema-gate-003/verification.json",
+    "sha256": "e3e1088f5a5b307c9b43e2e426852c5788ed0a0f3ee0ccf0fc787e3888e9ad28"
+  },
+  "recorded_python_version_is_a_new_requirement": false,
+  "interpreter_override": "Allowed explicitly; actual path/version/prefix and differences from 003 are recorded. No automatic fallback.",
+  "validator": {
+    "distribution": "jsonschema",
+    "version": "4.26.0",
+    "class": "jsonschema.validators.Draft202012Validator",
+    "dialect": "2020-12"
+  },
+  "checker_path": "stage3/execution-bindings/stage3-preparation-001-binding-001/tests/offline_checks.py",
+  "checker_mode": "default exact_jsonschema; never --structural-only",
+  "expected_exact_mode_check_count": 68,
+  "count_explanation": "The frozen 69-check structural path has one extra conditional check named structural_checker_cannot_accept_live_origin. The exact-validator path has 68 checks. Neither count is the 82-instance schema-gate-003 denominator.",
+  "operation_sequence": [
+    "Create a new output folder outside kit and source repository.",
+    "Write immutable run-start and compare tool/target hashes.",
+    "Probe the selected Python and jsonschema import/version without schema validation.",
+    "Only on the specified validator, invoke the frozen offline checker in exact mode.",
+    "Retain commands, return codes, raw stdout/stderr, all checker records, and after hashes.",
+    "Create a result ZIP outside the kit; retain failures without retry or replacement."
+  ],
+  "result_root_default": "sibling directory stage3-environment-check-results",
+  "result_id_pattern": "environment-check-<UTC>-<random8>",
+  "install_packages": false,
+  "automatic_retries": 0,
+  "live_model_api_calls": 0,
+  "token_count_api_calls": 0,
+  "github_actions_used": false,
+  "official_state_store_writes": 0,
+  "temporary_offline_fixture_stores": true,
+  "checks_started_at_distribution": false,
+  "schema_gate_003_rerun": false,
+  "conditions_frozen": true,
+  "implementation_binding_frozen": true,
+  "official_form_fully_frozen": false,
+  "execution_ready": false,
+  "acceptance_scope": "Successful completion of this offline check only; not live-schema conformance, Stage 3 completion or Stage 4 entry."
+}

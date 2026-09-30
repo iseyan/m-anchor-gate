@@ -1,0 +1,92 @@
+{
+  "artifact_type": "offline_output_and_future_run_path_plan",
+  "offline_check": {
+    "root": "sibling of extracted kit / stage3-environment-check-results",
+    "record_id": "environment-check-<UTC>-<random8>",
+    "existing_id_reused": false,
+    "files": [
+      "run-start.json",
+      "validator-probe.*",
+      "environment.json",
+      "binding-check.*",
+      "binding-check/",
+      "tool-hashes.before.json",
+      "tool-hashes.after.json",
+      "target-hashes.before.json",
+      "target-hashes.after.json",
+      "run-result.json",
+      "SHA256SUMS.txt"
+    ],
+    "conditional_files": "Probe/checker artifacts appear only if that step starts. Failures remain in place.",
+    "archive": "<record_id>.zip and <record_id>.zip.sha256 outside the kit"
+  },
+  "future_live_run": {
+    "logical_run_directory": "stage3/runs/stage3-preparation-001/",
+    "physical_root": null,
+    "physical_root_confirmed": false,
+    "created": false,
+    "case_store_paths": [
+      {
+        "condition_id": "R1",
+        "variant": "no_evidence_response_B",
+        "case_id": "stage3-preparation-001-r1",
+        "logical_path": "stage3/runs/stage3-preparation-001/stores/checked/r1.sqlite"
+      },
+      {
+        "condition_id": "R2",
+        "variant": "full_incorporation",
+        "case_id": "stage3-preparation-001-r2",
+        "logical_path": "stage3/runs/stage3-preparation-001/stores/checked/r2.sqlite"
+      },
+      {
+        "condition_id": "R3",
+        "variant": "reuse_existing_evidence",
+        "case_id": "stage3-preparation-001-r3",
+        "logical_path": "stage3/runs/stage3-preparation-001/stores/checked/r3.sqlite"
+      },
+      {
+        "condition_id": "R4",
+        "variant": "invalid_references",
+        "case_id": "stage3-preparation-001-r4",
+        "logical_path": "stage3/runs/stage3-preparation-001/stores/checked/r4.sqlite"
+      },
+      {
+        "condition_id": "R5",
+        "variant": "reference",
+        "case_id": "stage3-preparation-001-r1",
+        "logical_path": "stage3/runs/stage3-preparation-001/stores/checked/r1.sqlite"
+      },
+      {
+        "condition_id": "R5",
+        "variant": "changed_K",
+        "case_id": "stage3-preparation-001-r2",
+        "logical_path": "stage3/runs/stage3-preparation-001/stores/checked/r2.sqlite"
+      },
+      {
+        "condition_id": "R5",
+        "variant": "response_only",
+        "case_id": "stage3-preparation-001-r1",
+        "logical_path": "stage3/runs/stage3-preparation-001/stores/restart/response-only.sqlite"
+      },
+      {
+        "condition_id": "R5",
+        "variant": "summary_only",
+        "case_id": "stage3-preparation-001-r1",
+        "logical_path": "stage3/runs/stage3-preparation-001/stores/restart/summary-only.sqlite"
+      }
+    ],
+    "unchecked_path": "stage3/runs/stage3-preparation-001/stores/unchecked/",
+    "unchecked_store_is_authoritative": false,
+    "start_requirement": "Bind the absolute output root in a separate start record before dispatch; retain the logical paths from the condition form and use new, non-overwriting outputs."
+  },
+  "prohibited_destinations": [
+    "Frozen conditions directory",
+    "Frozen binding-001 directory",
+    "schema-gate-001/002/003 records",
+    "Actions preparation records",
+    "Bundle",
+    "Collected materials ZIP",
+    "Closed development report"
+  ],
+  "official_run_store_writes_by_this_work": 0
+}

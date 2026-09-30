@@ -1,0 +1,33 @@
+{
+  "artifact_type": "input_token_method_assessment",
+  "checked_at_utc": "2026-09-30T14:21:33.237704+00:00",
+  "model_identifier": "gpt-5.4-mini-2026-03-17",
+  "input_cap": 8192,
+  "status": "unresolved_for_the_current_frozen_call_plan",
+  "official_source": "https://developers.openai.com/api/docs/guides/token-counting",
+  "official_method": "POST /v1/responses/input_tokens reports the model input count, including formatting tokens for request structure.",
+  "local_estimate_limit": "Tokenizing visible text, counting UTF-8 bytes or adding an undocumented fixed allowance does not establish the full-request upper bound in this record.",
+  "additional_count_API_request_adopted": false,
+  "count_endpoint_called": false,
+  "account_and_snapshot_support_observed": false,
+  "fixed_plan": {
+    "maximum_total_api_calls": 7,
+    "planned_generation_calls": 7,
+    "automatic_retries": 0,
+    "probe_generation_calls": 0
+  },
+  "decision": "Do not silently add count requests or relabel the frozen maximum_total_api_calls as generation-only. No verified host bound is issued now.",
+  "future_resolution": "Either document a supported offline full-request bound, or fix count-request accounting and its implementation in a separate revision/run before adopting the API method. Preserve the current conditions and binding.",
+  "per_request_linkage_if_resolved": [
+    "Exact full generation-request byte SHA-256",
+    "Pinned model identifier",
+    "Method-record SHA-256",
+    "Count/upper bound at most 8192",
+    "If a separate count request is used: its exact bytes, outcome and linkage to the generation request"
+  ],
+  "dynamic_restart_inputs": "R5 must use actual saved reads. Initial fixtures or a mock request count cannot certify later live inputs. A changed request invalidates its previous bound.",
+  "verified_host_bound_records_created": 0,
+  "execution_ready": false,
+  "model_api_calls": 0,
+  "token_count_api_calls": 0
+}

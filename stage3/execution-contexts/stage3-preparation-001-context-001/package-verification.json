@@ -1,0 +1,51 @@
+{
+  "artifact_type": "distribution_and_authoring_check_record",
+  "recorded_at_utc": "2026-09-30T14:24:48.964968+00:00",
+  "context_id": "stage3-preparation-001-context-001",
+  "basis_commit": "e5fc2239bf661916259eb5da38a5faa0dbcb9416",
+  "distribution": {
+    "path": "distributions/stage3-environment-check-v0.1.zip",
+    "sha256": "bb06d9d4efdc98de586f73d78072a96212da3c05abc4204fa3054b65232f4596",
+    "bytes": 94365,
+    "file_count": 52,
+    "frozen_target_files": 44,
+    "helper_files": 8
+  },
+  "package_checks": {
+    "path": "stage3/execution-contexts/stage3-preparation-001-context-001/checks/package-check-001.report.json",
+    "sha256": "842c5ef47151bdb2f93dcb368b45c8d07f0e76a75ef23b7e47f9d0acf25c097d",
+    "passed_checks": 17,
+    "raw_records": {
+      "path": "stage3/execution-contexts/stage3-preparation-001-context-001/checks/package-check-001.records.zip",
+      "sha256": "0e6d02fe9884c7bb999db550c16ea01f8ee0f1d2d769331ddf716ec3c9550bfd"
+    }
+  },
+  "executed_builder": {
+    "path": "tools/build_stage3_environment_kit.py",
+    "sha256": "a165030496022a849dbc7b42fd1b9fa06638f5f5612916d74f70197d01c87eb7"
+  },
+  "executed_package_checker": {
+    "path": "tools/check_stage3_environment_kit.py",
+    "sha256": "61f6fc22327a442733a9157686eedd09bcc10ba82cbaa794151705c048d2478c"
+  },
+  "observed_validator_probe": {
+    "status": "blocked_or_failed",
+    "validator_version": null,
+    "error_type": "PackageNotFoundError",
+    "passed_new_code_checks": null,
+    "new_code_checker_started": false,
+    "meaning": "Validator unavailable in this authoring environment; no schema-conformance classification was performed."
+  },
+  "windows_cmd_executed": false,
+  "windows_environment_result_received": false,
+  "new_code_exact_validator_check_passed": false,
+  "model_api_calls": 0,
+  "token_count_api_calls": 0,
+  "github_actions_used": false,
+  "official_run_state_store_writes": 0,
+  "execution_ready": false,
+  "preparation_evaluation_complete": false,
+  "stage3_complete": false,
+  "stage4_started": false,
+  "scope": "Packaging and failure-path checks. Not a successful validator run, a rerun of 003, a token upper bound or live API execution."
+}
