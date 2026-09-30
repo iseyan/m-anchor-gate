@@ -1,0 +1,12 @@
+{
+  "record_type": "receiver_verifier_development_attempt",
+  "status": "stopped",
+  "exit_code": 1,
+  "error_type": "KeyError",
+  "error": "state_before",
+  "cause": "The receipt verifier initially treated store initialization audits as normal transition audits. Initialization records intentionally have state_after only.",
+  "submitted_Windows_run_failed": false,
+  "uploaded_archive_modified": false,
+  "uploaded_checker_rerun": false,
+  "repair": "Distinguish initialization records and verify their declared state against the stored version 0, without changing the submitted record or acceptance conditions."
+}
