@@ -1,0 +1,147 @@
+{
+  "record_type": "schema_gate_003_local_preparation",
+  "run_id": "local-preparation-20260930T102507Z-5db00b37",
+  "started_at_utc": "2026-09-30T10:25:07.028408+00:00",
+  "status": "installation_and_import_confirmed",
+  "inspect_only": false,
+  "schema_gate_003_started": false,
+  "schema_validation_performed": false,
+  "schemas_checked": 0,
+  "instances_checked": 0,
+  "model_api_calls": 0,
+  "state_store_writes": 0,
+  "official_run_form_frozen": false,
+  "execution_ready": false,
+  "stage3_complete": false,
+  "stage4_started": false,
+  "installation_confirmed": true,
+  "host_python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+  "host_executable": "C:\\Users\\ise\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "commands": [
+    {
+      "step": "01-create-venv",
+      "command": [
+        "C:\\Users\\ise\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-m",
+        "venv",
+        "C:\\Users\\ise\\Desktop\\schema-gate-003-local-preparation-v0.1\\environments\\local-preparation-20260930T102507Z-5db00b37"
+      ],
+      "started_at_utc": "2026-09-30T10:25:07.354786+00:00",
+      "stdout": "01-create-venv.stdout.txt",
+      "stderr": "01-create-venv.stderr.txt",
+      "pid": 25244,
+      "exit_code": 0,
+      "timed_out": false,
+      "process_exit_code": 0,
+      "ended_at_utc": "2026-09-30T10:25:19.158740+00:00"
+    },
+    {
+      "step": "02-install",
+      "command": [
+        "C:\\Users\\ise\\Desktop\\schema-gate-003-local-preparation-v0.1\\environments\\local-preparation-20260930T102507Z-5db00b37\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "install",
+        "--no-input",
+        "--disable-pip-version-check",
+        "--index-url",
+        "https://pypi.org/simple",
+        "--only-binary=:all:",
+        "--report",
+        "C:\\Users\\ise\\Desktop\\schema-gate-003-local-preparation-v0.1\\runs\\local-preparation-20260930T102507Z-5db00b37\\pip-install-report.json",
+        "-r",
+        "C:\\Users\\ise\\Desktop\\schema-gate-003-local-preparation-v0.1\\requirements.txt"
+      ],
+      "started_at_utc": "2026-09-30T10:25:19.159451+00:00",
+      "stdout": "02-install.stdout.txt",
+      "stderr": "02-install.stderr.txt",
+      "pid": 984,
+      "exit_code": 0,
+      "timed_out": false,
+      "process_exit_code": 0,
+      "ended_at_utc": "2026-09-30T10:25:24.892938+00:00"
+    },
+    {
+      "step": "03-import-and-version",
+      "command": [
+        "C:\\Users\\ise\\Desktop\\schema-gate-003-local-preparation-v0.1\\environments\\local-preparation-20260930T102507Z-5db00b37\\Scripts\\python.exe",
+        "-I",
+        "-c",
+        "import importlib.metadata as m, json, sys\nfrom jsonschema import Draft202012Validator\nversion = m.version('jsonschema')\nif version != '4.26.0':\n    raise RuntimeError('Unexpected validator version: ' + version)\nprint(json.dumps({'validator_version': version,\n    'validator_class': Draft202012Validator.__module__ + '.' + Draft202012Validator.__name__,\n    'python_version': sys.version, 'executable': sys.executable,\n    'prefix': sys.prefix, 'base_prefix': sys.base_prefix,\n    'schema_validation_performed': False}))\n"
+      ],
+      "started_at_utc": "2026-09-30T10:25:24.895642+00:00",
+      "stdout": "03-import-and-version.stdout.txt",
+      "stderr": "03-import-and-version.stderr.txt",
+      "pid": 14260,
+      "exit_code": 0,
+      "timed_out": false,
+      "process_exit_code": 0,
+      "ended_at_utc": "2026-09-30T10:25:25.388083+00:00"
+    },
+    {
+      "step": "04-freeze",
+      "command": [
+        "C:\\Users\\ise\\Desktop\\schema-gate-003-local-preparation-v0.1\\environments\\local-preparation-20260930T102507Z-5db00b37\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "freeze",
+        "--all"
+      ],
+      "started_at_utc": "2026-09-30T10:25:25.404274+00:00",
+      "stdout": "04-freeze.stdout.txt",
+      "stderr": "04-freeze.stderr.txt",
+      "pid": 5812,
+      "exit_code": 0,
+      "timed_out": false,
+      "process_exit_code": 0,
+      "ended_at_utc": "2026-09-30T10:25:26.365043+00:00"
+    }
+  ],
+  "source_basis_commit": "0dd000f106b5593b879b025781ac7e389c67b280",
+  "required_validator": {
+    "distribution": "jsonschema",
+    "version": "4.26.0",
+    "class": "jsonschema.Draft202012Validator",
+    "dialect": "2020-12"
+  },
+  "plan_sha256": "dbb6a48620cd9b8d3f6cefb9a961fdef4b4aa6d6f8788e0aec61a7e42df49ef1",
+  "script_sha256": "9061a64f32ea2190bd1c32f6b4e43b9780321c8627ceb5c9550baa4d707cf12f",
+  "requirements_sha256": "756cc9e506ae4ee1a6f6c0507088b5cfc0dc8ba350fb2d2d46f1ffa72033adb6",
+  "target_inventory_only": {
+    "schemas": 4,
+    "instances": 82,
+    "expected_valid": 81,
+    "expected_invalid": 1
+  },
+  "installed_environment": {
+    "validator_version": "4.26.0",
+    "validator_class": "jsonschema.validators.Draft202012Validator",
+    "python_version": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+    "executable": "C:\\Users\\ise\\Desktop\\schema-gate-003-local-preparation-v0.1\\environments\\local-preparation-20260930T102507Z-5db00b37\\Scripts\\python.exe",
+    "prefix": "C:\\Users\\ise\\Desktop\\schema-gate-003-local-preparation-v0.1\\environments\\local-preparation-20260930T102507Z-5db00b37",
+    "base_prefix": "C:\\Users\\ise\\AppData\\Local\\Programs\\Python\\Python313",
+    "schema_validation_performed": false
+  },
+  "source_integrity": {
+    "sha256_before": {
+      "targets/stage3/development-snapshot/schemas/decision.schema.json": "6ed201e6d3e6b731ae861f3ba041415b2f1085f7e6308b71eff4a5303f9fb81d",
+      "targets/stage3/development-snapshot/schemas/input.schema.json": "a301da3af83adefd8932a4786045351ebf8e3a03a5d1273d3c8a792546afb5d1",
+      "targets/stage3/development-snapshot/schemas/proposal.schema.json": "e1f4e6ed2143e6691963af81426c8497c492ab6e7b9578bb7d9d37daaf227176",
+      "targets/stage3/development-snapshot/schemas/state.schema.json": "5da9fc4feb447f6e724c52f2e72e161c4a567671385a6b9845a334615be0a934",
+      "targets/stage3/development-snapshot/validate_schemas.py": "d13701ac713323c58b7d809a273f2e2df48f54b24efc24c7460d1b52e2115230",
+      "targets/stage3/development-snapshot/results/dev-001/schema-instances.json": "146461c25fedd2f2d584c430c6f9e8a83b074f45d4ab31c949755d6c1d8f5f06"
+    },
+    "sha256_after": {
+      "targets/stage3/development-snapshot/schemas/decision.schema.json": "6ed201e6d3e6b731ae861f3ba041415b2f1085f7e6308b71eff4a5303f9fb81d",
+      "targets/stage3/development-snapshot/schemas/input.schema.json": "a301da3af83adefd8932a4786045351ebf8e3a03a5d1273d3c8a792546afb5d1",
+      "targets/stage3/development-snapshot/schemas/proposal.schema.json": "e1f4e6ed2143e6691963af81426c8497c492ab6e7b9578bb7d9d37daaf227176",
+      "targets/stage3/development-snapshot/schemas/state.schema.json": "5da9fc4feb447f6e724c52f2e72e161c4a567671385a6b9845a334615be0a934",
+      "targets/stage3/development-snapshot/validate_schemas.py": "d13701ac713323c58b7d809a273f2e2df48f54b24efc24c7460d1b52e2115230",
+      "targets/stage3/development-snapshot/results/dev-001/schema-instances.json": "146461c25fedd2f2d584c430c6f9e8a83b074f45d4ab31c949755d6c1d8f5f06"
+    },
+    "changed_or_missing": []
+  },
+  "ended_at_utc": "2026-09-30T10:25:26.370229+00:00",
+  "exit_code": 0
+}

@@ -1,0 +1,130 @@
+{
+  "record_type": "local_preparation_uploaded_record_verification",
+  "reviewed_at_utc": "2026-09-30T10:37:51.568840+00:00",
+  "preparation_run_id": "local-preparation-20260930T102507Z-5db00b37",
+  "evidence_origin": "User-uploaded Windows preparation records; no execution on the user PC by the reviewing assistant.",
+  "received_file_count": 8,
+  "received_manifest_entries": 7,
+  "manifest_entry_count": 12,
+  "manifest_checks": [
+    {
+      "path": "01-create-venv.stderr.txt",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "received": false,
+      "observed_sha256": null,
+      "matches": null
+    },
+    {
+      "path": "01-create-venv.stdout.txt",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "received": false,
+      "observed_sha256": null,
+      "matches": null
+    },
+    {
+      "path": "02-install.stderr.txt",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "received": false,
+      "observed_sha256": null,
+      "matches": null
+    },
+    {
+      "path": "02-install.stdout.txt",
+      "expected_sha256": "5fa6982f924dead1aa7a2e3b94910d4ff63e21613beb4851778d89b31533d55b",
+      "received": true,
+      "observed_sha256": "5fa6982f924dead1aa7a2e3b94910d4ff63e21613beb4851778d89b31533d55b",
+      "matches": true
+    },
+    {
+      "path": "03-import-and-version.stderr.txt",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "received": false,
+      "observed_sha256": null,
+      "matches": null
+    },
+    {
+      "path": "03-import-and-version.stdout.txt",
+      "expected_sha256": "6b477db10fba7f82db80a83c660cb3140d91e7ef5d6d1cec7f23d234a02d2aa2",
+      "received": true,
+      "observed_sha256": "6b477db10fba7f82db80a83c660cb3140d91e7ef5d6d1cec7f23d234a02d2aa2",
+      "matches": true
+    },
+    {
+      "path": "04-freeze.stderr.txt",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "received": false,
+      "observed_sha256": null,
+      "matches": null
+    },
+    {
+      "path": "04-freeze.stdout.txt",
+      "expected_sha256": "36504ac5dd9c701a8522ee691a9d990a1520ddc28cf7c0086e1f89fe125ff096",
+      "received": true,
+      "observed_sha256": "36504ac5dd9c701a8522ee691a9d990a1520ddc28cf7c0086e1f89fe125ff096",
+      "matches": true
+    },
+    {
+      "path": "pip-install-report.json",
+      "expected_sha256": "d656c844a6c01192602fa819a86c12ec23d99b6ce338bd0bdad5389d292cd13f",
+      "received": true,
+      "observed_sha256": "d656c844a6c01192602fa819a86c12ec23d99b6ce338bd0bdad5389d292cd13f",
+      "matches": true
+    },
+    {
+      "path": "preparation-result.json",
+      "expected_sha256": "f04a9b7a2a4660cde8d3b18ab3f967f827750957b4fd26c98c983e54cb0c6422",
+      "received": true,
+      "observed_sha256": "f04a9b7a2a4660cde8d3b18ab3f967f827750957b4fd26c98c983e54cb0c6422",
+      "matches": true
+    },
+    {
+      "path": "preparation-start.json",
+      "expected_sha256": "bbd41cf65a5590165cdb064d65d8bc08d37695790ceac0ffe5b38d0bf92c5182",
+      "received": true,
+      "observed_sha256": "bbd41cf65a5590165cdb064d65d8bc08d37695790ceac0ffe5b38d0bf92c5182",
+      "matches": true
+    },
+    {
+      "path": "requirements-observed.txt",
+      "expected_sha256": "36504ac5dd9c701a8522ee691a9d990a1520ddc28cf7c0086e1f89fe125ff096",
+      "received": true,
+      "observed_sha256": "36504ac5dd9c701a8522ee691a9d990a1520ddc28cf7c0086e1f89fe125ff096",
+      "matches": true
+    }
+  ],
+  "uploaded_manifest_sha256": "ae8e4adc2c0c45b53a860eaeb5d378faa447a44ca1b2c14f19ea866f4ca55532",
+  "preparation_result_sha256": "f04a9b7a2a4660cde8d3b18ab3f967f827750957b4fd26c98c983e54cb0c6422",
+  "status_in_received_record": "installation_and_import_confirmed",
+  "installation_confirmed_in_received_record": true,
+  "preparation_exit_code": 0,
+  "all_four_commands_exit_zero": true,
+  "import_output_matches_result": true,
+  "freeze_output_matches_requirements": true,
+  "six_target_hashes_match_fixed_repository_files_and_reported_before_after": true,
+  "uploaded_plan_and_script_match_distributed_source": true,
+  "installed_environment": {
+    "validator_version": "4.26.0",
+    "validator_class": "jsonschema.validators.Draft202012Validator",
+    "python_version": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+    "executable": "C:\\Users\\ise\\Desktop\\schema-gate-003-local-preparation-v0.1\\environments\\local-preparation-20260930T102507Z-5db00b37\\Scripts\\python.exe",
+    "prefix": "C:\\Users\\ise\\Desktop\\schema-gate-003-local-preparation-v0.1\\environments\\local-preparation-20260930T102507Z-5db00b37",
+    "base_prefix": "C:\\Users\\ise\\AppData\\Local\\Programs\\Python\\Python313",
+    "schema_validation_performed": false
+  },
+  "schema_gate_003_started": false,
+  "schema_validation_performed_by_this_review": false,
+  "schemas_checked": 0,
+  "instances_checked": 0,
+  "model_api_calls": 0,
+  "state_store_writes": 0,
+  "official_run_form_frozen": false,
+  "execution_ready": false,
+  "stage3_complete": false,
+  "stage4_started": false,
+  "limitations": [
+    "Five manifest entries were not uploaded. Their declared digest is the empty-file digest; their contents were not received or recreated.",
+    "The manifest itself has no independent expected hash; its digest identifies the received file.",
+    "No full local run directory was independently observed.",
+    "Preparation success does not establish schema conformance."
+  ]
+}
