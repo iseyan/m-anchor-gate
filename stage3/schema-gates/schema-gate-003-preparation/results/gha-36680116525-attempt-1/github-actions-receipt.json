@@ -1,0 +1,117 @@
+{
+  "record_type": "github_actions_preparation_receipt",
+  "retrieved_at_utc": "2026-09-30T06:50:01.645Z",
+  "repository": "iseyan/m-anchor-gate",
+  "run": {
+    "id": 36680116525,
+    "name": "Schema gate 003 preparation",
+    "head_branch": "main",
+    "head_sha": "7135d8725dd5b6f12f557284e077cf136e40cfb9",
+    "path": ".github/workflows/schema-gate-003-preparation.yml",
+    "event": "push",
+    "status": "completed",
+    "conclusion": "success",
+    "run_number": 1,
+    "run_attempt": 1,
+    "created_at": "2026-09-30T06:47:47Z",
+    "updated_at": "2026-09-30T06:48:01Z",
+    "run_started_at": "2026-09-30T06:47:47Z",
+    "html_url": "https://github.com/iseyan/m-anchor-gate/actions/runs/36680116525"
+  },
+  "jobs": [
+    {
+      "id": 109773500133,
+      "name": "installation-check",
+      "status": "completed",
+      "conclusion": "success",
+      "run_id": 36680116525,
+      "logs_url": null,
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Read the triggering source commit",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Select Python 3.12",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Install and verify the specified validator",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Retain preparation outputs, including failures",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5
+        },
+        {
+          "name": "Post Select Python 3.12",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9
+        },
+        {
+          "name": "Post Read the triggering source commit",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11
+        }
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "id": 11081871547,
+      "name": "schema-gate-003-preparation-36680116525-1",
+      "size_in_bytes": 15752,
+      "url": "https://api.github.com/repos/iseyan/m-anchor-gate/actions/artifacts/11081871547",
+      "archive_download_url": "https://api.github.com/repos/iseyan/m-anchor-gate/actions/artifacts/11081871547/zip",
+      "expired": false,
+      "created_at": "2026-09-30T06:47:58Z",
+      "expires_at": "2026-10-14T06:47:57Z",
+      "updated_at": "2026-09-30T06:47:58Z",
+      "digest": "sha256:4044b07ba7d4c0cb8a8a1c2db1c110089b52b605724b1f469a3616e890764d59",
+      "workflow_run": {
+        "id": 36680116525,
+        "repository_id": 1396988368,
+        "head_repository_id": 1396988368,
+        "head_branch": "main",
+        "head_sha": "7135d8725dd5b6f12f557284e077cf136e40cfb9"
+      }
+    }
+  ],
+  "capture_verification": {
+    "artifact_zip_sha256": "4044b07ba7d4c0cb8a8a1c2db1c110089b52b605724b1f469a3616e890764d59",
+    "downloaded_zip_matches_github_digest": true,
+    "extracted_artifact_files": 13,
+    "artifact_member_checksums_matched": 12,
+    "run_commit_matches_preparation_result": true,
+    "plan_script_requirements_hashes_match_checkout": true,
+    "six_fixed_source_hashes_match": true,
+    "source_basis_commit": "57a2a47c19c2ab05bd7c12e8baac028e5b045169",
+    "preparation_source_commit": "7135d8725dd5b6f12f557284e077cf136e40cfb9",
+    "existing_blob_count_before_preparation": 246,
+    "all_246_existing_git_blobs_preserved_in_preparation_commit": true,
+    "artifact_files_preserved_byte_for_byte": true,
+    "zip_retained_in_repository": false
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "record_type": "schema_gate_003_environment_preparation",
+  "started_at_utc": "2026-09-30T06:47:53.313107+00:00",
+  "status": "installation_and_import_confirmed",
+  "model_api_calls": 0,
+  "state_store_writes": 0,
+  "schema_gate_003_started": false,
+  "schemas_checked": 0,
+  "instances_checked": 0,
+  "schema_validation_performed": false,
+  "check_schema_called": false,
+  "official_run_form_frozen": false,
+  "execution_ready": false,
+  "stage3_complete": false,
+  "stage4_started": false,
+  "required_validator": {
+    "distribution": "jsonschema",
+    "version": "4.26.0",
+    "class": "jsonschema.Draft202012Validator",
+    "dialect": "2020-12"
+  },
+  "plan_sha256": "7ef58ab47d08071d1ebf885b73ccedb4c1834d53526a949606d887d2ff0997bf",
+  "requirements_sha256": "756cc9e506ae4ee1a6f6c0507088b5cfc0dc8ba350fb2d2d46f1ffa72033adb6",
+  "script_sha256": "4775c59ba9542cac0a2bb20b1abf6be7025a9270e7b7c2ba172c5732ff080b64",
+  "source_basis_commit": "57a2a47c19c2ab05bd7c12e8baac028e5b045169",
+  "host_python": "3.12.14 (main, Aug 13 2026, 02:47:42) [GCC 13.3.0]",
+  "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+  "github": {
+    "GITHUB_ACTIONS": "true",
+    "GITHUB_REPOSITORY": "iseyan/m-anchor-gate",
+    "GITHUB_SHA": "7135d8725dd5b6f12f557284e077cf136e40cfb9",
+    "GITHUB_RUN_ID": "36680116525",
+    "GITHUB_RUN_ATTEMPT": "1",
+    "GITHUB_WORKFLOW": "Schema gate 003 preparation",
+    "GITHUB_JOB": "installation-check",
+    "RUNNER_OS": "Linux",
+    "RUNNER_ARCH": "X64"
+  },
+  "runner_image": {
+    "ImageOS": "ubuntu24",
+    "ImageVersion": "20260920.314.1"
+  },
+  "environment_persistence": "The hosted runner is ephemeral; verify installation again in the future validation job.",
+  "checked_out_commit": "7135d8725dd5b6f12f557284e077cf136e40cfb9",
+  "target_inventory": {
+    "schemas": 4,
+    "instances": 82,
+    "expected_valid": 81,
+    "expected_invalid": 1,
+    "note": "Inventory only; no instance was schema-validated."
+  },
+  "installed_environment": {
+    "validator_version": "4.26.0",
+    "validator_class": "jsonschema.validators.Draft202012Validator",
+    "python_version": "3.12.14 (main, Aug 13 2026, 02:47:42) [GCC 13.3.0]",
+    "executable": "/home/runner/work/_temp/schema-gate-003-preparation-36680116525-1-venv/bin/python",
+    "prefix": "/home/runner/work/_temp/schema-gate-003-preparation-36680116525-1-venv",
+    "base_prefix": "/opt/hostedtoolcache/Python/3.12.14/x64",
+    "packages": {
+      "jsonschema": "4.26.0",
+      "referencing": "0.37.0",
+      "jsonschema-specifications": "2025.9.1",
+      "attrs": "26.1.0",
+      "rpds-py": "2026.6.3"
+    },
+    "validation_performed": false
+  },
+  "preparation_check_passed": true,
+  "source_integrity": {
+    "files_checked": 6,
+    "changed_or_missing": [],
+    "sha256_before": {
+      "stage3/development-snapshot/schemas/decision.schema.json": "6ed201e6d3e6b731ae861f3ba041415b2f1085f7e6308b71eff4a5303f9fb81d",
+      "stage3/development-snapshot/schemas/input.schema.json": "a301da3af83adefd8932a4786045351ebf8e3a03a5d1273d3c8a792546afb5d1",
+      "stage3/development-snapshot/schemas/proposal.schema.json": "e1f4e6ed2143e6691963af81426c8497c492ab6e7b9578bb7d9d37daaf227176",
+      "stage3/development-snapshot/schemas/state.schema.json": "5da9fc4feb447f6e724c52f2e72e161c4a567671385a6b9845a334615be0a934",
+      "stage3/development-snapshot/validate_schemas.py": "d13701ac713323c58b7d809a273f2e2df48f54b24efc24c7460d1b52e2115230",
+      "stage3/development-snapshot/results/dev-001/schema-instances.json": "146461c25fedd2f2d584c430c6f9e8a83b074f45d4ab31c949755d6c1d8f5f06"
+    }
+  },
+  "ended_at_utc": "2026-09-30T06:47:57.566544+00:00",
+  "exit_code": 0,
+  "commands": [
+    {
+      "step": "01-create-venv",
+      "command": [
+        "/opt/hostedtoolcache/Python/3.12.14/x64/bin/python",
+        "-m",
+        "venv",
+        "/home/runner/work/_temp/schema-gate-003-preparation-36680116525-1-venv"
+      ],
+      "started_at_utc": "2026-09-30T06:47:53.317281+00:00",
+      "ended_at_utc": "2026-09-30T06:47:56.074019+00:00",
+      "pid": 2384,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "exit_code": 0,
+      "stdout": "01-create-venv.stdout.txt",
+      "stderr": "01-create-venv.stderr.txt"
+    },
+    {
+      "step": "02-install",
+      "command": [
+        "/home/runner/work/_temp/schema-gate-003-preparation-36680116525-1-venv/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--no-input",
+        "--disable-pip-version-check",
+        "--index-url",
+        "https://pypi.org/simple",
+        "--only-binary=:all:",
+        "--report",
+        "/home/runner/work/_temp/schema-gate-003-preparation-36680116525-1/pip-install-report.json",
+        "-r",
+        "/home/runner/work/m-anchor-gate/m-anchor-gate/stage3/schema-gates/schema-gate-003-preparation/requirements.txt"
+      ],
+      "started_at_utc": "2026-09-30T06:47:56.074076+00:00",
+      "ended_at_utc": "2026-09-30T06:47:57.147059+00:00",
+      "pid": 2410,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "exit_code": 0,
+      "stdout": "02-install.stdout.txt",
+      "stderr": "02-install.stderr.txt"
+    },
+    {
+      "step": "03-import-and-version",
+      "command": [
+        "/home/runner/work/_temp/schema-gate-003-preparation-36680116525-1-venv/bin/python",
+        "-I",
+        "-c",
+        "import importlib.metadata as m, json, sys\nfrom jsonschema import Draft202012Validator\nversion = m.version('jsonschema')\nif version != '4.26.0':\n    raise RuntimeError('Unexpected jsonschema version: ' + version)\nnames = ['jsonschema', 'referencing', 'jsonschema-specifications', 'attrs', 'rpds-py']\nprint(json.dumps({'validator_version': version,\n    'validator_class': Draft202012Validator.__module__ + '.' + Draft202012Validator.__name__,\n    'python_version': sys.version, 'executable': sys.executable,\n    'prefix': sys.prefix, 'base_prefix': sys.base_prefix,\n    'packages': {name: m.version(name) for name in names},\n    'validation_performed': False}))\n"
+      ],
+      "started_at_utc": "2026-09-30T06:47:57.147088+00:00",
+      "ended_at_utc": "2026-09-30T06:47:57.293480+00:00",
+      "pid": 2433,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "exit_code": 0,
+      "stdout": "03-import-and-version.stdout.txt",
+      "stderr": "03-import-and-version.stderr.txt"
+    },
+    {
+      "step": "04-freeze",
+      "command": [
+        "/home/runner/work/_temp/schema-gate-003-preparation-36680116525-1-venv/bin/python",
+        "-m",
+        "pip",
+        "freeze",
+        "--all"
+      ],
+      "started_at_utc": "2026-09-30T06:47:57.293531+00:00",
+      "ended_at_utc": "2026-09-30T06:47:57.566158+00:00",
+      "pid": 2434,
+      "process_exit_code": 0,
+      "timed_out": false,
+      "exit_code": 0,
+      "stdout": "04-freeze.stdout.txt",
+      "stderr": "04-freeze.stderr.txt"
+    }
+  ]
+}

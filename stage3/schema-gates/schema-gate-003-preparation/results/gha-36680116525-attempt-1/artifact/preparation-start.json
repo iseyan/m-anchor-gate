@@ -1,0 +1,44 @@
+{
+  "record_type": "schema_gate_003_environment_preparation",
+  "started_at_utc": "2026-09-30T06:47:53.313107+00:00",
+  "status": "preparing",
+  "model_api_calls": 0,
+  "state_store_writes": 0,
+  "schema_gate_003_started": false,
+  "schemas_checked": 0,
+  "instances_checked": 0,
+  "schema_validation_performed": false,
+  "check_schema_called": false,
+  "official_run_form_frozen": false,
+  "execution_ready": false,
+  "stage3_complete": false,
+  "stage4_started": false,
+  "required_validator": {
+    "distribution": "jsonschema",
+    "version": "4.26.0",
+    "class": "jsonschema.Draft202012Validator",
+    "dialect": "2020-12"
+  },
+  "plan_sha256": "7ef58ab47d08071d1ebf885b73ccedb4c1834d53526a949606d887d2ff0997bf",
+  "requirements_sha256": "756cc9e506ae4ee1a6f6c0507088b5cfc0dc8ba350fb2d2d46f1ffa72033adb6",
+  "script_sha256": "4775c59ba9542cac0a2bb20b1abf6be7025a9270e7b7c2ba172c5732ff080b64",
+  "source_basis_commit": "57a2a47c19c2ab05bd7c12e8baac028e5b045169",
+  "host_python": "3.12.14 (main, Aug 13 2026, 02:47:42) [GCC 13.3.0]",
+  "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+  "github": {
+    "GITHUB_ACTIONS": "true",
+    "GITHUB_REPOSITORY": "iseyan/m-anchor-gate",
+    "GITHUB_SHA": "7135d8725dd5b6f12f557284e077cf136e40cfb9",
+    "GITHUB_RUN_ID": "36680116525",
+    "GITHUB_RUN_ATTEMPT": "1",
+    "GITHUB_WORKFLOW": "Schema gate 003 preparation",
+    "GITHUB_JOB": "installation-check",
+    "RUNNER_OS": "Linux",
+    "RUNNER_ARCH": "X64"
+  },
+  "runner_image": {
+    "ImageOS": "ubuntu24",
+    "ImageVersion": "20260920.314.1"
+  },
+  "environment_persistence": "The hosted runner is ephemeral; verify installation again in the future validation job."
+}

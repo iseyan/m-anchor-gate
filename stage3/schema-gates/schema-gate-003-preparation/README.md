@@ -1,5 +1,9 @@
 # Schema gate 003: environment preparation
 
+Installation and import were confirmed in [run 36680116525, attempt 1](https://github.com/iseyan/m-anchor-gate/actions/runs/36680116525).
+Reports: [English](results/gha-36680116525-attempt-1/report.en.md) / [日本語](results/gha-36680116525-attempt-1/report.ja.md).
+This is preparation only; schema-gate-003 validation remains unstarted.
+
 This directory prepares a separate execution environment for a future `schema-gate-003`.
 It contains no schema-gate-003 validation result. Preparation checks install `jsonschema==4.26.0`,
 import `Draft202012Validator`, verify its distribution version and retain the observed dependency versions.
