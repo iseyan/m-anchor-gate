@@ -1,0 +1,165 @@
+{
+  "artifact_type": "case_admission_manifest",
+  "version": "stage3-case-admissions/v0.1",
+  "run_id": "stage3-preparation-001",
+  "fixed_at_utc": "2026-09-30T11:21:01+00:00",
+  "authority": "run_operator_host_fixed_synthetic_evidence",
+  "authorization": "User requested model/settings, trial count, spending limit and case-admitted evidence to be fixed.",
+  "registry_reference": {
+    "path": "stage3/development-snapshot/fixtures/evidence-authority.json",
+    "sha256": "cd0eba5bab28177378d4320b9b1e5bcd211aa5763a9b75921cb8526f1d7cf745"
+  },
+  "interpretation_version": "stage3-synthetic-evidence/v0.1",
+  "interpretation": {
+    "omega": [
+      "h_A",
+      "h_B"
+    ],
+    "M_empty": [
+      "h_A",
+      "h_B"
+    ],
+    "M_e_B": [
+      "h_B"
+    ]
+  },
+  "claims_real_causation": false,
+  "model_can_change_admission_or_interpretation": false,
+  "applicability": "Same case ID has the same admitted set in every listed store; store clones do not grant evidence.",
+  "rejected_evidence_categories": [
+    "action_id",
+    "summary_id",
+    "model_output_or_proposal_id",
+    "unregistered_id",
+    "registered_but_not_admitted_for_case"
+  ],
+  "case_rows": [
+    {
+      "condition_id": "R1",
+      "variant": "no_evidence_response_B",
+      "case_id": "stage3-preparation-001-r1",
+      "registered_ids": [
+        "e_B"
+      ],
+      "admitted_valid_ids": [],
+      "new_observation_ids": [],
+      "permitted_applied_ids": [],
+      "admission_timing": "none",
+      "validity": "for_this_run_and_case_only_no_model_revocation_or_extension",
+      "planned_store_path": "stage3/runs/stage3-preparation-001/stores/checked/r1.sqlite"
+    },
+    {
+      "condition_id": "R2",
+      "variant": "full_incorporation",
+      "case_id": "stage3-preparation-001-r2",
+      "registered_ids": [
+        "e_B"
+      ],
+      "admitted_valid_ids": [
+        "e_B"
+      ],
+      "new_observation_ids": [
+        "e_B"
+      ],
+      "permitted_applied_ids": [
+        "e_B"
+      ],
+      "admission_timing": "admitted_before_R2_call",
+      "validity": "for_this_run_and_case_only_no_model_revocation_or_extension",
+      "planned_store_path": "stage3/runs/stage3-preparation-001/stores/checked/r2.sqlite"
+    },
+    {
+      "condition_id": "R3",
+      "variant": "reuse_existing_evidence",
+      "case_id": "stage3-preparation-001-r3",
+      "registered_ids": [
+        "e_B"
+      ],
+      "admitted_valid_ids": [
+        "e_B"
+      ],
+      "new_observation_ids": [],
+      "permitted_applied_ids": [
+        "e_B"
+      ],
+      "admission_timing": "previously_admitted_still_valid_before_R3_call",
+      "validity": "for_this_run_and_case_only_no_model_revocation_or_extension",
+      "planned_store_path": "stage3/runs/stage3-preparation-001/stores/checked/r3.sqlite"
+    },
+    {
+      "condition_id": "R4",
+      "variant": "invalid_references",
+      "case_id": "stage3-preparation-001-r4",
+      "registered_ids": [
+        "e_B"
+      ],
+      "admitted_valid_ids": [],
+      "new_observation_ids": [],
+      "permitted_applied_ids": [],
+      "admission_timing": "none",
+      "validity": "for_this_run_and_case_only_no_model_revocation_or_extension",
+      "planned_store_path": "stage3/runs/stage3-preparation-001/stores/checked/r4.sqlite"
+    },
+    {
+      "condition_id": "R5",
+      "variant": "reference",
+      "case_id": "stage3-preparation-001-r1",
+      "registered_ids": [
+        "e_B"
+      ],
+      "admitted_valid_ids": [],
+      "new_observation_ids": [],
+      "permitted_applied_ids": [],
+      "admission_timing": "same_admission_as_R1",
+      "validity": "for_this_run_and_case_only_no_model_revocation_or_extension",
+      "planned_store_path": "stage3/runs/stage3-preparation-001/stores/checked/r1.sqlite"
+    },
+    {
+      "condition_id": "R5",
+      "variant": "changed_K",
+      "case_id": "stage3-preparation-001-r2",
+      "registered_ids": [
+        "e_B"
+      ],
+      "admitted_valid_ids": [
+        "e_B"
+      ],
+      "new_observation_ids": [],
+      "permitted_applied_ids": [
+        "e_B"
+      ],
+      "admission_timing": "same_admission_as_R2_no_new_observation_at_restart",
+      "validity": "for_this_run_and_case_only_no_model_revocation_or_extension",
+      "planned_store_path": "stage3/runs/stage3-preparation-001/stores/checked/r2.sqlite"
+    },
+    {
+      "condition_id": "R5",
+      "variant": "response_only",
+      "case_id": "stage3-preparation-001-r1",
+      "registered_ids": [
+        "e_B"
+      ],
+      "admitted_valid_ids": [],
+      "new_observation_ids": [],
+      "permitted_applied_ids": [],
+      "admission_timing": "same_admission_as_R1",
+      "validity": "for_this_run_and_case_only_no_model_revocation_or_extension",
+      "planned_store_path": "stage3/runs/stage3-preparation-001/stores/restart/response-only.sqlite"
+    },
+    {
+      "condition_id": "R5",
+      "variant": "summary_only",
+      "case_id": "stage3-preparation-001-r1",
+      "registered_ids": [
+        "e_B"
+      ],
+      "admitted_valid_ids": [],
+      "new_observation_ids": [],
+      "permitted_applied_ids": [],
+      "admission_timing": "same_admission_as_R1",
+      "validity": "for_this_run_and_case_only_no_model_revocation_or_extension",
+      "planned_store_path": "stage3/runs/stage3-preparation-001/stores/restart/summary-only.sqlite"
+    }
+  ],
+  "runtime_admission_loading": "not_executed"
+}
