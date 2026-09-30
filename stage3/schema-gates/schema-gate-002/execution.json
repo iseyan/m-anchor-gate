@@ -1,0 +1,67 @@
+{
+  "record_id": "schema-gate-002",
+  "started_at_utc": "2026-09-30T05:10:26.795816+00:00",
+  "ended_at_utc": "2026-09-30T05:10:26.848419+00:00",
+  "started_at_jst": "2026-09-30T14:10:26.795816+09:00",
+  "pid": 7,
+  "host_recorder_pid": 2,
+  "command": [
+    "/workspace/scratch/2bcf40de1dce/tmp/schema-gate-002-env/bin/python",
+    "stage3/development-snapshot/validate_schemas.py",
+    "--instances",
+    "stage3/development-snapshot/results/dev-001/schema-instances.json",
+    "--report",
+    "stage3/schema-gates/schema-gate-002/schema-gate-002.json"
+  ],
+  "working_directory": "/workspace/scratch/2bcf40de1dce/output/m-anchor-gate",
+  "exit_code": 2,
+  "status": "blocked_or_failed",
+  "error_type": "ModuleNotFoundError",
+  "error": "No module named 'jsonschema'",
+  "validator_imported": false,
+  "schemas_targeted": 4,
+  "schemas_checked": 0,
+  "instances_targeted": 82,
+  "instances_checked": 0,
+  "schema_conformance_result": "not_evaluated",
+  "model_api_calls": 0,
+  "state_store_writes": 0,
+  "official_run_form_frozen": false,
+  "execution_ready": false,
+  "stage3_complete": false,
+  "stage4_entry": "not_started",
+  "prior_record": {
+    "path": "stage3/development-snapshot/results/dev-001/schema-gate-001.json",
+    "sha256_before": "b2ed49af861d3c8728939fa021358e5d46ad55a4062e8b88c57f366971715260",
+    "sha256_after": "b2ed49af861d3c8728939fa021358e5d46ad55a4062e8b88c57f366971715260",
+    "unchanged": true
+  },
+  "source_integrity": {
+    "checked_existing_files": 227,
+    "changed_or_missing_files": [],
+    "before_manifest_sha256": "f3bc4f2222e8ec11ff878ef8ea47fca44a59b08494a02f930fb1b9f32d8f5249",
+    "after_manifest_sha256": "f3bc4f2222e8ec11ff878ef8ea47fca44a59b08494a02f930fb1b9f32d8f5249"
+  },
+  "artifacts": [
+    {
+      "path": "pre-execution.json",
+      "sha256": "47f380ed0ceb7bffef224f23a6ec1c5a4cf180d5275094ca5a5ea2f14c485bc1"
+    },
+    {
+      "path": "schema-gate-002.json",
+      "sha256": "49539ff9b04acc9d743dbd0eb2fcbf268407af17c5de9376c50c392ae79e8eb8"
+    },
+    {
+      "path": "stdout.txt",
+      "sha256": "87f9cdaf335fe97b95f5f93bc6eb5e01bc8bec3027955590b39fca35a2ef94af"
+    },
+    {
+      "path": "stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "environment.json",
+      "sha256": "8754883ac3b04925feece2bf26812b648ddb1ded0a4a42abf59eb614027432de"
+    }
+  ]
+}

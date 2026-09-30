@@ -1,0 +1,33 @@
+[
+  {
+    "command": [
+      "python3",
+      "-m",
+      "venv",
+      "/workspace/scratch/2bcf40de1dce/tmp/schema-gate-002-env"
+    ],
+    "started_at": "2026-09-30T05:05:49.890341+00:00",
+    "ended_at": "2026-09-30T05:05:51.527547+00:00",
+    "exit_code": 0,
+    "stdout": "attempt-001.stdout.txt",
+    "stderr": "attempt-001.stderr.txt"
+  },
+  {
+    "command": [
+      "/workspace/scratch/2bcf40de1dce/tmp/schema-gate-002-env/bin/python",
+      "-m",
+      "pip",
+      "install",
+      "--disable-pip-version-check",
+      "--index-url",
+      "https://pypi.org/simple",
+      "--only-binary=:all:",
+      "jsonschema==4.26.0"
+    ],
+    "started_at": "2026-09-30T05:05:51.527757+00:00",
+    "ended_at": "2026-09-30T05:05:58.658150+00:00",
+    "exit_code": 1,
+    "stdout": "attempt-002.stdout.txt",
+    "stderr": "attempt-002.stderr.txt"
+  }
+]

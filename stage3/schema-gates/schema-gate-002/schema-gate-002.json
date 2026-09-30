@@ -1,0 +1,13 @@
+{
+  "checked_at": "2026-09-30T05:10:26.840041+00:00",
+  "validator": "jsonschema.Draft202012Validator",
+  "requested_package_version": "4.26.0",
+  "dialect": "2020-12",
+  "format_policy": "No format keywords; IDs use patterns.",
+  "schemas": [],
+  "instances": [],
+  "stage3_complete": false,
+  "status": "blocked_or_failed",
+  "error_type": "ModuleNotFoundError",
+  "error": "No module named 'jsonschema'"
+}

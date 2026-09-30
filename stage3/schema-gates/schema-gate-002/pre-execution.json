@@ -1,0 +1,528 @@
+{
+  "record_id": "schema-gate-002",
+  "record_type": "schema_gate_attempt_pre_execution",
+  "fixed_at_utc": "2026-09-30T05:10:26.738329+00:00",
+  "source_repository": "https://github.com/iseyan/m-anchor-gate",
+  "source_commit": "be9d97a24ea7b5bbab4800a18af7965b28721d46",
+  "source_tree": "39167c8dee82c0b50cefa41929f5079ae3212fde",
+  "source_identity_check": "Host compared all 227 local Git blob hashes with the previously verified source commit; current remote main was also checked.",
+  "validator": {
+    "class": "jsonschema.Draft202012Validator",
+    "required_distribution": "jsonschema==4.26.0",
+    "dialect": "2020-12",
+    "format_checker": null,
+    "custom_extensions": false,
+    "options_status": "Intended original-runner defaults; not exercised if import fails.",
+    "format_policy": "Target schemas contain no format keywords; patterns are used for identifiers.",
+    "external_schema_references_in_targets": []
+  },
+  "schemas": [
+    {
+      "path": "stage3/development-snapshot/schemas/decision.schema.json",
+      "sha256": "6ed201e6d3e6b731ae861f3ba041415b2f1085f7e6308b71eff4a5303f9fb81d",
+      "dialect": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "path": "stage3/development-snapshot/schemas/input.schema.json",
+      "sha256": "a301da3af83adefd8932a4786045351ebf8e3a03a5d1273d3c8a792546afb5d1",
+      "dialect": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "path": "stage3/development-snapshot/schemas/proposal.schema.json",
+      "sha256": "e1f4e6ed2143e6691963af81426c8497c492ab6e7b9578bb7d9d37daaf227176",
+      "dialect": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "path": "stage3/development-snapshot/schemas/state.schema.json",
+      "sha256": "5da9fc4feb447f6e724c52f2e72e161c4a567671385a6b9845a334615be0a934",
+      "dialect": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ],
+  "sources": [
+    {
+      "path": "stage3/development-snapshot/validate_schemas.py",
+      "sha256": "d13701ac713323c58b7d809a273f2e2df48f54b24efc24c7460d1b52e2115230"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/schema-instances.json",
+      "sha256": "146461c25fedd2f2d584c430c6f9e8a83b074f45d4ab31c949755d6c1d8f5f06"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/schema-gate-001.json",
+      "sha256": "b2ed49af861d3c8728939fa021358e5d46ad55a4062e8b88c57f366971715260"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/D11.raw.txt",
+      "sha256": "2be83f43883d0eefdc05160c9e5103cb46d7178ab65d0cf44097f2f88d304146"
+    },
+    {
+      "path": "stage3/development-snapshot/run_development.py",
+      "sha256": "1b122f4911dc035061e72f51db4f8a23b08bd8ee1f181c69aea5f92389f1cfda"
+    },
+    {
+      "path": "stage3/specification/stage3-integration-evaluation-v0.1.1.ja.md",
+      "sha256": "7896a85f613bbea912eb2eb95eb661f40cba8ad378e76b451b64732c98f93d71"
+    },
+    {
+      "path": "stage3/run-forms/stage3-run-form.v0.1.json",
+      "sha256": "45d626f72fc0dceaf932e70bf714e0ba730e454e66a95ed1b3ea2ed9e3c45466"
+    },
+    {
+      "path": "stage3/run-forms/stage3-prepared-run-form.v0.1.json",
+      "sha256": "6d8ca871edbdc4f4ec0ed6def1fc4d48ec606152ddd48dbdc0dbdad55fbe0594"
+    },
+    {
+      "path": "stage3/development-report.v0.1.en.md",
+      "sha256": "bd51142b9b5afd08b1955151b36ccbce11fd731c5786b609aae6da3e3e1d3027"
+    }
+  ],
+  "instances": {
+    "path": "stage3/development-snapshot/results/dev-001/schema-instances.json",
+    "sha256": "146461c25fedd2f2d584c430c6f9e8a83b074f45d4ab31c949755d6c1d8f5f06",
+    "count": 82,
+    "by_schema": {
+      "proposal.schema.json": 14,
+      "state.schema.json": 60,
+      "input.schema.json": 4,
+      "decision.schema.json": 4
+    },
+    "expected_valid": 81,
+    "expected_invalid": 1,
+    "rows": [
+      {
+        "id": "D01-proposal",
+        "schema": "proposal.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D01-checked-state-before",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D01-checked-state-after",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D01-comparison-state-before",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D01-comparison-state-after",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D02-proposal",
+        "schema": "proposal.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D02-checked-state-before",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D02-checked-state-after",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D02-comparison-state-before",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D02-comparison-state-after",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D03-proposal",
+        "schema": "proposal.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D03-checked-state-before",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D03-checked-state-after",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D03-comparison-state-before",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D03-comparison-state-after",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D04-proposal",
+        "schema": "proposal.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D04-checked-state-before",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D04-checked-state-after",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D04-comparison-state-before",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D04-comparison-state-after",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D05-proposal",
+        "schema": "proposal.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D05-checked-state-before",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D05-checked-state-after",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D05-comparison-state-before",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D05-comparison-state-after",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D06-proposal",
+        "schema": "proposal.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D06-checked-state-before",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D06-checked-state-after",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D06-comparison-state-before",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D06-comparison-state-after",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D07-proposal",
+        "schema": "proposal.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D07-checked-state-before",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D07-checked-state-after",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D07-comparison-state-before",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D07-comparison-state-after",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D08-proposal",
+        "schema": "proposal.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D08-checked-state-before",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D08-checked-state-after",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D08-comparison-state-before",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D08-comparison-state-after",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D09-proposal",
+        "schema": "proposal.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D09-checked-state-before",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D09-checked-state-after",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D09-comparison-state-before",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D09-comparison-state-after",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D10-proposal",
+        "schema": "proposal.schema.json",
+        "expected_valid": false
+      },
+      {
+        "id": "D10-checked-state-before",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D10-checked-state-after",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D10-comparison-state-before",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D10-comparison-state-after",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D11-checked-state-before",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D11-checked-state-after",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D11-comparison-state-before",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D11-comparison-state-after",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D12-proposal",
+        "schema": "proposal.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D12-checked-state-before",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D12-checked-state-after",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D12-comparison-state-before",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D12-comparison-state-after",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D13-proposal",
+        "schema": "proposal.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D13-checked-state-before",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D13-checked-state-after",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D13-comparison-state-before",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D13-comparison-state-after",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D14-proposal",
+        "schema": "proposal.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D14-checked-state-before",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D14-checked-state-after",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D14-comparison-state-before",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D14-comparison-state-after",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D15-proposal",
+        "schema": "proposal.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D15-checked-state-before",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D15-checked-state-after",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D15-comparison-state-before",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "D15-comparison-state-after",
+        "schema": "state.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "reference-input",
+        "schema": "input.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "reference-decision",
+        "schema": "decision.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "changed_K-input",
+        "schema": "input.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "changed_K-decision",
+        "schema": "decision.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "changed_action_only-input",
+        "schema": "input.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "changed_action_only-decision",
+        "schema": "decision.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "changed_summary_only-input",
+        "schema": "input.schema.json",
+        "expected_valid": true
+      },
+      {
+        "id": "changed_summary_only-decision",
+        "schema": "decision.schema.json",
+        "expected_valid": true
+      }
+    ],
+    "expectations_source": "Unmodified development fixture file from the source commit; no new expectations.",
+    "omitted_proposal": {
+      "id": "D11-proposal",
+      "reason": "Malformed raw JSON was not included as a parsed proposal in the original fixture generator. Its state snapshots remain included."
+    }
+  },
+  "pass_rule": "Original runner: exact validator version, check_schema for all four schemas, and every listed instance matches its stored expected_valid value; exit code 0.",
+  "command": [
+    "/workspace/scratch/2bcf40de1dce/tmp/schema-gate-002-env/bin/python",
+    "stage3/development-snapshot/validate_schemas.py",
+    "--instances",
+    "stage3/development-snapshot/results/dev-001/schema-instances.json",
+    "--report",
+    "stage3/schema-gates/schema-gate-002/schema-gate-002.json"
+  ],
+  "working_directory": "/workspace/scratch/2bcf40de1dce/output/m-anchor-gate",
+  "environment_setup_record": "setup/setup-attempts.json",
+  "existing_files_before": 227,
+  "existing_payload_manifest_sha256": "f3bc4f2222e8ec11ff878ef8ea47fca44a59b08494a02f930fb1b9f32d8f5249",
+  "model_api_calls_planned": 0,
+  "state_store_writes_planned": 0,
+  "official_run_form_frozen": false,
+  "execution_ready": false,
+  "stage3_complete": false,
+  "this_record_does_not_freeze_the_official_model_run_form": true
+}

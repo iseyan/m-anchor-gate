@@ -1,0 +1,7 @@
+{
+  "checked_at": "2026-09-30T05:07:22.945878+00:00",
+  "url": "https://pypi.org/simple/jsonschema/",
+  "status": 403,
+  "error_type": "HTTPError",
+  "reason": "Forbidden"
+}
