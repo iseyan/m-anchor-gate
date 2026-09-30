@@ -1,0 +1,134 @@
+{
+  "artifact_type": "unadopted_input_token_method_candidate",
+  "method_id": "responses-input-tokens-candidate-001",
+  "created_at_utc": "2026-09-30T15:05:09.920775+00:00",
+  "status": "documented_candidate_blocked_by_frozen_total_call_cap",
+  "adopted": false,
+  "execution_ready": false,
+  "endpoint": "https://api.openai.com/v1/responses/input_tokens",
+  "http_method": "POST",
+  "model_identifier": "gpt-5.4-mini-2026-03-17",
+  "maximum_input_tokens": 8192,
+  "official_sources": {
+    "token_guide": "https://developers.openai.com/api/docs/guides/token-counting",
+    "count_reference": "https://developers.openai.com/api/reference/typescript/resources/responses/subresources/input_tokens/methods/count",
+    "model_and_price": "https://developers.openai.com/api/docs/models/gpt-5.4-mini"
+  },
+  "source_observations": [
+    "The guide describes pre-generation counts including request-structure tokens.",
+    "The count reference exposes the eight copied fields listed below, but not the four excluded generation controls.",
+    "The count response has object=response.input_tokens and input_tokens. Snapshot/account support and count-endpoint pricing were not established by an API request."
+  ],
+  "payload_mapping": {
+    "copy_unchanged_from_exact_generation_body": [
+      "model",
+      "instructions",
+      "input",
+      "reasoning",
+      "text",
+      "tools",
+      "tool_choice",
+      "truncation"
+    ],
+    "generation_controls_not_in_count_reference": {
+      "max_output_tokens": "Output limit; remains 2048 in the exact generation request.",
+      "store": "Response storage control; remains false in the exact generation request.",
+      "stream": "Response transport control; remains false in the exact generation request.",
+      "service_tier": "Generation service tier; remains default in the exact generation request."
+    },
+    "forbidden_in_this_fixed_request": [
+      "conversation",
+      "previous_response_id",
+      "personality",
+      "parallel_tool_calls",
+      "temperature",
+      "top_p",
+      "seed"
+    ],
+    "unknown_or_new_generation_fields": "Stop; do not drop them silently or extend this mapping.",
+    "inner_input": "Keep input as the identical string, including embedded task, output schema and actual read-only view. Do not replace it by a summary or tokenize selected fields only.",
+    "encoding": "UTF-8 JSON; ensure_ascii=False, sort_keys=True, separators=(comma,colon), allow_nan=False; same canonical encoding as the frozen builder.",
+    "basis": "Projection onto the published count parameters for this fixed text-only request. This is a design choice derived from the reference, not observed account compatibility."
+  },
+  "future_host_protocol_if_separately_adopted": [
+    "Before dispatch, verify current environment, fixed source hashes, case admission, prices, run accounting and fresh non-overwriting output paths.",
+    "Obtain the authoritative read-only view and read trace, then build the exact generation-request bytes with the fixed builder. For R5 use the actual resumed store; fixtures cannot certify live input.",
+    "Save the generation bytes and SHA-256, trial/case/version/state/view hashes, reader identity and method-record SHA-256 outside old records.",
+    "Derive and save the count bytes and SHA-256 using only the declared projection. Validate all fixed settings, absence of forbidden fields, and unchanged input and instructions.",
+    "Reserve a count attempt before dispatch in the separately adopted accounting mechanism; perform at most one count request for this trial, with no retry, fallback, probe generation or JSON repair.",
+    "Retain start/end time, endpoint, request hash, HTTP status, provider request ID if returned, and raw response bytes or transport failure. Do not store credentials.",
+    "Require HTTP 200, parseable JSON, object=response.input_tokens, and a nonnegative integer input_tokens at most 8192; reject booleans, missing data, errors and an unverified origin.",
+    "Only an authenticated host observation linked to this exact request may establish a bound. A manually entered number, fixture usage or sample response is not sufficient.",
+    "Bind the observed count as upper_bound to the exact generation-request SHA-256, fixed model, method hash and raw count receipt. Save the linkage; never infer model identity from a field the count response does not contain.",
+    "Immediately before generation, compare the complete request bytes/hash and relevant source/read linkage again. Any change invalidates the bound and stops this run instead of recounting or retrying.",
+    "Dispatch the unchanged generation bytes once through the separately bound host path. Keep count attempts separate from the seven generation attempts, while enforcing the adopted total cap and the USD 1 run budget.",
+    "Retain later usage and any count/usage mismatch as a deviation, stop later dispatch, and preserve failures. Later usage cannot retrospectively supply a missing pre-dispatch bound."
+  ],
+  "future_bound_fields": [
+    "origin",
+    "api_input_sha256",
+    "model",
+    "upper_bound",
+    "method_record_sha256",
+    "count_request_sha256",
+    "count_response_sha256",
+    "count_receipt_path",
+    "count_receipt_sha256",
+    "run_id",
+    "trial_id",
+    "case_id",
+    "state_version",
+    "state_sha256",
+    "read_input_sha256"
+  ],
+  "current_call_accounting": {
+    "source": {
+      "path": "stage3/run-forms/stage3-preparation-001/official-run-form.json",
+      "sha256": "96ace90ed5c1f7f781bd5a5b3c7a256b9fc26b0595b7640a311044b6333db5e3",
+      "bytes": 20154
+    },
+    "source_pointer": "/trial_plan/maximum_total_api_calls",
+    "maximum_total_api_calls": 7,
+    "planned_generation_calls": 7,
+    "remaining_call_capacity_for_counting": 0,
+    "counting_calls_adopted": 0
+  },
+  "accounting_revision_candidate": {
+    "adopted": false,
+    "approved": false,
+    "requires_separate_condition_revision_and_run_binding": true,
+    "generation_attempt_cap": 7,
+    "count_attempt_cap": 7,
+    "combined_attempt_cap": 14,
+    "generation_trials_unchanged": [
+      "P001",
+      "P002",
+      "P003",
+      "A001",
+      "A002",
+      "A003",
+      "A004"
+    ],
+    "count_attempts_per_generation_trial": 1,
+    "count_attempt_consumed_on_transport_failure_or_error": true,
+    "all_retries": 0,
+    "extra_generations": 0,
+    "budget_usd": "1.00",
+    "count_endpoint_price_verified": false,
+    "count_request_cost_bound_usd": null,
+    "meaning": "Reviewable alternative only. It raises total requests, not generations. It is not an interpretation of, override to, or authorization under the current form."
+  },
+  "offline_method_status": "No supported whole-request offline bound established in the reviewed sources. This is not a claim that such a method is impossible.",
+  "rejected_substitutes": [
+    "Visible-text tokenization or UTF-8 bytes plus undocumented framing allowance",
+    "max_output_tokens=2048 or truncation=disabled as proof of the separate 8192 input cap",
+    "The received fixture usage.input_tokens=900 or a count example from documentation",
+    "A001-A004 fixture requests as bounds for later real saved-state reads",
+    "Post-generation usage as a pre-generation check"
+  ],
+  "live_implementation_changed": false,
+  "verified_host_bound_records_created": 0,
+  "generation_api_calls": 0,
+  "token_count_api_calls": 0,
+  "full_request_token_gate_closed": false
+}

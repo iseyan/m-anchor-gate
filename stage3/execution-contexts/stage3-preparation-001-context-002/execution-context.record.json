@@ -1,0 +1,268 @@
+{
+  "artifact_type": "pre_execution_linkage_record_with_unadopted_token_method",
+  "context_id": "stage3-preparation-001-context-002",
+  "run_id": "stage3-preparation-001",
+  "created_at_utc": "2026-09-30T15:05:09.920775+00:00",
+  "basis_commit": "c85aa1f259d212e30daca7876ac8f2a45f50337f",
+  "status": "environment_receipt_linked_storage_planned_token_and_start_gates_open",
+  "conditions_frozen": true,
+  "implementation_binding_frozen": true,
+  "official_form_fully_frozen": false,
+  "execution_context_frozen": false,
+  "execution_ready": false,
+  "live_run_started": false,
+  "fixed_references": [
+    {
+      "path": "stage3/run-forms/stage3-preparation-001/official-run-form.json",
+      "sha256": "96ace90ed5c1f7f781bd5a5b3c7a256b9fc26b0595b7640a311044b6333db5e3",
+      "bytes": 20154
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/binding.json",
+      "sha256": "58b7717a733f65d3c383ec0ed44b1979a8c8687d0a46490eee27d10167488a67",
+      "bytes": 12237
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/runtime-manifest.json",
+      "sha256": "b3aca72a5a0a41df1dcdddda4482645fa69ed64fbf5845c5537f0c0e5162dafd",
+      "bytes": 3362
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/src/api_client.py",
+      "sha256": "ebcd92d4108508bc87272f25153515bf8aed56fe6a5b536becd5a0e61f5d2e8f",
+      "bytes": 12078
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/src/request_builder.py",
+      "sha256": "dc8c443827565680578ed5cca629a49cb349850afadaa34a81865bf7a9f3edfd",
+      "bytes": 1460
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/src/live_reader.py",
+      "sha256": "8b94232b813cecac0072838a5e5adafe088289cb3f0c19ec8b649eb0f5339783",
+      "bytes": 1328
+    },
+    {
+      "path": "local-tools/stage3-environment-check-v0.1/target-manifest.json",
+      "sha256": "aa6e266a5cd495ba3c79fd0cda17cdf8acf901646802d5cf80d2fd88c3104c2f",
+      "bytes": 9518
+    },
+    {
+      "path": "stage3/environment-checks/environment-check-20260930T143626Z-f7a97493/verification.json",
+      "sha256": "62af6b4c41382a82e40308475f51447edb82602b07d465bd8dd5ec0e6bd3bf66",
+      "bytes": 63226
+    },
+    {
+      "path": "stage3/environment-checks/environment-check-20260930T143626Z-f7a97493/received/environment-check-20260930T143626Z-f7a97493.zip",
+      "sha256": "8c3f2dd55446d9a52bc5d5fe1df8e31d93f72e8ab4335058389ec7ca91ceb6b4",
+      "bytes": 198837
+    },
+    {
+      "path": "stage3/execution-contexts/stage3-preparation-001-context-001/execution-context.plan.json",
+      "sha256": "92e348893005dcaab06b1aa2c51e27de6e07728f60784d56920e844c5ca3180f",
+      "bytes": 3787
+    },
+    {
+      "path": "stage3/execution-contexts/stage3-preparation-001-context-001/token-budget-method.json",
+      "sha256": "9e111b2a23c40b652e245282441864d2c17a395b3a5f81b790668333419bf188",
+      "bytes": 1938
+    },
+    {
+      "path": "stage3/execution-contexts/stage3-preparation-001-context-001/storage-map.json",
+      "sha256": "ded54a1a4d4eebc297d6cf039d3e17cc549d81e6fd2169265bbdb0a7a8303489",
+      "bytes": 3380
+    }
+  ],
+  "conditions_sha256": "96ace90ed5c1f7f781bd5a5b3c7a256b9fc26b0595b7640a311044b6333db5e3",
+  "runtime_manifest_sha256": "b3aca72a5a0a41df1dcdddda4482645fa69ed64fbf5845c5537f0c0e5162dafd",
+  "token_method_record": {
+    "path": "stage3/execution-contexts/stage3-preparation-001-context-002/token-method.candidate.json",
+    "sha256": "833d78e0e8eecafa87e0dd08fb958f7d5a252b298af38269ba30bf06046150eb"
+  },
+  "request_linkage_review": {
+    "path": "stage3/execution-contexts/stage3-preparation-001-context-002/request-linkage-review.json",
+    "sha256": "bccced5229c4f28d2413e4fd3fecc43cbc71cc578a4d9ca75f524e710ae37878"
+  },
+  "environment": {
+    "status": "received_exact_validator_environment_selected_for_future_start",
+    "observed_in_run": "environment-check-20260930T143626Z-f7a97493",
+    "received": {
+      "python_executable": "C:\\Users\\ise\\Desktop\\schema-gate-003-local-preparation-v0.1\\environments\\local-preparation-20260930T102507Z-5db00b37\\Scripts\\python.exe",
+      "python_prefix": "C:\\Users\\ise\\Desktop\\schema-gate-003-local-preparation-v0.1\\environments\\local-preparation-20260930T102507Z-5db00b37",
+      "python_base_prefix": "C:\\Users\\ise\\AppData\\Local\\Programs\\Python\\Python313",
+      "python_version": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "validator_ready": true,
+      "validator_version": "4.26.0",
+      "validator_class": "jsonschema.validators.Draft202012Validator",
+      "schema_checks_performed": false,
+      "model_api_calls": 0,
+      "installed_distributions": [
+        {
+          "name": "attrs",
+          "version": "26.1.0"
+        },
+        {
+          "name": "jsonschema",
+          "version": "4.26.0"
+        },
+        {
+          "name": "jsonschema-specifications",
+          "version": "2025.9.1"
+        },
+        {
+          "name": "pip",
+          "version": "25.1.1"
+        },
+        {
+          "name": "referencing",
+          "version": "0.37.0"
+        },
+        {
+          "name": "rpds-py",
+          "version": "2026.6.3"
+        }
+      ],
+      "validator_module_path": "C:\\Users\\ise\\Desktop\\schema-gate-003-local-preparation-v0.1\\environments\\local-preparation-20260930T102507Z-5db00b37\\Lib\\site-packages\\jsonschema\\__init__.py"
+    },
+    "source_repo_path_on_windows": "C:\\Users\\ise\\Desktop\\stage3-environment-check-v0.1\\targets\\repo",
+    "future_python_executable": "C:\\Users\\ise\\Desktop\\schema-gate-003-local-preparation-v0.1\\environments\\local-preparation-20260930T102507Z-5db00b37\\Scripts\\python.exe",
+    "same_venv_required": true,
+    "exact_validator_checks_as_received": 68,
+    "exact_validator_check_closed_for_this_received_execution": true,
+    "windows_validation_rerun_by_this_record": false,
+    "unchanged_source_scope": "44 targets in the referenced target manifest; runtime bytes match the received execution.",
+    "current_windows_process_or_disk_observed": false,
+    "start_recheck": "At the actual start, record the executable, prefix, Python version, jsonschema version/class and source hashes. A changed environment or changed code needs its own record; do not borrow the received success."
+  },
+  "pricing": {
+    "checked_at_utc": "2026-09-30T15:05:09.920775+00:00",
+    "source_url": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+    "public_documentation_checked": true,
+    "model_identifier": "gpt-5.4-mini-2026-03-17",
+    "snapshot_listed": true,
+    "rate_basis": {
+      "service_tier": "default",
+      "routing": "global_standard",
+      "uncached_input_usd_per_million": "0.75",
+      "output_usd_per_million": "4.50"
+    },
+    "maximum_input_tokens_conditional": 8192,
+    "maximum_output_tokens": 2048,
+    "generation_charge_arithmetic_usd_per_call": "0.01536",
+    "generation_charge_arithmetic_usd_for_seven": "0.10752",
+    "generation_reservation_usd_per_call": "0.02",
+    "run_budget_usd": "1.00",
+    "count_endpoint_price_verified": false,
+    "count_cost_is_assumed_zero": false,
+    "account_access_or_billing_verified": false,
+    "execution_time_rate_guarantee": false,
+    "pre_dispatch_rule": "Recheck current model/tier/routing prices against the frozen rates. Conditional arithmetic needs an established input bound. If counting is adopted later, fix its pricing and budget accounting separately before any count dispatch.",
+    "cost_incurred_by_this_work_usd": "0.00"
+  },
+  "storage": {
+    "status": "absolute_path_plan_selected_not_locally_verified",
+    "physical_root_plan": "C:\\Users\\ise\\Desktop\\m-anchor-gate-executions",
+    "logical_run_directory": "stage3/runs/stage3-preparation-001/",
+    "physical_run_directory_plan": "C:\\Users\\ise\\Desktop\\m-anchor-gate-executions\\stage3\\runs\\stage3-preparation-001",
+    "physical_root_exists": null,
+    "writable": null,
+    "run_directory_absent": null,
+    "directory_created_by_this_work": false,
+    "official_store_created_by_this_work": false,
+    "case_store_map": [
+      {
+        "condition_id": "R1",
+        "variant": "no_evidence_response_B",
+        "case_id": "stage3-preparation-001-r1",
+        "logical_path": "stage3/runs/stage3-preparation-001/stores/checked/r1.sqlite",
+        "physical_path_plan": "C:\\Users\\ise\\Desktop\\m-anchor-gate-executions\\stage3\\runs\\stage3-preparation-001\\stores\\checked\\r1.sqlite"
+      },
+      {
+        "condition_id": "R2",
+        "variant": "full_incorporation",
+        "case_id": "stage3-preparation-001-r2",
+        "logical_path": "stage3/runs/stage3-preparation-001/stores/checked/r2.sqlite",
+        "physical_path_plan": "C:\\Users\\ise\\Desktop\\m-anchor-gate-executions\\stage3\\runs\\stage3-preparation-001\\stores\\checked\\r2.sqlite"
+      },
+      {
+        "condition_id": "R3",
+        "variant": "reuse_existing_evidence",
+        "case_id": "stage3-preparation-001-r3",
+        "logical_path": "stage3/runs/stage3-preparation-001/stores/checked/r3.sqlite",
+        "physical_path_plan": "C:\\Users\\ise\\Desktop\\m-anchor-gate-executions\\stage3\\runs\\stage3-preparation-001\\stores\\checked\\r3.sqlite"
+      },
+      {
+        "condition_id": "R4",
+        "variant": "invalid_references",
+        "case_id": "stage3-preparation-001-r4",
+        "logical_path": "stage3/runs/stage3-preparation-001/stores/checked/r4.sqlite",
+        "physical_path_plan": "C:\\Users\\ise\\Desktop\\m-anchor-gate-executions\\stage3\\runs\\stage3-preparation-001\\stores\\checked\\r4.sqlite"
+      },
+      {
+        "condition_id": "R5",
+        "variant": "reference",
+        "case_id": "stage3-preparation-001-r1",
+        "logical_path": "stage3/runs/stage3-preparation-001/stores/checked/r1.sqlite",
+        "physical_path_plan": "C:\\Users\\ise\\Desktop\\m-anchor-gate-executions\\stage3\\runs\\stage3-preparation-001\\stores\\checked\\r1.sqlite"
+      },
+      {
+        "condition_id": "R5",
+        "variant": "changed_K",
+        "case_id": "stage3-preparation-001-r2",
+        "logical_path": "stage3/runs/stage3-preparation-001/stores/checked/r2.sqlite",
+        "physical_path_plan": "C:\\Users\\ise\\Desktop\\m-anchor-gate-executions\\stage3\\runs\\stage3-preparation-001\\stores\\checked\\r2.sqlite"
+      },
+      {
+        "condition_id": "R5",
+        "variant": "response_only",
+        "case_id": "stage3-preparation-001-r1",
+        "logical_path": "stage3/runs/stage3-preparation-001/stores/restart/response-only.sqlite",
+        "physical_path_plan": "C:\\Users\\ise\\Desktop\\m-anchor-gate-executions\\stage3\\runs\\stage3-preparation-001\\stores\\restart\\response-only.sqlite"
+      },
+      {
+        "condition_id": "R5",
+        "variant": "summary_only",
+        "case_id": "stage3-preparation-001-r1",
+        "logical_path": "stage3/runs/stage3-preparation-001/stores/restart/summary-only.sqlite",
+        "physical_path_plan": "C:\\Users\\ise\\Desktop\\m-anchor-gate-executions\\stage3\\runs\\stage3-preparation-001\\stores\\restart\\summary-only.sqlite"
+      }
+    ],
+    "comparison_directory_plan": "C:\\Users\\ise\\Desktop\\m-anchor-gate-executions\\stage3\\runs\\stage3-preparation-001\\stores\\unchecked",
+    "comparison_is_authoritative": false,
+    "journal_directory_plan": "C:\\Users\\ise\\Desktop\\m-anchor-gate-executions\\stage3\\runs\\stage3-preparation-001\\journal",
+    "host_record_directory_plan": "C:\\Users\\ise\\Desktop\\m-anchor-gate-executions\\stage3\\runs\\stage3-preparation-001\\host-records",
+    "start_record_plan": "C:\\Users\\ise\\Desktop\\m-anchor-gate-executions\\stage3\\runs\\stage3-preparation-001\\run-start.json",
+    "live_store_metadata": {
+      "execution_context_file": "Absolute path to a new actual-start context; never point to this execution_ready=false document.",
+      "input_bound_file": "Absolute path to the exact trial/request bound derived by an adopted method; none exists now.",
+      "journal_directory": "The single planned journal directory, shared by writer and fresh readers."
+    },
+    "collision_policy": "Check path resolution and absence, then create exclusively at start. If any run output exists, retain it and stop; do not clear it, resume a failed attempt silently or invent a successful start.",
+    "changed_plan_policy": "A different root, new run ID or revised call accounting requires a new linkage record. Never rewrite old evidence or put outputs into the source kit.",
+    "not_verified": "Windows existence, ACLs, resolved aliases and write access have not been observed by this authoring session."
+  },
+  "call_accounting": {
+    "maximum_total_api_calls": 7,
+    "planned_generation_calls": 7,
+    "token_count_calls_adopted": 0,
+    "additional_generation_calls": 0,
+    "retries": 0,
+    "probes": 0
+  },
+  "start_blockers": [
+    "No supported whole-request offline bound is established; the documented API candidate would exceed the current total-seven plan.",
+    "The counting candidate is not adopted; any separate revision must bind its cost/accounting and implementation before use.",
+    "The selected absolute Windows output paths have not been checked or created on that host.",
+    "No actual-start record or per-live-request bound receipts exist; account access remains unverified."
+  ],
+  "preparation_evaluation_complete": false,
+  "stage3_complete": false,
+  "stage4_started": false,
+  "generation_api_calls": 0,
+  "token_count_api_calls": 0,
+  "official_run_state_store_writes": 0,
+  "github_actions_used": false,
+  "record_policy": "New files only. Preserve conditions, binding, context-001, the received environment check, 001-003, failed checks, Bundle and collected materials. A later decision or start uses another record, not an execution_ready edit here.",
+  "review_role": "Advisory. These findings come from the fixed files and official documentation, not reviewer decision authority."
+}

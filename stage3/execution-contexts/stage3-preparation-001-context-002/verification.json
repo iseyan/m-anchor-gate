@@ -1,0 +1,348 @@
+{
+  "artifact_type": "local_read_only_document_consistency_check",
+  "checked_at_utc": "2026-09-30T15:09:15.080347+00:00",
+  "checker_sha256": "76d6ec9864c8db7f80ad52f41656401cb65d2184d71e6cec92529d9bf7ec2796",
+  "status": "record_consistency_passed_token_gate_still_open",
+  "checks": [
+    {
+      "name": "reference:stage3/run-forms/stage3-preparation-001/official-run-form.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/binding.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/runtime-manifest.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/src/api_client.py",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/src/request_builder.py",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/src/live_reader.py",
+      "passed": true
+    },
+    {
+      "name": "reference:local-tools/stage3-environment-check-v0.1/target-manifest.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/environment-checks/environment-check-20260930T143626Z-f7a97493/verification.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/environment-checks/environment-check-20260930T143626Z-f7a97493/received/environment-check-20260930T143626Z-f7a97493.zip",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-contexts/stage3-preparation-001-context-001/execution-context.plan.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-contexts/stage3-preparation-001-context-001/token-budget-method.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-contexts/stage3-preparation-001-context-001/storage-map.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-contexts/stage3-preparation-001-context-002/token-method.candidate.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-contexts/stage3-preparation-001-context-002/request-linkage-review.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/environment-checks/environment-check-20260930T143626Z-f7a97493/received/environment-check-20260930T143626Z-f7a97493.zip",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/environment-checks/environment-check-20260930T143626Z-f7a97493/verification.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-contexts/stage3-preparation-001-context-002/token-method.candidate.json",
+      "passed": true
+    },
+    {
+      "name": "condition_source_matches",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/development-snapshot/adapter.py",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/development-snapshot/fixtures/evidence-authority.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/development-snapshot/m_anchor_minimal.py",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/development-snapshot/schemas/decision.schema.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/development-snapshot/schemas/input.schema.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/development-snapshot/schemas/proposal.schema.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/development-snapshot/schemas/state.schema.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/binding.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/evaluator-contract.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/fixtures/F001.proposal.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/fixtures/F002.proposal.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/fixtures/F003.proposal.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/fixtures/F004.proposal.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/fixtures/initial-input-P001.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/fixtures/initial-input-P002.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/fixtures/initial-input-P003.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/fixtures/r4-manifest.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/input-binding.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/prompts/decision.txt",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/prompts/proposal.txt",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/prompts/tasks.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/requirements.txt",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/runtime-manifest.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/src/api_client.py",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/src/contracts.py",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/src/evaluator.py",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/src/gate.py",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/src/live_reader.py",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/src/m_anchor_minimal.py",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/src/pipeline.py",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/src/reader.py",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/src/request_builder.py",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/tests/offline_checks.py",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/execution-bindings/stage3-preparation-001-binding-001/tests/writer_fixture.py",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/run-forms/stage3-preparation-001/FILES.sha256",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/run-forms/stage3-preparation-001/README.en.md",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/run-forms/stage3-preparation-001/README.ja.md",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/run-forms/stage3-preparation-001/case-admissions.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/run-forms/stage3-preparation-001/freeze-manifest.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/run-forms/stage3-preparation-001/official-run-form.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/run-forms/stage3-preparation-001/trial-plan.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/schema-gates/schema-gate-003/run/schema-gate-003-20260930T104603Z-36d5c5c4/schema-validation.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/schema-gates/schema-gate-003/verification.json",
+      "passed": true
+    },
+    {
+      "name": "reference:stage3/specification/stage3-integration-evaluation-v0.1.1.en.md",
+      "passed": true
+    },
+    {
+      "name": "target_scope",
+      "passed": true
+    },
+    {
+      "name": "received_environment_linked",
+      "passed": true
+    },
+    {
+      "name": "received_exact_mode_success",
+      "passed": true
+    },
+    {
+      "name": "call_cap_preserved",
+      "passed": true
+    },
+    {
+      "name": "candidate_not_adopted",
+      "passed": true
+    },
+    {
+      "name": "no_live_ready_or_bound_claim",
+      "passed": true
+    },
+    {
+      "name": "conditional_generation_arithmetic",
+      "passed": true
+    },
+    {
+      "name": "count_cost_not_invented",
+      "passed": true
+    },
+    {
+      "name": "seven_existing_fixture_requests",
+      "passed": true
+    },
+    {
+      "name": "received_source_root",
+      "passed": true
+    },
+    {
+      "name": "request_linkage:P001",
+      "passed": true
+    },
+    {
+      "name": "request_linkage:P002",
+      "passed": true
+    },
+    {
+      "name": "request_linkage:P003",
+      "passed": true
+    },
+    {
+      "name": "request_linkage:A001",
+      "passed": true
+    },
+    {
+      "name": "request_linkage:A002",
+      "passed": true
+    },
+    {
+      "name": "request_linkage:A003",
+      "passed": true
+    },
+    {
+      "name": "request_linkage:A004",
+      "passed": true
+    },
+    {
+      "name": "planned_store_mapping",
+      "passed": true
+    },
+    {
+      "name": "path_plan_outside_kit_and_venv",
+      "passed": true
+    },
+    {
+      "name": "zero_experimental_calls",
+      "passed": true
+    }
+  ],
+  "error": null,
+  "exit_code": 0,
+  "model_or_count_API_called": false,
+  "schema_validator_called": false,
+  "received_68_checks_rerun": false,
+  "schema_gate_003_rerun": false,
+  "input_token_counts_observed": 0,
+  "verified_host_bounds_issued": 0,
+  "windows_path_or_environment_reobserved": false,
+  "experimental_state_stores_written": 0,
+  "execution_ready": false,
+  "scope": "Byte references, fixture-request projection, conditional arithmetic and planned path consistency only."
+}
