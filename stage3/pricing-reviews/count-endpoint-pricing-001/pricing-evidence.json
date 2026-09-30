@@ -1,0 +1,152 @@
+{
+  "artifact_type": "bounded_public_pricing_source_review",
+  "record_id": "count-endpoint-pricing-001",
+  "checked_at_utc": "2026-09-30T16:24:55.322271+00:00",
+  "repository": "iseyan/m-anchor-gate",
+  "basis_commit": "0e07c135202114191cc873f14825c344a00b3b0b",
+  "basis_tree": "a5f15f047ebce52c932d00a9dbe9827cb6dce9e5",
+  "scope": "Only the pricing basis for the proposed count request; no condition adoption, implementation revision or execution.",
+  "target": {
+    "method": "POST",
+    "endpoint": "https://api.openai.com/v1/responses/input_tokens",
+    "model_identifier": "gpt-5.4-mini-2026-03-17",
+    "routing": "global_standard",
+    "generation_service_tier": "default",
+    "note": "The generation setting identifies the candidate context; it does not establish that a count request accepts a service_tier parameter."
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Counting tokens",
+      "url": "https://developers.openai.com/api/docs/guides/token-counting",
+      "observation": "Describes pre-generation input counting, including request-formatting tokens. No endpoint-specific billing basis was established from the retrieved page."
+    },
+    {
+      "id": "S2",
+      "title": "Get input token counts",
+      "url": "https://developers.openai.com/api/reference/typescript/resources/responses/subresources/input_tokens/methods/count",
+      "observation": "Specifies the count request and response fields. No endpoint-specific billing basis was established from the retrieved reference."
+    },
+    {
+      "id": "S3",
+      "title": "Pricing",
+      "url": "https://developers.openai.com/api/docs/pricing",
+      "observation": "Gives general model token rates and general API pricing language. This review could not establish which quantities, if any, this count endpoint bills."
+    },
+    {
+      "id": "S4",
+      "title": "Input Tokens resource",
+      "url": "https://developers.openai.com/api/reference/resources/responses/subresources/input_tokens",
+      "requested_url": "https://platform.openai.com/docs/api-reference/responses/input-tokens",
+      "observation": "The legacy URL redirects to the current count resource. It is not an independent count-pricing statement."
+    },
+    {
+      "id": "S5",
+      "title": "Changelog",
+      "url": "https://developers.openai.com/api/docs/changelog",
+      "observation": "Text searches for input_tokens and token count returned no match in the retrieved page. No count-pricing basis was established."
+    },
+    {
+      "id": "S6",
+      "title": "Usage",
+      "url": "https://developers.openai.com/api/reference/resources/admin/subresources/organization/subresources/usage",
+      "observation": "Describes aggregate usage fields. The retrieved page did not identify /responses/input_tokens as a billing category or establish its price."
+    }
+  ],
+  "search_scope": {
+    "method": "Official public-page retrieval and keyword searches, with a separate read-only source check; no authenticated account access.",
+    "domains": [
+      "developers.openai.com",
+      "platform.openai.com",
+      "learn.chatgpt.com"
+    ],
+    "queries": [
+      "\"input token counting\" pricing",
+      "\"responses/input_tokens\" billing",
+      "\"responses/input_tokens\" \"free\"",
+      "\"input token counts\" \"billing\"",
+      "\"token counting\" pricing billing free",
+      "\"responses/input_tokens\" charged cost"
+    ],
+    "limitations": "Bounded review of the listed sources, not proof that pricing information does not exist. Search snippets and navigation labels were not accepted as billing terms. Public pages may change; no archived-page completeness or provider-authentication claim is made."
+  },
+  "finding": {
+    "status": "cost_basis_not_established_in_review",
+    "count_endpoint_cost_basis": null,
+    "count_endpoint_cost_source": null,
+    "count_request_cost_upper_bound_usd": null,
+    "count_request_reservation_usd": null,
+    "combined_cost_upper_bound_usd": null,
+    "combined_cost_upper_bound_established": false,
+    "count_free_assumed": false,
+    "generation_input_rate_substituted": false,
+    "missing_usage_treated_as_zero": false
+  },
+  "unresolved_existing_candidate_questions": [
+    "Applicable billing terms for this endpoint and model, including whether a successful request is charged.",
+    "If quantity-dependent, the billed quantity and a pre-dispatch bound, including a count that returns more than 8192.",
+    "Billing treatment of errors, timeouts and uncertain delivery.",
+    "A supported per-attempt reservation and combined bound within the existing USD 1 policy."
+  ],
+  "budget_interpretation": {
+    "source": "stage3/run-forms/stage3-preparation-002-candidate-001/pricing-bound.review.json",
+    "symbolic_reservation_test": "0.14 + 7*c <= 1.00",
+    "c_usd": null,
+    "meaning": "Inherited feasibility expression only; neither available budget nor general model pricing supplies c. Generation pricing and settings were not revised by this record."
+  },
+  "unchanged_disposition": {
+    "current_run_id": "stage3-preparation-001",
+    "current_maximum_total_api_calls": 7,
+    "current_execution_ready": false,
+    "current_input_bound_gate_closed": false,
+    "proposed_run_id": "stage3-preparation-002",
+    "candidate_adopted": false,
+    "candidate_conditions_frozen": false,
+    "candidate_implementation_binding_frozen": false,
+    "candidate_execution_ready": false,
+    "count_request_may_be_dispatched": false,
+    "generation_request_may_be_dispatched": false,
+    "new_run_started": false,
+    "stage3_preparation_complete": false
+  },
+  "activity_this_review": {
+    "experiment_generation_api_calls": 0,
+    "experiment_count_api_calls": 0,
+    "experiment_authoritative_state_writes": 0,
+    "account_api_calls": 0,
+    "provider_inquiry_sent": false,
+    "github_actions_invoked": false,
+    "live_code_changed": false,
+    "runtime_checks_executed": false
+  },
+  "preserved_references": [
+    {
+      "path": "stage3/run-forms/stage3-preparation-001/official-run-form.json",
+      "sha256": "96ace90ed5c1f7f781bd5a5b3c7a256b9fc26b0595b7640a311044b6333db5e3"
+    },
+    {
+      "path": "stage3/run-forms/stage3-preparation-002-candidate-001/pricing-bound.review.json",
+      "sha256": "d2bb35137acb14656b2eb8ea2e7b6a518e5e2285ab7c51b659112cc6f55eabf3"
+    },
+    {
+      "path": "stage3/run-forms/stage3-preparation-002-candidate-001/run-form.candidate.json",
+      "sha256": "5e21ace6162eaa9b0fd756e57fdd9156a064432221e42218756d031939ed829a"
+    },
+    {
+      "path": "stage3/execution-contexts/stage3-preparation-001-context-002/execution-context.record.json",
+      "sha256": "da1555065e3ef7874f2930c7eaeb4446f669b6a1bd700c4de81c01e0ad1428bf"
+    }
+  ],
+  "preservation": {
+    "all_preexisting_repository_files_to_remain_unchanged": true,
+    "baseline_file_count": 417,
+    "new_record_location": "stage3/pricing-reviews/count-endpoint-pricing-001",
+    "existing_candidate_not_execution_path": true,
+    "old_case_ids_R4_hashes_and_69_68_003_results_not_transferred": true,
+    "closed_reports_bundle_and_archives_not_updated": true
+  },
+  "judgment": "The count method exists, but the inspected documentation does not establish a usable pre-dispatch cost bound. Keep the candidate unadopted and both runs not ready. Grok's comments are advisory; they do not authorize a transition.",
+  "next_evidence": "An applicable official pricing statement or provider/account-specific confirmation addressing the existing candidate questions. The inquiry draft already in the candidate remains unsent. Any subsequent evidence belongs in a new record.",
+  "integrity_scope": "FILES.sha256 identifies the three record files; it does not authenticate the provider's web pages or prove runtime reproducibility."
+}
+
