@@ -1,0 +1,45 @@
+name: Schema gate 003 preparation
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/schema-gate-003-preparation.yml'
+      - 'tools/prepare_schema_gate_003.py'
+      - 'stage3/schema-gates/schema-gate-003-preparation/preparation-plan.v0.1.json'
+      - 'stage3/schema-gates/schema-gate-003-preparation/requirements.txt'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  installation-check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Read the triggering source commit
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+
+      - name: Select Python 3.12
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
+        with:
+          python-version: '3.12'
+
+      - name: Install and verify the specified validator
+        env:
+          PREPARATION_OUTPUT: ${{ runner.temp }}/schema-gate-003-preparation-${{ github.run_id }}-${{ github.run_attempt }}
+        run: python tools/prepare_schema_gate_003.py --output "$PREPARATION_OUTPUT"
+
+      - name: Retain preparation outputs, including failures
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: schema-gate-003-preparation-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/schema-gate-003-preparation-${{ github.run_id }}-${{ github.run_attempt }}/
+          retention-days: 14
+          if-no-files-found: error
+          overwrite: false
