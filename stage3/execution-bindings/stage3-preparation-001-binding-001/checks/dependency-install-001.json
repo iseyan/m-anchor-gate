@@ -1,0 +1,21 @@
+{
+  "record_type": "binding_dependency_install_attempts",
+  "package": "jsonschema==4.26.0",
+  "environment": "new local binding-venv, Python 3.12.14",
+  "attempts": [
+    {
+      "id": "default-index",
+      "command": "binding-venv/bin/python -m pip install --disable-pip-version-check --retries 0 --timeout 15 jsonschema==4.26.0",
+      "exit_code": 1
+    },
+    {
+      "id": "explicit-pypi",
+      "command": "binding-venv/bin/python -m pip install --index-url https://pypi.org/simple --disable-pip-version-check --retries 0 --timeout 10 jsonschema==4.26.0",
+      "exit_code": 1
+    }
+  ],
+  "observed_error": "ERROR: Could not find a version that satisfies the requirement jsonschema==4.26.0 (from versions: none)\nERROR: No matching distribution found for jsonschema==4.26.0\n",
+  "interpretation": "Package was not obtained in this environment. This does not establish that the published package/version is nonexistent.",
+  "schema_gate_003_rerun": false,
+  "model_api_calls": 0
+}

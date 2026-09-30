@@ -1,0 +1,48 @@
+{
+  "artifact_type": "input_and_request_binding",
+  "run_id": "stage3-preparation-001",
+  "builder": {
+    "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/src/request_builder.py",
+    "sha256": "dc8c443827565680578ed5cca629a49cb349850afadaa34a81865bf7a9f3edfd"
+  },
+  "prompt_and_task_files": [
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/prompts/proposal.txt",
+      "sha256": "44da5d93cd07b858cbdd181713e97433434a9f6daa02e03a33250e578e2c9e3b"
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/prompts/decision.txt",
+      "sha256": "6d6edd99773abb6ab34ef3a5fab9501060c2dd2774c5978cfcbb46a7c859e58f"
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/prompts/tasks.json",
+      "sha256": "35bbbcf52a8c4e3c0289a6e83a3af2f1d8af1c9c1ac02473f38b07b164e123fd"
+    }
+  ],
+  "planned_initial_views": [
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/fixtures/initial-input-P001.json",
+      "sha256": "e9e03c77dfb5ea28f65b3cce45964ea078138a392451991526d5a4b129f29d10"
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/fixtures/initial-input-P002.json",
+      "sha256": "e98ab9d95bd095b0db356e439662207e6ec2dabea9e7ac5e6b9913fa5c89420d"
+    },
+    {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/fixtures/initial-input-P003.json",
+      "sha256": "0873a71029ecd4893a4f1209462a0890d1729014b82ad67190277abf56023a8f"
+    }
+  ],
+  "initial_views_status": "predeclared fixtures, matched by offline reads, not live model inputs",
+  "dynamic_R5_views": "assembled from actual post-proposal authoritative reads; hashes are recorded then, not invented now",
+  "request_serialization": "UTF-8, ensure_ascii=False, sorted object keys, compact separators, no non-JSON numbers",
+  "raw_model_output_serialization": "retain the exact extracted text bytes and complete original HTTP response bytes; never reserialize before the paired store replay",
+  "API_request_fields": "exact frozen model/settings plus instructions and one JSON-encoded input string",
+  "output_formats": "fixed Stage 3 proposal schema for P001-P003 and decision schema for A001-A004",
+  "evaluator_imported_by_request_builder": false,
+  "input_token_limit": 8192,
+  "token_bound_status": "not_yet_established_for_live_requests",
+  "token_bound_policy": "Live transport requires a separate verified host bound record naming the exact request SHA-256, model, bound <=8192 and the method record hash. No such record is supplied here.",
+  "additional_counting_API_calls_added": 0,
+  "account_access_status": "not_verified; this binding does not add an account-access proof as an acceptance criterion"
+}

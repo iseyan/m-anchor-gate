@@ -1,0 +1,32 @@
+{
+  "artifact_type": "evaluator_contract",
+  "version": "stage3-binding-evaluator/v0.1",
+  "implementation": {
+    "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/src/evaluator.py",
+    "sha256": "fd3ad6be6635dc972fa85fade195a3fb93d30c0054a35e8ac8a3b142d889af87"
+  },
+  "expected_values_location": "host_only_derived_from_actual_read_view",
+  "included_in_model_input": false,
+  "decision_rules": {
+    "selected_action": "actual linked stored action",
+    "retained_candidates": "actual stored K, compared as a set",
+    "state_version_read": "actual host read version",
+    "state_sha256_read": "SHA-256 of the canonical actual state bytes",
+    "cause_status": {
+      "K_size_gt_1": "unresolved",
+      "K_size_1": "single_candidate_under_interpretation",
+      "K_size_0": "candidate_exhaustion"
+    }
+  },
+  "transition_rules": {
+    "admissibility": "registered and admitted/valid for the bound case",
+    "preservation": "K_before intersection M(D) subseteq K_proposed subseteq K_before",
+    "case_version_hash_checks": "scored separately from preservation legality",
+    "full_incorporation_task": "all admitted valid evidence applied and K_proposed equals the supported intersection",
+    "D15": "legal partial incorporation can fail the full-incorporation task"
+  },
+  "missing_control": "Preserve task failure and unavailable contrast; no replacement successful state.",
+  "comparison_attribution": "Same proposal, two stores; differences belong to the integration mechanism.",
+  "internal_understanding_claim": false,
+  "prompt_injection_resistance_claim": false
+}

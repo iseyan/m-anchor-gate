@@ -1,0 +1,100 @@
+{
+  "artifact_type": "runtime_source_and_input_binding",
+  "binding_id": "stage3-preparation-001-binding-001",
+  "files": [
+    {
+      "path": "fixtures/F001.proposal.json",
+      "sha256": "45381aedc10b8d5292b1972e336eec5760ac583a679c0a873cbe1313b13b3f8a"
+    },
+    {
+      "path": "fixtures/F002.proposal.json",
+      "sha256": "77d9ce9c43a8e35fe48b6c02d949c283dcfd0faf74d91136c8a8522c3968f15d"
+    },
+    {
+      "path": "fixtures/F003.proposal.json",
+      "sha256": "f692d6f1d440083cfda5a95ff9e5fa2a9cc48ac76900eafcc1d9c45453c14cc9"
+    },
+    {
+      "path": "fixtures/F004.proposal.json",
+      "sha256": "33487d25a57c08f2269686deee7375bf8b169662767ab56c8e41ffc2156deb5c"
+    },
+    {
+      "path": "fixtures/initial-input-P001.json",
+      "sha256": "e9e03c77dfb5ea28f65b3cce45964ea078138a392451991526d5a4b129f29d10"
+    },
+    {
+      "path": "fixtures/initial-input-P002.json",
+      "sha256": "e98ab9d95bd095b0db356e439662207e6ec2dabea9e7ac5e6b9913fa5c89420d"
+    },
+    {
+      "path": "fixtures/initial-input-P003.json",
+      "sha256": "0873a71029ecd4893a4f1209462a0890d1729014b82ad67190277abf56023a8f"
+    },
+    {
+      "path": "fixtures/r4-manifest.json",
+      "sha256": "3b91c529ba31fcaac416ea98fea11f651392537e948aac1fe7b8c9d49a7b3074"
+    },
+    {
+      "path": "prompts/decision.txt",
+      "sha256": "6d6edd99773abb6ab34ef3a5fab9501060c2dd2774c5978cfcbb46a7c859e58f"
+    },
+    {
+      "path": "prompts/proposal.txt",
+      "sha256": "44da5d93cd07b858cbdd181713e97433434a9f6daa02e03a33250e578e2c9e3b"
+    },
+    {
+      "path": "prompts/tasks.json",
+      "sha256": "35bbbcf52a8c4e3c0289a6e83a3af2f1d8af1c9c1ac02473f38b07b164e123fd"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "756cc9e506ae4ee1a6f6c0507088b5cfc0dc8ba350fb2d2d46f1ffa72033adb6"
+    },
+    {
+      "path": "src/api_client.py",
+      "sha256": "ebcd92d4108508bc87272f25153515bf8aed56fe6a5b536becd5a0e61f5d2e8f"
+    },
+    {
+      "path": "src/contracts.py",
+      "sha256": "30b4402a6d87dfd075bdcbf6f7a9cfeb1bfe616d64fdb8b32c18e8bf6c3ee475"
+    },
+    {
+      "path": "src/evaluator.py",
+      "sha256": "fd3ad6be6635dc972fa85fade195a3fb93d30c0054a35e8ac8a3b142d889af87"
+    },
+    {
+      "path": "src/gate.py",
+      "sha256": "5208175ef1e81cd067ea2f1f95a6c9d89e2916bcea197df2bfaa736ec8366ce0"
+    },
+    {
+      "path": "src/live_reader.py",
+      "sha256": "8b94232b813cecac0072838a5e5adafe088289cb3f0c19ec8b649eb0f5339783"
+    },
+    {
+      "path": "src/m_anchor_minimal.py",
+      "sha256": "0f9551e8d00cd4408441944d9067cfe9bce7d5653019a5af27738fb5895f58c9"
+    },
+    {
+      "path": "src/pipeline.py",
+      "sha256": "45d0ee3dd382c39314b3e1cd7489ccaaf86b56ef6a1a5db65e3644ca567a4376"
+    },
+    {
+      "path": "src/reader.py",
+      "sha256": "824d685ae2542b23d065d81fc7b3d4b5c22495a5d7e5238374da0232cded8552"
+    },
+    {
+      "path": "src/request_builder.py",
+      "sha256": "dc8c443827565680578ed5cca629a49cb349850afadaa34a81865bf7a9f3edfd"
+    },
+    {
+      "path": "tests/offline_checks.py",
+      "sha256": "131d20490725bf67f097b0d825cf4eb605c9619408d842ecd70df887fef272b5"
+    },
+    {
+      "path": "tests/writer_fixture.py",
+      "sha256": "0de8e443aab6bc6e62aedc0f9a04a13a50a02ac3f27dfff53fe09e846140a52e"
+    }
+  ],
+  "self_hash_excluded": true,
+  "hash_role": "identity_of_code_templates_and_fixtures_not_proof_of_execution"
+}

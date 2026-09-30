@@ -1,0 +1,9 @@
+{
+  "P001": {"output_schema":"proposal","task":"Keep provisional response B selected and propose the next state using the available evidence."},
+  "P002": {"output_schema":"proposal","task":"Keep provisional response B selected and fully incorporate all admitted valid evidence under the supplied interpretation."},
+  "P003": {"output_schema":"proposal","task":"Keep provisional response B selected and fully incorporate existing admitted valid evidence. There is no new observation."},
+  "A001": {"output_schema":"decision","task":"Assess the saved state and action read by this fresh process."},
+  "A002": {"output_schema":"decision","task":"Assess the saved state and action read by this fresh process."},
+  "A003": {"output_schema":"decision","task":"Assess the saved state and action read by this fresh process."},
+  "A004": {"output_schema":"decision","task":"Assess the saved state and action read by this fresh process."}
+}

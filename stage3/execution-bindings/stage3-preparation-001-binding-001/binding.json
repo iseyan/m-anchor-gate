@@ -1,0 +1,282 @@
+{
+  "artifact_type": "pre_execution_binding_record",
+  "binding_version": "stage3-execution-binding/v0.1",
+  "binding_id": "stage3-preparation-001-binding-001",
+  "run_id": "stage3-preparation-001",
+  "frozen_at_utc": "2026-09-30T13:55:11+00:00",
+  "basis_commit": "840d6b7be93924f4781f6ac19ca53afbc592507b",
+  "status": "implementation_and_input_binding_frozen_live_entry_checks_incomplete",
+  "conditions_frozen": true,
+  "implementation_binding_frozen": true,
+  "official_form_fully_frozen": false,
+  "execution_ready": false,
+  "live_run_started": false,
+  "conditions_reference": {
+    "path": "stage3/run-forms/stage3-preparation-001/official-run-form.json",
+    "sha256": "96ace90ed5c1f7f781bd5a5b3c7a256b9fc26b0595b7640a311044b6333db5e3"
+  },
+  "runtime_manifest": {
+    "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/runtime-manifest.json",
+    "sha256": "b3aca72a5a0a41df1dcdddda4482645fa69ed64fbf5845c5537f0c0e5162dafd"
+  },
+  "input_binding": {
+    "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/input-binding.json",
+    "sha256": "f5464b8905c3d4be3f3dd32f406bc099900a505063665fccfff36e86655d5101"
+  },
+  "r4_fixed_proposals": {
+    "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/fixtures/r4-manifest.json",
+    "sha256": "3b91c529ba31fcaac416ea98fea11f651392537e948aac1fe7b8c9d49a7b3074"
+  },
+  "evaluator_contract": {
+    "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/evaluator-contract.json",
+    "sha256": "392eb52dc090ea70b685d599d8d312fb130bdeaab2a0f0b2b2f2623dd262cd84"
+  },
+  "unchanged_references": [
+    {
+      "path": "stage3/run-forms/stage3-preparation-001/FILES.sha256",
+      "sha256": "7a70d25a6894426c3c9fee3c9ad5b1b587b98dcc0fc3f8fbd9a78100fcb899fc"
+    },
+    {
+      "path": "stage3/run-forms/stage3-preparation-001/README.en.md",
+      "sha256": "997ac6cd8d45336cc6988a06a7909f01217214fdd3a6200a021d145d782f2216"
+    },
+    {
+      "path": "stage3/run-forms/stage3-preparation-001/README.ja.md",
+      "sha256": "95cc153f8f9549edb802660303dd046cdf124477675cce172743667f90e149b8"
+    },
+    {
+      "path": "stage3/run-forms/stage3-preparation-001/case-admissions.json",
+      "sha256": "73c6a626d1d8418c8b5eef3276d79529ab903a14e9a5311eae4a441e88e0b4dc"
+    },
+    {
+      "path": "stage3/run-forms/stage3-preparation-001/freeze-manifest.json",
+      "sha256": "da49bcb03bee48baf0a52a475920ba440df35abee28aff49110da18b2524c8a9"
+    },
+    {
+      "path": "stage3/run-forms/stage3-preparation-001/official-run-form.json",
+      "sha256": "96ace90ed5c1f7f781bd5a5b3c7a256b9fc26b0595b7640a311044b6333db5e3"
+    },
+    {
+      "path": "stage3/run-forms/stage3-preparation-001/trial-plan.json",
+      "sha256": "64719a5eee171731798ebf4e2d413922f192b1f728951f9ecbd0cdeeb31af977"
+    },
+    {
+      "path": "stage3/specification/stage3-integration-evaluation-v0.1.1.en.md",
+      "sha256": "614882692b1b8419f6be4d1df9fbbf3a243bb43c05450c726a6ac2c3faeaa0fe"
+    },
+    {
+      "path": "stage3/development-snapshot/adapter.py",
+      "sha256": "a735b5d4b95a224f5e76d27e38366a12cb987b7e0f40e6833b4788acc1050945"
+    },
+    {
+      "path": "stage3/development-snapshot/m_anchor_minimal.py",
+      "sha256": "0f9551e8d00cd4408441944d9067cfe9bce7d5653019a5af27738fb5895f58c9"
+    },
+    {
+      "path": "stage3/development-snapshot/fixtures/evidence-authority.json",
+      "sha256": "cd0eba5bab28177378d4320b9b1e5bcd211aa5763a9b75921cb8526f1d7cf745"
+    },
+    {
+      "path": "stage3/development-snapshot/schemas/input.schema.json",
+      "sha256": "a301da3af83adefd8932a4786045351ebf8e3a03a5d1273d3c8a792546afb5d1"
+    },
+    {
+      "path": "stage3/development-snapshot/schemas/state.schema.json",
+      "sha256": "5da9fc4feb447f6e724c52f2e72e161c4a567671385a6b9845a334615be0a934"
+    },
+    {
+      "path": "stage3/development-snapshot/schemas/proposal.schema.json",
+      "sha256": "e1f4e6ed2143e6691963af81426c8497c492ab6e7b9578bb7d9d37daaf227176"
+    },
+    {
+      "path": "stage3/development-snapshot/schemas/decision.schema.json",
+      "sha256": "6ed201e6d3e6b731ae861f3ba041415b2f1085f7e6308b71eff4a5303f9fb81d"
+    },
+    {
+      "path": "stage3/schema-gates/schema-gate-003/verification.json",
+      "sha256": "e3e1088f5a5b307c9b43e2e426852c5788ed0a0f3ee0ccf0fc787e3888e9ad28"
+    },
+    {
+      "path": "stage3/schema-gates/schema-gate-003/run/schema-gate-003-20260930T104603Z-36d5c5c4/schema-validation.json",
+      "sha256": "d8c518b49ba581d19f55d31c54a641b5f3f9ed0d05d2e59ccbd4f81ef8741dbd"
+    }
+  ],
+  "implementation": {
+    "adapter": "src/gate.py",
+    "transport": "src/api_client.py",
+    "composition": "src/pipeline.py",
+    "offline_reader": "src/reader.py",
+    "future_live_reader": "src/live_reader.py",
+    "guard_copied_unchanged": {
+      "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/src/m_anchor_minimal.py",
+      "sha256": "0f9551e8d00cd4408441944d9067cfe9bce7d5653019a5af27738fb5895f58c9"
+    },
+    "old_development_origin_guard_modified": false,
+    "origin_labels": [
+      "model_output",
+      "offline_transport_fixture",
+      "fixed_invalid_replay",
+      "trusted_control_setup"
+    ],
+    "authoritative_candidate_update_path": "gate.submit_raw transaction",
+    "comparison_store_can_supply_authoritative_input": false,
+    "HTTP_retry_count": 0,
+    "model_fallback": false,
+    "retained_failed_outputs": true
+  },
+  "offline_checks": [
+    {
+      "id": "local-check-001",
+      "mode": "exact_jsonschema",
+      "status": "blocked_or_failed",
+      "passed_checks": 0,
+      "report": {
+        "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/checks/local-check-001.report.json",
+        "sha256": "12f503f5eba2e321b8b8a7d0dd915160c25d3830f902b3dfdead54c1f6931fe6"
+      },
+      "raw_records_archive": {
+        "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/checks/local-check-001.records.zip",
+        "sha256": "eef4daa6bbd5502deb1a870d0a1f78043d1f1ccf15344fa0b6dee1e53f0f7c6d"
+      },
+      "runtime_manifest_sha256": null,
+      "model_api_calls": 0
+    },
+    {
+      "id": "local-check-002",
+      "mode": "offline_structural",
+      "status": "passed_offline_checks",
+      "passed_checks": 61,
+      "report": {
+        "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/checks/local-check-002.report.json",
+        "sha256": "1227df50636f83b551934a37f6af026f9b36636ce8c97dfc3cf9840b120cb9fd"
+      },
+      "raw_records_archive": {
+        "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/checks/local-check-002.records.zip",
+        "sha256": "ebf08283d063b423239fff842334f67b1d9290310c4ac2fe1a3523809aac4881"
+      },
+      "runtime_manifest_sha256": null,
+      "model_api_calls": 0
+    },
+    {
+      "id": "local-check-003",
+      "mode": "offline_structural",
+      "status": "passed_offline_checks",
+      "passed_checks": 68,
+      "report": {
+        "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/checks/local-check-003.report.json",
+        "sha256": "62ba7fed6f4e95f83133583a8f046c5cfe466f32a8b7c159d0a57e60ea9e9123"
+      },
+      "raw_records_archive": {
+        "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/checks/local-check-003.records.zip",
+        "sha256": "40eb602c6cbd4a5de9f8d00dd5968a82cb971652ffef1ff94597489e079c1b8f"
+      },
+      "runtime_manifest_sha256": null,
+      "model_api_calls": 0
+    },
+    {
+      "id": "local-check-004",
+      "mode": "offline_structural",
+      "status": "passed_offline_checks",
+      "passed_checks": 69,
+      "report": {
+        "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/checks/local-check-004.report.json",
+        "sha256": "72f0a68a7c86253cd1601bec0fa4f76ba8bafd2237e314d2aabe9138fce5f917"
+      },
+      "raw_records_archive": {
+        "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/checks/local-check-004.records.zip",
+        "sha256": "f67a71373c0c8047b2401a2b09c70e301bac641c09366a2948cb89e5ca7cfc07"
+      },
+      "runtime_manifest_sha256": "bb6ddb3578ff7b7eac9ec73e67c9d0aa3b1160787fa60b6c6ec19767ff5bb9ed",
+      "model_api_calls": 0
+    },
+    {
+      "id": "local-check-005",
+      "mode": "offline_structural",
+      "status": "passed_offline_checks",
+      "passed_checks": 69,
+      "report": {
+        "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/checks/local-check-005.report.json",
+        "sha256": "bb13f36517cb361c7ceaed2fcf3782263c90ebfb10a96936952b9b8fb1fbb781"
+      },
+      "raw_records_archive": {
+        "path": "stage3/execution-bindings/stage3-preparation-001-binding-001/checks/local-check-005.records.zip",
+        "sha256": "491454be5462f8a7028cf17fbd5c450d184be2faddc2a509a3807dd892ea8a13"
+      },
+      "runtime_manifest_sha256": "b3aca72a5a0a41df1dcdddda4482645fa69ed64fbf5845c5537f0c0e5162dafd",
+      "model_api_calls": 0
+    }
+  ],
+  "latest_offline_check": {
+    "id": "local-check-005",
+    "passed_checks": 69,
+    "mode": "offline_structural",
+    "main_fixture_dispatches": 7,
+    "auxiliary_error_fixture_dispatches": 5,
+    "external_schema_conformance_verified": false,
+    "writer_pid": 7,
+    "reader_pids": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "writer_exit_before_readers": true,
+    "same_reader_and_mock_dispatch_process": true,
+    "actual_API_request_id_observed": false,
+    "live_linkage_verified": false
+  },
+  "schema_status": {
+    "prior_gate_003": "unchanged; pass limited to its four schemas and 82 development-instance classifications",
+    "binding_environment": "jsonschema 4.26.0 unavailable; both installation attempts failed",
+    "new_exact_validator_check": "local-check-001 blocked before checks; not relabeled as pass",
+    "structural_check_role": "explicit offline development check only; cannot authorize live output or HTTP dispatch",
+    "new_live_data_conformance": "not_evaluated"
+  },
+  "remaining_before_live_dispatch": [
+    "Run the new offline checks with jsonschema==4.26.0 in the intended runtime and retain a separate result; this is not a rerun or amendment of schema-gate-003.",
+    "Fix a supported input-token counting/bounding method and a host bound record for each exact request. Missing bounds block dispatch.",
+    "Complete a separate execution-context record linking this binding, the fixed conditions, runtime and current cost checks; retain account access as unverified until actually observed.",
+    "Invoke the bound writer/reader path only in a separately started execution. Store actual API IDs and outcomes outside this binding directory."
+  ],
+  "creation_counts": {
+    "model_api_calls": 0,
+    "http_inference_requests": 0,
+    "spend_incurred_usd": "0.00",
+    "official_run_state_store_writes": 0,
+    "temporary_offline_fixture_store_writes": true,
+    "github_actions_used": false
+  },
+  "completion": {
+    "preparation_evaluation": "not_completed",
+    "stage3_integration_evaluation": "not_completed",
+    "stage4": "not_started"
+  },
+  "scope_exclusions": [
+    "internal_model_understanding",
+    "real_world_evidence_truth",
+    "general_authorization",
+    "accident_prevention",
+    "privileged_direct_write_resistance",
+    "concurrency_and_crash_recovery",
+    "prompt_injection_resistance"
+  ],
+  "review_role": "advisory; no added reviewer approval or acceptance authority",
+  "record_policy": "Freeze this binding as a new record. Keep old conditions and 001-003/Bundle/materials unchanged. Further fixes or results use new records; do not append readiness or success here.",
+  "documentation_sources": [
+    {
+      "url": "https://developers.openai.com/api/reference/cli/resources/responses/methods/create",
+      "purpose": "request/response fields and usage",
+      "checked_on": "2026-09-30"
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/guides/structured-outputs",
+      "purpose": "Responses JSON mode; schema validation remains on host",
+      "checked_on": "2026-09-30"
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/guides/token-counting",
+      "purpose": "input-token counting is separate; no count API added or called",
+      "checked_on": "2026-09-30"
+    }
+  ]
+}

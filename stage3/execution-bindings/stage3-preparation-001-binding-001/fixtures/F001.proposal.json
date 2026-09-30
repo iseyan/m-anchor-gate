@@ -1,0 +1,1 @@
+{"case_id":"stage3-preparation-001-r4","evidence_ids":["action-001"],"expected_state_sha256":"8a0a1fd19bb3ec7194195601078996321a546704575b36c97d98dc87148ca72c","expected_version":1,"proposal_id":"F001","proposed_K":["h_B"],"reason":"Fixed invalid evidence-reference proposal F001.","schema_version":"stage3-proposal/v0.1","selected_action":"a_B"}
