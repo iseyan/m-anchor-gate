@@ -1,0 +1,163 @@
+{
+  "record_type": "schema_gate_003_received_execution_verification",
+  "reviewed_at_utc": "2026-09-30T10:51:11.237650+00:00",
+  "basis_commit": "3df3b4310094c47f1553fdc997cf0b1e816a57e2",
+  "run_id": "schema-gate-003-20260930T104603Z-36d5c5c4",
+  "evidence_origin": "User-executed local Windows validation; reviewer inspected uploaded records and did not rerun the validator.",
+  "original_zip": {
+    "file": "received/schema-gate-003-20260930T104603Z-36d5c5c4.zip",
+    "sha256": "04481b4f2c3d52aafbe880882f55836a09d24d57666514eb875ba05b4732f30a",
+    "bytes": 9366
+  },
+  "raw_file_count": 10,
+  "manifest_entry_count": 9,
+  "manifest_checks": [
+    {
+      "file": "preparation-result.json",
+      "expected_sha256": "f04a9b7a2a4660cde8d3b18ab3f967f827750957b4fd26c98c983e54cb0c6422",
+      "observed_sha256": "f04a9b7a2a4660cde8d3b18ab3f967f827750957b4fd26c98c983e54cb0c6422",
+      "matches": true
+    },
+    {
+      "file": "run-result.json",
+      "expected_sha256": "92d3b03337627eaa8f47b8b91fb71d4b04ae2216d6ddb4fbfdc4645d70810ef8",
+      "observed_sha256": "92d3b03337627eaa8f47b8b91fb71d4b04ae2216d6ddb4fbfdc4645d70810ef8",
+      "matches": true
+    },
+    {
+      "file": "run-start.json",
+      "expected_sha256": "2769b2efb2bfa1663045755deef6b4ce61adccb388fa5e1cceb9e3224fd3cd45",
+      "observed_sha256": "2769b2efb2bfa1663045755deef6b4ce61adccb388fa5e1cceb9e3224fd3cd45",
+      "matches": true
+    },
+    {
+      "file": "schema-validation.json",
+      "expected_sha256": "d8c518b49ba581d19f55d31c54a641b5f3f9ed0d05d2e59ccbd4f81ef8741dbd",
+      "observed_sha256": "d8c518b49ba581d19f55d31c54a641b5f3f9ed0d05d2e59ccbd4f81ef8741dbd",
+      "matches": true
+    },
+    {
+      "file": "validation-command.json",
+      "expected_sha256": "578a69c227bfab549f7243361092899b0bf30c171140dd0a95d37c7e42da498c",
+      "observed_sha256": "578a69c227bfab549f7243361092899b0bf30c171140dd0a95d37c7e42da498c",
+      "matches": true
+    },
+    {
+      "file": "validation-process-result.json",
+      "expected_sha256": "957771bfb29dca15cd3804d4c54cdd86510345ee818299edc2b8b4f96c3b2fe9",
+      "observed_sha256": "957771bfb29dca15cd3804d4c54cdd86510345ee818299edc2b8b4f96c3b2fe9",
+      "matches": true
+    },
+    {
+      "file": "validation-started.json",
+      "expected_sha256": "6a44ffeb0230c8ac619ac41ae217d157fa0e6784879bb289c15a9e1384179b21",
+      "observed_sha256": "6a44ffeb0230c8ac619ac41ae217d157fa0e6784879bb289c15a9e1384179b21",
+      "matches": true
+    },
+    {
+      "file": "validation.stderr.txt",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "observed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "file": "validation.stdout.txt",
+      "expected_sha256": "6319e00f9573f68dfd68f0f087e2aa7d86ca423895a05f6a4fbf9d0eb71731b9",
+      "observed_sha256": "6319e00f9573f68dfd68f0f087e2aa7d86ca423895a05f6a4fbf9d0eb71731b9",
+      "matches": true
+    }
+  ],
+  "manifest_self_hash_role": "Identification of the received manifest, not an independent expected hash.",
+  "raw_file_sha256": {
+    "SHA256SUMS.txt": "df6f154402425e78c42fd05f7a2c7cc1530770c0cb4ac83ff2565f60f7156810",
+    "preparation-result.json": "f04a9b7a2a4660cde8d3b18ab3f967f827750957b4fd26c98c983e54cb0c6422",
+    "run-result.json": "92d3b03337627eaa8f47b8b91fb71d4b04ae2216d6ddb4fbfdc4645d70810ef8",
+    "run-start.json": "2769b2efb2bfa1663045755deef6b4ce61adccb388fa5e1cceb9e3224fd3cd45",
+    "schema-validation.json": "d8c518b49ba581d19f55d31c54a641b5f3f9ed0d05d2e59ccbd4f81ef8741dbd",
+    "validation-command.json": "578a69c227bfab549f7243361092899b0bf30c171140dd0a95d37c7e42da498c",
+    "validation-process-result.json": "957771bfb29dca15cd3804d4c54cdd86510345ee818299edc2b8b4f96c3b2fe9",
+    "validation-started.json": "6a44ffeb0230c8ac619ac41ae217d157fa0e6784879bb289c15a9e1384179b21",
+    "validation.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "validation.stdout.txt": "6319e00f9573f68dfd68f0f087e2aa7d86ca423895a05f6a4fbf9d0eb71731b9"
+  },
+  "linkage_checks": {
+    "stdout_matches_validation_report": true,
+    "launcher_matches_published_source": true,
+    "preparation_result_unchanged": true,
+    "preparation_hash_link_matches": true,
+    "same_python_executable": true,
+    "same_python_prefix": true,
+    "same_python_version": true,
+    "six_target_hashes_match": true,
+    "all_82_classifications_match_saved_fixture": true,
+    "process_records_consistent": true,
+    "chronology_consistent": true,
+    "output_outside_kit": true,
+    "four_criteria_unchanged": true
+  },
+  "criteria_recomputed_from_original_records_and_fixed_fixtures": {
+    "specified_validator": true,
+    "four_schemas_check_schema": true,
+    "all_82_classifications_match": true,
+    "validation_exit_zero": true
+  },
+  "schema_gate_passed_for_listed_development_instances": true,
+  "validator": {
+    "distribution": "jsonschema",
+    "version": "4.26.0",
+    "class": "jsonschema.validators.Draft202012Validator",
+    "dialect": "2020-12"
+  },
+  "schema_count": 4,
+  "instances_by_schema": {
+    "proposal.schema.json": 14,
+    "state.schema.json": 60,
+    "input.schema.json": 4,
+    "decision.schema.json": 4
+  },
+  "instances_checked": 82,
+  "valid_instances": 81,
+  "expected_invalid_instances": 1,
+  "expected_invalid_ids": [
+    "D10-proposal"
+  ],
+  "classification_mismatches": 0,
+  "interpretation": "82 classification matches, not 82 valid instances; D11 malformed raw JSON was excluded from the saved 14 parsed proposals.",
+  "source_sha256": {
+    "schemas/decision.schema.json": "6ed201e6d3e6b731ae861f3ba041415b2f1085f7e6308b71eff4a5303f9fb81d",
+    "schemas/input.schema.json": "a301da3af83adefd8932a4786045351ebf8e3a03a5d1273d3c8a792546afb5d1",
+    "schemas/proposal.schema.json": "e1f4e6ed2143e6691963af81426c8497c492ab6e7b9578bb7d9d37daaf227176",
+    "schemas/state.schema.json": "5da9fc4feb447f6e724c52f2e72e161c4a567671385a6b9845a334615be0a934",
+    "validate_schemas.py": "d13701ac713323c58b7d809a273f2e2df48f54b24efc24c7460d1b52e2115230",
+    "results/dev-001/schema-instances.json": "146461c25fedd2f2d584c430c6f9e8a83b074f45d4ab31c949755d6c1d8f5f06"
+  },
+  "execution": {
+    "started_at_utc": "2026-09-30T10:46:03.847355+00:00",
+    "ended_at_utc": "2026-09-30T10:46:04.518579+00:00",
+    "preparation_run_id": "local-preparation-20260930T102507Z-5db00b37",
+    "preparation_result_sha256": "f04a9b7a2a4660cde8d3b18ab3f967f827750957b4fd26c98c983e54cb0c6422",
+    "launcher_sha256": "a070097fa20eb9c9bd2cb0089ae357786a4502d435c587e589df06f5d36797bf",
+    "validation_pid": 3332,
+    "validation_exit_code": 0,
+    "launcher_exit_code": 0,
+    "python_executable": "C:\\Users\\ise\\Desktop\\schema-gate-003-local-preparation-v0.1\\environments\\local-preparation-20260930T102507Z-5db00b37\\Scripts\\python.exe",
+    "python_prefix": "C:\\Users\\ise\\Desktop\\schema-gate-003-local-preparation-v0.1\\environments\\local-preparation-20260930T102507Z-5db00b37",
+    "python_version": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+    "working_directory": "C:\\Users\\ise\\Desktop\\schema-gate-003-results\\schema-gate-003-20260930T104603Z-36d5c5c4"
+  },
+  "schema_gate_003_started": true,
+  "model_api_calls": 0,
+  "state_store_writes": 0,
+  "github_actions_used": false,
+  "official_run_form_frozen": false,
+  "execution_ready": false,
+  "stage3_complete": false,
+  "stage4_started": false,
+  "scope_limitations": [
+    "The check covers the four fixed schemas and the 82 listed development fixtures.",
+    "A hash identifies bytes and supports record consistency; it is not independent proof of execution or reproduction.",
+    "This is not model integration evaluation, evidence-admissibility validation, state-preservation testing or Stage 3 completion.",
+    "The reviewer did not execute the Windows process; conclusions are based on the received records and their consistency."
+  ],
+  "prior_records": "No changes or additions to 001, 002, their closures, Actions preparation records, the preparation ZIP, Bundle, the frozen materials ZIP or closed development reports."
+}

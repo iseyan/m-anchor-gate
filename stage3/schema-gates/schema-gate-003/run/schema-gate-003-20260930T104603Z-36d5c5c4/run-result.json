@@ -1,0 +1,95 @@
+{
+  "record_type": "schema_gate_003_local_validation",
+  "run_id": "schema-gate-003-20260930T104603Z-36d5c5c4",
+  "started_at_utc": "2026-09-30T10:46:03.847355+00:00",
+  "status": "passed_for_listed_development_instances",
+  "preparation_run_id": "local-preparation-20260930T102507Z-5db00b37",
+  "preparation_result_sha256": "f04a9b7a2a4660cde8d3b18ab3f967f827750957b4fd26c98c983e54cb0c6422",
+  "launcher_sha256": "a070097fa20eb9c9bd2cb0089ae357786a4502d435c587e589df06f5d36797bf",
+  "python_executable": "C:\\Users\\ise\\Desktop\\schema-gate-003-local-preparation-v0.1\\environments\\local-preparation-20260930T102507Z-5db00b37\\Scripts\\python.exe",
+  "python_version": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+  "python_prefix": "C:\\Users\\ise\\Desktop\\schema-gate-003-local-preparation-v0.1\\environments\\local-preparation-20260930T102507Z-5db00b37",
+  "python_base_prefix": "C:\\Users\\ise\\AppData\\Local\\Programs\\Python\\Python313",
+  "schema_gate_003_started": true,
+  "schema_gate_passed": true,
+  "schema_gate_acceptance_unchanged": [
+    "specified jsonschema==4.26.0 / Draft202012Validator",
+    "check_schema succeeds for all four target schemas",
+    "all 82 classifications match saved expectations",
+    "validation command exits with code 0"
+  ],
+  "target_sha256_expected": {
+    "schemas/decision.schema.json": "6ed201e6d3e6b731ae861f3ba041415b2f1085f7e6308b71eff4a5303f9fb81d",
+    "schemas/input.schema.json": "a301da3af83adefd8932a4786045351ebf8e3a03a5d1273d3c8a792546afb5d1",
+    "schemas/proposal.schema.json": "e1f4e6ed2143e6691963af81426c8497c492ab6e7b9578bb7d9d37daaf227176",
+    "schemas/state.schema.json": "5da9fc4feb447f6e724c52f2e72e161c4a567671385a6b9845a334615be0a934",
+    "validate_schemas.py": "d13701ac713323c58b7d809a273f2e2df48f54b24efc24c7460d1b52e2115230",
+    "results/dev-001/schema-instances.json": "146461c25fedd2f2d584c430c6f9e8a83b074f45d4ab31c949755d6c1d8f5f06"
+  },
+  "schemas_checked": 4,
+  "instances_checked": 82,
+  "model_api_calls": 0,
+  "state_store_writes": 0,
+  "github_actions_used": false,
+  "official_run_form_frozen": false,
+  "execution_ready": false,
+  "stage3_complete": false,
+  "stage4_started": false,
+  "scope": "Four fixed schemas and 82 saved development fixtures only.",
+  "same_prepared_venv_confirmed": true,
+  "target_sha256_before": {
+    "schemas/decision.schema.json": "6ed201e6d3e6b731ae861f3ba041415b2f1085f7e6308b71eff4a5303f9fb81d",
+    "schemas/input.schema.json": "a301da3af83adefd8932a4786045351ebf8e3a03a5d1273d3c8a792546afb5d1",
+    "schemas/proposal.schema.json": "e1f4e6ed2143e6691963af81426c8497c492ab6e7b9578bb7d9d37daaf227176",
+    "schemas/state.schema.json": "5da9fc4feb447f6e724c52f2e72e161c4a567671385a6b9845a334615be0a934",
+    "validate_schemas.py": "d13701ac713323c58b7d809a273f2e2df48f54b24efc24c7460d1b52e2115230",
+    "results/dev-001/schema-instances.json": "146461c25fedd2f2d584c430c6f9e8a83b074f45d4ab31c949755d6c1d8f5f06"
+  },
+  "installed_validator": {
+    "distribution": "jsonschema",
+    "version": "4.26.0",
+    "class": "jsonschema.validators.Draft202012Validator",
+    "dialect": "2020-12"
+  },
+  "validation_process": {
+    "command": [
+      "C:\\Users\\ise\\Desktop\\schema-gate-003-local-preparation-v0.1\\environments\\local-preparation-20260930T102507Z-5db00b37\\Scripts\\python.exe",
+      "-I",
+      "-B",
+      "-X",
+      "utf8",
+      "C:\\Users\\ise\\Desktop\\schema-gate-003-local-preparation-v0.1\\targets\\stage3\\development-snapshot\\validate_schemas.py",
+      "--instances",
+      "C:\\Users\\ise\\Desktop\\schema-gate-003-local-preparation-v0.1\\targets\\stage3\\development-snapshot\\results\\dev-001\\schema-instances.json",
+      "--report",
+      "C:\\Users\\ise\\Desktop\\schema-gate-003-results\\schema-gate-003-20260930T104603Z-36d5c5c4\\schema-validation.json"
+    ],
+    "cwd": "C:\\Users\\ise\\Desktop\\schema-gate-003-results\\schema-gate-003-20260930T104603Z-36d5c5c4",
+    "started_at_utc": "2026-09-30T10:46:04.036578+00:00",
+    "timeout_seconds": 300,
+    "stdout": "validation.stdout.txt",
+    "stderr": "validation.stderr.txt",
+    "pid": 3332,
+    "exit_code": 0,
+    "timed_out": false,
+    "process_exit_code": 0,
+    "ended_at_utc": "2026-09-30T10:46:04.494217+00:00"
+  },
+  "criteria": {
+    "specified_validator": true,
+    "four_schemas_check_schema": true,
+    "all_82_classifications_match": true,
+    "validation_exit_zero": true
+  },
+  "target_sha256_after": {
+    "schemas/decision.schema.json": "6ed201e6d3e6b731ae861f3ba041415b2f1085f7e6308b71eff4a5303f9fb81d",
+    "schemas/input.schema.json": "a301da3af83adefd8932a4786045351ebf8e3a03a5d1273d3c8a792546afb5d1",
+    "schemas/proposal.schema.json": "e1f4e6ed2143e6691963af81426c8497c492ab6e7b9578bb7d9d37daaf227176",
+    "schemas/state.schema.json": "5da9fc4feb447f6e724c52f2e72e161c4a567671385a6b9845a334615be0a934",
+    "validate_schemas.py": "d13701ac713323c58b7d809a273f2e2df48f54b24efc24c7460d1b52e2115230",
+    "results/dev-001/schema-instances.json": "146461c25fedd2f2d584c430c6f9e8a83b074f45d4ab31c949755d6c1d8f5f06"
+  },
+  "fixed_targets_unchanged": true,
+  "ended_at_utc": "2026-09-30T10:46:04.518579+00:00",
+  "exit_code": 0
+}

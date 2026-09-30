@@ -1,0 +1,24 @@
+{
+  "command": [
+    "C:\\Users\\ise\\Desktop\\schema-gate-003-local-preparation-v0.1\\environments\\local-preparation-20260930T102507Z-5db00b37\\Scripts\\python.exe",
+    "-I",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\Users\\ise\\Desktop\\schema-gate-003-local-preparation-v0.1\\targets\\stage3\\development-snapshot\\validate_schemas.py",
+    "--instances",
+    "C:\\Users\\ise\\Desktop\\schema-gate-003-local-preparation-v0.1\\targets\\stage3\\development-snapshot\\results\\dev-001\\schema-instances.json",
+    "--report",
+    "C:\\Users\\ise\\Desktop\\schema-gate-003-results\\schema-gate-003-20260930T104603Z-36d5c5c4\\schema-validation.json"
+  ],
+  "cwd": "C:\\Users\\ise\\Desktop\\schema-gate-003-results\\schema-gate-003-20260930T104603Z-36d5c5c4",
+  "started_at_utc": "2026-09-30T10:46:04.036578+00:00",
+  "timeout_seconds": 300,
+  "stdout": "validation.stdout.txt",
+  "stderr": "validation.stderr.txt",
+  "pid": 3332,
+  "exit_code": 0,
+  "timed_out": false,
+  "process_exit_code": 0,
+  "ended_at_utc": "2026-09-30T10:46:04.494217+00:00"
+}

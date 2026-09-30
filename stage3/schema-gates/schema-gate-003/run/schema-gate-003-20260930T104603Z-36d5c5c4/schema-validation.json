@@ -1,0 +1,441 @@
+{
+  "checked_at": "2026-09-30T10:46:04.262019+00:00",
+  "validator": "jsonschema.Draft202012Validator",
+  "requested_package_version": "4.26.0",
+  "dialect": "2020-12",
+  "format_policy": "No format keywords; IDs use patterns.",
+  "schemas": [
+    {
+      "file": "decision.schema.json",
+      "valid": true
+    },
+    {
+      "file": "input.schema.json",
+      "valid": true
+    },
+    {
+      "file": "proposal.schema.json",
+      "valid": true
+    },
+    {
+      "file": "state.schema.json",
+      "valid": true
+    }
+  ],
+  "instances": [
+    {
+      "id": "D01-proposal",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D01-checked-state-before",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D01-checked-state-after",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D01-comparison-state-before",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D01-comparison-state-after",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D02-proposal",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D02-checked-state-before",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D02-checked-state-after",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D02-comparison-state-before",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D02-comparison-state-after",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D03-proposal",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D03-checked-state-before",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D03-checked-state-after",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D03-comparison-state-before",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D03-comparison-state-after",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D04-proposal",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D04-checked-state-before",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D04-checked-state-after",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D04-comparison-state-before",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D04-comparison-state-after",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D05-proposal",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D05-checked-state-before",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D05-checked-state-after",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D05-comparison-state-before",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D05-comparison-state-after",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D06-proposal",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D06-checked-state-before",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D06-checked-state-after",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D06-comparison-state-before",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D06-comparison-state-after",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D07-proposal",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D07-checked-state-before",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D07-checked-state-after",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D07-comparison-state-before",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D07-comparison-state-after",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D08-proposal",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D08-checked-state-before",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D08-checked-state-after",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D08-comparison-state-before",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D08-comparison-state-after",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D09-proposal",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D09-checked-state-before",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D09-checked-state-after",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D09-comparison-state-before",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D09-comparison-state-after",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D10-proposal",
+      "valid": false,
+      "expected_valid": false
+    },
+    {
+      "id": "D10-checked-state-before",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D10-checked-state-after",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D10-comparison-state-before",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D10-comparison-state-after",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D11-checked-state-before",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D11-checked-state-after",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D11-comparison-state-before",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D11-comparison-state-after",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D12-proposal",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D12-checked-state-before",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D12-checked-state-after",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D12-comparison-state-before",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D12-comparison-state-after",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D13-proposal",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D13-checked-state-before",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D13-checked-state-after",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D13-comparison-state-before",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D13-comparison-state-after",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D14-proposal",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D14-checked-state-before",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D14-checked-state-after",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D14-comparison-state-before",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D14-comparison-state-after",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D15-proposal",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D15-checked-state-before",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D15-checked-state-after",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D15-comparison-state-before",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "D15-comparison-state-after",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "reference-input",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "reference-decision",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "changed_K-input",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "changed_K-decision",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "changed_action_only-input",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "changed_action_only-decision",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "changed_summary_only-input",
+      "valid": true,
+      "expected_valid": true
+    },
+    {
+      "id": "changed_summary_only-decision",
+      "valid": true,
+      "expected_valid": true
+    }
+  ],
+  "stage3_complete": false,
+  "installed_version": "4.26.0",
+  "status": "passed_for_listed_development_instances",
+  "scope": "Listed schemas and fixture instances only; future model outputs need runtime validation."
+}
