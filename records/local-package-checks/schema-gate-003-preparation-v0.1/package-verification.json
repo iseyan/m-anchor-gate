@@ -1,0 +1,28 @@
+{
+  "record_type": "local_preparation_distribution_assembly_check",
+  "checked_at_utc": "2026-09-30T09:16:13.154280+00:00",
+  "source_basis_commit": "0dd000f106b5593b879b025781ac7e389c67b280",
+  "archive": "distributions/schema-gate-003-local-preparation-v0.1.zip",
+  "archive_sha256": "d9e2c3647cab4c30bca5704415c2dd80bf709093743855c35570abc15fdec66b",
+  "archive_members": 13,
+  "archive_members_match_source": true,
+  "packaged_source_files_match_fixed_targets": 6,
+  "python_syntax_parsed": true,
+  "extracted_package_inspect_command": [
+    "python",
+    "prepare_local.py",
+    "--inspect-only",
+    "--output-root",
+    "/workspace/scratch/2bcf40de1dce/output/m-anchor-gate/records/local-package-checks/schema-gate-003-preparation-v0.1"
+  ],
+  "inspect_record": "records/local-package-checks/schema-gate-003-preparation-v0.1/local-preparation-20260930T091514Z-dfb7c94a/preparation-result.json",
+  "inspect_record_sha256": "3f5efa89ad6e08531d2cd9ca834280ac44d9f098c1bc720a0c355bcf06150bdb",
+  "inspect_exit_code": 0,
+  "local_installation_executed": false,
+  "windows_launcher_executed": false,
+  "github_actions_used_for_this_check": false,
+  "schema_gate_003_started": false,
+  "schema_validation_performed": false,
+  "execution_ready": false,
+  "scope": "Package assembly and inspect-only execution; not installation or schema conformance."
+}

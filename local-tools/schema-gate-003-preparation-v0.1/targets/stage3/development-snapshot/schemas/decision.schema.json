@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Stage 3 development decision",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "stage3-decision/v0.1"
+    },
+    "case_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "state_version_read": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "state_sha256_read": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "selected_action": {
+      "enum": [
+        "a_A",
+        "a_B"
+      ]
+    },
+    "retained_candidates": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "h_A",
+          "h_B"
+        ]
+      },
+      "uniqueItems": true,
+      "maxItems": 2
+    },
+    "cause_status": {
+      "enum": [
+        "unresolved",
+        "single_candidate_under_interpretation",
+        "candidate_exhaustion"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "case_id",
+    "state_version_read",
+    "state_sha256_read",
+    "selected_action",
+    "retained_candidates",
+    "cause_status"
+  ],
+  "additionalProperties": false
+}

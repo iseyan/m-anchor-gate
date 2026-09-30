@@ -1,0 +1,1616 @@
+[
+  {
+    "id": "D01-proposal",
+    "schema": "proposal.schema.json",
+    "instance": {
+      "schema_version": "stage3-proposal/v0.1",
+      "proposal_id": "D01",
+      "case_id": "dev-D01",
+      "expected_version": 1,
+      "expected_state_sha256": "406e7ecaf8e5b8d68ddfdcaa1eab0d809755b4ebc17c10375f299231fbf83c66",
+      "proposed_K": [
+        "h_A",
+        "h_B"
+      ],
+      "selected_action": "a_B",
+      "evidence_ids": [],
+      "reason": "Fixed development fixture."
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D01-checked-state-before",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "e19c4ffa1a9986ad66fde5bf79389e93ff5aa598d113fc4b6714ab6f5266590c",
+      "applied_evidence": [],
+      "case_id": "dev-D01",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D01-checked-state-after",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-002",
+      "action_sha256": "d64fab72abe2ccf451a9974a1757a840b012d286f20ab34987da2e89597c4f6e",
+      "applied_evidence": [],
+      "case_id": "dev-D01",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 2
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D01-comparison-state-before",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "e19c4ffa1a9986ad66fde5bf79389e93ff5aa598d113fc4b6714ab6f5266590c",
+      "applied_evidence": [],
+      "case_id": "dev-D01",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D01-comparison-state-after",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-002",
+      "action_sha256": "d64fab72abe2ccf451a9974a1757a840b012d286f20ab34987da2e89597c4f6e",
+      "applied_evidence": [],
+      "case_id": "dev-D01",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 2
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D02-proposal",
+    "schema": "proposal.schema.json",
+    "instance": {
+      "schema_version": "stage3-proposal/v0.1",
+      "proposal_id": "D02",
+      "case_id": "dev-D02",
+      "expected_version": 1,
+      "expected_state_sha256": "3138255d4c1d163d03cc3449383b2dd6f90df461de444312b22ad7d6308b0d32",
+      "proposed_K": [
+        "h_B"
+      ],
+      "selected_action": "a_B",
+      "evidence_ids": [],
+      "reason": "Fixed development fixture."
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D02-checked-state-before",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "c19091bfa2808470ba735eaa7727801f7d04a173c6c28e372fec607265413eb8",
+      "applied_evidence": [],
+      "case_id": "dev-D02",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D02-checked-state-after",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "c19091bfa2808470ba735eaa7727801f7d04a173c6c28e372fec607265413eb8",
+      "applied_evidence": [],
+      "case_id": "dev-D02",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D02-comparison-state-before",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "c19091bfa2808470ba735eaa7727801f7d04a173c6c28e372fec607265413eb8",
+      "applied_evidence": [],
+      "case_id": "dev-D02",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D02-comparison-state-after",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_B"
+      ],
+      "action_id": "action-002",
+      "action_sha256": "95efeaacef49333849ee25d26e40ca2b0b16bee6354f443725cc11987e69c9d9",
+      "applied_evidence": [],
+      "case_id": "dev-D02",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 2
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D03-proposal",
+    "schema": "proposal.schema.json",
+    "instance": {
+      "schema_version": "stage3-proposal/v0.1",
+      "proposal_id": "D03",
+      "case_id": "dev-D03",
+      "expected_version": 1,
+      "expected_state_sha256": "ce4089f33879c33fd47932f31437de2a2fc8ee2948d09a282a7cc99b342604b0",
+      "proposed_K": [
+        "h_B"
+      ],
+      "selected_action": "a_B",
+      "evidence_ids": [
+        "e_unknown"
+      ],
+      "reason": "Fixed development fixture."
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D03-checked-state-before",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "61e6ae2ad44d4e26179b9d0382edb42ce6e610e833ebfd20fcfa04d631072193",
+      "applied_evidence": [],
+      "case_id": "dev-D03",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D03-checked-state-after",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "61e6ae2ad44d4e26179b9d0382edb42ce6e610e833ebfd20fcfa04d631072193",
+      "applied_evidence": [],
+      "case_id": "dev-D03",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D03-comparison-state-before",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "61e6ae2ad44d4e26179b9d0382edb42ce6e610e833ebfd20fcfa04d631072193",
+      "applied_evidence": [],
+      "case_id": "dev-D03",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D03-comparison-state-after",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "61e6ae2ad44d4e26179b9d0382edb42ce6e610e833ebfd20fcfa04d631072193",
+      "applied_evidence": [],
+      "case_id": "dev-D03",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D04-proposal",
+    "schema": "proposal.schema.json",
+    "instance": {
+      "schema_version": "stage3-proposal/v0.1",
+      "proposal_id": "D04",
+      "case_id": "dev-D04",
+      "expected_version": 1,
+      "expected_state_sha256": "0fd5f9e38dca1eb62ad4f959dfa3297b7a9efd29f87cfa960c1af94beff48d82",
+      "proposed_K": [
+        "h_B"
+      ],
+      "selected_action": "a_B",
+      "evidence_ids": [
+        "action-001"
+      ],
+      "reason": "Fixed development fixture."
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D04-checked-state-before",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "ee2bd0afbfe5d458b8fa19888b350d7361448e048adfd42f9ba6ef86764b0802",
+      "applied_evidence": [],
+      "case_id": "dev-D04",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D04-checked-state-after",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "ee2bd0afbfe5d458b8fa19888b350d7361448e048adfd42f9ba6ef86764b0802",
+      "applied_evidence": [],
+      "case_id": "dev-D04",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D04-comparison-state-before",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "ee2bd0afbfe5d458b8fa19888b350d7361448e048adfd42f9ba6ef86764b0802",
+      "applied_evidence": [],
+      "case_id": "dev-D04",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D04-comparison-state-after",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "ee2bd0afbfe5d458b8fa19888b350d7361448e048adfd42f9ba6ef86764b0802",
+      "applied_evidence": [],
+      "case_id": "dev-D04",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D05-proposal",
+    "schema": "proposal.schema.json",
+    "instance": {
+      "schema_version": "stage3-proposal/v0.1",
+      "proposal_id": "D05",
+      "case_id": "dev-D05",
+      "expected_version": 1,
+      "expected_state_sha256": "975366392cf3f9252716c049766090f196eebb5ce778b7f1a84259f0bef1c112",
+      "proposed_K": [
+        "h_B"
+      ],
+      "selected_action": "a_B",
+      "evidence_ids": [
+        "summary-001"
+      ],
+      "reason": "Fixed development fixture."
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D05-checked-state-before",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "2bfe30acf01236c637801db4445958f20cb0358c9cd01728c212292990292123",
+      "applied_evidence": [],
+      "case_id": "dev-D05",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D05-checked-state-after",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "2bfe30acf01236c637801db4445958f20cb0358c9cd01728c212292990292123",
+      "applied_evidence": [],
+      "case_id": "dev-D05",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D05-comparison-state-before",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "2bfe30acf01236c637801db4445958f20cb0358c9cd01728c212292990292123",
+      "applied_evidence": [],
+      "case_id": "dev-D05",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D05-comparison-state-after",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "2bfe30acf01236c637801db4445958f20cb0358c9cd01728c212292990292123",
+      "applied_evidence": [],
+      "case_id": "dev-D05",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D06-proposal",
+    "schema": "proposal.schema.json",
+    "instance": {
+      "schema_version": "stage3-proposal/v0.1",
+      "proposal_id": "D06",
+      "case_id": "dev-D06",
+      "expected_version": 1,
+      "expected_state_sha256": "06653d7480d52df869050e3c5eaaa7d167cb91f9a5b62a6bbcd2fe0ab43417c7",
+      "proposed_K": [
+        "h_B"
+      ],
+      "selected_action": "a_B",
+      "evidence_ids": [
+        "e_B"
+      ],
+      "reason": "Fixed development fixture."
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D06-checked-state-before",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "8bca9afce685f3e398b089519f8c0ddfed456f1964614e5b757b93424bf0aa8f",
+      "applied_evidence": [],
+      "case_id": "dev-D06",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D06-checked-state-after",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "8bca9afce685f3e398b089519f8c0ddfed456f1964614e5b757b93424bf0aa8f",
+      "applied_evidence": [],
+      "case_id": "dev-D06",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D06-comparison-state-before",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "8bca9afce685f3e398b089519f8c0ddfed456f1964614e5b757b93424bf0aa8f",
+      "applied_evidence": [],
+      "case_id": "dev-D06",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D06-comparison-state-after",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "8bca9afce685f3e398b089519f8c0ddfed456f1964614e5b757b93424bf0aa8f",
+      "applied_evidence": [],
+      "case_id": "dev-D06",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D07-proposal",
+    "schema": "proposal.schema.json",
+    "instance": {
+      "schema_version": "stage3-proposal/v0.1",
+      "proposal_id": "D07",
+      "case_id": "other-case",
+      "expected_version": 1,
+      "expected_state_sha256": "1730abf7243a4d1bbf11f55cda0771c1661fd938eb2b9b8f3379344a3af87222",
+      "proposed_K": [
+        "h_A",
+        "h_B"
+      ],
+      "selected_action": "a_B",
+      "evidence_ids": [],
+      "reason": "Fixed development fixture."
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D07-checked-state-before",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "436b0406b81f80b8317fbcc42d0a31ce5565a7967b7a360c28a51c96fe5d59bb",
+      "applied_evidence": [],
+      "case_id": "dev-D07",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D07-checked-state-after",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "436b0406b81f80b8317fbcc42d0a31ce5565a7967b7a360c28a51c96fe5d59bb",
+      "applied_evidence": [],
+      "case_id": "dev-D07",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D07-comparison-state-before",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "436b0406b81f80b8317fbcc42d0a31ce5565a7967b7a360c28a51c96fe5d59bb",
+      "applied_evidence": [],
+      "case_id": "dev-D07",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D07-comparison-state-after",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "436b0406b81f80b8317fbcc42d0a31ce5565a7967b7a360c28a51c96fe5d59bb",
+      "applied_evidence": [],
+      "case_id": "dev-D07",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D08-proposal",
+    "schema": "proposal.schema.json",
+    "instance": {
+      "schema_version": "stage3-proposal/v0.1",
+      "proposal_id": "D08",
+      "case_id": "dev-D08",
+      "expected_version": 7,
+      "expected_state_sha256": "18bc907aa1283fc79025846c761f92a77890b967b80ef62fa496a74e2e5fe85b",
+      "proposed_K": [
+        "h_A",
+        "h_B"
+      ],
+      "selected_action": "a_B",
+      "evidence_ids": [],
+      "reason": "Fixed development fixture."
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D08-checked-state-before",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "e037dcfae5aa9a3cee903aca23cbe16eefd24311d2d82d873aea211e29d55b7a",
+      "applied_evidence": [],
+      "case_id": "dev-D08",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D08-checked-state-after",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "e037dcfae5aa9a3cee903aca23cbe16eefd24311d2d82d873aea211e29d55b7a",
+      "applied_evidence": [],
+      "case_id": "dev-D08",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D08-comparison-state-before",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "e037dcfae5aa9a3cee903aca23cbe16eefd24311d2d82d873aea211e29d55b7a",
+      "applied_evidence": [],
+      "case_id": "dev-D08",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D08-comparison-state-after",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "e037dcfae5aa9a3cee903aca23cbe16eefd24311d2d82d873aea211e29d55b7a",
+      "applied_evidence": [],
+      "case_id": "dev-D08",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D09-proposal",
+    "schema": "proposal.schema.json",
+    "instance": {
+      "schema_version": "stage3-proposal/v0.1",
+      "proposal_id": "D09",
+      "case_id": "dev-D09",
+      "expected_version": 1,
+      "expected_state_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "proposed_K": [
+        "h_A",
+        "h_B"
+      ],
+      "selected_action": "a_B",
+      "evidence_ids": [],
+      "reason": "Fixed development fixture."
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D09-checked-state-before",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "1b16052e12ce4ffaa60fd3171b2697dda995d854de5b8f8fb1035623f2a90a7c",
+      "applied_evidence": [],
+      "case_id": "dev-D09",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D09-checked-state-after",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "1b16052e12ce4ffaa60fd3171b2697dda995d854de5b8f8fb1035623f2a90a7c",
+      "applied_evidence": [],
+      "case_id": "dev-D09",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D09-comparison-state-before",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "1b16052e12ce4ffaa60fd3171b2697dda995d854de5b8f8fb1035623f2a90a7c",
+      "applied_evidence": [],
+      "case_id": "dev-D09",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D09-comparison-state-after",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "1b16052e12ce4ffaa60fd3171b2697dda995d854de5b8f8fb1035623f2a90a7c",
+      "applied_evidence": [],
+      "case_id": "dev-D09",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D10-proposal",
+    "schema": "proposal.schema.json",
+    "instance": {
+      "schema_version": "stage3-proposal/v0.1",
+      "proposal_id": "D10",
+      "case_id": "dev-D10",
+      "expected_version": 1,
+      "expected_state_sha256": "a85f0074a49c6bdb652e51912bcda4ba700123cc0a3b58a3a1d5e980e9e99432",
+      "proposed_K": [
+        "h_A",
+        "h_B"
+      ],
+      "selected_action": "a_B",
+      "evidence_ids": [],
+      "reason": "Fixed development fixture.",
+      "version": 7,
+      "state_sha256": "H7"
+    },
+    "expected_valid": false
+  },
+  {
+    "id": "D10-checked-state-before",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "bccee7f0b7492571ffce8c3fbb05b8aea496dd88ccc62c1d3ab1b370e9d12463",
+      "applied_evidence": [],
+      "case_id": "dev-D10",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D10-checked-state-after",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "bccee7f0b7492571ffce8c3fbb05b8aea496dd88ccc62c1d3ab1b370e9d12463",
+      "applied_evidence": [],
+      "case_id": "dev-D10",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D10-comparison-state-before",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "bccee7f0b7492571ffce8c3fbb05b8aea496dd88ccc62c1d3ab1b370e9d12463",
+      "applied_evidence": [],
+      "case_id": "dev-D10",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D10-comparison-state-after",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "bccee7f0b7492571ffce8c3fbb05b8aea496dd88ccc62c1d3ab1b370e9d12463",
+      "applied_evidence": [],
+      "case_id": "dev-D10",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D11-checked-state-before",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "c52a465ac9781f86724c61fe8da2279e258a287479d4b04471cac8ceabf5a80b",
+      "applied_evidence": [],
+      "case_id": "dev-D11",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D11-checked-state-after",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "c52a465ac9781f86724c61fe8da2279e258a287479d4b04471cac8ceabf5a80b",
+      "applied_evidence": [],
+      "case_id": "dev-D11",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D11-comparison-state-before",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "c52a465ac9781f86724c61fe8da2279e258a287479d4b04471cac8ceabf5a80b",
+      "applied_evidence": [],
+      "case_id": "dev-D11",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D11-comparison-state-after",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "c52a465ac9781f86724c61fe8da2279e258a287479d4b04471cac8ceabf5a80b",
+      "applied_evidence": [],
+      "case_id": "dev-D11",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D12-proposal",
+    "schema": "proposal.schema.json",
+    "instance": {
+      "schema_version": "stage3-proposal/v0.1",
+      "proposal_id": "D12",
+      "case_id": "dev-D12",
+      "expected_version": 1,
+      "expected_state_sha256": "974fef3aa6acbded22b21931d1f239b5623d6aa5495e3be753adc77e0a974e35",
+      "proposed_K": [
+        "h_B"
+      ],
+      "selected_action": "a_B",
+      "evidence_ids": [
+        "e_B"
+      ],
+      "reason": "Fixed development fixture."
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D12-checked-state-before",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "1a1d77dafac8d8cf7a989ae5658fa849f23a708e6b3d4848204b05d7a7d62ea0",
+      "applied_evidence": [],
+      "case_id": "dev-D12",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D12-checked-state-after",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_B"
+      ],
+      "action_id": "action-002",
+      "action_sha256": "e64ad942b6828069352a30d2e590362247da193b1dff0b257eea9f4f6cfc5492",
+      "applied_evidence": [
+        "e_B"
+      ],
+      "case_id": "dev-D12",
+      "rule_version": "stage3-synthetic-evidence/v0.1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 2
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D12-comparison-state-before",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "1a1d77dafac8d8cf7a989ae5658fa849f23a708e6b3d4848204b05d7a7d62ea0",
+      "applied_evidence": [],
+      "case_id": "dev-D12",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D12-comparison-state-after",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_B"
+      ],
+      "action_id": "action-002",
+      "action_sha256": "e64ad942b6828069352a30d2e590362247da193b1dff0b257eea9f4f6cfc5492",
+      "applied_evidence": [
+        "e_B"
+      ],
+      "case_id": "dev-D12",
+      "rule_version": "stage3-synthetic-evidence/v0.1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 2
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D13-proposal",
+    "schema": "proposal.schema.json",
+    "instance": {
+      "schema_version": "stage3-proposal/v0.1",
+      "proposal_id": "D13",
+      "case_id": "dev-D13",
+      "expected_version": 1,
+      "expected_state_sha256": "2087c2d78a28de52d85413742e94b6b98093b821b5102bff3bfd1659f86110bd",
+      "proposed_K": [
+        "h_B"
+      ],
+      "selected_action": "a_B",
+      "evidence_ids": [
+        "e_B"
+      ],
+      "reason": "Fixed development fixture."
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D13-checked-state-before",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "73ed7e2e703b7c0c39d2c449fcf3e8c4e55f0b12ae44f1e1b1d306c41cc4d613",
+      "applied_evidence": [],
+      "case_id": "dev-D13",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D13-checked-state-after",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_B"
+      ],
+      "action_id": "action-002",
+      "action_sha256": "77448dd27d978be7f4d1a07b5e1bd32e1d15441ec746b186bf832680023ffa2f",
+      "applied_evidence": [
+        "e_B"
+      ],
+      "case_id": "dev-D13",
+      "rule_version": "stage3-synthetic-evidence/v0.1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 2
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D13-comparison-state-before",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "73ed7e2e703b7c0c39d2c449fcf3e8c4e55f0b12ae44f1e1b1d306c41cc4d613",
+      "applied_evidence": [],
+      "case_id": "dev-D13",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D13-comparison-state-after",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_B"
+      ],
+      "action_id": "action-002",
+      "action_sha256": "77448dd27d978be7f4d1a07b5e1bd32e1d15441ec746b186bf832680023ffa2f",
+      "applied_evidence": [
+        "e_B"
+      ],
+      "case_id": "dev-D13",
+      "rule_version": "stage3-synthetic-evidence/v0.1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 2
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D14-proposal",
+    "schema": "proposal.schema.json",
+    "instance": {
+      "schema_version": "stage3-proposal/v0.1",
+      "proposal_id": "D14",
+      "case_id": "dev-D14",
+      "expected_version": 2,
+      "expected_state_sha256": "5d3c4e408692e26df8b4f4f68e9ac28b0aa1f5a1d21311c929ef8aca3d949c5d",
+      "proposed_K": [
+        "h_A",
+        "h_B"
+      ],
+      "selected_action": "a_B",
+      "evidence_ids": [
+        "e_B"
+      ],
+      "reason": "Fixed development fixture."
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D14-checked-state-before",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_B"
+      ],
+      "action_id": "action-002",
+      "action_sha256": "4ee585cee4522f2192842399d1fda3d758e1b5d3060e94ee293ae82144a500db",
+      "applied_evidence": [
+        "e_B"
+      ],
+      "case_id": "dev-D14",
+      "rule_version": "stage3-synthetic-evidence/v0.1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 2
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D14-checked-state-after",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_B"
+      ],
+      "action_id": "action-002",
+      "action_sha256": "4ee585cee4522f2192842399d1fda3d758e1b5d3060e94ee293ae82144a500db",
+      "applied_evidence": [
+        "e_B"
+      ],
+      "case_id": "dev-D14",
+      "rule_version": "stage3-synthetic-evidence/v0.1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 2
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D14-comparison-state-before",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_B"
+      ],
+      "action_id": "action-002",
+      "action_sha256": "4ee585cee4522f2192842399d1fda3d758e1b5d3060e94ee293ae82144a500db",
+      "applied_evidence": [
+        "e_B"
+      ],
+      "case_id": "dev-D14",
+      "rule_version": "stage3-synthetic-evidence/v0.1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 2
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D14-comparison-state-after",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_B"
+      ],
+      "action_id": "action-002",
+      "action_sha256": "4ee585cee4522f2192842399d1fda3d758e1b5d3060e94ee293ae82144a500db",
+      "applied_evidence": [
+        "e_B"
+      ],
+      "case_id": "dev-D14",
+      "rule_version": "stage3-synthetic-evidence/v0.1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 2
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D15-proposal",
+    "schema": "proposal.schema.json",
+    "instance": {
+      "schema_version": "stage3-proposal/v0.1",
+      "proposal_id": "D15",
+      "case_id": "dev-D15",
+      "expected_version": 1,
+      "expected_state_sha256": "d6c7826259c70a8d2f66152a26f5d979ea5bbee2730ed1a07c4b19ad279f7516",
+      "proposed_K": [
+        "h_A",
+        "h_B"
+      ],
+      "selected_action": "a_B",
+      "evidence_ids": [
+        "e_B"
+      ],
+      "reason": "Fixed development fixture."
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D15-checked-state-before",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "4db81999b3b31a5fc28afa373cfb623c03875f85920a4565d06f84d6eaae4b16",
+      "applied_evidence": [],
+      "case_id": "dev-D15",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D15-checked-state-after",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-002",
+      "action_sha256": "926990864d427596c51b0e090c0e0f59f51fbffb2cccf4744e5b22a9bdb75135",
+      "applied_evidence": [
+        "e_B"
+      ],
+      "case_id": "dev-D15",
+      "rule_version": "stage3-synthetic-evidence/v0.1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 2
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D15-comparison-state-before",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-001",
+      "action_sha256": "4db81999b3b31a5fc28afa373cfb623c03875f85920a4565d06f84d6eaae4b16",
+      "applied_evidence": [],
+      "case_id": "dev-D15",
+      "rule_version": "empty-basis-identity/v1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 1
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "D15-comparison-state-after",
+    "schema": "state.schema.json",
+    "instance": {
+      "K": [
+        "h_A",
+        "h_B"
+      ],
+      "action_id": "action-002",
+      "action_sha256": "926990864d427596c51b0e090c0e0f59f51fbffb2cccf4744e5b22a9bdb75135",
+      "applied_evidence": [
+        "e_B"
+      ],
+      "case_id": "dev-D15",
+      "rule_version": "stage3-synthetic-evidence/v0.1",
+      "schema_version": "stage3-state/v0.1",
+      "version": 2
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "reference-input",
+    "schema": "input.schema.json",
+    "instance": {
+      "action": {
+        "action_id": "action-002",
+        "case_id": "dev-read",
+        "reason": "Fixed development fixture.",
+        "selected_action": "a_B",
+        "state_version": 2
+      },
+      "admitted_evidence": [
+        {
+          "evidence_id": "e_B",
+          "permitted_candidates": [
+            "h_B"
+          ]
+        }
+      ],
+      "new_observation_ids": [],
+      "schema_version": "stage3-input/v0.1",
+      "state": {
+        "K": [
+          "h_A",
+          "h_B"
+        ],
+        "action_id": "action-002",
+        "action_sha256": "9d2115f8d6f4a408acbdd1ecff98b4014058781634856a806fcc1c2731290b0a",
+        "applied_evidence": [
+          "e_B"
+        ],
+        "case_id": "dev-read",
+        "rule_version": "stage3-synthetic-evidence/v0.1",
+        "schema_version": "stage3-state/v0.1",
+        "version": 2
+      },
+      "state_sha256": "2c818b78c614fd14b9a2a5bc3756ae369010045f080124d4d823276477c527a1",
+      "summary": {
+        "admitted_as_evidence": false,
+        "summary_id": "summary-001",
+        "text": "Provisional response B selected."
+      }
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "reference-decision",
+    "schema": "decision.schema.json",
+    "instance": {
+      "case_id": "dev-read",
+      "cause_status": "unresolved",
+      "retained_candidates": [
+        "h_A",
+        "h_B"
+      ],
+      "schema_version": "stage3-decision/v0.1",
+      "selected_action": "a_B",
+      "state_sha256_read": "2c818b78c614fd14b9a2a5bc3756ae369010045f080124d4d823276477c527a1",
+      "state_version_read": 2
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "changed_K-input",
+    "schema": "input.schema.json",
+    "instance": {
+      "action": {
+        "action_id": "action-002",
+        "case_id": "dev-read",
+        "reason": "Fixed development fixture.",
+        "selected_action": "a_B",
+        "state_version": 2
+      },
+      "admitted_evidence": [
+        {
+          "evidence_id": "e_B",
+          "permitted_candidates": [
+            "h_B"
+          ]
+        }
+      ],
+      "new_observation_ids": [],
+      "schema_version": "stage3-input/v0.1",
+      "state": {
+        "K": [
+          "h_B"
+        ],
+        "action_id": "action-002",
+        "action_sha256": "9d2115f8d6f4a408acbdd1ecff98b4014058781634856a806fcc1c2731290b0a",
+        "applied_evidence": [
+          "e_B"
+        ],
+        "case_id": "dev-read",
+        "rule_version": "stage3-synthetic-evidence/v0.1",
+        "schema_version": "stage3-state/v0.1",
+        "version": 2
+      },
+      "state_sha256": "433a98ddbb877ced53abfe66c8868b2fc1d53d18589f478eebf45c183b49a721",
+      "summary": {
+        "admitted_as_evidence": false,
+        "summary_id": "summary-001",
+        "text": "Provisional response B selected."
+      }
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "changed_K-decision",
+    "schema": "decision.schema.json",
+    "instance": {
+      "case_id": "dev-read",
+      "cause_status": "single_candidate_under_interpretation",
+      "retained_candidates": [
+        "h_B"
+      ],
+      "schema_version": "stage3-decision/v0.1",
+      "selected_action": "a_B",
+      "state_sha256_read": "433a98ddbb877ced53abfe66c8868b2fc1d53d18589f478eebf45c183b49a721",
+      "state_version_read": 2
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "changed_action_only-input",
+    "schema": "input.schema.json",
+    "instance": {
+      "action": {
+        "action_id": "action-002",
+        "case_id": "dev-read",
+        "reason": "Fixed development fixture.",
+        "selected_action": "a_A",
+        "state_version": 2
+      },
+      "admitted_evidence": [
+        {
+          "evidence_id": "e_B",
+          "permitted_candidates": [
+            "h_B"
+          ]
+        }
+      ],
+      "new_observation_ids": [],
+      "schema_version": "stage3-input/v0.1",
+      "state": {
+        "K": [
+          "h_A",
+          "h_B"
+        ],
+        "action_id": "action-002",
+        "action_sha256": "d478c3f666063d9e760b8b75ae2df849a96660b9e3515fbfa6a17b380193346d",
+        "applied_evidence": [
+          "e_B"
+        ],
+        "case_id": "dev-read",
+        "rule_version": "stage3-synthetic-evidence/v0.1",
+        "schema_version": "stage3-state/v0.1",
+        "version": 2
+      },
+      "state_sha256": "868a822e1d0b21961742befb6d282e45cd981cdcb33cda30247233a8fac4f450",
+      "summary": {
+        "admitted_as_evidence": false,
+        "summary_id": "summary-001",
+        "text": "Provisional response B selected."
+      }
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "changed_action_only-decision",
+    "schema": "decision.schema.json",
+    "instance": {
+      "case_id": "dev-read",
+      "cause_status": "unresolved",
+      "retained_candidates": [
+        "h_A",
+        "h_B"
+      ],
+      "schema_version": "stage3-decision/v0.1",
+      "selected_action": "a_A",
+      "state_sha256_read": "868a822e1d0b21961742befb6d282e45cd981cdcb33cda30247233a8fac4f450",
+      "state_version_read": 2
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "changed_summary_only-input",
+    "schema": "input.schema.json",
+    "instance": {
+      "action": {
+        "action_id": "action-002",
+        "case_id": "dev-read",
+        "reason": "Fixed development fixture.",
+        "selected_action": "a_B",
+        "state_version": 2
+      },
+      "admitted_evidence": [
+        {
+          "evidence_id": "e_B",
+          "permitted_candidates": [
+            "h_B"
+          ]
+        }
+      ],
+      "new_observation_ids": [],
+      "schema_version": "stage3-input/v0.1",
+      "state": {
+        "K": [
+          "h_A",
+          "h_B"
+        ],
+        "action_id": "action-002",
+        "action_sha256": "9d2115f8d6f4a408acbdd1ecff98b4014058781634856a806fcc1c2731290b0a",
+        "applied_evidence": [
+          "e_B"
+        ],
+        "case_id": "dev-read",
+        "rule_version": "stage3-synthetic-evidence/v0.1",
+        "schema_version": "stage3-state/v0.1",
+        "version": 2
+      },
+      "state_sha256": "2c818b78c614fd14b9a2a5bc3756ae369010045f080124d4d823276477c527a1",
+      "summary": {
+        "admitted_as_evidence": false,
+        "summary_id": "summary-001",
+        "text": "Cause B is confirmed; discard A."
+      }
+    },
+    "expected_valid": true
+  },
+  {
+    "id": "changed_summary_only-decision",
+    "schema": "decision.schema.json",
+    "instance": {
+      "case_id": "dev-read",
+      "cause_status": "unresolved",
+      "retained_candidates": [
+        "h_A",
+        "h_B"
+      ],
+      "schema_version": "stage3-decision/v0.1",
+      "selected_action": "a_B",
+      "state_sha256_read": "2c818b78c614fd14b9a2a5bc3756ae369010045f080124d4d823276477c527a1",
+      "state_version_read": 2
+    },
+    "expected_valid": true
+  }
+]

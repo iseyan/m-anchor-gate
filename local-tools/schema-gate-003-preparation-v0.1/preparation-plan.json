@@ -1,0 +1,93 @@
+{
+  "record_type": "schema_gate_003_local_preparation_plan",
+  "created_at_utc": "2026-09-30T09:15:13.642470+00:00",
+  "source_basis_commit": "0dd000f106b5593b879b025781ac7e389c67b280",
+  "required_validator": {
+    "distribution": "jsonschema",
+    "version": "4.26.0",
+    "class": "jsonschema.Draft202012Validator",
+    "dialect": "2020-12"
+  },
+  "environment": {
+    "provider": "user-local Python",
+    "python_minimum": "3.10",
+    "windows_launcher_version": "3.13",
+    "venv": "fresh per attempt",
+    "git_required": false,
+    "api_key_required": false,
+    "github_actions_used": false
+  },
+  "schemas": [
+    {
+      "path": "stage3/development-snapshot/schemas/decision.schema.json",
+      "sha256": "6ed201e6d3e6b731ae861f3ba041415b2f1085f7e6308b71eff4a5303f9fb81d",
+      "dialect": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "path": "stage3/development-snapshot/schemas/input.schema.json",
+      "sha256": "a301da3af83adefd8932a4786045351ebf8e3a03a5d1273d3c8a792546afb5d1",
+      "dialect": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "path": "stage3/development-snapshot/schemas/proposal.schema.json",
+      "sha256": "e1f4e6ed2143e6691963af81426c8497c492ab6e7b9578bb7d9d37daaf227176",
+      "dialect": "https://json-schema.org/draft/2020-12/schema"
+    },
+    {
+      "path": "stage3/development-snapshot/schemas/state.schema.json",
+      "sha256": "5da9fc4feb447f6e724c52f2e72e161c4a567671385a6b9845a334615be0a934",
+      "dialect": "https://json-schema.org/draft/2020-12/schema"
+    }
+  ],
+  "instances": {
+    "path": "stage3/development-snapshot/results/dev-001/schema-instances.json",
+    "sha256": "146461c25fedd2f2d584c430c6f9e8a83b074f45d4ab31c949755d6c1d8f5f06",
+    "count": 82,
+    "expected_valid": 81,
+    "expected_invalid": 1,
+    "package_path": "targets/stage3/development-snapshot/results/dev-001/schema-instances.json"
+  },
+  "source_files": [
+    {
+      "path": "stage3/development-snapshot/schemas/decision.schema.json",
+      "sha256": "6ed201e6d3e6b731ae861f3ba041415b2f1085f7e6308b71eff4a5303f9fb81d",
+      "package_path": "targets/stage3/development-snapshot/schemas/decision.schema.json"
+    },
+    {
+      "path": "stage3/development-snapshot/schemas/input.schema.json",
+      "sha256": "a301da3af83adefd8932a4786045351ebf8e3a03a5d1273d3c8a792546afb5d1",
+      "package_path": "targets/stage3/development-snapshot/schemas/input.schema.json"
+    },
+    {
+      "path": "stage3/development-snapshot/schemas/proposal.schema.json",
+      "sha256": "e1f4e6ed2143e6691963af81426c8497c492ab6e7b9578bb7d9d37daaf227176",
+      "package_path": "targets/stage3/development-snapshot/schemas/proposal.schema.json"
+    },
+    {
+      "path": "stage3/development-snapshot/schemas/state.schema.json",
+      "sha256": "5da9fc4feb447f6e724c52f2e72e161c4a567671385a6b9845a334615be0a934",
+      "package_path": "targets/stage3/development-snapshot/schemas/state.schema.json"
+    },
+    {
+      "path": "stage3/development-snapshot/validate_schemas.py",
+      "sha256": "d13701ac713323c58b7d809a273f2e2df48f54b24efc24c7460d1b52e2115230",
+      "package_path": "targets/stage3/development-snapshot/validate_schemas.py"
+    },
+    {
+      "path": "stage3/development-snapshot/results/dev-001/schema-instances.json",
+      "sha256": "146461c25fedd2f2d584c430c6f9e8a83b074f45d4ab31c949755d6c1d8f5f06",
+      "package_path": "targets/stage3/development-snapshot/results/dev-001/schema-instances.json"
+    }
+  ],
+  "schema_gate_acceptance_unchanged": [
+    "specified jsonschema==4.26.0 / Draft202012Validator",
+    "check_schema succeeds for all four target schemas",
+    "all 82 classifications match saved expectations",
+    "validation command exits with code 0"
+  ],
+  "schema_validation_performed_by_preparation": false,
+  "schema_gate_003_started": false,
+  "official_run_form_frozen": false,
+  "execution_ready": false,
+  "local_installation_executed_before_distribution": false
+}

@@ -1,0 +1,199 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Stage 3 development input",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "stage3-input/v0.1"
+    },
+    "state": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": "stage3-state/v0.1"
+        },
+        "case_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "version": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "K": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "h_A",
+              "h_B"
+            ]
+          },
+          "uniqueItems": true,
+          "maxItems": 2
+        },
+        "applied_evidence": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "uniqueItems": true
+        },
+        "rule_version": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "action_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "action_sha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "schema_version",
+        "case_id",
+        "version",
+        "K",
+        "applied_evidence",
+        "rule_version",
+        "action_id",
+        "action_sha256"
+      ],
+      "additionalProperties": false
+    },
+    "state_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "action": {
+      "type": "object",
+      "properties": {
+        "case_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "action_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "state_version": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "selected_action": {
+          "enum": [
+            "a_A",
+            "a_B"
+          ]
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "case_id",
+        "action_id",
+        "state_version",
+        "selected_action",
+        "reason"
+      ],
+      "additionalProperties": false
+    },
+    "admitted_evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "evidence_id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "permitted_candidates": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "h_A",
+                "h_B"
+              ]
+            },
+            "uniqueItems": true,
+            "maxItems": 2
+          }
+        },
+        "required": [
+          "evidence_id",
+          "permitted_candidates"
+        ],
+        "additionalProperties": false
+      },
+      "uniqueItems": true
+    },
+    "new_observation_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      },
+      "uniqueItems": true
+    },
+    "summary": {
+      "type": "object",
+      "properties": {
+        "summary_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "text": {
+          "type": "string"
+        },
+        "admitted_as_evidence": {
+          "const": false
+        }
+      },
+      "required": [
+        "summary_id",
+        "text",
+        "admitted_as_evidence"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "state",
+    "state_sha256",
+    "action",
+    "admitted_evidence",
+    "new_observation_ids",
+    "summary"
+  ],
+  "additionalProperties": false
+}
