@@ -14,6 +14,20 @@ The prototype is separate from the app and public-game projects. No live model c
 
 Python 3.10 or later and the standard library are sufficient. Keep the repository layout: the prototype imports the unchanged guard from `demonstration1/demo1/m_anchor_minimal.py`.
 
+### Windows launcher
+
+Download and extract the complete repository ZIP, then double-click [`run-demo.cmd`](run-demo.cmd) inside `stage4`. The launcher uses an already installed Python 3.10 or later; it does not install packages or contact a provider. The Windows launcher itself has not been tested on Windows.
+
+The fixed local demo runs four examples: provisional B with a fresh-process read, unsupported removal rejected, a changed summary that leaves the assessment unchanged, and an update using host-admitted synthetic evidence. Every run creates a new `run-output/stage4-demo-...` folder. Open its `summary.txt` for the short result. The same folder retains the two stores, proposal files, command output and `demo-result.json`. Expected rejection is a normal example outcome; an unexpected failure is retained and stops the demo without retry.
+
+On any supported Python environment, the same runner can be started with:
+
+```sh
+python stage4/prototype/run_demo.py
+```
+
+### Individual commands
+
 Run these commands from the repository root. Choose unused database and proposal paths. `init` and `template --output` refuse to overwrite an existing file.
 
 ```sh
@@ -53,7 +67,7 @@ This is a local Python/CLI interface with one case per SQLite store. It has no H
 python -B -m unittest discover -s stage4/prototype/tests -v
 ```
 
-The seven tests passed locally on Python 3.12.14 / Linux on 1 October 2026. The five commands above also ran successfully with a new temporary store. Windows execution of this prototype has not been checked.
+The nine tests (seven API checks and two runner checks) passed locally on Python 3.12.14 / Linux on 1 October 2026. The runner checks include a path with Japanese characters, spaces and an exclamation mark. Windows execution, including the CMD launcher, remains unchecked.
 
 The tests use disposable stores to check candidate preservation, admitted evidence, invalid proposal recording, state references, summary separation, fresh-process reads, rollback on an audit-write error and protection against overwriting unrelated stores. They are implementation checks for this prototype, not Stage 3 evaluation results. Existing records and the published guard are unchanged.
 
@@ -63,6 +77,10 @@ The tests use disposable stores to check candidate preservation, admitted eviden
 
 最初の用途は、他のローカルプロセスからJSON提案を提出し、保存状態・検査結果・監査を取得できることとする。実証1号の二候補と合成証拠 `e_B` に範囲を絞る。別途のアプリや公開ゲームとは統合しない。
 
+Windows向けには、リポジトリのZIP全体を展開し、`stage4` 内の [`run-demo.cmd`](run-demo.cmd) をダブルクリックする起動方法を用意した。既存のPython 3.10以降を使い、追加インストールやプロバイダ通信は行わない。Windows実機での動作は未確認である。
+
+実演は、暫定対応Bの保存と別プロセス読出し、根拠なし削除の拒否、要約変更後の判定維持、受理済み合成証拠による更新の4例。毎回、新しい `run-output/stage4-demo-...` フォルダを作る。その中の `summary.txt` で短い結果を読める。ストア・提案ファイル・コマンド出力・`demo-result.json` も同じフォルダに残る。意図した拒否は正常な実演結果であり、想定外の失敗では記録を残して再試行せず停止する。
+
 上のコマンドをリポジトリ直下で実行する。Python 3.10以降の標準ライブラリだけを使い、既存の保存則コードを未改変で読み込む。新しい保存先を指定すること。最初の例は、暫定対応Bを保存しても両候補が残り、別プロセスの `assess` が版1を読んで判断する流れである。`template` は固定の提案例を作る機能であり、モデル生成ではない。別途得たJSON提案も提出できるが、その出所を認証する機能ではない。
 
 証拠対照を試す場合は、別ストアを `init demo-local --admit e_B` で作る。そのストアから作った提案の `evidence_ids` を `["e_B"]`、`proposed_K` を `["h_B"]` に変更して提出する。初期化で受理していないケースでは拒否する。受理資格と解釈を提案から書き換える入口は設けない。
@@ -71,6 +89,6 @@ The tests use disposable stores to check candidate preservation, admitted eviden
 
 HTTPサーバー、モデル接続、計数API、実世界への行為は実装しない。証拠の真偽、特権的な直接書込、製品向け権限管理、並行負荷、クラッシュ復旧は未評価である。003をこの新コードのスキーマ適合へ読み替えない。
 
-2026年10月1日、Python 3.12.14／Linuxで7件の実装検査が通過した。掲載した5コマンドも新規の一時ストアで確認した。この試作のWindows実行は未確認である。
+2026年10月1日、Python 3.12.14／Linuxで9件（APIの7件と実演スクリプトの2件）の検査が通過した。日本語・空白・感嘆符を含む保存先も含めた。CMD起動ファイルを含むWindows実行は未確認のままである。
 
 検査は上記の `unittest` コマンドで、使い捨ての保存先に対して行う。監査書込エラー時の一括ロールバックも確認する。この試作の実装確認として扱い、Stage 3の完了記録には加算しない。今後の注意は既存の[補遺](../docs/research-scope-and-process-note.ja-en.md)を引き継ぎ、追加の閉鎖文書は作らない。
