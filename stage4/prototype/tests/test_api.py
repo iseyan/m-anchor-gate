@@ -1,6 +1,7 @@
 """Behavior checks for the local API, using only disposable stores."""
 
 import base64
+from contextlib import closing
 import json
 from pathlib import Path
 import sqlite3
@@ -110,13 +111,13 @@ class LocalAPITests(unittest.TestCase):
 
     def test_audit_write_error_rolls_back_state_and_action(self):
         before = self.api.read("case-1")
-        with sqlite3.connect(self.db) as connection:
+        with closing(sqlite3.connect(self.db)) as connection, connection:
             connection.execute("CREATE TRIGGER fail_audit BEFORE INSERT ON audit BEGIN SELECT RAISE(ABORT, 'test write failure'); END")
         with self.assertRaises(sqlite3.IntegrityError):
             self.api.submit("case-1", self.proposal())
         self.assertEqual(self.api.read("case-1"), before)
         self.assertEqual(self.api.history("case-1"), [])
-        with sqlite3.connect(self.db) as connection:
+        with closing(sqlite3.connect(self.db)) as connection, connection:
             self.assertEqual(connection.execute("SELECT count(*) FROM actions").fetchone()[0], 0)
 
     def test_existing_or_foreign_store_is_not_overwritten(self):
@@ -125,7 +126,7 @@ class LocalAPITests(unittest.TestCase):
             GateAPI.initialize(self.db, "case-1")
         self.assertEqual(self.db.read_bytes(), before)
         foreign = Path(self.temp.name) / "other.sqlite3"
-        with sqlite3.connect(foreign) as connection:
+        with closing(sqlite3.connect(foreign)) as connection, connection:
             connection.execute("CREATE TABLE example(value TEXT)")
         before = foreign.read_bytes()
         with self.assertRaises((ValueError, sqlite3.Error)):
