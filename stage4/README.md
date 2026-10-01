@@ -16,7 +16,7 @@ Python 3.10 or later and the standard library are sufficient. Keep the repositor
 
 ### Windows launcher
 
-Download and extract the complete repository ZIP, then double-click [`run-demo.cmd`](run-demo.cmd) inside `stage4`. The launcher uses an already installed Python 3.10 or later; it does not install packages or contact a provider. The CMD entry point has been checked in the limited Windows environment described below; Explorer double-click execution remains unverified.
+Download and extract the complete repository ZIP, then double-click [`run-demo.cmd`](run-demo.cmd) inside `stage4`. The launcher uses an already installed Python 3.10 or later; it does not install packages or contact a provider. The Windows launcher has been checked with both bundled Python and the user's installed Python; see Checks for the observed execution scope.
 
 The fixed local demo runs four examples: provisional B with a fresh-process read, unsupported removal rejected, a changed summary that leaves the assessment unchanged, and an update using host-admitted synthetic evidence. Every run creates a new `run-output/stage4-demo-...` folder. Open its `summary.txt` for the short result. The same folder retains the two stores, proposal files, command output and `demo-result.json`. Expected rejection is a normal example outcome; an unexpected failure is retained and stops the demo without retry.
 
@@ -71,7 +71,9 @@ The nine tests (seven API checks and two runner checks) at `d4f8c29` passed loca
 
 On the same date, Windows 11 (build 26200) with Codex's bundled Python 3.12.14 exposed two test-cleanup errors: test-owned SQLite connections remained open. The tests now close those connections explicitly, preserving commit/rollback behavior, and all nine tests passed in that Windows environment. The prototype, guard and demo code are unchanged; the earlier Linux result is not a rerun of this test correction.
 
-The complete fixed-commit ZIP at `d4f8c29` was also extracted and its unchanged `stage4/run-demo.cmd` invoked through `cmd.exe`. Only that process's `PATH` was prepended with the bundled Python directory, and standard input was redirected from `NUL` for the final pause. The generated `summary.txt` and `demo-result.json` showed all four examples completed: ten steps exited 0, the intended rejection exited 2, and the launcher exited 0. Saved state, version and action survived rejection and summary replacement, and the fresh-process read matched the saved state/action. Ordinary installed-Python and Explorer double-click execution remain unverified. These checks complete neither Stage 3 nor Stage 4 and do not establish product readiness.
+The complete fixed-commit ZIP at `d4f8c29` was also extracted and its unchanged `stage4/run-demo.cmd` invoked through `cmd.exe`. Only that process's `PATH` was prepended with the bundled Python directory, and standard input was redirected from `NUL` for the final pause. The generated `summary.txt` and `demo-result.json` showed all four examples completed: ten steps exited 0, the intended rejection exited 2, and the launcher exited 0. Saved state, version and action survived rejection and summary replacement, and the fresh-process read matched the saved state/action.
+
+A subsequent user-run interactive launcher execution on the same date used installed Python 3.13.5 with the unchanged `d4f8c29` archive. The supplied screen showed all four examples completed and launcher exit 0. The saved `summary.txt`, `demo-result.json` and step outputs from `stage4-demo-20261001T115038Z-3288db04` confirmed Windows / Python 3.13.5, all eleven expected step exits (including rejection exit 2), the fresh-process read, preservation on rejection and summary replacement, and the admitted-evidence update. This verifies that fixed demo; the nine-test suite was not run with Python 3.13.5. These checks complete neither Stage 3 nor Stage 4 and do not establish product readiness.
 
 The tests use disposable stores to check candidate preservation, admitted evidence, invalid proposal recording, state references, summary separation, fresh-process reads, rollback on an audit-write error and protection against overwriting unrelated stores. They are implementation checks for this prototype, not Stage 3 evaluation results. Existing records and the published guard are unchanged.
 
@@ -81,7 +83,7 @@ The tests use disposable stores to check candidate preservation, admitted eviden
 
 最初の用途は、他のローカルプロセスからJSON提案を提出し、保存状態・検査結果・監査を取得できることとする。実証1号の二候補と合成証拠 `e_B` に範囲を絞る。別途のアプリや公開ゲームとは統合しない。
 
-Windows向けには、リポジトリのZIP全体を展開し、`stage4` 内の [`run-demo.cmd`](run-demo.cmd) をダブルクリックする起動方法を用意した。既存のPython 3.10以降を使い、追加インストールやプロバイダ通信は行わない。CMDからの起動は後述する限定したWindows環境で確認した。エクスプローラーでのダブルクリック実行は未確認である。
+Windows向けには、リポジトリのZIP全体を展開し、`stage4` 内の [`run-demo.cmd`](run-demo.cmd) をダブルクリックする起動方法を用意した。既存のPython 3.10以降を使い、追加インストールやプロバイダ通信は行わない。同梱Pythonと利用者がインストールしたPythonの双方で、Windows起動ファイルの実行を確認した。確認した範囲は後述する。
 
 実演は、暫定対応Bの保存と別プロセス読出し、根拠なし削除の拒否、要約変更後の判定維持、受理済み合成証拠による更新の4例。毎回、新しい `run-output/stage4-demo-...` フォルダを作る。その中の `summary.txt` で短い結果を読める。ストア・提案ファイル・コマンド出力・`demo-result.json` も同じフォルダに残る。意図した拒否は正常な実演結果であり、想定外の失敗では記録を残して再試行せず停止する。
 
@@ -97,6 +99,8 @@ HTTPサーバー、モデル接続、計数API、実世界への行為は実装�
 
 同日、Windows 11（ビルド26200）とCodex同梱のPython 3.12.14では、テスト側で開いたSQLite接続が閉じられていないため、後片付けで2件のエラーが出た。確定・ロールバックの動作を維持して接続を明示的に閉じるようテストを修正し、このWindows環境で9件すべてが通過した。試作本体・保存則・実演コードは未改変であり、先のLinux結果は今回のテスト修正後の再実行ではない。
 
-また、固定コミット `d4f8c29` のリポジトリ全体ZIPを展開し、未改変の `stage4/run-demo.cmd` を `cmd.exe` から実行した。そのプロセスだけの `PATH` の先頭に同梱Pythonの場所を加え、末尾の一時停止には `NUL` から標準入力を渡した。生成された `summary.txt` と `demo-result.json` で4例の完了を確認した。10ステップは終了コード0、予定された拒否は2、起動ファイル全体は0だった。拒否と要約変更で保存状態・版・対応は維持され、別プロセスの読出しも保存状態・対応と一致した。通常インストールされたPythonによる実演と、エクスプローラーでのダブルクリック実行は未確認である。これらの確認を工程3完了・工程4完了・製品提供可能とは扱わない。
+また、固定コミット `d4f8c29` のリポジトリ全体ZIPを展開し、未改変の `stage4/run-demo.cmd` を `cmd.exe` から実行した。そのプロセスだけの `PATH` の先頭に同梱Pythonの場所を加え、末尾の一時停止には `NUL` から標準入力を渡した。生成された `summary.txt` と `demo-result.json` で4例の完了を確認した。10ステップは終了コード0、予定された拒否は2、起動ファイル全体は0だった。拒否と要約変更で保存状態・版・対応は維持され、別プロセスの読出しも保存状態・対応と一致した。
+
+その後、同日に利用者が未改変の `d4f8c29` 展開先から対話的に起動し、インストール済みのPython 3.13.5で実演した。提示画面では4例の完了と起動ファイルの終了コード0を確認した。`stage4-demo-20261001T115038Z-3288db04` に保存された `summary.txt`、`demo-result.json`、各ステップの出力でも、Windows／Python 3.13.5、11ステップすべての予定した終了コード（拒否は2）、別プロセス読出し、拒否・要約変更時の維持、受理済み合成証拠による更新を確認した。これは固定入力実演の確認であり、Python 3.13.5で9件の検査を実行した記録ではない。これらの確認を工程3完了・工程4完了・製品提供可能とは扱わない。
 
 検査は上記の `unittest` コマンドで、使い捨ての保存先に対して行う。監査書込エラー時の一括ロールバックも確認する。この試作の実装確認として扱い、Stage 3の完了記録には加算しない。今後の注意は既存の[補遺](../docs/research-scope-and-process-note.ja-en.md)を引き継ぎ、追加の閉鎖文書は作らない。
