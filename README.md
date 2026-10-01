@@ -8,14 +8,14 @@ The recorded design separates model proposals from host validation and authorita
 
 ## Current scope — 1 October 2026 (JST)
 
-**The official Stage 3 integration evaluation is stopped, incomplete. Stage 4 implementation has not started under this plan.** The retained research results are listed below; they are not one combined proof.
+**The official Stage 3 integration evaluation remains stopped and incomplete. Stage 4 has started with a local API prototype, following the user's instruction.** The results and current work are listed below; they are not one combined proof.
 
 | Stage | Result retained | Evidence and limit |
 | --- | --- | --- |
 | 1 — Formal note | Conditional mathematical result | Preservation under the stated transition assumptions; an empty evidence basis leaves the candidate set unchanged. The [finalized materials](reports/collected-materials/M-Anchor_Stages_1-4_Materials_v0.1.en.pdf) retain this background. |
 | 2 — Demonstration 1 | Completed fixed-input demonstration | [Implementation and run](demonstration1/demo1/demo1-implementation-and-run-v0.1.en.md): a fresh process used the saved version, candidates and selected action. No LLM. |
 | 3 — Development and schema checks | Fixed-input checks and schema gate 003 completed within their recorded scope | [Development report](stage3/development-report.v0.1.en.md): D02 alone differs under the removal check. [003 receipt report](stage3/schema-gates/schema-gate-003/report.en.md): four schemas checked; 82 classifications matched, including 81 valid instances and D10's expected invalid instance. The receipt is not an independent rerun. Preparation and live integration evaluation remain incomplete. |
-| 4 — Productization | Not started under this plan | [Draft plan](stage4/stage4-productization-plan-v0.1.en.md), with entry conditions unmet and `execution_ready=false`. |
+| 4 — Productization | Local API prototype started | [Scope, code and local instructions](stage4/README.md). The user chose to begin this work while Stage 3 stays incomplete; the old draft's entry conditions are not declared satisfied. Product readiness remains unestablished. |
 
 Start with Demonstration 1 for the observable result. The [English](reports/collected-materials/M-Anchor_Stages_1-4_Materials_v0.1.en.pdf) and [Japanese](reports/collected-materials/M-Anchor_Stages_1-4_Materials_v0.1.ja.pdf) collected PDFs remain historical reading editions, unchanged by this scope decision.
 
@@ -23,9 +23,9 @@ Start with Demonstration 1 for the observable result. The [English](reports/coll
 
 Current `stage3-preparation-001` retains its total cap of seven API calls. Its input bound of 8,192 tokens is unestablished, so generation does not proceed. Proposed `stage3-preparation-002` remains unadopted and is not an execution path. Neither run is ready; no first counting request is authorized. Conditions and implementation bindings already frozen remain historical records; they do not amount to a fully frozen execution form.
 
-Live API preparation, count-pricing research, provider inquiry and full run-form freezing are not continuing tasks in this effort. An eventual live-integration study would need a separately chosen purpose and scope. Stopping does not pass an unmet gate or change an earlier result.
+The official Stage 3 live API preparation, count-pricing research, provider inquiry and full run-form freezing remain stopped. Stage 4's local prototype starts separately from that evaluation route. Stopping Stage 3 does not pass an unmet gate or change an earlier result.
 
-The [process appendix](docs/research-scope-and-process-note.ja-en.md) records how preparation and documentation grew beyond the research question, and the cautions for future work.
+The [process appendix](docs/research-scope-and-process-note.ja-en.md) records how preparation and documentation grew beyond the research question. Its cautions remain applicable; its then-unstarted Stage 4 status precedes the [subsequent start decision](stage4/README.md).
 
 ## Supporting records
 
@@ -42,7 +42,7 @@ The [Demonstration 1 README](demonstration1/demo1/README.md) and [separate repla
 
 ## Provenance and limits
 
-Specifications, code, run records, failures, receipts, candidate files and finalized materials are retained. The documentation revision changes the root reading guide and adds the process appendix; it adds no experiment result. Schema gates 001–002 are not rewritten as successes, and 003 is not extended to new code or model outputs.
+Historical specifications, code, run records, failures, receipts, candidate files and finalized materials are retained. New prototype code and its implementation checks are under `stage4/prototype/`; they do not complete Stage 3. Schema gates 001–002 are not rewritten as successes, and 003 is not extended to new code or model outputs.
 
 `provenance/import-manifest.json` and `provenance/SHA256SUMS.txt` describe the original import, including the then-current root READMEs. They do not describe every later addition or the revised navigation. The [pre-revision snapshot](https://github.com/iseyan/m-anchor-gate/tree/64d8280203d4d8f38d6fda816c8e39ed482e367a) retains those README bytes. Git history records subsequent changes. Checksums identify bytes; they do not prove an authenticated API exchange or independent reproduction.
 
