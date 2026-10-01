@@ -8,14 +8,14 @@ The recorded design separates model proposals from host validation and authorita
 
 ## Current scope — 1 October 2026 (JST)
 
-**The official Stage 3 integration evaluation remains stopped and incomplete. Stage 4 has started with a local API prototype, following the user's instruction.** The results and current work are listed below; they are not one combined proof.
+**The official Stage 3 integration evaluation remains stopped and incomplete. Stage 4's local API prototype has been checked; Stage 4 as a whole remains incomplete.** The results and current work are listed below; they are not one combined proof.
 
 | Stage | Result retained | Evidence and limit |
 | --- | --- | --- |
 | 1 — Formal note | Conditional mathematical result | Preservation under the stated transition assumptions; an empty evidence basis leaves the candidate set unchanged. The [finalized materials](reports/collected-materials/M-Anchor_Stages_1-4_Materials_v0.1.en.pdf) retain this background. |
 | 2 — Demonstration 1 | Completed fixed-input demonstration | [Implementation and run](demonstration1/demo1/demo1-implementation-and-run-v0.1.en.md): a fresh process used the saved version, candidates and selected action. No LLM. |
 | 3 — Development and schema checks | Fixed-input checks and schema gate 003 completed within their recorded scope | [Development report](stage3/development-report.v0.1.en.md): D02 alone differs under the removal check. [003 receipt report](stage3/schema-gates/schema-gate-003/report.en.md): four schemas checked; 82 classifications matched, including 81 valid instances and D10's expected invalid instance. The receipt is not an independent rerun. Preparation and live integration evaluation remain incomplete. |
-| 4 — Productization | Local prototype started / entry conditions unmet | [Scope, code and local instructions](stage4/README.md). The user chose to begin this work while Stage 3 stays incomplete; the old draft's entry conditions are not declared satisfied. Product readiness remains unestablished. |
+| 4 — Productization | Local prototype checked / overall incomplete | [Scope, code and local instructions](stage4/README.md). In the fixed two-candidate examples, a later process reads the saved version, state and selected response and returns an assessment. Stages 3 and 4 remain independently incomplete; the old entry conditions remain unmet. This does not establish model understanding or product readiness. |
 
 Start with Demonstration 1 for the observable result. The [English](reports/collected-materials/M-Anchor_Stages_1-4_Materials_v0.1.en.pdf) and [Japanese](reports/collected-materials/M-Anchor_Stages_1-4_Materials_v0.1.ja.pdf) collected PDFs remain historical reading editions, unchanged by this scope decision.
 
