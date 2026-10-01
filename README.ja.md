@@ -15,7 +15,7 @@
 | 1 — 形式ノート | 条件付きの数学的結果 | 明示した遷移の仮定の下での保存則。証拠の基底が空なら候補集合は変わらない。[確定済み資料集](reports/collected-materials/M-Anchor_Stages_1-4_Materials_v0.1.ja.pdf)に背景資料を収録。 |
 | 2 — 実証1号 | 固定入力の実証完了 | [実装・試験記録](demonstration1/demo1/demo1-implementation-and-run-v0.1.ja.md)：別プロセスが保存版・候補・選択対応を読んで判断に使った。LLM未使用。 |
 | 3 — 開発・スキーマ点検 | 記録された範囲で固定入力点検とスキーマゲート003を完了 | [開発報告](stage3/development-report.v0.1.en.md)：除去検査による差はD02のみ。[003受領報告](stage3/schema-gates/schema-gate-003/report.ja.md)：4スキーマを検査、82件の分類一致（81件適合・D10は期待不適合）。受領照合であり独立再実行ではない。準備評価とライブ統合評価は未完。 |
-| 4 — 製品化 | ローカル共通APIの試作を開始 | [範囲・コード・実行手順](stage4/README.md)。工程3を未完のまま開始する利用者の判断に基づく。旧草稿の入口条件を満たしたとは扱わず、製品提供可能かは未判定。 |
+| 4 — 製品化 | ローカル試作を開始／入口条件は未充足 | [範囲・コード・実行手順](stage4/README.md)。工程3を未完のまま開始する利用者の判断に基づく。旧草稿の入口条件を満たしたとは扱わず、製品提供可能かは未判定。 |
 
 観測された結果を読む入口は実証1号とする。[英語正本](reports/collected-materials/M-Anchor_Stages_1-4_Materials_v0.1.en.pdf)・[日本語副本](reports/collected-materials/M-Anchor_Stages_1-4_Materials_v0.1.ja.pdf)の資料集PDFは、当時の状態を記した資料として保持し、今回の方針変更で改訂しない。
 
